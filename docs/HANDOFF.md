@@ -4,7 +4,7 @@
 
 事業4（CSVからのSEO記事）と7（トレンド記事・SNS）を統合した基盤です。入口だけを `collect` / `pseo` に分け、文章生成・ファイル保存・配信先別の履歴を共用します。SEO用とSNS用に同じ処理を複製する必要はありません。
 
-[3リポジトリの構成・合併判断](https://github.com/nyu1791-collab/office-worker/blob/ccr-aac984d0-n27k7c/docs/BUSINESS_ARCHITECTURE.md)。動画リポジトリは対象外です。
+[3リポジトリの構成・合併判断](https://github.com/nyu1791-collab/office-worker/blob/bde57750200924a357414216a13248c7a1720894/docs/BUSINESS_ARCHITECTURE.md)。動画リポジトリは対象外です。
 
 ## 今回の修正
 
