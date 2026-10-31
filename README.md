@@ -68,3 +68,12 @@ HNは `max_age_hours: 24` と `keywords` で期間・分野を絞れます。RSS
 - `affiliates:` に契約済みの紹介URLを登録 → 関連語が本文にある記事だけ末尾紹介欄＋PR表記を追加（リンク・コード内の語句は対象外）
 - ジャンルは絞る（`niche` と `sources` を合わせる）。雑多より「AI自動化ツール専門」のほうが伸びる
 - 1日2記事×継続が目安。`pseo` で比較・まとめ系のロングテール記事を一気に積む
+
+## 販売作品・サービスの告知（promo）
+翻訳した同人作品の海外向け告知や、自社商品（office-worker の商品）の紹介を、カタログから言語ごとに作る。
+```powershell
+python -m engine promo data\catalog.csv                # output/promo/日付/ に下書き（手で直してよい）
+python -m engine promo data\catalog.csv --publish      # 確認した下書きを X へ。同じ作品は7日に1回まで（--every-days）
+```
+- カタログ列: `title,url,langs,blurb,tags,adult`（例: `data/catalog_example.csv`）。`adult=1` は `[18+]` を付け、文面は非露骨に
+- 成人向けを投稿するアカウントは X の「センシティブな内容」設定を必ず有効に

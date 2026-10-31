@@ -4,6 +4,7 @@
   run    [-n 2]        collect + write（毎日これ1本）
   pseo data/pseo.csv [--prompt pseo_sales]   CSVの各行から記事を量産（プログラマティックSEO）
   login note|x         note / X のログイン状態を保存（browser-use 投稿用・一度だけ）
+  promo catalog.csv [--publish]   販売中作品の多言語告知（翻訳作品の海外向け等）
   status               キュー・投稿数"""
 import argparse
 import csv
@@ -251,6 +252,9 @@ def main():
     p = sp.add_parser("retry", help="失敗した公開先のみ再試行（結果不明・部分投稿は除外）")
     p.add_argument("post_id", nargs="?"); p.add_argument("-n", type=nonnegative_int, default=10)
     sp.add_parser("login").add_argument("site", choices=["note", "x"])
+    p = sp.add_parser("promo", help="作品カタログ → 多言語の告知文（確認用に保存、--publish で X）")
+    p.add_argument("catalog"); p.add_argument("--limit", type=nonnegative_int, default=5)
+    p.add_argument("--every-days", type=nonnegative_int, default=7); p.add_argument("--publish", action="store_true")
     sp.add_parser("status")
     a = ap.parse_args()
     if ((a.cmd in ("write", "run", "retry") and a.n == 0) or
@@ -293,6 +297,10 @@ def main():
     if a.cmd == "login":
         from . import browser
         browser.login(a.site)
+    if a.cmd == "promo":
+        from . import promo
+        made = promo.run(a.catalog, st, c, a.limit, a.every_days, a.publish)
+        print(f"{len(made)}件（output/promo/ に保存）" + ("" if a.publish else "。確認後 --publish で X に投稿"))
     if a.cmd == "status":
         print(f"キュー {len(st['queue'])} / 投稿済み {len(st['posts'])}")
         for p in st["posts"][-5:]:

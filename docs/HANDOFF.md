@@ -79,3 +79,7 @@ WordPressのdescriptionはexcerptへ保存します。SEOプラグイン固有�
 - 元記事の本文が取れない元ネタ（Google ニュースの転送リンク・PDF等・同意画面/ボット判定ページ）は**記事を書かずに見送る**（`min_source_chars` 既定400字）。見出しだけで本文を作り話で埋めるのを防ぐ。見送りは本数に数えない。Google ニュースの本文取得には Firecrawl が必要
 - 記事プロンプト: 元ネタにある事実だけ、**原文の翻訳記事にしない**（要約＋解説、引用は短く出典明記）、根拠の無い比較表・FAQ を作らない、文字数は「目安」に（水増し防止）。X 文面も誇張・本文に無い数字を禁止
 - WordPress 送信前に HTML から script/iframe/on*属性/javascript: リンクを除去。既存タグ（term_exists）の ID を拾う
+
+## 2026-10-31 promo を追加
+- `python -m engine promo catalog.csv [--publish]`: 作品カタログ → 言語別の告知文。下書きは output/promo に保存、手直し後 --publish で X。投稿済みだけをローテーション対象（7日）、結果不明は再送しない
+- LLM は OpenRouter も可（`LLM_PROVIDER=openrouter`）
