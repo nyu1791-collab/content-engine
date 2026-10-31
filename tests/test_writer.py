@@ -86,3 +86,16 @@ class AffiliateTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SafeHtmlTests(unittest.TestCase):
+    def test_wordpress_html_drops_scripts_and_handlers_but_keeps_content(self):
+        from engine.publishers import wordpress
+        html = wordpress.safe_html('## 見出し\n\n本文<script>alert(1)</script><img src=x onerror="alert(1)">'
+                                   '[リンク](javascript:alert(1)) [正常](https://ok.example)\n\n| a | b |\n|---|---|\n| 1 | 2 |')
+        self.assertNotIn("script", html)
+        self.assertNotIn("onerror", html)
+        self.assertNotIn("javascript:", html)
+        self.assertIn("<h2>見出し</h2>", html)
+        self.assertIn('href="https://ok.example"', html)
+        self.assertIn("<table>", html)

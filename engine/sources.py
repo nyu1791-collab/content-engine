@@ -4,7 +4,7 @@ import hashlib
 import math
 import re
 import time
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 
 import feedparser
 import requests
@@ -119,6 +119,15 @@ def collect(cfg_sources):
     return items
 
 
+BLOCKED_RE = re.compile(r"Before you continue to Google|Enable JavaScript and cookies|Just a moment\.\.\.|"
+                        r"Access Denied|Are you a robot|captcha|ログインしてください|JavaScriptを有効", re.I)
+
+
+def looks_blocked(text):
+    """同意画面・ボット判定・ログイン要求のページは本文ではない"""
+    return len(text) < 2000 and bool(BLOCKED_RE.search(text))
+
+
 def fetch_body(url, n=8000):
     """記事執筆用に元ページ本文を取得。GitHub → README、それ以外 → Firecrawl（JS描画・本文抽出）→ BeautifulSoup。"""
     from . import fc
@@ -135,12 +144,21 @@ def fetch_body(url, n=8000):
                     return md[:n]
             except Exception as e:
                 print(f"  firecrawl失敗→ローカル: {e}")
-        r = requests.get(url, headers=UA, timeout=20)
-        r.encoding = r.apparent_encoding
-        soup = BeautifulSoup(r.text, "html.parser")
+        if urlparse(url).netloc.endswith("news.google.com"):
+            return ""  # JS で転送するまとめページ。Firecrawl 無しでは本文を取れない（見出しだけで書かせない）
+        r = requests.get(url, headers=UA, timeout=20, stream=True)
+        ctype = r.headers.get("content-type", "")
+        if "html" not in ctype and "text/plain" not in ctype:
+            r.close()
+            return ""  # PDF・画像・動画などは本文として扱わない
+        raw = r.raw.read(3_000_000, decode_content=True)  # 巨大ページの全読込を防ぐ
+        r.close()
+        text = raw.decode(r.encoding or requests.utils.get_encoding_from_headers(r.headers) or "utf-8", errors="replace")
+        soup = BeautifulSoup(text, "html.parser")
         for t in soup(["script", "style", "nav", "footer", "header", "aside"]):
             t.decompose()
         main = soup.find("article") or soup.find("main") or soup.body or soup
-        return re.sub(r"\n\s*\n+", "\n", main.get_text("\n")).strip()[:n]
+        body = re.sub(r"\n\s*\n+", "\n", main.get_text("\n")).strip()
+        return "" if looks_blocked(body) else body[:n]
     except Exception:
         return ""

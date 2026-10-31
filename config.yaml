@@ -22,7 +22,7 @@ sources:
     min_points: 150
     max_age_hours: 24
     keywords: [AI, LLM, OpenAI, Anthropic, Gemini, "machine learning"]
-  - {type: google_news, query: "生成AI ツール", limit: 10}
+  - {type: google_news, query: "生成AI ツール", limit: 10}   # リンクが Google の転送ページのため本文取得には Firecrawl が必要（無いと自動で見送り）
   - {type: rss, url: "https://zenn.dev/topics/ai/feed", limit: 10}
   # - {type: reddit, sub: LocalLLaMA, limit: 10}
 

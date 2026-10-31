@@ -14,15 +14,34 @@ def _tag_ids(base, auth, names):
         hit = next((t for t in r if t["name"] == n), None)
         if not hit:
             hit = requests.post(f"{base}/tags", json={"name": n}, auth=auth, timeout=20).json()
-        if "id" in hit:
-            ids.append(hit["id"])
+        # 既存タグは term_exists エラーで data.term_id に ID が返る
+        tag_id = hit.get("id") or (hit.get("data") or {}).get("term_id") if isinstance(hit, dict) else None
+        if tag_id:
+            ids.append(tag_id)
     return ids
+
+
+UNSAFE_TAGS = ("script", "style", "iframe", "object", "embed", "form", "input", "button", "link", "meta", "base")
+
+
+def safe_html(md):
+    """AI が書いた本文の HTML から実行され得る要素・属性を除く（元記事経由のプロンプトインジェクション対策）"""
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(markdown.markdown(md, extensions=["tables", "fenced_code"]), "html.parser")
+    for el in soup.find_all(UNSAFE_TAGS):
+        el.decompose()
+    for el in soup.find_all(True):
+        for attr in list(el.attrs):
+            val = str(el.attrs[attr]).strip().lower()
+            if attr.lower().startswith("on") or (attr.lower() in ("href", "src", "action") and val.startswith(("javascript:", "data:", "vbscript:"))):
+                del el.attrs[attr]
+    return str(soup)
 
 
 def publish(post, cfg):
     base = os.environ["WP_URL"].rstrip("/") + "/wp-json/wp/v2"
     auth = (os.environ["WP_USER"], os.environ["WP_APP_PASSWORD"])
-    html = markdown.markdown(post["body"], extensions=["tables", "fenced_code"])
+    html = safe_html(post["body"])
     data = {"title": post["title"], "content": html, "slug": post["slug"], "excerpt": post.get("description", ""),
             "status": cfg.get("wp_status", "draft"), "tags": _tag_ids(base, auth, post.get("tags", []))}
     if cat := os.getenv("WP_CATEGORY_ID"):

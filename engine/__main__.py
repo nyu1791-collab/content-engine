@@ -208,7 +208,9 @@ def do_collect(c, st):
 
 
 def do_write(c, st, n):
-    for _ in range(min(n, len(st["queue"]))):
+    written, budget = 0, len(st["queue"])  # 見送った元ネタで本数を消費しない（キューを一巡したら終了）
+    while written < n and budget > 0:
+        budget -= 1
         item = state.next_item(st)
         if not item:
             break
@@ -218,8 +220,15 @@ def do_write(c, st, n):
             continue
         print(f"▶ [{item['source']}] {item['title']}")
         try:
-            post = writer.article(item, sources.fetch_body(item["url"]) or item.get("summary", ""), c)
+            body = sources.fetch_body(item["url"])
+            if len(body.strip()) < c.get("min_source_chars", 400):
+                # 見出しと短い要約だけで記事を書くと内容を作り話で埋めることになるので書かない
+                print(f"  元記事の本文を取得できないため見送り（{len(body.strip())}字）: {item['url']}")
+                state.save(st)
+                continue
+            post = writer.article(item, body, c)
             publish(post, c, st, source_id=item["id"])
+            written += 1
         except Exception as e:
             print(f"  ✗ {e}")
             if _existing_record(st, source_id=item["id"]) is None:

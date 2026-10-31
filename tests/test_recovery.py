@@ -46,7 +46,7 @@ class RecoveryTests(RecoveryFixture, unittest.TestCase):
                 raise OSError("temporary state write failure")
             save(st)
 
-        with patch.object(state, "save", side_effect=fail_once_after_wordpress_success), patch.object(app.writer, "article", return_value=self.post), patch.object(app.sources, "fetch_body", return_value="source"), patch.object(wordpress, "publish", return_value="https://blog.invalid/article") as publish:
+        with patch.object(state, "save", side_effect=fail_once_after_wordpress_success), patch.object(app.writer, "article", return_value=self.post), patch.object(app.sources, "fetch_body", return_value="source " * 100), patch.object(wordpress, "publish", return_value="https://blog.invalid/article") as publish:
             app.do_write(self.cfg, self.st, 1)
             self.st = state.load()
             self.assertEqual(self.st["queue"], [])
@@ -67,7 +67,7 @@ class RecoveryTests(RecoveryFixture, unittest.TestCase):
                 raise OSError("temporary state write failure")
             save(st)
 
-        with patch.object(state, "save", side_effect=fail_first_save), patch.object(app.writer, "article", return_value=self.post) as generate, patch.object(app.sources, "fetch_body", return_value="source"):
+        with patch.object(state, "save", side_effect=fail_first_save), patch.object(app.writer, "article", return_value=self.post) as generate, patch.object(app.sources, "fetch_body", return_value="source " * 100):
             app.do_write(self.cfg, self.st, 1)
             loaded = state.load()
             self.assertEqual(loaded["queue"], [])
@@ -212,3 +212,28 @@ class StateSizeTests(RecoveryFixture, unittest.TestCase):
         self.assertNotIn("body", done["post"])
         self.assertEqual(done["post"]["source_url"], self.post["source_url"])
         self.assertEqual(retry["post"]["body"], "本文")
+
+
+class ThinSourceTests(RecoveryFixture, unittest.TestCase):
+    def test_unfetchable_sources_are_skipped_and_do_not_use_the_quota(self):
+        thin = {"id": "thin", "source": "News", "title": "見出しだけ", "url": "https://news.google.com/rss/articles/x"}
+        good = {"id": "good", "source": "HN", "title": "本文あり", "url": "https://source.invalid/a"}
+        self.st["queue"] = [thin, good]
+        bodies = {thin["url"]: "", good["url"]: "本文 " * 300}
+        with patch.object(app.sources, "fetch_body", side_effect=lambda u: bodies[u]), \
+                patch.object(app.writer, "article", return_value=self.post) as gen, \
+                contextlib.redirect_stdout(io.StringIO()):
+            app.do_write(self.cfg, self.st, 1)
+        gen.assert_called_once()
+        self.assertEqual(gen.call_args[0][0]["id"], "good")
+        self.assertEqual(self.st["queue"], [])  # 本文が取れない元ネタは再キューしない
+
+
+class FetchBodyTests(unittest.TestCase):
+    def test_google_news_redirect_and_non_html_are_not_bodies(self):
+        from engine import sources
+        self.assertEqual(sources.fetch_body("https://news.google.com/rss/articles/abc"), "")
+        resp = Mock(headers={"content-type": "application/pdf"})
+        with patch.object(sources.requests, "get", return_value=resp):
+            self.assertEqual(sources.fetch_body("https://example.invalid/paper.pdf"), "")
+        self.assertTrue(sources.looks_blocked("Before you continue to Google ..."))

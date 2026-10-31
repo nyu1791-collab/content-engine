@@ -74,3 +74,8 @@ WordPressのdescriptionはexcerptへ保存します。SEOプラグイン固有�
 - 配信が全部成功した記録は `state.json` から記事本文を外す（本文は `output/` にある）。Actions が毎日コミットする state の肥大化対策。再試行が必要な記録は本文を保持
 - `cta`（記事末尾の商品・相談案内）を追加。空なら付かない
 - 商品「売上CSV集計」の紹介記事: `python -m engine pseo data/pseo_sales_csv.csv --prompt pseo_sales`。`prompts/pseo_sales.md` は**実証済みの事実だけ**を書くよう限定。生成には GEMINI_API_KEY が必要（未実行）
+
+## 2026-10-31 見直し（2回目）
+- 元記事の本文が取れない元ネタ（Google ニュースの転送リンク・PDF等・同意画面/ボット判定ページ）は**記事を書かずに見送る**（`min_source_chars` 既定400字）。見出しだけで本文を作り話で埋めるのを防ぐ。見送りは本数に数えない。Google ニュースの本文取得には Firecrawl が必要
+- 記事プロンプト: 元ネタにある事実だけ、**原文の翻訳記事にしない**（要約＋解説、引用は短く出典明記）、根拠の無い比較表・FAQ を作らない、文字数は「目安」に（水増し防止）。X 文面も誇張・本文に無い数字を禁止
+- WordPress 送信前に HTML から script/iframe/on*属性/javascript: リンクを除去。既存タグ（term_exists）の ID を拾う
