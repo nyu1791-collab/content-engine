@@ -3,6 +3,9 @@ import re
 from datetime import datetime
 from pathlib import Path
 
+import markdown
+from bs4 import BeautifulSoup
+
 from . import llm
 
 P = Path(__file__).resolve().parent.parent / "prompts"
@@ -50,10 +53,14 @@ def pseo(row: dict, cfg):
 def thread(post, url, cfg):
     res = llm.ask(_prompt("thread", title=post["title"], body=post["body"][:5000], url=url or "", n=cfg.get("thread_len", 4)),
                   json_mode=True)
-    tweets = res if isinstance(res, list) else (res or {}).get("tweets") if res else None
-    if not tweets:
+    if res is None:
         tweets = [f"{post['title']}\n\n{post.get('description','')}" + (f"\n{url}" if url else "")]
-    return [fit_tweet(str(t)) for t in tweets if str(t).strip()]
+    else:
+        tweets = res.get("tweets") if isinstance(res, dict) else res
+    if (not isinstance(tweets, list) or not tweets or
+            any(not isinstance(t, str) or not t.strip() for t in tweets)):
+        raise ValueError("Xの生成結果は空でない文字列の配列である必要があります")
+    return [fit_tweet(t.strip()) for t in tweets]
 
 
 URL_RE = re.compile(r"https?://\S+")
@@ -79,14 +86,19 @@ def fit_tweet(t: str, limit: int = 280) -> str:
 
 
 def inject_affiliates(md, affiliates):
-    """キーワード初出をリンク化 ＋ 記事末尾におすすめボックス（関連するものだけ）。"""
+    """本文を保ち、可視本文の関連語に対応する紹介欄だけを末尾へ追加する。"""
+    if not affiliates:
+        return md
+    soup = BeautifulSoup(markdown.markdown(md, extensions=["fenced_code", "tables"]), "html.parser")
+    for element in soup.find_all(["a", "code", "pre", "script", "style"]):
+        element.decompose()
+    text = URL_RE.sub("", soup.get_text(" "))
     used = []
     for a in affiliates:
         kw = a["keyword"]
-        # \w は日本語にも当たるので英数字だけで境界判定（「おすすめのXserverは」もリンク化される）
-        pat = re.compile(rf"(?<![\[/A-Za-z0-9_]){re.escape(kw)}(?![\]A-Za-z0-9_])")
-        if pat.search(md):
-            md = pat.sub(f"[{kw}]({a['url']})", md, count=1)
+        # 日本語の前後を許容し、英数字の単語の途中には一致させない。
+        pat = re.compile(rf"(?<![A-Za-z0-9_]){re.escape(kw)}(?![A-Za-z0-9_])")
+        if kw and pat.search(text):
             used.append(a)
     if used:
         md += "\n\n## この記事で紹介したツール・サービス\n\n" + "\n".join(

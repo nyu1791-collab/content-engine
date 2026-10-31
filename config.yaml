@@ -26,7 +26,7 @@ sources:
   - {type: rss, url: "https://zenn.dev/topics/ai/feed", limit: 10}
   # - {type: reddit, sub: LocalLLaMA, limit: 10}
 
-# 記事中キーワードの初出を自動リンク化（A8.net / もしも / Amazon のリンクに差し替え）
+# 本文に関連語がある記事へ、末尾の紹介欄とPR表記を追加（本文や既存リンクは変更しない）
 affiliates: []        # 契約済みの実URLを登録するまでは空にする
 # 例:
 # affiliates:

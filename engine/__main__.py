@@ -27,6 +27,24 @@ def cfg():
     return yaml.safe_load(Path(os.getenv("CONFIG", "config.yaml")).read_text(encoding="utf-8"))
 
 
+def nonnegative_int(value):
+    if isinstance(value, bool) or not isinstance(value, (str, int)):
+        raise argparse.ArgumentTypeError("0以上の整数を指定してください")
+    try:
+        number = int(value)
+    except (TypeError, ValueError):
+        raise argparse.ArgumentTypeError("0以上の整数を指定してください") from None
+    if number < 0:
+        raise argparse.ArgumentTypeError("0以上の整数を指定してください")
+    return number
+
+
+def _existing_record(st, source_id=None, pseo_key=None):
+    return next((record for record in st["posts"]
+                 if ((source_id is not None and record.get("source_id") == source_id) or
+                     (pseo_key is not None and record.get("pseo_key") == pseo_key))), None)
+
+
 def _retryable(record):
     return (record.get("draft_status") in ("pending", "failed") or
             any(d.get("status") in ("pending", "failed") for d in record.get("deliveries", {}).values()))
@@ -120,7 +138,10 @@ def _deliver(record, c, st):
     print(f"  {record['id']} {post['title']}  {result}")
 
 
-def publish(post, c, st, pseo_key=None):
+def publish(post, c, st, pseo_key=None, source_id=None):
+    existing = _existing_record(st, source_id=source_id, pseo_key=pseo_key)
+    if existing is not None:
+        return existing
     targets = list(dict.fromkeys(["file", *c.get("publishers", [])]))
     if "x" in targets and "x_browser" in targets:
         raise ValueError("x と x_browser はどちらか一方を選んでください")
@@ -131,6 +152,8 @@ def publish(post, c, st, pseo_key=None):
               "deliveries": {name: {"status": "pending"} for name in targets}}
     if pseo_key is not None:
         record["pseo_key"] = pseo_key
+    if source_id is not None:
+        record["source_id"] = source_id
     st["posts"].append(record)
     state.save(st)
     _deliver(record, c, st)
@@ -138,6 +161,8 @@ def publish(post, c, st, pseo_key=None):
 
 
 def do_retry(c, st, post_id=None, limit=10):
+    if limit <= 0:
+        return
     records = [p for p in st["posts"] if p.get("post") and (not post_id or p.get("id") == post_id)]
     for record in [p for p in records if _retryable(p)][:limit]:
         _deliver(record, c, st)
@@ -151,6 +176,32 @@ def _pseo_key(row):
     return json.dumps(row, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
 
+def _pseo_rows(path, done, limit):
+    """不正なCSV行を除外し、正常な未生成行だけを指定件数まで返す。"""
+    if limit == 0:
+        return []
+    rows, keys = [], set(done)
+    with open(path, encoding="utf-8-sig", newline="") as source:
+        reader = csv.DictReader(source)
+        headers = reader.fieldnames
+        if not headers or any(not name.strip() for name in headers) or len(headers) != len(set(headers)):
+            raise ValueError("CSVのヘッダーには重複のない空欄以外の列名を指定してください")
+        for row in reader:
+            if None in row or any(value is None for value in row.values()):
+                print(f"  CSV {reader.line_num}行: 列数がヘッダーと一致しないためスキップ")
+                continue
+            if not any(value.strip() for value in row.values()):
+                continue
+            key = _pseo_key(row)
+            if key in keys or "|".join(row.values()) in keys:
+                continue
+            rows.append(row)
+            keys.add(key)
+            if len(rows) >= limit:
+                break
+    return rows
+
+
 def do_collect(c, st):
     n = state.enqueue(st, sources.collect(c["sources"]))
     print(f"新規 {n}件 / キュー {len(st['queue'])}件")
@@ -161,15 +212,22 @@ def do_write(c, st, n):
         item = state.next_item(st)
         if not item:
             break
+        if _existing_record(st, source_id=item["id"]) is not None:
+            print(f"  {item['title']}: 生成済みの記録があります。配信失敗は retry で再試行してください")
+            state.save(st)
+            continue
         print(f"▶ [{item['source']}] {item['title']}")
         try:
             post = writer.article(item, sources.fetch_body(item["url"]) or item.get("summary", ""), c)
-            publish(post, c, st)
+            publish(post, c, st, source_id=item["id"])
         except Exception as e:
             print(f"  ✗ {e}")
-            item["tries"] = item.get("tries", 0) + 1
-            if item["tries"] < 3:  # 一時的な失敗（429等）は後で再挑戦
-                st["queue"].append(item)
+            if _existing_record(st, source_id=item["id"]) is None:
+                item["tries"] = item.get("tries", 0) + 1
+                if item["tries"] < 3:  # 記録作成前の生成失敗だけ再キューする。
+                    st["queue"].append(item)
+            else:
+                print("  生成済みの記録を保持しました。元記事は再生成せず配信結果を確認してください")
         state.save(st)
         time.sleep(c.get("interval_sec", 5))
 
@@ -179,23 +237,36 @@ def main():
     sp = ap.add_subparsers(dest="cmd", required=True)
     sp.add_parser("collect")
     for name in ("write", "run"):
-        sp.add_parser(name).add_argument("-n", type=int, default=None)
-    p = sp.add_parser("pseo"); p.add_argument("csv"); p.add_argument("--limit", type=int, default=10)
+        sp.add_parser(name).add_argument("-n", type=nonnegative_int, default=None)
+    p = sp.add_parser("pseo"); p.add_argument("csv"); p.add_argument("--limit", type=nonnegative_int, default=10)
     p = sp.add_parser("retry", help="失敗した公開先のみ再試行（結果不明・部分投稿は除外）")
-    p.add_argument("post_id", nargs="?"); p.add_argument("-n", type=int, default=10)
+    p.add_argument("post_id", nargs="?"); p.add_argument("-n", type=nonnegative_int, default=10)
     sp.add_parser("login").add_argument("site", choices=["note", "x"])
     sp.add_parser("status")
     a = ap.parse_args()
-    c, st = cfg(), state.load()
+    if ((a.cmd in ("write", "run", "retry") and a.n == 0) or
+            (a.cmd == "pseo" and a.limit == 0)):
+        return
+    c = cfg()
+    if a.cmd in ("write", "run"):
+        try:
+            count = nonnegative_int(a.n if a.n is not None else c.get("posts_per_run", 2))
+        except argparse.ArgumentTypeError as error:
+            ap.error(f"posts_per_run: {error}")
+        if count == 0:
+            return
+    st = state.load()
 
     if a.cmd in ("collect", "run"):
         do_collect(c, st); state.save(st)
     if a.cmd in ("write", "run"):
-        do_write(c, st, a.n or c.get("posts_per_run", 2))
+        do_write(c, st, count)
     if a.cmd == "pseo":
         done = set(st.get("pseo_done", {})) | {p.get("pseo_key") for p in st["posts"]}
-        with open(a.csv, encoding="utf-8-sig") as f:
-            rows = [r for r in csv.DictReader(f) if _pseo_key(r) not in done and "|".join(r.values()) not in done][: a.limit]
+        try:
+            rows = _pseo_rows(a.csv, done, a.limit)
+        except ValueError as error:
+            ap.error(str(error))
         for r in rows:
             key = _pseo_key(r)
             if key in done:

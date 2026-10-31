@@ -3,6 +3,8 @@ from datetime import datetime
 import json
 from pathlib import Path
 
+import yaml
+
 
 def publish(post, cfg):
     d = Path(cfg.get("output_dir", "output"))
@@ -12,10 +14,10 @@ def publish(post, cfg):
     i = 2
     while path.exists():  # 同日同スラッグは上書きしない
         path = d / f"{date}-{post['slug']}-{i}.md"; i += 1
-    tags = ", ".join(f'"{t}"' for t in post.get("tags", []))
-    title = post["title"].replace('"', "'")
-    desc = post.get("description", "").replace('"', "'")
-    path.write_text(f'---\ntitle: "{title}"\ndate: {date}\ndescription: "{desc}"\ntags: [{tags}]\n---\n\n{post["body"]}\n',
+    metadata = {"title": post["title"], "date": date, "description": post.get("description", ""),
+                "tags": post.get("tags", [])}
+    header = yaml.safe_dump(metadata, allow_unicode=True, sort_keys=False)
+    path.write_text(f'---\n{header}---\n\n{post["body"]}\n',
                     encoding="utf-8")
     return str(path)
 

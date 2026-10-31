@@ -15,7 +15,16 @@ def post_thread(tweets, progress=None, on_progress=None):
         progress["in_flight"] = index
         if on_progress:
             on_progress()
-        r = c.create_tweet(text=t, in_reply_to_tweet_id=prev)
+        try:
+            r = c.create_tweet(text=t, in_reply_to_tweet_id=prev)
+        except Exception as error:
+            status = getattr(getattr(error, "response", None), "status_code", None)
+            # 明確な拒否は投稿されていない。408や通信断は結果不明のまま保留する。
+            if isinstance(status, int) and 400 <= status < 500 and status != 408:
+                progress.pop("in_flight", None)
+                if on_progress:
+                    on_progress()
+            raise
         prev = r.data["id"]
         first = first or prev
         ids.append(prev)

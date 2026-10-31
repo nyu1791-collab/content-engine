@@ -3,6 +3,7 @@ import sys
 import tempfile
 import types
 import unittest
+from tests import network_guard  # noqa: F401
 from pathlib import Path
 from unittest.mock import Mock, patch
 
@@ -28,7 +29,7 @@ class DeliveryTests(unittest.TestCase):
 
     def test_file_only_saves_reviewable_tweets(self):
         record = app.publish(self.post, self.cfg, self.st)
-        draft = json.loads(Path(record["draft_file"]).read_text())
+        draft = json.loads(Path(record["draft_file"]).read_text(encoding="utf-8"))
         self.assertEqual(draft["status"], "draft")
         self.assertEqual(draft["tweets"], ["日本語の確認用ポスト"])
         self.assertEqual(record["deliveries"]["file"]["status"], "succeeded")

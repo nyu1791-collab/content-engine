@@ -1,5 +1,6 @@
 """HNの時刻と分野絞り込み。公開APIへ通信せず固定時刻・HTTP応答で検証する。"""
 import unittest
+from tests import network_guard  # noqa: F401
 from unittest.mock import Mock, patch
 
 from engine import sources
