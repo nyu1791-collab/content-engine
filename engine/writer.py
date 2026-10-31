@@ -33,20 +33,26 @@ def article(item, body, cfg):
     res["tags"] = [t for t in (res.get("tags") or []) if t][:8]
     res["slug"] = slugify(res.get("slug") or res["title"]) or slugify(item["title"])
     res["source_url"] = item["url"]
-    res["body"] = inject_affiliates(res["body"], cfg.get("affiliates", [])) + f"\n\n---\n参考: [{item['title']}]({item['url']})\n"
+    res["body"] = with_cta(inject_affiliates(res["body"], cfg.get("affiliates", [])), cfg) + f"\n\n---\n参考: [{item['title']}]({item['url']})\n"
     return res
 
 
-def pseo(row: dict, cfg):
-    """プログラマティックSEO: CSV 1行 × テンプレ → 1記事。"""
-    res = llm.ask(_prompt("pseo", persona=cfg["persona"], niche=cfg["niche"], data="\n".join(f"- {k}: {v}" for k, v in row.items()),
+def with_cta(md, cfg):
+    """config の cta（相談・商品への案内）を本文末に1回だけ付ける。空なら何もしない。"""
+    cta = (cfg.get("cta") or "").strip()
+    return md if not cta or cta in md else md.rstrip() + "\n\n" + cta + "\n"
+
+
+def pseo(row: dict, cfg, prompt: str = "pseo"):
+    """プログラマティックSEO: CSV 1行 × テンプレ（prompts/<prompt>.md）→ 1記事。"""
+    res = llm.ask(_prompt(prompt, persona=cfg["persona"], niche=cfg["niche"], data="\n".join(f"- {k}: {v}" for k, v in row.items()),
                           min_chars=cfg.get("min_chars", 2000)), json_mode=True)
     if not isinstance(res, dict) or not res.get("body"):
         raise RuntimeError("pSEO には GEMINI_API_KEY が必要です（または応答が不正）")
     res.setdefault("description", "")
     res["tags"] = [t for t in (res.get("tags") or []) if t][:8]
     res["slug"] = slugify(res.get("slug") or res["title"])
-    res["body"] = inject_affiliates(res["body"], cfg.get("affiliates", []))
+    res["body"] = with_cta(inject_affiliates(res["body"], cfg.get("affiliates", [])), cfg)
     return res
 
 

@@ -69,3 +69,8 @@ WordPressのdescriptionはexcerptへ保存します。SEOプラグイン固有�
 ローカル実行とActionsで同じ状態を並行更新しないでください。実行前後に状態を同期します。同時の手動pushなどで状態のコミットが失敗した場合は、Actionsの `content-state-<run_id>` artifactから状態と出力を回収し、投稿先の結果と照合して復旧します。まず少数の記事・SNS下書きで `office-worker` の同じ商品への相談導線を整える段階です。
 
 記事の生成自体が3回失敗した元ネタは、既存仕様としてキューから外します。生成記録がないため配信の `retry` 対象ではありません。原因を修正して元ネタを再処理する場合は、状態JSONをバックアップし、該当IDの `seen` を解除して再収集するか、元の項目を `tries: 0` で `queue` へ戻します。失敗元ネタの専用保管・管理画面は未実装です。
+
+## 2026-10-31 追記
+- 配信が全部成功した記録は `state.json` から記事本文を外す（本文は `output/` にある）。Actions が毎日コミットする state の肥大化対策。再試行が必要な記録は本文を保持
+- `cta`（記事末尾の商品・相談案内）を追加。空なら付かない
+- 商品「売上CSV集計」の紹介記事: `python -m engine pseo data/pseo_sales_csv.csv --prompt pseo_sales`。`prompts/pseo_sales.md` は**実証済みの事実だけ**を書くよう限定。生成には GEMINI_API_KEY が必要（未実行）

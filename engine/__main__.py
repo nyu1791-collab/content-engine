@@ -2,7 +2,7 @@
   collect              ネタ収集 → キューへ（既出は除外）
   write  [-n 2]        キュー上位を記事化して公開（config の publishers へ）
   run    [-n 2]        collect + write（毎日これ1本）
-  pseo data/pseo.csv   CSVの各行から記事を量産（プログラマティックSEO）
+  pseo data/pseo.csv [--prompt pseo_sales]   CSVの各行から記事を量産（プログラマティックSEO）
   login note|x         note / X のログイン状態を保存（browser-use 投稿用・一度だけ）
   status               キュー・投稿数"""
 import argparse
@@ -238,7 +238,7 @@ def main():
     sp.add_parser("collect")
     for name in ("write", "run"):
         sp.add_parser(name).add_argument("-n", type=nonnegative_int, default=None)
-    p = sp.add_parser("pseo"); p.add_argument("csv"); p.add_argument("--limit", type=nonnegative_int, default=10)
+    p = sp.add_parser("pseo"); p.add_argument("csv"); p.add_argument("--prompt", default="pseo", help="prompts/<名前>.md を使う"); p.add_argument("--limit", type=nonnegative_int, default=10)
     p = sp.add_parser("retry", help="失敗した公開先のみ再試行（結果不明・部分投稿は除外）")
     p.add_argument("post_id", nargs="?"); p.add_argument("-n", type=nonnegative_int, default=10)
     sp.add_parser("login").add_argument("site", choices=["note", "x"])
@@ -273,7 +273,7 @@ def main():
                 continue
             print(f"▶ {r}")
             try:
-                post = writer.pseo(r, c)
+                post = writer.pseo(r, c, prompt=a.prompt)
                 publish(post, c, st, pseo_key=key)
                 done.add(key)
             except Exception as e:

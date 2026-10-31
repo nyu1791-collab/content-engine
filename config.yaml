@@ -26,6 +26,11 @@ sources:
   - {type: rss, url: "https://zenn.dev/topics/ai/feed", limit: 10}
   # - {type: reddit, sub: LocalLLaMA, limit: 10}
 
+# 記事末尾に付ける案内（商品・相談先）。空なら付けない。URLは実在する受付ページに差し替える
+cta: ""
+# 例（売上CSV集計の商品記事を出す時）:
+# cta: "**店舗ごとの売上CSVの集計を自動化したい方へ**　各店舗のCSVを1か月分お送りいただければ、集計結果のExcelを無料でお作りします。→ [ご相談はこちら](https://example.com/contact)"
+
 # 本文に関連語がある記事へ、末尾の紹介欄とPR表記を追加（本文や既存リンクは変更しない）
 affiliates: []        # 契約済みの実URLを登録するまでは空にする
 # 例:
