@@ -74,7 +74,7 @@ class DeliveryTests(unittest.TestCase):
             raise TimeoutError("response lost")
 
         with patch.object(x, "post_thread", side_effect=partial) as send:
-            record = app.publish(self.post, self.cfg, self.st)
+            app.publish(self.post, self.cfg, self.st)
             app.do_retry(self.cfg, self.st)
             self.assertEqual(send.call_count, 1)
         saved = state.load()["posts"][0]["deliveries"]["x"]

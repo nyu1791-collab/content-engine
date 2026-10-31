@@ -85,7 +85,7 @@ def note_draft(post: dict, publish=False, headless=True) -> str:
 def x_thread(tweets: list[str], headless=True) -> str:
     texts = {f"tweet_{i}": t for i, t in enumerate(tweets)}
     steps = "\n".join(
-        (f"- 投稿欄をクリックし insert_prepared_text(key=\"tweet_0\")" if i == 0 else
+        ("- 投稿欄をクリックし insert_prepared_text(key=\"tweet_0\")" if i == 0 else
          f"- 『ポストを追加』（+ボタン）を押し、新しく出た欄をクリックして insert_prepared_text(key=\"tweet_{i}\")")
         for i in range(len(tweets)))
     task = f"""X（旧Twitter）でスレッド投稿してください（ログイン済み）。
