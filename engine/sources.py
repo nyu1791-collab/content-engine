@@ -66,7 +66,16 @@ def reddit(sub, limit=10, **_):
              "summary": p["data"].get("selftext", "")[:600], "score": p["data"]["score"]} for p in j["data"]["children"]]
 
 
-TYPES = {"rss": rss, "google_news": google_news, "hackernews": hackernews, "github_trending": github_trending, "reddit": reddit}
+def firecrawl_search(query, limit=10, tbs="qdr:d", **_):
+    """Firecrawl 検索（tbs=qdr:d で過去24時間）。要 FIRECRAWL_API_URL か FIRECRAWL_API_KEY"""
+    from . import fc
+    if not fc.client():
+        raise RuntimeError("Firecrawl 未設定")
+    return [{"id": _id(r["url"]), "source": "Firecrawl search", "title": r["title"] or r["url"], "url": r["url"],
+             "summary": r["description"], "score": 0} for r in fc.search(query, limit=limit, tbs=tbs)]
+
+
+TYPES = {"firecrawl_search": firecrawl_search, "rss": rss, "google_news": google_news, "hackernews": hackernews, "github_trending": github_trending, "reddit": reddit}
 
 
 def collect(cfg_sources):
@@ -84,13 +93,21 @@ def collect(cfg_sources):
 
 
 def fetch_body(url, n=8000):
-    """記事執筆用に元ページ本文を取得（GitHubならREADME）。"""
+    """記事執筆用に元ページ本文を取得。GitHub → README、それ以外 → Firecrawl（JS描画・本文抽出）→ BeautifulSoup。"""
+    from . import fc
     try:
         m = re.match(r"https://github.com/([^/]+/[^/]+)/?$", url)
         if m:
             r = requests.get(f"https://raw.githubusercontent.com/{m.group(1)}/HEAD/README.md", timeout=15)
             if r.ok:
                 return r.text[:n]
+        if fc.client():
+            try:
+                md, _, _ = fc.scrape(url, main_only=True)
+                if len(md) > 200:
+                    return md[:n]
+            except Exception as e:
+                print(f"  firecrawl失敗→ローカル: {e}")
         r = requests.get(url, headers=UA, timeout=20)
         r.encoding = r.apparent_encoding
         soup = BeautifulSoup(r.text, "html.parser")

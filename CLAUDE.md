@@ -4,3 +4,4 @@
 - 公開先追加: `engine/publishers/<name>.py` に `publish(post, cfg) -> url` → `__main__.publish()` に分岐1つ
 - 文体・構成は `prompts/*.md`。post は `{title, slug, description, tags, body(markdown), source_url}`
 - 状態は `data/state.json`（Actions がコミット）。手で消せば再収集される
+- 取り込み元は `vendor/`（submodule・改変しない）。Firecrawl は `engine/fc.py`、browser-use 投稿は `engine/browser.py`

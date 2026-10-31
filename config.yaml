@@ -7,11 +7,14 @@ thread_len: 4
 interval_sec: 5
 
 # 公開先（file は常に output/ へ保存。下を有効化すると追加で公開）
-publishers: []        # 例: [wordpress, x]  /  [note]
+publishers: []        # 例: [wordpress, x]  /  [note, x_browser]（browser-use で画面投稿・API不要）
+note_publish: false   # note を公開まで行うか（false=下書き）
+browser_headless: true
 wp_status: publish    # draft にすれば下書き
 output_dir: output
 
 sources:
+  # - {type: firecrawl_search, query: "AI エージェント 新機能", limit: 10, tbs: "qdr:d"}   # Firecrawl 起動時
   - {type: github_trending, language: "", since: daily, limit: 10}
   - {type: github_trending, language: python, since: daily, limit: 5}
   - {type: hackernews, limit: 10, min_points: 150}

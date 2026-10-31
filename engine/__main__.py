@@ -3,7 +3,7 @@
   write  [-n 2]        キュー上位を記事化して公開（config の publishers へ）
   run    [-n 2]        collect + write（毎日これ1本）
   pseo data/pseo.csv   CSVの各行から記事を量産（プログラマティックSEO）
-  note-login           note 用ログイン状態を保存
+  login note|x         note / X のログイン状態を保存（browser-use 投稿用・一度だけ）
   status               キュー・投稿数"""
 import argparse
 import csv
@@ -33,17 +33,21 @@ def publish(post, c, st):
             if name == "wordpress":
                 from .publishers import wordpress
                 links["wordpress"] = wordpress.publish(post, c)
-            elif name == "note":
-                from .publishers import note
-                links["note"] = note.publish(post, c)
+            elif name == "note":  # browser-use で下書き保存（note_publish: true で公開）
+                from . import browser
+                links["note"] = browser.note_draft(post, publish=c.get("note_publish", False), headless=c.get("browser_headless", True))
         except Exception as e:
             print(f"  {name} 失敗: {e}")
-    if "x" in pubs:
+    if "x" in pubs or "x_browser" in pubs:
         try:
-            from .publishers import x
-            url = links.get("wordpress") or post.get("source_url")
+            url = links.get("wordpress") or links.get("note") or post.get("source_url")
             tweets = writer.thread(post, url, c)
-            links["x"] = x.post_thread(tweets)
+            if "x" in pubs:  # X API v2
+                from .publishers import x
+                links["x"] = x.post_thread(tweets)
+            else:  # browser-use で画面から投稿（API 不要）
+                from . import browser
+                links["x"] = browser.x_thread(tweets, headless=c.get("browser_headless", True))
         except Exception as e:
             print(f"  x 失敗: {e}")
     st["posts"].append({"date": datetime.now().strftime("%Y-%m-%d %H:%M"), "title": post["title"], **links})
@@ -75,7 +79,7 @@ def main():
     for name in ("write", "run"):
         sp.add_parser(name).add_argument("-n", type=int, default=None)
     p = sp.add_parser("pseo"); p.add_argument("csv"); p.add_argument("--limit", type=int, default=10)
-    sp.add_parser("note-login")
+    sp.add_parser("login").add_argument("site", choices=["note", "x"])
     sp.add_parser("status")
     a = ap.parse_args()
     c, st = cfg(), state.load()
@@ -97,9 +101,9 @@ def main():
             except Exception as e:
                 print(f"  ✗ {e}")
             state.save(st)
-    if a.cmd == "note-login":
-        from .publishers import note
-        note.login()
+    if a.cmd == "login":
+        from . import browser
+        browser.login(a.site)
     if a.cmd == "status":
         print(f"キュー {len(st['queue'])} / 投稿済み {len(st['posts'])}")
         for p in st["posts"][-5:]:

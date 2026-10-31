@@ -1,3 +1,7 @@
+# --- 取り込んだリポジトリ本体（git submodule: vendor/） ---
+-e ./vendor/firecrawl/apps/python-sdk       # firecrawl/firecrawl 公式 Python SDK (MIT) 本文抽出・検索
+-e ./vendor/browser-use                     # browser-use/browser-use (MIT) note / X をブラウザ経由で投稿
+# --- その他 ---
 google-genai>=1.0
 python-dotenv
 pyyaml
@@ -6,4 +10,4 @@ beautifulsoup4
 feedparser
 markdown
 tweepy
-# note 下書き保存を使う場合のみ:  pip install playwright && playwright install chromium
+playwright
