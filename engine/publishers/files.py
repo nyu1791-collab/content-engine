@@ -8,6 +8,9 @@ def publish(post, cfg):
     d.mkdir(parents=True, exist_ok=True)
     date = datetime.now().strftime("%Y-%m-%d")
     path = d / f"{date}-{post['slug']}.md"
+    i = 2
+    while path.exists():  # 同日同スラッグは上書きしない
+        path = d / f"{date}-{post['slug']}-{i}.md"; i += 1
     tags = ", ".join(f'"{t}"' for t in post.get("tags", []))
     title = post["title"].replace('"', "'")
     desc = post.get("description", "").replace('"', "'")

@@ -40,7 +40,8 @@ def publish(post, c, st):
             print(f"  {name} 失敗: {e}")
     if "x" in pubs or "x_browser" in pubs:
         try:
-            url = links.get("wordpress") or links.get("note") or post.get("source_url")
+            # 公開URLのみ使う（note 下書きURLは他人が開けない）
+            url = links.get("wordpress") or (links.get("note") if c.get("note_publish") else None) or post.get("source_url")
             tweets = writer.thread(post, url, c)
             if "x" in pubs:  # X API v2
                 from .publishers import x
@@ -61,13 +62,18 @@ def do_collect(c, st):
 
 def do_write(c, st, n):
     for _ in range(min(n, len(st["queue"]))):
-        item = st["queue"].pop(0)
-        print(f"▶ {item['title']}")
+        item = state.next_item(st)
+        if not item:
+            break
+        print(f"▶ [{item['source']}] {item['title']}")
         try:
             post = writer.article(item, sources.fetch_body(item["url"]) or item.get("summary", ""), c)
             publish(post, c, st)
         except Exception as e:
             print(f"  ✗ {e}")
+            item["tries"] = item.get("tries", 0) + 1
+            if item["tries"] < 3:  # 一時的な失敗（429等）は後で再挑戦
+                st["queue"].append(item)
         state.save(st)
         time.sleep(c.get("interval_sec", 5))
 
