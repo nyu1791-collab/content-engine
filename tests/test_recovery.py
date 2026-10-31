@@ -197,3 +197,18 @@ class XRejectionTests(RecoveryFixture, unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class StateSizeTests(RecoveryFixture, unittest.TestCase):
+    def test_completed_records_drop_body_but_retryable_keep_it(self):
+        record = app.publish(self.post, self.cfg, self.st, source_id="done-1")
+        self.assertEqual(record["deliveries"]["file"]["status"], "succeeded")
+        failed = {"id": "f1", "date": "", "title": "x", "post": dict(self.post),
+                  "draft_status": "succeeded", "deliveries": {"wordpress": {"status": "failed"}}}
+        self.st["posts"].append(failed)
+        state.save(self.st)
+        saved = state.load()
+        done, retry = saved["posts"][0], saved["posts"][1]
+        self.assertNotIn("body", done["post"])
+        self.assertEqual(done["post"]["source_url"], self.post["source_url"])
+        self.assertEqual(retry["post"]["body"], "本文")

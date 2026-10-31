@@ -28,12 +28,25 @@ def needs_attention(post):
             any(d.get("status") != "succeeded" for d in post.get("deliveries", {}).values()))
 
 
+KEEP_POST_KEYS = ("title", "slug", "source_url", "description")
+
+
+def _compact(record):
+    """配信が全部済んだ記録から本文を外す（本文は output/ にある）。毎日コミットされる state.json の肥大化を防ぐ。
+    再試行が要る記録は本文を残す。"""
+    post = record.get("post")
+    if isinstance(post, dict) and "body" in post and not needs_attention(record):
+        record["post"] = {k: post[k] for k in KEEP_POST_KEYS if k in post}
+
+
 def save(st):
     PATH.parent.mkdir(parents=True, exist_ok=True)
     _remember_pseo(st)
     st["seen"] = dict(list(st["seen"].items())[-5000:])
     recent = {id(p) for p in st["posts"][-1000:]}
     st["posts"] = [p for p in st["posts"] if id(p) in recent or needs_attention(p)]
+    for p in st["posts"]:
+        _compact(p)
     pending = PATH.with_suffix(".json.tmp")
     pending.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
     pending.replace(PATH)

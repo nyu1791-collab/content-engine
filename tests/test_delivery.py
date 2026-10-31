@@ -33,7 +33,10 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(draft["status"], "draft")
         self.assertEqual(draft["tweets"], ["日本語の確認用ポスト"])
         self.assertEqual(record["deliveries"]["file"]["status"], "succeeded")
-        self.assertEqual(state.load()["posts"][0]["post"], self.post)
+        # 配信が全部済んだ記録は本文を state から外す（本文は output/ の記事ファイルにある）
+        saved = state.load()["posts"][0]["post"]
+        self.assertEqual(saved, {k: self.post[k] for k in ("title", "slug", "source_url")})
+        self.assertIn("本文", Path(record["deliveries"]["file"]["url"]).read_text(encoding="utf-8"))
 
     def test_retry_only_failed_destination_and_keeps_original_draft_mode(self):
         self.cfg["publishers"] = ["wordpress"]
