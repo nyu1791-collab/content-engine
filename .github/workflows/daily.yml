@@ -1,0 +1,35 @@
+name: daily-content
+on:
+  schedule:
+    - cron: "17 22 * * *"   # 毎日 07:17 JST
+  workflow_dispatch:
+    inputs:
+      n: {description: "記事数", default: "2"}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12", cache: pip}
+      - run: pip install -r requirements.txt
+      - run: python -m engine run -n ${{ github.event.inputs.n || 2 }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+      - name: commit state & articles
+        run: |
+          git config user.name "content-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/state.json output/
+          git commit -m "content: $(date +%F)" || echo "no changes"
+          git push

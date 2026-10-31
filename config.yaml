@@ -1,0 +1,26 @@
+niche: AI・自動化ツール / 開発者向けOSS
+persona: 現役エンジニアで、AIツールを毎日試しているテック系ブロガー
+
+posts_per_run: 2      # 1回の実行で書く記事数
+min_chars: 2000
+thread_len: 4
+interval_sec: 5
+
+# 公開先（file は常に output/ へ保存。下を有効化すると追加で公開）
+publishers: []        # 例: [wordpress, x]  /  [note]
+wp_status: publish    # draft にすれば下書き
+output_dir: output
+
+sources:
+  - {type: github_trending, language: "", since: daily, limit: 10}
+  - {type: github_trending, language: python, since: daily, limit: 5}
+  - {type: hackernews, limit: 10, min_points: 150}
+  - {type: google_news, query: "生成AI ツール", limit: 10}
+  - {type: rss, url: "https://zenn.dev/topics/ai/feed", limit: 10}
+  # - {type: reddit, sub: LocalLLaMA, limit: 10}
+
+# 記事中キーワードの初出を自動リンク化（A8.net / もしも / Amazon のリンクに差し替え）
+affiliates:
+  - {keyword: ConoHa, url: "https://example.com/a8/conoha", label: "ConoHa VPS（AIツールの常時稼働に）"}
+  - {keyword: Xserver, url: "https://example.com/a8/xserver", label: "エックスサーバー（WordPress開設）"}
+  - {keyword: Udemy, url: "https://example.com/a8/udemy", label: "Udemy（Python/AI講座）"}

@@ -1,0 +1,9 @@
+google-genai>=1.0
+python-dotenv
+pyyaml
+requests
+beautifulsoup4
+feedparser
+markdown
+tweepy
+# note 下書き保存を使う場合のみ:  pip install playwright && playwright install chromium
