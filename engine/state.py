@@ -8,15 +8,35 @@ PATH = Path("data/state.json")
 
 def load():
     if PATH.exists():
-        return json.loads(PATH.read_text(encoding="utf-8"))
-    return {"seen": {}, "queue": [], "posts": []}
+        st = json.loads(PATH.read_text(encoding="utf-8"))
+    else:
+        st = {"seen": {}, "queue": [], "posts": []}
+    _remember_pseo(st)
+    return st
+
+
+def _remember_pseo(st):
+    # 投稿履歴の表示件数を減らしても、生成済みCSV行は忘れない。
+    done = st.setdefault("pseo_done", {})
+    for post in st["posts"]:
+        if post.get("pseo_key"):
+            done[post["pseo_key"]] = post.get("id", post.get("title", ""))
+
+
+def needs_attention(post):
+    return (post.get("draft_status") in ("pending", "failed") or
+            any(d.get("status") != "succeeded" for d in post.get("deliveries", {}).values()))
 
 
 def save(st):
     PATH.parent.mkdir(parents=True, exist_ok=True)
+    _remember_pseo(st)
     st["seen"] = dict(list(st["seen"].items())[-5000:])
-    st["posts"] = st["posts"][-1000:]
-    PATH.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
+    recent = {id(p) for p in st["posts"][-1000:]}
+    st["posts"] = [p for p in st["posts"] if id(p) in recent or needs_attention(p)]
+    pending = PATH.with_suffix(".json.tmp")
+    pending.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
+    pending.replace(PATH)
 
 
 def enqueue(st, items):

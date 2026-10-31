@@ -1,0 +1,57 @@
+# content-engine 引き継ぎ
+
+## 目的と構成
+
+事業4（CSVからのSEO記事）と7（トレンド記事・SNS）を統合した基盤です。入口だけを `collect` / `pseo` に分け、文章生成・ファイル保存・配信先別の履歴を共用します。SEO用とSNS用に同じ処理を複製する必要はありません。
+
+[3リポジトリの構成・合併判断](https://github.com/nyu1791-collab/office-worker/blob/ccr-aac984d0-n27k7c/docs/BUSINESS_ARCHITECTURE.md)。動画リポジトリは対象外です。
+
+## 今回の修正
+
+- 配信先ごとに `pending/in_progress/succeeded/failed/uncertain` を保存。失敗を成功扱いにしない。
+- `retry [post_id] -n 10` で失敗した公開先だけ再試行。成功済みの記事を再作成しない。
+- Xの部分投稿IDを保存。結果不明・部分投稿・途中停止は無条件で再送しない。
+- fileだけの運用でも記事と `*-tweets.json` を保存し、SNS文面を確認できるようにする。
+- WordPressは既定 `draft`。下書きURLをXへ案内しない。再試行でも当初の公開/下書き設定を維持。
+- SEO生成済みキーを投稿履歴の表示上限とは別に保持。状態JSONを一時ファイル経由で保存。
+- HNに過去24時間と分野キーワードの条件を追加。全ソースが同じ期間条件を使うわけではない。
+- 基本導入でvendor/AIブラウザを不要にし、Actionsを軽量化。定期実行の重複とエラー時の状態保存を改善。
+- 実体験を装わないpersonaに変更し、仮の紹介リンクは初期設定から除去。
+
+## 再開コマンド
+
+```powershell
+.\setup.ps1
+.\.venv\Scripts\python -m engine status
+.\.venv\Scripts\python -m unittest discover -s tests -v
+# GEMINI_API_KEYなどを設定してから、まずファイル下書きで1件
+.\.venv\Scripts\python -m engine run -n 1
+# CSVの内容と根拠データを確認してから
+.\.venv\Scripts\python -m engine pseo data\pseo.csv --limit 1
+# 失敗履歴を確認してから再試行
+.\.venv\Scripts\python -m engine retry -n 1
+```
+
+初期 `publishers: []` は外部投稿を行いません。`output/` のMarkdownとSNS用JSONを確認します。AIブラウザは `setup.ps1 -WithBrowser`、Firecrawlは `-WithFirecrawl` で追加。Linuxは `bash setup.sh` と同名の `--with-*` オプションです。
+
+## 再試行と結果不明
+
+`status` の表示と `data/state.json` の各投稿 `deliveries` を確認します。`retry` は `pending/failed` とSNS下書き生成失敗を対象にします。`uncertain/in_progress` は投稿済みか確認できない状態で、再送すると重複し得るため自動再送しません。
+
+この状態は投稿先の管理画面、Xの保存済みID、ファイルの有無を確認してから解消します。現在は確認専用の管理UIがないため、状態JSONをバックアップし、該当公開先の結果を確認して `succeeded` とURLを記録するか、実際に未投稿と確認できた場合だけ `failed` に戻します。Xの部分投稿がある場合は `failed` に戻すだけで再試行せず、投稿先と残りの文面を照合して手動で補完します。
+
+投稿時の公開設定を履歴に固定しています。後でconfigを `publish` に変えても既存のWordPress下書きは自動公開されません。公開はWordPressで確認して行います。
+
+## 検証範囲と制約
+
+Python 3.12の専用venvに基本依存を導入し、回帰テスト22件、`pip check`、`status` を確認しました。vendorの導入は不要でした。
+
+WindowsのPowerShellセットアップとexe実行は今回未検証です。旧形式の投稿履歴には配信先別の失敗情報がないため、過去の失敗を今回の形式へ自動復元することはできません。
+
+回帰テストは配信失敗・重複防止・X部分投稿・下書きURL・SEO再開・HN絞り込みを外部通信なしで確認します。実際のGemini、WordPress、X、note、Firecrawl、Docker、定刻のActions実行は今回未検証です。Actionsの成功表示だけで外部投稿成功を判断せず、配信履歴を確認してください。
+
+HNは取得した上位候補内で条件を満たす記事を選ぶため、指定件数に届かない場合があります。RSS/GitHub等は各サービスの並び順や期間指定に従います。Xの文字数処理は概算で、投稿先の厳密な検証とは一致しない場合があります。
+
+WordPressのdescriptionはexcerptへ保存します。SEOプラグイン固有のメタディスクリプション設定は未対応です。記事量産だけで検索流入や収益は保証されず、根拠データ、比較対象の実在、価格・住所・日付は人間の確認が必要です。紹介リンクは契約済みURLを設定してから使います。
+
+ローカル実行とActionsで同じ状態を並行更新しないでください。実行前後に状態を同期します。同時の手動pushなどで状態のコミットが失敗した場合は、Actionsの `content-state-<run_id>` artifactから状態と出力を回収し、投稿先の結果と照合して復旧します。まず少数の記事・SNS下書きで `office-worker` の同じ商品への相談導線を整える段階です。

@@ -7,8 +7,10 @@
   status               キュー・投稿数"""
 import argparse
 import csv
+import json
 import os
 import time
+import uuid
 from datetime import datetime
 from pathlib import Path
 
@@ -18,41 +20,135 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from . import sources, state, writer  # noqa: E402
-from .publishers import files  # noqa: E402
+from .publishers import files, UncertainDelivery  # noqa: E402
 
 
 def cfg():
     return yaml.safe_load(Path(os.getenv("CONFIG", "config.yaml")).read_text(encoding="utf-8"))
 
 
-def publish(post, c, st):
-    links = {"file": files.publish(post, c)}
-    pubs = c.get("publishers", [])
-    for name in pubs:
+def _retryable(record):
+    return (record.get("draft_status") in ("pending", "failed") or
+            any(d.get("status") in ("pending", "failed") for d in record.get("deliveries", {}).values()))
+
+
+def _public_url(record):
+    for name in ("wordpress", "note"):
+        delivery = record["deliveries"].get(name, {})
+        if delivery.get("status") == "succeeded" and delivery.get("public"):
+            return delivery["url"]
+    return record["post"].get("source_url", "")
+
+
+def _deliver(record, c, st):
+    post = record["post"]
+    deliveries = record["deliveries"]
+    # 投稿時に決めた公開/下書き設定は、後日の再試行でも引き継ぐ。
+    delivery_cfg = {**c, **record.get("publish_config", {})}
+    for name, delivery in deliveries.items():
+        if name in ("x", "x_browser") or delivery["status"] not in ("pending", "failed"):
+            continue
+        delivery.update(status="in_progress")
+        delivery.pop("error", None)
+        state.save(st)  # 送信前に記録。途中停止後の無条件な二重送信を避ける。
+        browser_started = False
         try:
-            if name == "wordpress":
+            if name == "file":
+                url = files.publish(post, delivery_cfg)
+            elif name == "wordpress":
                 from .publishers import wordpress
-                links["wordpress"] = wordpress.publish(post, c)
-            elif name == "note":  # browser-use で下書き保存（note_publish: true で公開）
+                url = wordpress.publish(post, delivery_cfg)
+                delivery["public"] = delivery_cfg.get("wp_status", "draft") == "publish"
+            elif name == "note":
                 from . import browser
-                links["note"] = browser.note_draft(post, publish=c.get("note_publish", False), headless=c.get("browser_headless", True))
+                browser_started = True
+                url = browser.note_draft(post, publish=delivery_cfg.get("note_publish", False), headless=c.get("browser_headless", True))
+                delivery["public"] = bool(delivery_cfg.get("note_publish", False))
+            else:
+                raise ValueError(f"不明な公開先: {name}")
+            delivery.update(status="succeeded", url=url)
+            record[name] = url  # 旧履歴との互換性
         except Exception as e:
+            # ブラウザや応答の途切れたPOSTでは、投稿済みか確定できない。
+            uncertain = browser_started or isinstance(e, UncertainDelivery)
+            delivery.update(status="uncertain" if uncertain else "failed", error=str(e))
             print(f"  {name} 失敗: {e}")
-    if "x" in pubs or "x_browser" in pubs:
+        state.save(st)
+
+    # fileだけの運用でもSNS用の文面を保存し、人間が確認できるようにする。
+    try:
+        if not record.get("tweets"):
+            record["tweets"] = writer.thread(post, _public_url(record), c)
+        if not record["tweets"]:
+            raise ValueError("Xの下書き文面が空です")
+        record["draft_file"] = files.tweet_draft(post, record["tweets"], c, record["id"])
+        record["draft_status"] = "succeeded"
+        record.pop("draft_error", None)
+    except Exception as e:
+        record.update(draft_status="failed", draft_error=str(e))
+        print(f"  X下書き 失敗: {e}")
+        state.save(st)
+        return
+    state.save(st)
+
+    for name in ("x", "x_browser"):
+        delivery = deliveries.get(name)
+        if not delivery or delivery["status"] not in ("pending", "failed"):
+            continue
+        delivery.update(status="in_progress")
+        delivery.pop("error", None)
+        state.save(st)
+        browser_started = False
         try:
-            # 公開URLのみ使う（note 下書きURLは他人が開けない）
-            url = links.get("wordpress") or (links.get("note") if c.get("note_publish") else None) or post.get("source_url")
-            tweets = writer.thread(post, url, c)
-            if "x" in pubs:  # X API v2
+            if name == "x":
                 from .publishers import x
-                links["x"] = x.post_thread(tweets)
-            else:  # browser-use で画面から投稿（API 不要）
+                progress = delivery.setdefault("progress", {})
+                url = x.post_thread(record["tweets"], progress=progress, on_progress=lambda: state.save(st))
+            else:
                 from . import browser
-                links["x"] = browser.x_thread(tweets, headless=c.get("browser_headless", True))
+                browser_started = True
+                url = browser.x_thread(record["tweets"], headless=c.get("browser_headless", True))
+            delivery.update(status="succeeded", url=url)
+            record[name] = url
         except Exception as e:
+            progress = delivery.get("progress", {})
+            uncertain = browser_started or bool(progress.get("ids")) or progress.get("in_flight") is not None
+            delivery.update(status="uncertain" if uncertain else "failed", error=str(e))
             print(f"  x 失敗: {e}")
-    st["posts"].append({"date": datetime.now().strftime("%Y-%m-%d %H:%M"), "title": post["title"], **links})
-    print(f"  ✓ {post['title']}  {links}")
+        state.save(st)
+    result = ", ".join(f"{name}={d['status']}" for name, d in deliveries.items())
+    print(f"  {record['id']} {post['title']}  {result}")
+
+
+def publish(post, c, st, pseo_key=None):
+    targets = list(dict.fromkeys(["file", *c.get("publishers", [])]))
+    if "x" in targets and "x_browser" in targets:
+        raise ValueError("x と x_browser はどちらか一方を選んでください")
+    record = {"id": uuid.uuid4().hex[:12], "date": datetime.now().strftime("%Y-%m-%d %H:%M"),
+              "title": post["title"], "post": post,
+              "draft_status": "pending",
+              "publish_config": {"wp_status": c.get("wp_status", "draft"), "note_publish": c.get("note_publish", False)},
+              "deliveries": {name: {"status": "pending"} for name in targets}}
+    if pseo_key is not None:
+        record["pseo_key"] = pseo_key
+    st["posts"].append(record)
+    state.save(st)
+    _deliver(record, c, st)
+    return record
+
+
+def do_retry(c, st, post_id=None, limit=10):
+    records = [p for p in st["posts"] if p.get("post") and (not post_id or p.get("id") == post_id)]
+    for record in [p for p in records if _retryable(p)][:limit]:
+        _deliver(record, c, st)
+    for record in records:
+        uncertain = [n for n, d in record["deliveries"].items() if d["status"] in ("uncertain", "in_progress")]
+        if uncertain:
+            print(f"  {record['id']}: {', '.join(uncertain)} は結果要確認。自動再送しません")
+
+
+def _pseo_key(row):
+    return json.dumps(row, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
 
 def do_collect(c, st):
@@ -85,6 +181,8 @@ def main():
     for name in ("write", "run"):
         sp.add_parser(name).add_argument("-n", type=int, default=None)
     p = sp.add_parser("pseo"); p.add_argument("csv"); p.add_argument("--limit", type=int, default=10)
+    p = sp.add_parser("retry", help="失敗した公開先のみ再試行（結果不明・部分投稿は除外）")
+    p.add_argument("post_id", nargs="?"); p.add_argument("-n", type=int, default=10)
     sp.add_parser("login").add_argument("site", choices=["note", "x"])
     sp.add_parser("status")
     a = ap.parse_args()
@@ -95,25 +193,31 @@ def main():
     if a.cmd in ("write", "run"):
         do_write(c, st, a.n or c.get("posts_per_run", 2))
     if a.cmd == "pseo":
-        done = {p.get("pseo_key") for p in st["posts"]}
+        done = set(st.get("pseo_done", {})) | {p.get("pseo_key") for p in st["posts"]}
         with open(a.csv, encoding="utf-8-sig") as f:
-            rows = [r for r in csv.DictReader(f) if "|".join(r.values()) not in done][: a.limit]
+            rows = [r for r in csv.DictReader(f) if _pseo_key(r) not in done and "|".join(r.values()) not in done][: a.limit]
         for r in rows:
+            key = _pseo_key(r)
+            if key in done:
+                continue
             print(f"▶ {r}")
             try:
                 post = writer.pseo(r, c)
-                publish(post, c, st)
-                st["posts"][-1]["pseo_key"] = "|".join(r.values())
+                publish(post, c, st, pseo_key=key)
+                done.add(key)
             except Exception as e:
                 print(f"  ✗ {e}")
             state.save(st)
+    if a.cmd == "retry":
+        do_retry(c, st, a.post_id, a.n)
     if a.cmd == "login":
         from . import browser
         browser.login(a.site)
     if a.cmd == "status":
         print(f"キュー {len(st['queue'])} / 投稿済み {len(st['posts'])}")
         for p in st["posts"][-5:]:
-            print(f"  {p['date']} {p['title']}")
+            statuses = ", ".join(f"{k}={v['status']}" for k, v in p.get("deliveries", {}).items())
+            print(f"  {p.get('id', '')} {p['date']} {p['title']} {statuses}")
 
 
 if __name__ == "__main__":

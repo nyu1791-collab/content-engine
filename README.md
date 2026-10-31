@@ -1,8 +1,10 @@
 # content-engine — トレンド収集 → 記事/X投稿生成 → 自動公開（プログラマティックSEO）
 
-毎朝 GitHub Actions が勝手に動き、**GitHub Trending / Hacker News / Googleニュース / RSS** から新ネタを拾って
+GitHub Actionsの定期実行で、**GitHub Trending / Hacker News / Googleニュース / RSS** から新ネタを拾って
 Gemini で日本語解説記事＋Xツリーを作り、**WordPress / X / note下書き / Markdownファイル** に公開。
-記事内のキーワードは自動でアフィリエイトリンク化。PCの電源は切っていてOK。
+初期設定は記事とSNS文面のファイル下書きです。外部への公開は配信先の設定と認証後に行います。契約済みの紹介URLを登録すると関連語へリンクを挿入できます。
+
+[現在地・再開手順・失敗時の扱い](docs/HANDOFF.md) を先に確認してください。事業4と7はすでに本リポジトリに統合済みです。営業と顧客ファイル処理は別リポジトリで継続します。
 
 ```
 collect(GitHub/HN/News/RSS/Firecrawl検索) → state.json(既出除外・スコア順キュー) → write(Gemini) → affiliate差込 → publish(file / wordpress / x / note・x_browser[browser-use])
@@ -18,17 +20,23 @@ pseo(CSV×テンプレ) ──────────────────�
 
 ## 最短スタート
 ```powershell
-.\setup.ps1 ; .\.venv\Scripts\Activate.ps1
-.\scripts\firecrawl.ps1 up   # （任意・要Docker）→ .env に FIRECRAWL_API_URL=http://localhost:3002
+.\setup.ps1
+.\.venv\Scripts\Activate.ps1
 notepad .env          # GEMINI_API_KEY
 notepad config.yaml   # ジャンル・ペルソナ・ソース・アフィリエイト
 python -m engine run -n 1     # output/ に記事ができる
 ```
 
-## 完全自動化（GitHub Actions・無料）
+基本導入ではvendorの取得やAIブラウザ導入は不要です。必要な時だけ `./setup.ps1 -WithBrowser` / `./setup.ps1 -WithFirecrawl` で追加します。Linuxは `bash setup.sh` と `--with-browser` / `--with-firecrawl` です。
+
+Firecrawlをローカル起動する場合は `-WithFirecrawl` でSDKを追加してから `./scripts/firecrawl.ps1 up`（要Docker）を実行し、`.env` の `FIRECRAWL_API_URL=http://localhost:3002` を設定します。既存のFirecrawl設定を引き継ぐ場合もSDKの追加が必要です。
+
+## 定期実行（GitHub Actions）
 1. このリポジトリの Settings → Secrets and variables → Actions に `GEMINI_API_KEY`（WordPress/X を使うならそのキーも）
 2. `config.yaml` の `publishers:` を `[wordpress, x]` などに
 3. 以後毎日 07:17 JST に自動実行（Actions タブの「Run workflow」で手動実行も可）
+
+指定時刻は実行予定で、サービス側の遅延があり得ます。ActionsやAPIの利用枠・料金は契約に従います。WordPressは既定で下書きです。実行後は `status` と配信先別の結果を確認してください。
 
 ## コマンド
 | コマンド | 内容 |
@@ -39,6 +47,7 @@ python -m engine run -n 1     # output/ に記事ができる
 | `pseo data/pseo.csv --limit 10` | CSV 1行 = 1記事 で量産（列は自由。例: 地域×サービス、ツール×用途） |
 | `login note` / `login x` | ブラウザ投稿用のログインを保存（一度だけ。`data/browser_profile`） |
 | `status` | キュー・投稿履歴 |
+| `retry [post_id] -n 10` | 失敗した公開先のみ再試行。成功済み・結果不明・X部分投稿は自動再送しない |
 
 ## 公開先
 | 名前 | 必要なもの |
@@ -46,10 +55,14 @@ python -m engine run -n 1     # output/ に記事ができる
 | file（常時） | なし。`output/*.md`（frontmatter付き → Hugo/Astro/Jekyll で GitHub Pages ブログにも） |
 | wordpress | `WP_URL` `WP_USER` `WP_APP_PASSWORD`（`wp_status: draft` で下書き運用も） |
 | x | X Developer の4キー（Read and Write）。記事URLつきツリー投稿 |
-| x_browser | `login x` だけ。browser-use が画面からスレッド投稿（API 不要・ローカル実行） |
-| note | `login note` だけ。browser-use が下書き保存（`note_publish: true` で公開まで） |
+| x_browser | `-WithBrowser`、Geminiキー、`login x`。browser-use が画面からスレッド投稿（ローカル実行） |
+| note | `-WithBrowser`、Geminiキー、`login note`。browser-use が下書き保存（`note_publish: true` で公開まで） |
 
 ※ note / x_browser はログイン済みブラウザが要るので、PC 上の定期実行（タスクスケジューラで `python -m engine run`）で回す。GitHub Actions は file / wordpress / x 向け。
+
+file運用でも `output/<post_id>-tweets.json` にSNS文面を保存します。`data/state.json` には公開先別の成功・失敗・結果不明を記録します。投稿後に応答を受け取れなかった場合やXの部分投稿は、投稿先を確認してから対処してください。旧形式の履歴から過去の失敗先を復元する機能はありません。
+
+HNは `max_age_hours: 24` と `keywords` で期間・分野を絞れます。RSSなど他のソースは同じ条件ではありません。記事の比較対象・価格・所在地は根拠を確認してから公開します。WordPressのdescriptionはexcerptへ保存し、SEOプラグイン固有の設定は行いません。
 
 ## 収益化のコツ
 - `affiliates:` に A8.net / もしも / Amazon のリンクを登録 → 関連語が出た記事だけ自動挿入＋PR表記

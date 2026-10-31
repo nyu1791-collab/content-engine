@@ -3,3 +3,5 @@
 __pycache__/
 data/note_state.json
 data/browser_profile/
+*.log
+.pytest_cache/

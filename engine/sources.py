@@ -1,7 +1,9 @@
 """ネタ収集: RSS / Googleニュース / Hacker News / GitHub Trending / Reddit。すべてAPIキー不要。
 返り値は共通形式 {id, source, title, url, summary, score}。"""
 import hashlib
+import math
 import re
+import time
 from urllib.parse import quote
 
 import feedparser
@@ -30,12 +32,37 @@ def google_news(query, limit=10, lang="ja", **_):
     return rss(f"https://news.google.com/rss/search?q={quote(query)}&hl={hl}", limit)
 
 
-def hackernews(limit=15, min_points=100, **_):
+def hackernews(limit=15, min_points=100, max_age_hours=24, keywords=None, **_):
+    """HN上位候補から収集。年齢は投稿時刻基準、0で無制限。語句はタイトル/URL/本文のいずれかに一致。"""
+    if limit <= 0:
+        return []
+    max_age_hours = float(max_age_hours)
+    if not math.isfinite(max_age_hours) or max_age_hours < 0:
+        raise ValueError("max_age_hours は0以上の有限の時間数で指定してください")
+    keywords = [keywords] if isinstance(keywords, str) else (keywords or [])
+    # 「AI」が「mail」に一致する等の部分一致を避ける。日本語の前後は許容する。
+    patterns = [re.compile(r"(?<![a-z0-9])" + re.escape(word.strip()) + r"(?![a-z0-9])", re.I)
+                for word in keywords if isinstance(word, str) and word.strip()]
+    now = time.time()
     ids = requests.get("https://hacker-news.firebaseio.com/v0/topstories.json", timeout=15).json()[: limit * 3]
     out = []
     for i in ids:
         it = requests.get(f"https://hacker-news.firebaseio.com/v0/item/{i}.json", timeout=15).json() or {}
-        if it.get("score", 0) >= min_points and it.get("url"):
+        if max_age_hours:
+            try:
+                timestamp = it.get("time")
+                if isinstance(timestamp, bool):
+                    continue
+                age = now - float(timestamp)
+            except (TypeError, ValueError, OverflowError):
+                continue
+            if not math.isfinite(age) or not 0 <= age <= max_age_hours * 3600:
+                continue
+        if patterns:
+            content = " ".join(str(it.get(field) or "") for field in ("title", "url", "text"))
+            if not any(pattern.search(content) for pattern in patterns):
+                continue
+        if it.get("score", 0) >= min_points and it.get("url") and it.get("title"):
             out.append({"id": _id(it["url"]), "source": "Hacker News", "title": it["title"], "url": it["url"],
                         "summary": f"HN {it['score']} points, {it.get('descendants', 0)} comments", "score": it["score"]})
         if len(out) >= limit:
