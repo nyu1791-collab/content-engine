@@ -77,3 +77,12 @@ python -m engine promo data\catalog.csv --publish      # 確認した下書き�
 ```
 - カタログ列: `title,url,langs,blurb,tags,adult`（例: `data/catalog_example.csv`）。`adult=1` は `[18+]` を付け、文面は非露骨に
 - 成人向けを投稿するアカウントは X の「センシティブな内容」設定を必ず有効に
+
+## Gemini の接続（情報収集・執筆・読み取り・翻訳）
+1. キー発行: https://aistudio.google.com/apikey
+2. PC（3リポジトリ共通で1回だけ）: PowerShell で `setx GEMINI_API_KEY "キー"` → PowerShell を開き直す（各 `.env` の `GEMINI_API_KEY=` は空のままでよい）
+3. 確認: `python -m engine llm-check`（用途ごとの接続先と、検索の裏付けが取れるかを表示）
+4. 用途ごとの使い分けは `.env` の `GEMINI_MODEL_WRITE` 等（例: 記事だけ `gemini-2.5-pro`）。安全フィルタで止まる内容は `GEMINI_SAFETY=relaxed`、それでも止まる用途だけ `LLM_PROVIDER_<用途>=openrouter`
+
+- このリポジトリでの用途: **最新ニュースの収集**（`gemini_search` ソース、research。実在するURLだけ採用）、記事・SNS・告知文（write）
+- GitHub Actions（毎日の自動実行）: リポジトリの Settings → Secrets and variables → Actions → **New repository secret** で `GEMINI_API_KEY` を登録。モデルを変えるなら Variables に `GEMINI_MODEL` 等

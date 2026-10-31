@@ -26,6 +26,10 @@ jobs:
           ARTICLE_COUNT: ${{ github.event.inputs.n || '2' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          GEMINI_MODEL_WRITE: ${{ vars.GEMINI_MODEL_WRITE }}
+          GEMINI_MODEL_RESEARCH: ${{ vars.GEMINI_MODEL_RESEARCH }}
+          GEMINI_SAFETY: ${{ vars.GEMINI_SAFETY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
           WP_URL: ${{ secrets.WP_URL }}
           WP_USER: ${{ secrets.WP_USER }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}

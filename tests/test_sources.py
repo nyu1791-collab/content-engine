@@ -78,3 +78,17 @@ class HackerNewsTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class GeminiSearchTests(unittest.TestCase):
+    def test_only_resolvable_urls_and_grounding_fallback(self):
+        from unittest.mock import patch
+        from engine import llm, sources
+        res = {"items": [{"title": "本物", "url": "https://real.example/a", "summary": "s"},
+                         {"title": "作り話", "url": "https://fake.example/404", "summary": "s"}]}
+        grounding = [{"title": "real2.example", "uri": "https://vertexaisearch.example/redirect/1"}]
+        resolve = {"https://real.example/a": "https://real.example/a", "https://fake.example/404": None,
+                   "https://vertexaisearch.example/redirect/1": "https://real2.example/news"}
+        with patch.object(llm, "ask_sources", return_value=(res, grounding)), patch.object(sources, "_resolve", side_effect=resolve.get):
+            items = sources.gemini_search("AI", limit=5)
+        self.assertEqual([i["url"] for i in items], ["https://real.example/a", "https://real2.example/news"])

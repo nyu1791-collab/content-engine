@@ -102,7 +102,43 @@ def firecrawl_search(query, limit=10, tbs="qdr:d", **_):
              "summary": r["description"], "score": 0} for r in fc.search(query, limit=limit, tbs=tbs)]
 
 
-TYPES = {"firecrawl_search": firecrawl_search, "rss": rss, "google_news": google_news, "hackernews": hackernews, "github_trending": github_trending, "reddit": reddit}
+def _resolve(url):
+    """実在確認＋転送先の最終URL（検索の転送リンク → 記事本体）。存在しなければ None"""
+    try:
+        r = requests.get(url, headers=UA, timeout=15, allow_redirects=True, stream=True)
+        r.close()
+        return r.url if r.status_code < 400 else None
+    except requests.RequestException:
+        return None
+
+
+def gemini_search(query, limit=8, days=3, lang="ja", **_):
+    """Gemini＋Google 検索で最近のニュース・発表を集める（キーだけで使える情報収集）。
+    AI が書いた URL は実在するものだけ採用し、足りなければ検索の出典リンクで補う（作り話の URL を通さない）"""
+    from . import llm
+    prompt = (f"Google 検索で「{query}」に関する過去{days}日以内の新しいニュース・発表・リリースを最大{limit}件集めてください。"
+              f"各件: title（元記事の見出し）, url（元記事のURL）, summary（{'日本語で' if lang == 'ja' else 'in English, '}2文）。"
+              '確認できたものだけ。JSON のみ: {"items": [{"title": "", "url": "", "summary": ""}]}')
+    res, sources = llm.ask_sources(prompt, json_mode=True, temperature=0, task="research")
+    items, seen = [], set()
+    for it in (res.get("items") if isinstance(res, dict) else []) or []:
+        url = _resolve(str(it.get("url") or ""))
+        if url and url not in seen:
+            seen.add(url)
+            items.append({"id": _id(url), "source": "Gemini検索", "title": str(it.get("title") or url)[:200], "url": url,
+                          "summary": str(it.get("summary") or "")[:600], "score": 0})
+    for src in sources:
+        if len(items) >= limit:
+            break
+        url = _resolve(src["uri"])
+        if url and url not in seen:
+            seen.add(url)
+            items.append({"id": _id(url), "source": "Gemini検索", "title": src["title"] or url, "url": url,
+                          "summary": f"「{query}」の検索結果", "score": 0})
+    return items[:limit]
+
+
+TYPES = {"gemini_search": gemini_search, "firecrawl_search": firecrawl_search, "rss": rss, "google_news": google_news, "hackernews": hackernews, "github_trending": github_trending, "reddit": reddit}
 
 
 def collect(cfg_sources):

@@ -24,7 +24,7 @@ def slugify(s):
 def article(item, body, cfg):
     res = llm.ask(_prompt("article", persona=cfg["persona"], niche=cfg["niche"], title=item["title"], url=item["url"],
                           summary=item.get("summary", ""), body=body[:7000], min_chars=cfg.get("min_chars", 2000)),
-                  json_mode=True)
+                  json_mode=True, task="write")
     if not isinstance(res, dict) or not res.get("body"):  # キー無し/崩れた応答: 最低限の紹介記事
         res = {"title": item["title"], "slug": slugify(item["title"]), "description": item.get("summary", "")[:120],
                "tags": [item.get("source", "")], "body": f"## 概要\n\n{item.get('summary','')}\n\n## 原文\n\n{body[:1500]}"}
@@ -46,7 +46,7 @@ def with_cta(md, cfg):
 def pseo(row: dict, cfg, prompt: str = "pseo"):
     """プログラマティックSEO: CSV 1行 × テンプレ（prompts/<prompt>.md）→ 1記事。"""
     res = llm.ask(_prompt(prompt, persona=cfg["persona"], niche=cfg["niche"], data="\n".join(f"- {k}: {v}" for k, v in row.items()),
-                          min_chars=cfg.get("min_chars", 2000)), json_mode=True)
+                          min_chars=cfg.get("min_chars", 2000)), json_mode=True, task="write")
     if not isinstance(res, dict) or not res.get("body"):
         raise RuntimeError("pSEO には GEMINI_API_KEY が必要です（または応答が不正）")
     res.setdefault("description", "")
@@ -58,7 +58,7 @@ def pseo(row: dict, cfg, prompt: str = "pseo"):
 
 def thread(post, url, cfg):
     res = llm.ask(_prompt("thread", title=post["title"], body=post["body"][:5000], url=url or "", n=cfg.get("thread_len", 4)),
-                  json_mode=True)
+                  json_mode=True, task="write")
     if res is None:
         tweets = [f"{post['title']}\n\n{post.get('description','')}" + (f"\n{url}" if url else "")]
     else:

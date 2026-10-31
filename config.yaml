@@ -14,6 +14,8 @@ wp_status: draft      # 内容を確認してから公開。自動公開する�
 output_dir: output
 
 sources:
+  # Gemini＋Google 検索で最新情報を集める（GEMINI_API_KEY だけで使える。1回の実行で1検索）
+  - {type: gemini_search, query: "生成AI 業務効率化 新サービス", limit: 6, days: 3}
   # - {type: firecrawl_search, query: "AI エージェント 新機能", limit: 10, tbs: "qdr:d"}   # Firecrawl 起動時
   - {type: github_trending, language: "", since: daily, limit: 10}
   - {type: github_trending, language: python, since: daily, limit: 5}

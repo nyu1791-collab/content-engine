@@ -32,7 +32,7 @@ def compose(work, lang):
     adult_rule = ("this is adult (18+) content: mark it 18+ and keep the text non-explicit (no sexual descriptions)"
                   if work["adult"] else "keep it family-friendly")
     res = llm.ask(PROMPT.format(lang=LANG_NAMES.get(lang, lang), title=work["title"], blurb=work.get("blurb", ""),
-                                tags=work.get("tags", ""), url=work["url"], adult_rule=adult_rule), json_mode=True, temperature=0.8)
+                                tags=work.get("tags", ""), url=work["url"], adult_rule=adult_rule), json_mode=True, temperature=0.8, task="write")
     text = res.get("text") if isinstance(res, dict) else None
     if not isinstance(text, str) or len(text.strip()) < 10:
         tags = " ".join("#" + t.strip().replace(" ", "") for t in (work.get("tags") or "").split(",") if t.strip())[:80]

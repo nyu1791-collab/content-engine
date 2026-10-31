@@ -255,8 +255,12 @@ def main():
     p = sp.add_parser("promo", help="作品カタログ → 多言語の告知文（確認用に保存、--publish で X）")
     p.add_argument("catalog"); p.add_argument("--limit", type=nonnegative_int, default=5)
     p.add_argument("--every-days", type=nonnegative_int, default=7); p.add_argument("--publish", action="store_true")
+    sp.add_parser("llm-check", help="Gemini 等の接続確認")
     sp.add_parser("status")
     a = ap.parse_args()
+    if a.cmd == "llm-check":
+        from . import llm
+        return llm.check()
     if ((a.cmd in ("write", "run", "retry") and a.n == 0) or
             (a.cmd == "pseo" and a.limit == 0)):
         return
