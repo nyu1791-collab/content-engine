@@ -1,0 +1,12 @@
+{
+  "post_id": "041c7cf2e4ab",
+  "status": "draft",
+  "title": "AIエージェントの記憶を保持するOSS「claude-mem」とは",
+  "source_url": "https://github.com/thedotmack/claude-mem",
+  "tweets": [
+    "AIエージェントのセッション終了時に文脈がリセットされる問題を解消するOSS「claude-mem」を紹介します。作業経緯の再説明を省きたい開発者におすすめのツールです。\n#AIエージェント #ClaudeCode",
+    "claude-memは、セッション中のツール利用状況を記録し、AIで意味的な要約を生成して次回に関連文脈を自動注入します。Claude CodeのほかGeminiやCopilotなど複数のエージェント環境に対応しています。",
+    "セットアップは「npx claude-mem install」を実行するだけです。Node.js 20以上が必要で、ホスト型のほか自身のOpenRouter、Gemini、Anthropicプランを選択して利用できます。",
+    "公式observerには30日間の無料トライアルがあり、終了後は設定に応じて自身のプランへフォールバックされます。\n\n詳しくはこちら: https://github.com/thedotmack/claude-mem"
+  ]
+}
