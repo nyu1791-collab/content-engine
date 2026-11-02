@@ -41,7 +41,33 @@
   "be3a9321359d": "2026-11-01",
   "13fc56ecad4e": "2026-11-01",
   "80512dc5bac9": "2026-11-01",
-  "76d068e9376c": "2026-11-01"
+  "76d068e9376c": "2026-11-01",
+  "8e1c095c8be3": "2026-11-02",
+  "7a484625cf3a": "2026-11-02",
+  "71698e2d2074": "2026-11-02",
+  "17830fe5932e": "2026-11-02",
+  "c175a33fc995": "2026-11-02",
+  "a55c819fccc2": "2026-11-02",
+  "ed6cd510886f": "2026-11-02",
+  "06db34233a17": "2026-11-02",
+  "af11c4a85f03": "2026-11-02",
+  "586dee9a79c1": "2026-11-02",
+  "71c43854f4ff": "2026-11-02",
+  "ab8e3a821dcd": "2026-11-02",
+  "00e1179c1314": "2026-11-02",
+  "6743471d7a09": "2026-11-02",
+  "5a4f0eaa4d82": "2026-11-02",
+  "d6586357358d": "2026-11-02",
+  "15e72f0a5a38": "2026-11-02",
+  "85b96a283ce5": "2026-11-02",
+  "beeebffada14": "2026-11-02",
+  "a4da981375e0": "2026-11-02",
+  "0c5a23886756": "2026-11-02",
+  "d34053e9ecc9": "2026-11-02",
+  "4a81f9c8fb4c": "2026-11-02",
+  "9607e45c4952": "2026-11-02",
+  "f53fda008733": "2026-11-02",
+  "6a250085de15": "2026-11-02"
  },
  "queue": [
   {
@@ -135,6 +161,15 @@
    "added": "2026-11-01"
   },
   {
+   "id": "c175a33fc995",
+   "source": "GitHub Trending",
+   "title": "shiyu-coder/Kronos",
+   "url": "https://github.com/shiyu-coder/Kronos",
+   "summary": "Kronos: A Foundation Model for the Language of Financial Markets (+630 stars today)",
+   "score": 630,
+   "added": "2026-11-02"
+  },
+  {
    "id": "20703a86e2b0",
    "source": "GitHub Trending",
    "title": "calesthio/OpenMontage",
@@ -142,6 +177,15 @@
    "summary": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio. (+583 stars today)",
    "score": 583,
    "added": "2026-11-01"
+  },
+  {
+   "id": "af11c4a85f03",
+   "source": "GitHub Trending",
+   "title": "beenuar/AiSOC",
+   "url": "https://github.com/beenuar/AiSOC",
+   "summary": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue. (+446 stars today)",
+   "score": 446,
+   "added": "2026-11-02"
   },
   {
    "id": "7d8c130e960b",
@@ -153,6 +197,42 @@
    "added": "2026-11-01"
   },
   {
+   "id": "ed6cd510886f",
+   "source": "GitHub Trending",
+   "title": "cjpais/Handy",
+   "url": "https://github.com/cjpais/Handy",
+   "summary": "A free, open source, and extensible speech-to-text application that works completely offline. (+339 stars today)",
+   "score": 339,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "a55c819fccc2",
+   "source": "GitHub Trending",
+   "title": "public-apis/public-apis",
+   "url": "https://github.com/public-apis/public-apis",
+   "summary": "A collective list of free APIs (+324 stars today)",
+   "score": 324,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "00e1179c1314",
+   "source": "Hacker News",
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "summary": "HN 294 points, 228 comments",
+   "score": 294,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "586dee9a79c1",
+   "source": "GitHub Trending",
+   "title": "FlashML-org/FreeToken",
+   "url": "https://github.com/FlashML-org/FreeToken",
+   "summary": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently. (+242 stars today)",
+   "score": 242,
+   "added": "2026-11-02"
+  },
+  {
    "id": "8b95ff6d8b4e",
    "source": "Hacker News",
    "title": "Anthropic blocks users for anything touching training larger models",
@@ -162,21 +242,39 @@
    "added": "2026-11-01"
   },
   {
+   "id": "ab8e3a821dcd",
+   "source": "Hacker News",
+   "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+   "url": "https://github.com/ivankovic/omnidiff",
+   "summary": "HN 156 points, 40 comments",
+   "score": 156,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "71c43854f4ff",
+   "source": "Hacker News",
+   "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+   "summary": "HN 153 points, 127 comments",
+   "score": 153,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "06db34233a17",
+   "source": "GitHub Trending",
+   "title": "kornia/kornia",
+   "url": "https://github.com/kornia/kornia",
+   "summary": "🐍 Geometric Computer Vision Library for Spatial AI (+101 stars today)",
+   "score": 101,
+   "added": "2026-11-02"
+  },
+  {
    "id": "5b5da3d72e6c",
    "source": "GitHub Trending",
    "title": "0x0funky/agent-sprite-forge",
    "url": "https://github.com/0x0funky/agent-sprite-forge",
    "summary": "Agent Skill for generating 2D sprite sheets and map, transparent PNG frames, and animated GIFs from prompts. (+45 stars today)",
    "score": 45,
-   "added": "2026-11-01"
-  },
-  {
-   "id": "c150bfaad53f",
-   "source": "Gemini検索",
-   "title": "Stella AI for Biz、「Word Agent」「Excel Agent」を提供開始",
-   "url": "https://prtimes.jp/main/html/rd/p/000000106.000138218.html",
-   "summary": "株式会社SUPERNOVAは、生成AIサービス「Stella AI for Biz」においてWordやExcel形式で作業を自動化する新エージェント機能の提供を開始しました。申請書の記入やデータの集計・整理をAIが直接ファイル上で行うことで、転記や体裁調整の手間をなくし業務効率化を支援します。",
-   "score": 0,
    "added": "2026-11-01"
   },
   {
@@ -221,15 +319,6 @@
    "title": "スライドの修正を、ひとことで。ChatSenseが新機能を提供予定",
    "url": "https://prtimes.jp/main/html/rd/p/000000432.000073671.html",
    "summary": "株式会社ナレッジセンスは、法人向け生成AI「ChatSense」においてスライド修正を簡単な指示で行える新機能を発表しました。作成済みスライドの修正箇所を直感的に指示・編集可能にすることで、資料作成にかかる工数を削減し業務を効率化します。",
-   "score": 0,
-   "added": "2026-11-01"
-  },
-  {
-   "id": "861c6dc4e0e7",
-   "source": "\"生成AI ツール\" - Google ニュース",
-   "title": "ChatGPTよりすごいAIおすすめ比較！無料で使える類似サービス一覧 - AIsmiley",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0zekphWWJ4NHZKQ0loRTJKaF83NFFxOTR6c0haMzlEQ2dTaE1USnVJdlBvclg0TFE3ZGplbnlZd2lRRTFWbVpvVk1mSGdkTUZxTWNMV2dIMEowX2h1b2tfSnZBclpTQ0hxWERwM1hRN1pPRHdLT0E?oc=5",
-   "summary": "ChatGPTよりすごいAIおすすめ比較！無料で使える類似サービス一覧 AIsmiley",
    "score": 0,
    "added": "2026-11-01"
   },
@@ -315,15 +404,6 @@
    "added": "2026-11-01"
   },
   {
-   "id": "98adf59cd88b",
-   "source": "Zennの「AI」のフィード",
-   "title": "Claude Code の会話履歴が消える日数を4か所に別々に書いたら、--settings が勝った(既定は30日)",
-   "url": "https://zenn.dev/numarn/articles/claude-cleanup-period-days-precedence-handson",
-   "summary": "Claude Code との会話は、1回のセッションごとに1本のファイルとして手元に残ります。この記録は放っておくと 勝手に消えます。では何日で消えるのか、その日数をどこに書けば効くのか。 X でこの設定(cleanupPeriodDays)に触れている投稿を見かけたので、人の説明は前提にせず、全部自分で測り直しました。 やり方は単純です。日付をずらした偽の記録ファイルを並べ、何件消えたかを数えました。 先に安全の話をします。本物の ~/.claude/ では絶対に試さないでください。 消えた記録を戻す手段は確認していません。そこで、設定の置き場所を指定する環境変数 CLAUDE_CON...",
-   "score": 0,
-   "added": "2026-11-01"
-  },
-  {
    "id": "22043b91bcd3",
    "source": "Zennの「AI」のフィード",
    "title": "「予約が止まった」理由も「漏えいはなかった」で終わった理由も ― 2つの不正アクセス事例に見る委託先管理の確認ポイント",
@@ -403,6 +483,159 @@
    "summary": "AIで漫画を作る方法は、大きく分けると画像を一枚ずつ作って漫画に組む方法と、物語・キャラクター・コマ構成からページを作る方法があります。違いは絵柄だけではありません。構成、セリフ、画像の配置をいつ決め、修正時にどこへ戻るかが変わります。 この記事では、漫画制作を「準備・構成・画像・仕上げ」に分け、二つの方法で作り手が担う工程を比較します。Lyra Japanの開発・運営側として、確認できる公式の制作フローをページ制作型の例に使います。個別の画像生成サービスとの品質比較や、同じ入力を使った生成実験ではありません。 漫画制作には、画像の前後にも工程がある 短い漫画でも、完成までには次の作...",
    "score": 0,
    "added": "2026-11-01"
+  },
+  {
+   "id": "8e1c095c8be3",
+   "source": "Gemini検索",
+   "title": "リコージャパン、営業現場のDXを支援する「ナレッジワークAI商談記録 for RICOH」を発売",
+   "url": "https://jp.ricoh.com/release/2026/1102_1",
+   "summary": "リコージャパンは、営業現場のDXを支援する「ナレッジワークAI商談記録 for RICOH」の提供を2026年11月2日より開始したと発表しました。AIが商談内容を自動で文字起こし・要約し、kintoneと連携することで営業担当者の入力負荷軽減と営業活動の効率化を図ります。",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "7a484625cf3a",
+   "source": "Gemini検索",
+   "title": "オラクルの機能がChatGPTで利用可能に 複数システムをまたぐ業務をAIで自動化",
+   "url": "https://kn.itmedia.co.jp/kn/article/2611/02/2000002740/",
+   "summary": "オラクルはOpenAIとの協業拡大を発表し、業務システムとAIを統合する「Oracle AI Workspace」などの新ソリューション群を公開しました。ChatGPTなどのAIエージェントが複数システムを横断して業務を直接実行できるようになり、日常業務の大幅な効率化を後押しします。",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "71698e2d2074",
+   "source": "Gemini検索",
+   "title": "設計書・図面の意味を損なわずAIで活用可能なナレッジへ変換する「RAG管理ソフトウェア」を販売開始",
+   "url": "https://www.hitachi-solutions-tech.co.jp/corporate/news/2026/nr261030.html",
+   "summary": "日立ソリューションズ・テクノロジーは、技術文書を図表や文脈を維持したまま知識化する「RAG管理ソフトウェア」の販売を開始しました。製造現場などの設計書や手順書を高精度にAI検索・活用できる基盤を提供し、属人化の解消と業務効率化を両立させます。",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "17830fe5932e",
+   "source": "Gemini検索",
+   "title": "AI活用を業務変革と成果創出につなげる 「AGX支援サービス」を提供開始 | ZEIN株式会社",
+   "url": "https://zein.jp/news/2026/10/30/agx/",
+   "summary": "ZEIN株式会社は、生成AIやAIエージェントの活用を実務の成果に結びつける「AGX支援サービス」の提供を開始しました。業務プロセスの再設計から実装、運用定着までを一貫して支援し、部分的な効率化にとどまらない組織全体の持続的な業務改革を推進します。",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "6743471d7a09",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "Claudeで2000万円級分析が80万円に ChatGPTやGemini、3大AIの戦略大研究 - 日経クロストレンド",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VckJOME5MMGtYRVkxMU1rbW54Z0dhQUtIdURVdjVWYnBtN25NbHpWZU02Y0NQazBuMnZyNmMzZkQtRVVmYjhqcGRpQTZfcmFzNlVNTTh4TVpkNVZUNjktSFNpNUlmQQ?oc=5",
+   "summary": "Claudeで2000万円級分析が80万円に ChatGPTやGemini、3大AIの戦略大研究 日経クロストレンド",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "5a4f0eaa4d82",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "〔寄り道〕生成ＡＩ利用率50％、うち４割が課金 - NNAアジア",
+   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0zVy14X3UzZWx2ZGZTWGE1dUIxZFJSa1A1aTZjbUF3Nkd3aS12V1pER216VGg0UjN6NFk2bGpXMVpxY1BVZXc?oc=5",
+   "summary": "〔寄り道〕生成ＡＩ利用率50％、うち４割が課金 NNAアジア",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "d6586357358d",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "ニューヨーク市、学校での生成AIを1年間禁止、研究は何を示すか - Pasquale Pillitteri",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZXl4MEpXWFJTMlBmcWNCdEwwa2hybXJrdG9UVXFVYVpNbVBJa2VZaWYwNDEwaEpZSV95RS1rMU9zX3hIWGEtendZYURWU2R6ZUlDR0EtcHUtYkxMamg2QUpVcDY5bVFQWUJQMjZPVUk0Ui1fVE5ZM0FuSDF0NXdJVmFWcUVrOTBYTkE?oc=5",
+   "summary": "ニューヨーク市、学校での生成AIを1年間禁止、研究は何を示すか Pasquale Pillitteri",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "15e72f0a5a38",
+   "source": "Zennの「AI」のフィード",
+   "title": "Kiro CLIとKiro Crewを改めて入門してAWSで動かすまで",
+   "url": "https://zenn.dev/upgradetech/articles/2026-11-kiro-crew-api-key-intro",
+   "summary": "KiroはIDEだけの製品ではなくなりました。2026年11月時点では、IDE、CLI、Web、Mobile、そしてCrewの5つの入口があります。 特にCLIはAPIキーでヘッドレス実行ができるようになり、Crewは自分のマシンに常駐して仕事を進めるエージェントとして公開されました。 IDEでSpecを書いた経験はあるけれど最近は触っていない、という状態から、CLIとCrewとAPIキーを実機で一通り試して整理しました。 Kiroの今の全体像 入口は公式ドキュメントの数え方で5つあります。 IDEは従来どおりで、チャットとSpecsとHooksがあります。CLIにはヘッドレスモー...",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "85b96a283ce5",
+   "source": "Zennの「AI」のフィード",
+   "title": "今日の市場ブリーフィング",
+   "url": "https://zenn.dev/bambampurin/articles/2026-09-22-market-daily",
+   "summary": "日経平均65,000円突破とレーザーテック+8.7%急騰から読み解く市場指標リファレンス この記事で分かること 65,000円台に乗せた日経平均株価と米国市場の温度差 米10年債利回り4.97%の上昇下におけるVIX指数と為替の動向 レーザーテック急騰にみる半導体関連株とその他主要銘柄の明暗 主要株価指数の動きを把握する方法 日経平均株価が65,000円の大台を突破した背景には、ハイテク株を中心とした市場の買い展開が存在します。 2026年9月22日の日経平均株価は前日比+1.38%（+886.08円相当）上昇し、65,018.95円で取引を終えました。出来高は1億...",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "beeebffada14",
+   "source": "Zennの「AI」のフィード",
+   "title": "Agent DX 〜 AI時代にフレームワークHonoは必要か",
+   "url": "https://zenn.dev/yusukebe/articles/3d3dc6605ca1b1",
+   "summary": "AIがユーザーになりました。我々は人間向けの開発者ではなく、AI向けの開発者体験を考えなくてはいけません。 我々は人間です。雰囲気で「フレームワークは必要ない」「フレームワークは必要」と言っても、AIの意見ではありません。人間の意見です。説得力がありません。我々人間はAIのことをもっと知らなくてはいけません。 そこで、Honoでは「Agent DX」というプロジェクトを立ち上げて、AI向けの開発者体験をちゃんと測りました。以下3つのカンファレンスでAgent DXについて話しました。 AI時代のWebフレームワークはどこへ行く？ - フロントエンドカンファレンス福岡 2026 Hono...",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "a4da981375e0",
+   "source": "Zennの「AI」のフィード",
+   "title": "Unlimited-OCR-2で完全ローカルOCRワークベンチ構築：長文PDF・数式・表もVRAM一定で爆速解析",
+   "url": "https://zenn.dev/lumichy/articles/unlimited-ocr-2-workbench-2026",
+   "summary": "社内文書や学術論文、請求書などのPDF解析をクラウドAPI（Google Cloud Document AI や Azure AI Document Intelligence、あるいは GPT-4o / Claude 3.5 Sonnet）に丸投げしていませんか？ 確かにクラウドAPIは手軽ですが、機密データの外部送信リスク や 毎月の従量課金コスト は無視できない問題です。かといって、従来のオープンソースOCRである Tesseract を使うと、複数段組みや数式、セル結合の多いテーブルに出くわした瞬間にテキスト順序が崩壊してしまいます。 そんなドキュメント解析の悩みを根本から覆すモ...",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "0c5a23886756",
+   "source": "Zennの「AI」のフィード",
+   "title": "Coding Agent の「作り直し」と「検証ミス」を減らす：Matt Pocock Skills × pstack",
+   "url": "https://zenn.dev/ryodev/articles/469b436dee634a",
+   "summary": "最近、Coding Agent を使った開発で、Matt Pocock Skills と pstack を組み合わせて使うことが増えています。 最初は便利そうな Skill を個別に試していただけでしたが、ソースコードやドキュメント、ほかの開発者の使用例を読んでいるうちに、それぞれの設計思想にも興味を持つようになりました。 実際に使い続ける中で、両者の良いところを取り入れた、自分なりのワークフローが少しずつ固まってきました。 特に役立っているのは、Spec を書いたのに UI が想像と違ったり、Agent がこちらの意図していない判断をしたり、変更後のアプリを検証したつもりが古いプロセス...",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "d34053e9ecc9",
+   "source": "Zennの「AI」のフィード",
+   "title": "Claude Desktopで「確認してから断定する」を全部の発言にかける——FA開発で使っている常時規則のスキル",
+   "url": "https://zenn.dev/kensho_ya/articles/claude-desktop-always-on-rules-verify-first",
+   "summary": "Claude Desktopには、STやFHマクロの書き方を決めたスキルとは別に、作業の進め方そのものを決めたスキルを1本入れている。この記事に関係するのは、そのうちの2つの部分だ。1つは成果物を作るときの工程で、仕様の分解から検証、出力の形までを決めている。もう1つは「常時規則」と名付けた節で、成果物の有無に関係なく、すべての発言にかける規則だ。 工程の側には仕様トレース・机上トレース・独立レビューがあり、検証プロトコルの記事で書いた内容と重なるので、ここでは扱わない。この記事では常時規則の中身を書く。自分で使いながら手を入れている途中のもので、完成形ではない。 出発点は「出力に現...",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "4a81f9c8fb4c",
+   "source": "Zennの「AI」のフィード",
+   "title": "Claude Codeに「進捗どう？」と聞くのをやめた ― 隣の画面で勝手に育つ\"きょうのボード\"",
+   "url": "https://zenn.dev/jir0/articles/4cbcdd7421f26e",
+   "summary": "複数のプロジェクトを Claude Code に委任して並行で進めていると、1日に何度も同じことをやる羽目になります。 チャット窓を切り替えて「進捗どう？」と聞く。長い返事を読む。別の窓に切り替えて、また聞く。夕方になると「今日って結局何が終わったんだっけ」とスクロールで遡る——委任した作業そのものより、状況把握のほうが仕事になっている瞬間がありました。 で、気づいたんです。Claude はファイルを書けるんだから、進捗ボードも Claude に書かせればいい。私が聞きに行くのではなく、向こうが書きに来る形にすればいい。 そうして作ったのが「きょうのボード」です。この記事はその紹介と、作...",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "9607e45c4952",
+   "source": "Zennの「AI」のフィード",
+   "title": "AI生成コードのレビューで先に確認したい5つの前提",
+   "url": "https://zenn.dev/techstudiolab/articles/review-ai-generated-code-business-assumptions",
+   "summary": "AIが生成したコードはテストを通過し、画面でも期待どおりに動いている。それでも、更新してはいけない注文までキャンセルされる実装だったら、承認できるでしょうか。 AIコーディングツールを使うほど、レビュー対象のコードは増えます。細部まで確認する時間を確保するのも簡単ではありません。 私なら、実装の細部を追う前に、AIがどんな業務上の前提を置いてコードを書いたのかを確認します。 架空の受注管理システムを例に、レビューで確認したい5つの前提と、その確認を効率よく進める手順を整理します。 テストが通っても、要求を満たしたとは限らない コードレビューでは、条件分岐、例外処理、型、テスト、セキ...",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "f53fda008733",
+   "source": "Zennの「AI」のフィード",
+   "title": "既存コードから仕様書・テストまでをつなぐ開発フローを、Codex の Agent Skills で作った話",
+   "url": "https://zenn.dev/elletech/articles/bbadfc622f2cd2",
+   "summary": "はじめに Webアプリの新規開発で、Codex の Agent Skills を使って「既存のソースコードから仕様書を作り、その仕様書からテストを作って実行する」までを一つの流れにまとめました。この記事では、その仕組みと、やってみてうまくいかなかったこと・工夫したことを書きます。 どんな状態だったか 技術スタックは TypeScript / Next.js / MUI / Prisma / PostgreSQL です。 ソースコードはあるものの、画面仕様書・API仕様書・テスト仕様書はまとまった形で存在せず、仕様は一部の人の頭の中にしかありませんでした。 そんな中で、単体テストの...",
+   "score": 0,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "6a250085de15",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIに無人運用させたパイプラインで、エラーを出さずに壊れていた8件と検知の作り方",
+   "url": "https://zenn.dev/zenn_content/articles/unattended-pipeline-silent-failures",
+   "summary": "はじめに 結論: Claude Code に作らせ・直させながら毎日無人で回している自作の知見収集パイプラインで、エラーを出さないまま壊れていた故障を、修正コミットと調査記録から数え直すと、期間まで言えるものが8件ありました。一番長いのは約4か月（日次バックアップが一度も動いていなかった）、一番長く「鳴っていたのに気づかなかった」のは28日間（評価の前段フィルタが毎日約800行の警告を出しながら素通りしていた）です。 8件に共通していたのは、「止まらない設計」「起動した記録」「exit 0」が、そのまま**「気づかない」の原因**になっていたことでした。 この記事では、8件の一覧（何...",
+   "score": 0,
+   "added": "2026-11-02"
   }
  ],
  "posts": [
@@ -467,14 +700,76 @@
     "ライブラリの検証漏れなどの連鎖がセキュリティ境界を突破した事例です。\n\n詳しくはこちら\nhttps://www.parameter.ai/labs/we-found-a-gap-at-openai"
    ],
    "draft_file": "output/bab49c2dcc46-tweets.json"
+  },
+  {
+   "id": "b38a3b27b0bd",
+   "date": "2026-11-02 01:30",
+   "title": "Stella AI for BizにWordとExcelのエージェント機能が登場",
+   "post": {
+    "title": "Stella AI for BizにWordとExcelのエージェント機能が登場",
+    "slug": "stella-ai-for-biz-word-excel-agents",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000000106.000138218.html",
+    "description": "Stella AI for Bizが「Word Agent」「Excel Agent」の提供を開始。申請書の自動記入や新旧対照表の作成、数式入りExcelの整理など、チャットからの転記作業を不要にする新機能の特徴と実務での活用点を解説します。"
+   },
+   "draft_status": "succeeded",
+   "publish_config": {
+    "wp_status": "draft",
+    "note_publish": false
+   },
+   "deliveries": {
+    "file": {
+     "status": "succeeded",
+     "url": "output/2026-11-02-stella-ai-for-biz-word-excel-agents.md"
+    }
+   },
+   "source_id": "c150bfaad53f",
+   "file": "output/2026-11-02-stella-ai-for-biz-word-excel-agents.md",
+   "tweets": [
+    "「Stella AI for Biz」にWordとExcelを直接編集する新機能が登場。AIの出力を手作業でコピペ・整形する手間をなくし、そのまま業務で使えるファイルとして出力できます。 #生成AI #業務効率化",
+    "「Word Agent」は申請書や社内様式へ直接内容を記入します。情報不足の箇所は「【要記入】」と示して誤情報を防ぐほか、新旧対照表の作成や校閲モードでのコメント挿入にも対応しています。",
+    "「Excel Agent」は崩れた表データの整理やCSV突合を行い、数式が埋め込まれた管理表を作成します。検算済みの集計値だけでなく、複合グラフや印刷範囲の設定まで対応可能です。",
+    "指定様式への転記や集計の手間を減らし、既存の業務フローのままAIを活用できます。なお重要書類は人による最終確認が推奨されます。\n\n詳しくはこちら\nhttps://prtimes.jp/main/html/rd/p/000000106.000138218.html"
+   ],
+   "draft_file": "output/b38a3b27b0bd-tweets.json"
+  },
+  {
+   "id": "82e645b59deb",
+   "date": "2026-11-02 01:31",
+   "title": "Claude Codeの会話履歴は何日で消える？設定優先順位と注意点",
+   "post": {
+    "title": "Claude Codeの会話履歴は何日で消える？設定優先順位と注意点",
+    "slug": "claude-code-cleanupperioddays-precedence",
+    "source_url": "https://zenn.dev/numarn/articles/claude-cleanup-period-days-precedence-handson",
+    "description": "Claude Codeの会話記録が自動削除される日数（既定30日）や設定項目cleanupPeriodDaysの優先順位を解説。設定の配置場所ごとの優先度や、短時間の実行では掃除が走らない仕様、設定ミス時の挙動など実測結果を整理しました。"
+   },
+   "draft_status": "succeeded",
+   "publish_config": {
+    "wp_status": "draft",
+    "note_publish": false
+   },
+   "deliveries": {
+    "file": {
+     "status": "succeeded",
+     "url": "output/2026-11-02-claude-code-cleanupperioddays-precedence.md"
+    }
+   },
+   "source_id": "98adf59cd88b",
+   "file": "output/2026-11-02-claude-code-cleanupperioddays-precedence.md",
+   "tweets": [
+    "Claude Codeの会話履歴が自動削除される日数や仕様をご存知ですか？保持期間の制御や設定の優先順位を理解し、適切なログ管理に役立てましょう。\n#ClaudeCode #AI開発",
+    "履歴は既定で30日（30×24時間）保持された後に自動削除されます。判定基準はテキストの日時ではなくファイルの最終更新時刻です。中身が0バイトの空ファイルは削除されず、1バイト以上書き込まれたファイルのみが対象となります。",
+    "日数はcleanupPeriodDaysで変更でき、起動時オプション--settingsが最優先されます。ただし実行時間が約5.95秒未満だと削除が走らず、数値の型指定を誤ると正常終了コード0のまま削除が停止するため注意が必要です。",
+    "設定は作業フォルダや全体など4か所で指定でき、優先度が高い設定で上書きされます。\n\n詳しくはこちら:\nhttps://zenn.dev/numarn/articles/claude-cleanup-period-days-precedence-handson"
+   ],
+   "draft_file": "output/82e645b59deb-tweets.json"
   }
  ],
  "pseo_done": {},
  "source_order": [
+  "GitHub Trending",
+  "Hacker News",
   "Gemini検索",
   "\"生成AI ツール\" - Google ニュース",
-  "Zennの「AI」のフィード",
-  "GitHub Trending",
-  "Hacker News"
+  "Zennの「AI」のフィード"
  ]
 }

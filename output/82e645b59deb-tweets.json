@@ -1,0 +1,12 @@
+{
+  "post_id": "82e645b59deb",
+  "status": "draft",
+  "title": "Claude Codeの会話履歴は何日で消える？設定優先順位と注意点",
+  "source_url": "https://zenn.dev/numarn/articles/claude-cleanup-period-days-precedence-handson",
+  "tweets": [
+    "Claude Codeの会話履歴が自動削除される日数や仕様をご存知ですか？保持期間の制御や設定の優先順位を理解し、適切なログ管理に役立てましょう。\n#ClaudeCode #AI開発",
+    "履歴は既定で30日（30×24時間）保持された後に自動削除されます。判定基準はテキストの日時ではなくファイルの最終更新時刻です。中身が0バイトの空ファイルは削除されず、1バイト以上書き込まれたファイルのみが対象となります。",
+    "日数はcleanupPeriodDaysで変更でき、起動時オプション--settingsが最優先されます。ただし実行時間が約5.95秒未満だと削除が走らず、数値の型指定を誤ると正常終了コード0のまま削除が停止するため注意が必要です。",
+    "設定は作業フォルダや全体など4か所で指定でき、優先度が高い設定で上書きされます。\n\n詳しくはこちら:\nhttps://zenn.dev/numarn/articles/claude-cleanup-period-days-precedence-handson"
+  ]
+}
