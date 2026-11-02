@@ -1,0 +1,61 @@
+name: video-topic
+
+# スマホのGitHubの画面からテーマを入れる入口。テーマをDiscordの承認依頼にする。
+# 承認は approval-and-video-jobs（10分ごと）が読み、承認されたテーマだけ voiceBox-Pipeline へ渡す。
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: 'テーマ（例: 生成AIの最新ニュース）'
+        required: true
+        type: string
+      urls:
+        description: '参考にする公開URL（https、1行1件・任意）'
+        required: false
+        default: ''
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: content-state-${{ github.ref }}   # approval.yml と同じ。state.json の書き込みを一度に1つにする
+  cancel-in-progress: false
+jobs:
+  request:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12", cache: pip}
+      - run: pip install -r requirements.txt
+      - name: Post the topic for approval
+        env:
+          TOPIC: ${{ inputs.topic }}
+          URLS: ${{ inputs.urls }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_APPROVAL_CHANNEL_ID: ${{ secrets.DISCORD_APPROVAL_CHANNEL_ID }}
+          DISCORD_APPROVER_ID: ${{ secrets.DISCORD_APPROVER_ID }}
+          VIDEO_JOB_DIR: data/video_jobs
+        run: |
+          args=()
+          while IFS= read -r url; do
+            url="$(echo "$url" | xargs)"
+            if [ -n "$url" ]; then args+=(--url "$url"); fi
+          done <<< "$URLS"
+          python -m engine video "$TOPIC" "${args[@]}"
+      - name: Save approval request state
+        env:
+          STATE_BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "content-bot"
+          git config user.email "bot@users.noreply.github.com"
+          if [ -f data/state.json ]; then git add data/state.json; fi
+          if [ -d data/video_jobs ]; then git add data/video_jobs; fi
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "video topic request: $(date +%F-%H%M)"
+          git push origin "HEAD:$STATE_BRANCH"
