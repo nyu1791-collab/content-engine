@@ -1,0 +1,17 @@
+# 成人向け商品の紹介記事（別サイト用）。このファイルでは公開しない（publishers は空のまま）
+# 別サイトに18歳以上の確認画面を作り、別の WordPress を用意してから publishers を有効にする。
+# 実行: CONFIG=config.adult.yaml STATE_PATH=data/adult_state.json python -m engine pseo ...
+niche: 成人向け商品の購入前確認（18歳以上）
+persona: 成人向け商品を購入する前に条件を確認したい18歳以上の人向けに、商品データを事実だけで整理する案内人。性的な描写はしない
+min_chars: 1200
+interval_sec: 5
+sources: []           # pseo では使わない
+posts_per_run: 2
+approval: true        # Discord で「承認 記録ID」と返信されるまで公開しない
+publishers: []        # 別サイトのWordPressを用意するまで空
+wp_status: draft
+note_publish: false
+browser_headless: true
+output_dir: output/adult
+cta: ""
+affiliates: []

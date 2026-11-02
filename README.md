@@ -86,3 +86,13 @@ python -m engine promo data\catalog.csv --publish      # 確認した下書き�
 
 - このリポジトリでの用途: **最新ニュースの収集**（`gemini_search` ソース、research。実在するURLだけ採用）、記事・SNS・告知文（write）
 - GitHub Actions（毎日の自動実行）: リポジトリの Settings → Secrets and variables → Actions → **New repository secret** で `GEMINI_API_KEY` を登録。モデルを変えるなら Variables に `GEMINI_MODEL` 等
+
+## Windowsの専用環境を確認する
+
+このフォルダでPowerShellを開き、次を実行する。確認だけなら接続・導入は行わない。
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\setup.ps1 -CheckOnly
+```
+
+通常の導入は末尾の `-CheckOnly` を外す。既存 `.venv` のPython 3.12以上を再利用するため、PC全体の `python` が3.11でも作り直さない。新規作成時はuvのPython 3.12を優先する。

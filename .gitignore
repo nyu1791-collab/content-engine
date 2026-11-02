@@ -2,6 +2,11 @@
 .venv/
 __pycache__/
 data/note_state.json
+# アフィリエイトの商品データと記録（紹介URLを含むため公開しない）
+data/affiliate_products.csv
+data/adult_products.csv
+data/affiliate_state.json
+data/adult_state.json
 data/browser_profile/
 *.log
 .pytest_cache/

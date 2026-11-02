@@ -1,0 +1,16 @@
+# 通販商品の紹介記事（無限アフィ・確認つき）。使い方は docs/AFFILIATE_PLAN.md
+# 実行: CONFIG=config.affiliate.yaml STATE_PATH=data/affiliate_state.json python -m engine pseo ...
+niche: 通販で買える商品の比較と購入前の確認（Amazon・楽天・Yahoo!ショッピング）
+persona: 通販で買う前に条件を比べたい人向けに、商品データを整理して伝える案内人。体験談や効果の保証は書かない
+min_chars: 1500
+interval_sec: 5
+sources: []           # pseo では使わない
+posts_per_run: 2
+approval: true        # Discord で「承認 記録ID」と返信されるまで公開しない
+publishers: []        # WordPress の設定を入れてから [wordpress] にする（下書きのまま）
+wp_status: draft
+note_publish: false
+browser_headless: true
+output_dir: output/affiliate
+cta: ""
+affiliates: []

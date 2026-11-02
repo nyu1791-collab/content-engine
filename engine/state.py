@@ -1,9 +1,11 @@
-"""既出管理＋キュー。data/state.json 1ファイル（GitHub Actions でコミットして永続化）。"""
+"""既出管理＋キュー。data/state.json 1ファイル（GitHub Actions でコミットして永続化）。
+アフィリエイト用の設定は STATE_PATH で別ファイルにし、記事の記録を混ぜない。"""
 import json
+import os
 from datetime import datetime, timedelta
 from pathlib import Path
 
-PATH = Path("data/state.json")
+PATH = Path(os.getenv("STATE_PATH", "data/state.json"))
 
 
 def load():
