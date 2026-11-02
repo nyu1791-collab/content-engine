@@ -50,11 +50,12 @@ class VideoJobTests(unittest.TestCase):
 
     def test_request_message_asks_for_production_not_publication(self):
         record, call = self.run_video("生成AIの最新ニュース", [], None)
-        content = call.call_args.kwargs["json"]["content"]
+        post = next(c for c in call.call_args_list if c.args[0] == "POST")  # 承認依頼の投稿
+        content = post.kwargs["json"]["content"]
         self.assertIn("動画制作の承認", content)
         self.assertIn("動画制作を始める", content)
         self.assertIn(f"承認 {record['id']}", content)
-        self.assertEqual(call.call_args.kwargs["json"]["allowed_mentions"], {"users": ["222"]})
+        self.assertEqual(post.kwargs["json"]["allowed_mentions"], {"users": ["222"]})
 
     def test_pending_topic_writes_no_job(self):
         record, _ = self.run_video("テーマ", [], None)
@@ -77,6 +78,27 @@ class VideoJobTests(unittest.TestCase):
         record, _ = self.run_video("テーマ", [], "rejected")
         self.assertEqual(record["approval"]["status"], "rejected")
         self.assertFalse(self.jobs.exists())
+
+    def test_discord_message_from_approver_becomes_one_pending_topic(self):
+        messages = [
+            {"id": "m3", "author": {"id": "222"}, "content": "動画 生成AIの最新ニュース https://source.example/a"},
+            {"id": "m2", "author": {"id": "999"}, "content": "動画 他人のテーマ"},
+            {"id": "m1", "author": {"id": "222"}, "content": "ただの雑談"},
+            {"id": "m0", "author": {"id": "222"}, "content": "動画 https://source.example/only-url"},
+        ]
+
+        def fake_request(method, url, **kwargs):
+            return reply(messages) if method == "GET" else reply({"id": "bot-msg"})
+
+        with patch("engine.approval.requests.request", side_effect=fake_request):
+            with patch.object(approval, "decisions", return_value={}):
+                app.do_approve(self.cfg, self.st)
+                app.do_approve(self.cfg, self.st)  # 同じ投稿は二度登録しない
+        topics = [p for p in self.st["posts"] if p.get("kind") == "video"]
+        self.assertEqual([t["topic"] for t in topics], ["生成AIの最新ニュース"])
+        self.assertEqual(topics[0]["urls"], ["https://source.example/a"])
+        self.assertEqual(topics[0]["approval"]["status"], "pending")
+        self.assertIn("m3", self.st["topic_seen"])
 
     def test_waiting_topic_body_is_kept_for_the_approval_message(self):
         record, _ = self.run_video("テーマ", ["https://source.example/a"], None)

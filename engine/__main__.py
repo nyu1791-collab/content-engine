@@ -248,8 +248,31 @@ def do_write(c, st, n):
         time.sleep(c.get("interval_sec", 5))
 
 
+def take_topic_requests(st):
+    """Discordで承認者が書いた「動画 テーマ」を、承認待ちの動画テーマにする。同じ投稿は一度だけ。"""
+    from . import approval
+    seen = st.setdefault("topic_seen", [])
+    try:
+        found = approval.topic_requests(set(seen))
+    except Exception as e:  # Discord が読めなくても、既存の承認処理は続ける
+        print(f"  テーマの読み取り失敗: {e}")
+        return
+    for item in found:
+        seen.append(item["message_id"])
+        try:
+            record = video_jobs.new_request(item["topic"], item["urls"])
+        except ValueError as e:
+            print(f"  テーマを受け付けませんでした: {e}")
+            continue
+        record["approval"] = {"status": "pending"}
+        st["posts"].append(record)
+        print(f"  Discordの依頼からテーマを登録: {record['id']} {record['topic']}")
+    st["topic_seen"] = seen[-200:]
+
+
 def do_approve(c, st):
     from . import approval
+    take_topic_requests(st)
     waiting = [r for r in st["posts"] if r.get("approval", {}).get("status") == "pending"]
     for record in waiting:
         if "message_id" in record["approval"]:

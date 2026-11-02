@@ -56,3 +56,24 @@ def decisions(waiting_ids):
         if match and match.group(2) in waiting_ids and match.group(2) not in decided:
             decided[match.group(2)] = "approved" if match.group(1) == "承認" else "rejected"
     return decided
+
+
+TOPIC = re.compile(r"^動画[ 　]+(.+)$")
+URL = re.compile(r"https://\S+")
+
+
+def topic_requests(seen_ids):
+    """承認者本人が書いた「動画 テーマ（https://…）」を古い順に読む。seen_ids にあるメッセージは除く。"""
+    values = _settings()
+    messages = _call("GET", "messages", values, params={"limit": 100})
+    found = []
+    for message in reversed(messages):  # Discord は新しい順で返す
+        content = message.get("content", "").strip()
+        if message.get("author", {}).get("id") != values["DISCORD_APPROVER_ID"] or message["id"] in seen_ids:
+            continue
+        match = TOPIC.match(content.splitlines()[0]) if content else None
+        if not match:
+            continue
+        topic = " ".join(URL.sub("", match.group(1)).split())
+        found.append({"message_id": message["id"], "topic": topic, "urls": URL.findall(content)})
+    return found
