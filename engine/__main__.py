@@ -3,6 +3,7 @@
   write  [-n 2]        キュー上位を記事化して公開（config の publishers へ）
   run    [-n 2]        collect + write（毎日これ1本）
   approve              承認依頼をDiscordへ送り、承認された記事だけ公開
+  video "テーマ" [--url URL]   テーマを承認依頼にし、承認されたら動画制作ジョブを作る（制作は voiceBox-Pipeline）
   pseo data/pseo.csv [--prompt pseo_sales]   CSVの各行から記事を量産（プログラマティックSEO）
   login note|x         note / X のログイン状態を保存（browser-use 投稿用・一度だけ）
   promo catalog.csv [--publish]   販売中作品の多言語告知（翻訳作品の海外向け等）
@@ -21,7 +22,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from . import sources, state, writer  # noqa: E402
+from . import sources, state, video_jobs, writer  # noqa: E402
 from .publishers import files, UncertainDelivery  # noqa: E402
 
 
@@ -268,9 +269,21 @@ def do_approve(c, st):
             continue
         record["approval"].update(status=status, decided=datetime.now().strftime("%Y-%m-%d %H:%M"))
         state.save(st)
-        if status == "approved":
+        if status == "approved" and record.get("kind") == "video":
+            video_jobs.write_job(record)  # 動画テーマは公開せず、制作ジョブだけ作る
+            print(f"  動画制作ジョブを作成: {record['id']} {record['topic']}")
+        elif status == "approved":
             _deliver(record, c, st)
     print(f"承認待ち {len(asked) - len(decided)}件 / 今回の判定 {len(decided)}件")
+
+
+def do_video(c, st, topic, urls):
+    record = video_jobs.new_request(topic, urls)
+    record["approval"] = {"status": "pending"}
+    st["posts"].append(record)
+    state.save(st)
+    print(f"動画テーマを承認依頼に登録: {record['id']} {record['topic']}")
+    do_approve(c, st)
 
 
 def main():
@@ -288,6 +301,8 @@ def main():
     p.add_argument("--every-days", type=nonnegative_int, default=7); p.add_argument("--publish", action="store_true")
     sp.add_parser("llm-check", help="Gemini 等の接続確認")
     sp.add_parser("approve", help="Discordで承認依頼を送り、承認された記事だけ公開")
+    p = sp.add_parser("video", help="テーマをDiscordで承認依頼し、承認されたら動画制作ジョブを作る")
+    p.add_argument("topic"); p.add_argument("--url", action="append", default=[], help="参考にする公開URL（https）")
     sp.add_parser("status")
     a = ap.parse_args()
     if a.cmd == "llm-check":
@@ -330,6 +345,8 @@ def main():
             state.save(st)
     if a.cmd == "approve":
         do_approve(c, st)
+    if a.cmd == "video":
+        do_video(c, st, a.topic, a.url)
     if a.cmd == "retry":
         do_retry(c, st, a.post_id, a.n)
     if a.cmd == "login":

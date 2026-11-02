@@ -35,9 +35,10 @@ KEEP_POST_KEYS = ("title", "slug", "source_url", "description")
 
 def _compact(record):
     """配信が全部済んだ記録から本文を外す（本文は output/ にある）。毎日コミットされる state.json の肥大化を防ぐ。
-    再試行が要る記録は本文を残す。"""
+    再試行が要る記録と、承認待ちの記録は本文を残す（承認依頼の本文に使う）。"""
     post = record.get("post")
-    if isinstance(post, dict) and "body" in post and not needs_attention(record):
+    waiting = record.get("approval", {}).get("status") == "pending"
+    if isinstance(post, dict) and "body" in post and not needs_attention(record) and not waiting:
         record["post"] = {k: post[k] for k in KEEP_POST_KEYS if k in post}
 
 

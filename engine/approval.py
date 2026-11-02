@@ -30,11 +30,13 @@ def request(record):
     values = _settings()
     post = record["post"]
     approver = values["DISCORD_APPROVER_ID"]
-    text = (f"<@{approver}> 【公開の承認】{post['title']}\n"
+    video = record.get("kind") == "video"
+    label, action = ("動画制作の承認", "動画制作を始める") if video else ("公開の承認", "公開する")
+    text = (f"<@{approver}> 【{label}】{post['title']}\n"
             f"記録ID: {record['id']}\n"
             f"出典: {post.get('source_url', '')}\n"
             f"冒頭: {post.get('body', '')[:300]}\n\n"
-            f"公開するなら「承認 {record['id']}」、やめるなら「却下 {record['id']}」と返信してください。")
+            f"{action}なら「承認 {record['id']}」、やめるなら「却下 {record['id']}」と返信してください。")
     # 承認者本人だけにメンションする（携帯の通知が届くように。他の人は呼ばない）
     message = _call("POST", "messages", values, json={"content": text[:1900], "allowed_mentions": {"users": [approver]}})
     return message["id"]

@@ -8,7 +8,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: daily-content-${{ github.ref }}
+  group: content-state-${{ github.ref }}   # approval.yml と同じ。state.json の書き込みを一度に1つにする
   cancel-in-progress: false
 jobs:
   run:
