@@ -67,7 +67,35 @@
   "4a81f9c8fb4c": "2026-11-02",
   "9607e45c4952": "2026-11-02",
   "f53fda008733": "2026-11-02",
-  "6a250085de15": "2026-11-02"
+  "6a250085de15": "2026-11-02",
+  "03d8a667c8cc": "2026-11-03",
+  "18abe13e1d80": "2026-11-03",
+  "82fe53a627b5": "2026-11-03",
+  "16541570af2c": "2026-11-03",
+  "f3ff53581488": "2026-11-03",
+  "76a267c59bdc": "2026-11-03",
+  "3a0b0b37a392": "2026-11-03",
+  "d8699931bd0d": "2026-11-03",
+  "971dc80d2487": "2026-11-03",
+  "acdf7e3bc1bf": "2026-11-03",
+  "a217982385ec": "2026-11-03",
+  "72dcf13a79ff": "2026-11-03",
+  "65c11e25331f": "2026-11-03",
+  "a10e27b88162": "2026-11-03",
+  "a502ab00921d": "2026-11-03",
+  "d94b5437b873": "2026-11-03",
+  "2f8c5bf6be2f": "2026-11-03",
+  "9dea43250142": "2026-11-03",
+  "787317c0275e": "2026-11-03",
+  "ec0f034db6b7": "2026-11-03",
+  "74848808399e": "2026-11-03",
+  "14d8f064d737": "2026-11-03",
+  "6a8114095e57": "2026-11-03",
+  "9d75410b7476": "2026-11-03",
+  "167196021f8d": "2026-11-03",
+  "2aedd933953a": "2026-11-03",
+  "7f412363fac2": "2026-11-03",
+  "fe3df01f1970": "2026-11-03"
  },
  "queue": [
   {
@@ -152,6 +180,24 @@
    "added": "2026-11-01"
   },
   {
+   "id": "76a267c59bdc",
+   "source": "GitHub Trending",
+   "title": "D4Vinci/Scrapling",
+   "url": "https://github.com/D4Vinci/Scrapling",
+   "summary": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here:https://discord.gg/EMgGbDceNQand follow here for daily tips and tricks:https://x.com/Scrapling_dev (+706 stars today)",
+   "score": 706,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "d8699931bd0d",
+   "source": "GitHub Trending",
+   "title": "JustVugg/colibri",
+   "url": "https://github.com/JustVugg/colibri",
+   "summary": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 (+675 stars today)",
+   "score": 675,
+   "added": "2026-11-03"
+  },
+  {
    "id": "c3257d531a3c",
    "source": "GitHub Trending",
    "title": "obra/superpowers",
@@ -177,6 +223,15 @@
    "summary": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio. (+583 stars today)",
    "score": 583,
    "added": "2026-11-01"
+  },
+  {
+   "id": "3a0b0b37a392",
+   "source": "GitHub Trending",
+   "title": "hyprwm/Hyprland",
+   "url": "https://github.com/hyprwm/Hyprland",
+   "summary": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks. (+509 stars today)",
+   "score": 509,
+   "added": "2026-11-03"
   },
   {
    "id": "af11c4a85f03",
@@ -215,13 +270,13 @@
    "added": "2026-11-02"
   },
   {
-   "id": "00e1179c1314",
-   "source": "Hacker News",
-   "title": "The AI cost of JavaScript frameworks",
-   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
-   "summary": "HN 294 points, 228 comments",
-   "score": 294,
-   "added": "2026-11-02"
+   "id": "971dc80d2487",
+   "source": "GitHub Trending",
+   "title": "karpathy/nanochat",
+   "url": "https://github.com/karpathy/nanochat",
+   "summary": "The best ChatGPT that $100 can buy. (+321 stars today)",
+   "score": 321,
+   "added": "2026-11-03"
   },
   {
    "id": "586dee9a79c1",
@@ -231,6 +286,15 @@
    "summary": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently. (+242 stars today)",
    "score": 242,
    "added": "2026-11-02"
+  },
+  {
+   "id": "acdf7e3bc1bf",
+   "source": "Hacker News",
+   "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+   "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+   "summary": "HN 236 points, 173 comments",
+   "score": 236,
+   "added": "2026-11-03"
   },
   {
    "id": "8b95ff6d8b4e",
@@ -636,6 +700,204 @@
    "summary": "はじめに 結論: Claude Code に作らせ・直させながら毎日無人で回している自作の知見収集パイプラインで、エラーを出さないまま壊れていた故障を、修正コミットと調査記録から数え直すと、期間まで言えるものが8件ありました。一番長いのは約4か月（日次バックアップが一度も動いていなかった）、一番長く「鳴っていたのに気づかなかった」のは28日間（評価の前段フィルタが毎日約800行の警告を出しながら素通りしていた）です。 8件に共通していたのは、「止まらない設計」「起動した記録」「exit 0」が、そのまま**「気づかない」の原因**になっていたことでした。 この記事では、8件の一覧（何...",
    "score": 0,
    "added": "2026-11-02"
+  },
+  {
+   "id": "03d8a667c8cc",
+   "source": "Gemini検索",
+   "title": "SHIFT AI、経営者向け新サービス「SHIFT AI EXECUTIVE」を提供開始。経営者主導の「AI経営」を支援",
+   "url": "https://prtimes.jp/main/html/rd/p/000000308.000116644.html",
+   "summary": "株式会社SHIFT AIが、経営者主導で組織変革を推進する新サービス「SHIFT AI EXECUTIVE」の提供を開始しました。社長への業務集中や判断の属人化解消に向けてAI導入から定着までを伴走支援し、企業全体の業務効率化と持続的な成長を目指します。",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "18abe13e1d80",
+   "source": "Gemini検索",
+   "title": "SBI証券とRidge-i、共同開発の生成AIチャットサービスを2026年10月30日より提供開始～生成AIを活用した一貫した顧客サポート体験を提供",
+   "url": "https://www.sbisec.co.jp/ETGate/?OutSide=on&_ControlID=WPLETmgR001Control&_PageID=WPLETmgR001Mdtl30&_ActionID=DefaultAID&_DataStoreID=DSWPLETmgR001Control&getFlg=on&burl=search_home&cat1=home&cat2=corporate&dir=corporate&file=irpress/home_prestory261102_021530.html",
+   "summary": "SBI証券とRidge-iは、共同開発した生成AIチャットエンジンの提供開始を発表しました。エラー画面に応じた適切な解決策の自動提示や有人対応への要約引き継ぎを実現し、顧客サポート業務の高度化と効率化を図ります。",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "82fe53a627b5",
+   "source": "Gemini検索",
+   "title": "全自動ブラウザ操作AI「Cowork」、操作中のページをハイライト表示",
+   "url": "https://prtimes.jp/main/html/rd/p/000000435.000073671.html",
+   "summary": "ナレッジセンスは、Web業務を自動化する全自動ブラウザ操作AI「Cowork」において新機能の提供を発表しました。操作中の画面領域を視覚的に明示することで運用の安全性を高め、PC上でのルーティンワーク効率化を加速させます。",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "16541570af2c",
+   "source": "Gemini検索",
+   "title": "自動生成AI技術を組み込む、遠隔画像診断支援サービスの全国展開でViewSend ICTとムトウが、業務提携。医療機関間連携とAI・自動化の社会実装を加速します。",
+   "url": "https://prtimes.jp/main/html/rd/p/000000016.000126973.html",
+   "summary": "ViewSend ICTとムトウは、自動生成AI技術を組み込んだ遠隔画像診断支援サービスの全国展開に向けた業務提携を発表しました。読影所見作成や請求管理などのAI自動化を推進し、医師不足への対応と病院運営の業務効率化を目指します。",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "a217982385ec",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "生成AI 業務変革カオスマップを公開！～実務を再定義する「自律・自動化・専門特化」、200製品以上の最新ソリューションを集約～ - AIsmiley",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOR0RBalpBQ1lwLXJkLUh6V09IQzRXeHMtTDN3VmVDc05TWjdSYlFfSmhaQXo3TkU1Z0Z0RlZiTTUxcDhRaF9rS3RENUNKcWkyZlNZQXFac2ZFejRhaXJuWmtZaU1mODBFNnNBUGk4N0t0ZkdoblRLQXVpcFhKMFV4X1YwOA?oc=5",
+   "summary": "生成AI 業務変革カオスマップを公開！～実務を再定義する「自律・自動化・専門特化」、200製品以上の最新ソリューションを集約～ AIsmiley",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "72dcf13a79ff",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "会社が把握していないAIツールも Tooの社内Mac約5割でAI関連の活動を確認（電波タイムズ） - Yahoo!ニュース",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96QmRob0NlY1JkX2N1WlNjajNRSWtVWkE0UmJBNmt6LXd1U0tyQXdRUVoxYzlYVjJRcDNZbURrbEgzNUl4aUdTc0J0LTBvamZzZ2ZjQ1VPNlhRYllXRWJ6SGF2Q2NRX0FLUXl2akdXTU52ZkN4QUtwcllYYzhDUDA?oc=5",
+   "summary": "会社が把握していないAIツールも Tooの社内Mac約5割でAI関連の活動を確認（電波タイムズ） Yahoo!ニュース",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "65c11e25331f",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "主要なAIツールであるClaudeが画像を生成できない理由。 - Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTXlaZ3gwMThVOUVIQ015UnJXVkFWOUs2TXNpWW1tcVdnbHh0Z3JaeUNRSFhqTzhCallZYXNpVm45bDJ1Y0NOaDJJUnlRRVBDRVJWWUxqckZ2ZEhBc1gtTUZYZktfLXJoRmdzUk1TYW5hNVFVT045QWdaakM3ME4zZ0xn?oc=5",
+   "summary": "主要なAIツールであるClaudeが画像を生成できない理由。 Vietnam.vn",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "a10e27b88162",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "【生成AIの事例トレンド】「試用」から「本格的な組み込み」のフェーズへ - ThinkIT",
+   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBfbXZGWFI0bXNicThEWU9mbUZQSElmalpVbjJaUlRpdms1ajFJM3pQZU9fNnZxU2IxbjhRWXVJb2NoRDUwdFdUcnlzZw?oc=5",
+   "summary": "【生成AIの事例トレンド】「試用」から「本格的な組み込み」のフェーズへ ThinkIT",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "a502ab00921d",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "ON1、ローカルAIツールを搭載したPhoto RAW 2027をMacとWindows向けに提供 - Unite.AI",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcVl2VHl2MDNvWHdGMXJ5Yl9zMWFVVmVtMGZxSWdDa2M0UG0tN0R0SW1hdmdiNldoTTk5Sm5STjkyMkRIcXV6X3h3bUcyb3RJTUtPLUJ1dHQ3ZHItNEtSbW5jUS1ZVElCb1NWZktiSk84cjhKcTc3ZmZpRlBPUWI0amItTk1RWC1ZZlFtYzE4eDRXV1U?oc=5",
+   "summary": "ON1、ローカルAIツールを搭載したPhoto RAW 2027をMacとWindows向けに提供 Unite.AI",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "d94b5437b873",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "会社が知らないAI利用も判明 Tooが社内Macを調べて見えた生成AI管理の課題 - 電波タイムズ",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB2elJLWUtnMHdtRVRhYzJVV0hPQWNmUjFESGctVS1icjcwN2JvelFueEx1cnRTYWt3TS1DVEt4QlJKYThBWjNsUTNIUFFKS1JScjN3eGNvSXVqZ1FlNFE?oc=5",
+   "summary": "会社が知らないAI利用も判明 Tooが社内Macを調べて見えた生成AI管理の課題 電波タイムズ",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "2f8c5bf6be2f",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "【生成AI活用の次段階】「導入した」だけでは成果が出ない、企業に問われる実装力 - ThinkIT",
+   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9OdzVrYUZPMkM0aFNVX1YzdUwwTno3cFhYUnFvOU9pX0pJb3ZKX0JYaU1JdjhQTWtES1dzT2V6NVZJTWFQN2ZZdjJQVQ?oc=5",
+   "summary": "【生成AI活用の次段階】「導入した」だけでは成果が出ない、企業に問われる実装力 ThinkIT",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "9dea43250142",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "AI時代の新人教育 18社の試行錯誤 - 日経クロステック",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1CMmFDY3NnRVpfTTNuYXlzYmNOOWM0THhuVWpmeDZFV3BDVFU2OXVDTlNVYUNnMDZzYzdTTjlYZWJXNldMUzdqc0EtckFjMzhVOEFOUHctS29XRWVvZkdR?oc=5",
+   "summary": "AI時代の新人教育 18社の試行錯誤 日経クロステック",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "787317c0275e",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIの定期タスクを止めずに回す：使用量の上限・モデルの使い分け・時間の分散・見張り役",
+   "url": "https://zenn.dev/shoyomayabot/articles/keep-scheduled-ai-tasks-running",
+   "summary": "AIエージェントには、決まった時間に仕事をさせる「スケジュールタスク」を設定できます。毎朝のニュースまとめ、毎週のレポート、記事の投稿などです。 便利な反面、数が増えると困ったことが起きます。気づいたら止まっている。朝に失敗したのに、夜まで誰も気づかない。使用量の上限に当たって、まとめて失敗する。 この記事では、AIの定期タスクを止めずに回すための工夫を4つ紹介します。 使用量の上限を知る モデルを使い分ける 実行時間を分散させる 見張り役のタスクを置く 例はClaudeのスケジュールタスクですが、考え方は他のAIサービスでも同じです。 1. 使用量の上限を知る AIのサブスクリ...",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "ec0f034db6b7",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIコーディングエージェント向け検出器「impeccable」で自分のHTMLを検査したら94件の指摘が出た",
+   "url": "https://zenn.dev/matsushima_a/articles/day-034-impeccable-detect-contrast",
+   "summary": "要約 海外AIネタ100日チャレンジのDay 034。GitHub TrendingのJavaScript/TypeScriptランキングで急伸していたpbakaus/impeccable(Apache-2.0)を試した。 impeccableは、AIコーディングエージェントが生成するUIに特有の「いかにもAI感(AIスロップ)」なデザインパターンを、62個の決定論的なルールでLLM・APIキーなしに検出するCLIツール。 本チャレンジ自身が毎日作っているX投稿用シェアカードHTML(posts/cards/day-NNN.html、31枚)とその土台のテンプレートに対してimpe...",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "74848808399e",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIエージェントの購入委任をRubyで扱う — AP2対応SDK v1.0.0を公開しました",
+   "url": "https://zenn.dev/ccq/articles/6ca97030e6c8fd",
+   "summary": "AIエージェントがユーザーの代わりに商品を購入する場合、販売者はどうやって「このAgentには、その商品を買う権限がある」と確認すればよいのでしょうか。 この課題に取り組む仕組みの一つが、AP2（Agentic Payment Protocol）です。 AP2のCheckout MandateをRubyで扱うOSS、ap2_mandate_verifierのv1.0.0を公開しました。 以前の記事では、v0.1.0を使い、正常・改ざん・期限切れの3ケースで「購入委任を検証する」ところを紹介しました。 今回は、そこから広がった発行 → 提示 → 検証 → Checkout Receipt確...",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "14d8f064d737",
+   "source": "Zennの「AI」のフィード",
+   "title": "EVM simulationが成功しても止める：AIエージェントのALLOW・WARN・BLOCK設計",
+   "url": "https://zenn.dev/rinku/articles/evm-simulation-policy-decisions",
+   "summary": "EVMトランザクションを組み立てるエージェントでは、送信前に「callが成功するか」と「アプリの方針として進めてよいか」を分けて扱う必要があります。 TxGuardの判定層を使って、同じsimulation成功でもALLOW・WARN・BLOCKが変わる例をローカルで再現します。対象は、すでにEVM callを作っているTypeScript開発者です。ウォレット接続や送信は行いません。 この記事では、TxGuardの判定層とSDKの動作をローカルで検証しています。公開APIの稼働、SDKのnpm公開、顧客利用や収益は今回確認していません。以下の出力は合成fixtureであり、実際のチェー...",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "6a8114095e57",
+   "source": "Zennの「AI」のフィード",
+   "title": "三人将棋では「駒得は正義」が通用しない  ―― 【出る杭は打たれる】",
+   "url": "https://zenn.dev/mataasobo/articles/58c207cd3de160",
+   "summary": "自作の三人将棋で、AlphaZero 方式で学習させたAI2人と対局しました。 受け続けて粘ったら持ち駒が19枚まで増えましたが、負けました。 気になってデータを調べると、三人将棋では、持ち駒は5枚を超えると持っているだけで損になっていました。 三人将棋とAI 9×9の盤で、青・赤・緑の3人が指します。玉を取られた人は脱落し、最後に残った1人が勝ちです。取った駒は持ち駒にできます。 AIは自己対局だけで学習させたもので、ブラウザの中で動きます。 遊べるページ：https://mataasobo.com/shogi3/shogi3.html 持ち駒を1枚足してみる AIどうしの...",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "9d75410b7476",
+   "source": "Zennの「AI」のフィード",
+   "title": "コードレビューより設計レビュー",
+   "url": "https://zenn.dev/tanashun/articles/review-before-ai-writes",
+   "summary": "AI が書いた PR を、人はどこまで読むべきか。最近、「コードを読まずにマージする」という話をよく見かけます。 私は、AI と開発するなら、人のレビューの重心を、コードレビューから設計レビューに移すのがよいと考えています。AI が書く前に設計レビューをしておけば、コードレビューで人が読むのは、1 点だけで済みます。「要件に無いものが、AI の判断で足されていないか」です。 開発部長として、チームでこの形にしています。この記事では、その理由とやり方を紹介します。 「読まずにマージ」の議論と、どこが違うか 「コードを読まずにマージする」という議論の多くは、コードレビューのうち、どこを人...",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "167196021f8d",
+   "source": "Zennの「AI」のフィード",
+   "title": "Geminiのカスタムアシスタント「Gem」から「スキル」への移行入門",
+   "url": "https://zenn.dev/shangyuan/articles/bdaead308019e0",
+   "summary": "概要 / 目的 GeminiのGemを、これまで愛用してきた方なら、すでにこんな注意書きを見たことがあるはずです。 個人アカウントなら、有料・無料プラン限らず、2026年11月17日に、 組織向けのアカウントなら、企業向けは2027年3月、教育向けは2027年6月以降に順次移行となります。 いままでGemで作っていたものを、今後はスキルで作る必要があります。 この記事では、これまでGeminiの機能として活用されてきたカスタム指示機能（Gem）から、新しく「スキル」システムへの移行を踏まえ、独自の「スキル」を作成する方向けの導入手順をまとめています。 達成できたこと: Gem...",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "2aedd933953a",
+   "source": "Zennの「AI」のフィード",
+   "title": "Claude CodeのPreToolUseフックで、AIに「やらせない」を仕組みにする",
+   "url": "https://zenn.dev/atsushi_apps/articles/claude-code-pretooluse-hook",
+   "summary": "iPhoneアプリを一人で作っている Atsushi です。Claude Code のセッションを十数本、同じ Mac で並べて動かしています（セッションを「部署」に分ける話）。 AI に守ってほしい決まりは、CLAUDE.md に書いています。でも、決まりは忘れられることがあります。会話が長くなって要約されると、細かい決まりが抜け落ちるからです。 そこで、どうしても守ってほしい決まりは、Claude Code の PreToolUse フックで仕組みにしています。この記事では、フックの作り方と、実際に使っているフックを例に、作るときのコツを紹介します。 PreToolUse フック...",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "7f412363fac2",
+   "source": "Zennの「AI」のフィード",
+   "title": "Claude Code の作業ディレクトリ外の書き込み禁止は Bash・PowerShell に効かない：Windows の実測と止め方",
+   "url": "https://zenn.dev/tamao825/articles/claude-code-block-writes-outside-bash-powershell",
+   "summary": "Claude Code 2.1.314 で入った permissions.blockWritesOutsideWorkingDirectories を true にしても、Windows の 2.1.316 では Bash の echo … >・cp と PowerShell の Set-Content・> で作業フォルダの外にファイルができました。止まったのは Write・Edit・NotebookEdit だけです。逆に、作業フォルダの中のファイルが、パスの大文字小文字の違いだけで「外」と判定されて拒否されることもあります。 ! この記事の答え（Windows 11・2....",
+   "score": 0,
+   "added": "2026-11-03"
+  },
+  {
+   "id": "fe3df01f1970",
+   "source": "Zennの「AI」のフィード",
+   "title": "robots.txtで「検索はOK、AI学習はNG」を書き分ける：__usage_ai-trainingの設計を読む",
+   "url": "https://zenn.dev/dgtlchika/articles/41bf9f94396ecb",
+   "summary": "はじめに 「検索には載せたい。でもAIの学習には使ってほしくない」。robots.txtでこれを書こうとして、ボット名を延々と追記し続けることに疲れていました。 2026年10月末、robots.txtに「AI学習には使わないで」を書く共通の名前 __usage_ai-training が、IETFの個人提出ドラフトとして出されました。この記事では書き方そのものより、なぜこういう設計になったのかを自分なりに読み解きます。読み終えると、次の3点が説明できるようになるはずです。 ボット名指定と何が違うのか（取得と利用の分離） なぜ User-agent: * が効かないのか 今の時点で...",
+   "score": 0,
+   "added": "2026-11-03"
   }
  ],
  "posts": [
@@ -762,15 +1024,77 @@
     "設定は作業フォルダや全体など4か所で指定でき、優先度が高い設定で上書きされます。\n\n詳しくはこちら:\nhttps://zenn.dev/numarn/articles/claude-cleanup-period-days-precedence-handson"
    ],
    "draft_file": "output/82e645b59deb-tweets.json"
+  },
+  {
+   "id": "96841055fb41",
+   "date": "2026-11-03 03:30",
+   "title": "agent-desktop解説：AIが画面要素を直接操作するCLIツール",
+   "post": {
+    "title": "agent-desktop解説：AIが画面要素を直接操作するCLIツール",
+    "slug": "vercel-labs-agent-desktop-guide",
+    "source_url": "https://github.com/vercel-labs/agent-desktop",
+    "description": "Vercel Labsが公開したOSS「agent-desktop」は、OSのアクセシビリティツリーを介してAIエージェントがデスクトップアプリを操作できるCLIツールです。画像認識を使わない仕組みや導入方法、コマンド例を整理して解説します。"
+   },
+   "draft_status": "succeeded",
+   "publish_config": {
+    "wp_status": "draft",
+    "note_publish": false
+   },
+   "deliveries": {
+    "file": {
+     "status": "succeeded",
+     "url": "output/2026-11-03-vercel-labs-agent-desktop-guide.md"
+    }
+   },
+   "source_id": "f3ff53581488",
+   "file": "output/2026-11-03-vercel-labs-agent-desktop-guide.md",
+   "tweets": [
+    "Vercel Labs公開の「agent-desktop」は、AIが画像認識ではなくOSのUI構造を読み取ってPCアプリを操作するCLIツールです。座標ズレのない確実なデスクトップ操作を自動化したい人向けに注目されています。 #AIエージェント #開発",
+    "最大の特徴は、OSのアクセシビリティツリーから要素ごとの参照ID（ref）を取得して操作する点です。画面の状態をJSON形式で取得し、IDを指定してクリックや入力を行います。デフォルトはヘッドレス動作のため、マウスを動かさずに操作が可能です。",
+    "コマンド実行結果は成否やエラー詳細が定型JSONで出力され、リトライ可否や対処提案も含まれるためLLMと連携しやすい設計です。macOS、Windows、Linuxに対応し、アプリ管理や入力など実質56種類のコマンドが即座に利用可能です。",
+    "npmから導入可能で、「状態取得→ref指定操作→確認」の3ステップで動作します。UI構造に基づき安定して動くエージェント開発に役立ちます。\n\n詳しくはこちら\nhttps://github.com/vercel-labs/agent-desktop"
+   ],
+   "draft_file": "output/96841055fb41-tweets.json"
+  },
+  {
+   "id": "8e7cb50a9381",
+   "date": "2026-11-03 03:31",
+   "title": "AIでJSフレームワークを実装するコスト差とは？検証結果を解説",
+   "post": {
+    "title": "AIでJSフレームワークを実装するコスト差とは？検証結果を解説",
+    "slug": "ai-cost-of-javascript-frameworks",
+    "source_url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+    "description": "AIエージェントに同一仕様のWebアプリを作らせると、フレームワークごとにAPIコストはどう変わるのか。Nolan Lawson氏によるベンチマーク結果を基に、Hono+htmxやAstro、Next.jsなどの費用差と注意点を解説します。"
+   },
+   "draft_status": "succeeded",
+   "publish_config": {
+    "wp_status": "draft",
+    "note_publish": false
+   },
+   "deliveries": {
+    "file": {
+     "status": "succeeded",
+     "url": "output/2026-11-03-ai-cost-of-javascript-frameworks.md"
+    }
+   },
+   "source_id": "00e1179c1314",
+   "file": "output/2026-11-03-ai-cost-of-javascript-frameworks.md",
+   "tweets": [
+    "AIに同一仕様のWebアプリを作らせたところ、JSフレームワーク間でAPIコストに約1.8倍の差が出ました。AI時代における客観的な技術選定の参考になる検証です。 #JavaScript #生成AI",
+    "Claude Codeでポケモン情報アプリを実装した結果、試行の中央値で最安はHono+htmx（2.67ドル）、最高はAngular（4.97ドル）でした。AstroやNuxtなどシンプルな構成ほど費用が抑えられています。",
+    "コスト差の要因はコード生成量やAIの事前知識の差です。SvelteKitのように外部ドキュメントの追加読み込みが必要だったり、事前知識が少なくリポジトリ調査が走るフレームワークはトークン消費が増加しました。",
+    "AI開発では、モデルの学習データの鮮度やコードの複雑さを踏まえた選定が重要になります。\n\n詳しくはこちら: https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+   ],
+   "draft_file": "output/8e7cb50a9381-tweets.json"
   }
  ],
  "pseo_done": {},
  "source_order": [
-  "GitHub Trending",
-  "Hacker News",
   "Gemini検索",
   "\"生成AI ツール\" - Google ニュース",
-  "Zennの「AI」のフィード"
+  "Zennの「AI」のフィード",
+  "GitHub Trending",
+  "Hacker News"
  ],
  "topic_seen": []
 }

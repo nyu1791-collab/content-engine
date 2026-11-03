@@ -1,0 +1,12 @@
+{
+  "post_id": "96841055fb41",
+  "status": "draft",
+  "title": "agent-desktop解説：AIが画面要素を直接操作するCLIツール",
+  "source_url": "https://github.com/vercel-labs/agent-desktop",
+  "tweets": [
+    "Vercel Labs公開の「agent-desktop」は、AIが画像認識ではなくOSのUI構造を読み取ってPCアプリを操作するCLIツールです。座標ズレのない確実なデスクトップ操作を自動化したい人向けに注目されています。 #AIエージェント #開発",
+    "最大の特徴は、OSのアクセシビリティツリーから要素ごとの参照ID（ref）を取得して操作する点です。画面の状態をJSON形式で取得し、IDを指定してクリックや入力を行います。デフォルトはヘッドレス動作のため、マウスを動かさずに操作が可能です。",
+    "コマンド実行結果は成否やエラー詳細が定型JSONで出力され、リトライ可否や対処提案も含まれるためLLMと連携しやすい設計です。macOS、Windows、Linuxに対応し、アプリ管理や入力など実質56種類のコマンドが即座に利用可能です。",
+    "npmから導入可能で、「状態取得→ref指定操作→確認」の3ステップで動作します。UI構造に基づき安定して動くエージェント開発に役立ちます。\n\n詳しくはこちら\nhttps://github.com/vercel-labs/agent-desktop"
+  ]
+}

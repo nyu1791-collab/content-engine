@@ -1,0 +1,12 @@
+{
+  "post_id": "8e7cb50a9381",
+  "status": "draft",
+  "title": "AIでJSフレームワークを実装するコスト差とは？検証結果を解説",
+  "source_url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+  "tweets": [
+    "AIに同一仕様のWebアプリを作らせたところ、JSフレームワーク間でAPIコストに約1.8倍の差が出ました。AI時代における客観的な技術選定の参考になる検証です。 #JavaScript #生成AI",
+    "Claude Codeでポケモン情報アプリを実装した結果、試行の中央値で最安はHono+htmx（2.67ドル）、最高はAngular（4.97ドル）でした。AstroやNuxtなどシンプルな構成ほど費用が抑えられています。",
+    "コスト差の要因はコード生成量やAIの事前知識の差です。SvelteKitのように外部ドキュメントの追加読み込みが必要だったり、事前知識が少なくリポジトリ調査が走るフレームワークはトークン消費が増加しました。",
+    "AI開発では、モデルの学習データの鮮度やコードの複雑さを踏まえた選定が重要になります。\n\n詳しくはこちら: https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+  ]
+}
