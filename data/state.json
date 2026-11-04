@@ -95,7 +95,33 @@
   "167196021f8d": "2026-11-03",
   "2aedd933953a": "2026-11-03",
   "7f412363fac2": "2026-11-03",
-  "fe3df01f1970": "2026-11-03"
+  "fe3df01f1970": "2026-11-03",
+  "ef13d17864e7": "2026-11-04",
+  "1e134b75f954": "2026-11-04",
+  "731db601d1a3": "2026-11-04",
+  "77049851f70b": "2026-11-04",
+  "d2f39386e20e": "2026-11-04",
+  "76d7fff5eff1": "2026-11-04",
+  "eeaf9b0a846d": "2026-11-04",
+  "e693c29af620": "2026-11-04",
+  "613a41025d12": "2026-11-04",
+  "f6211dd69522": "2026-11-04",
+  "3893f38c25d1": "2026-11-04",
+  "93c8eb4a1dfb": "2026-11-04",
+  "f676cb614419": "2026-11-04",
+  "6f5e5d83271e": "2026-11-04",
+  "9f427233e6ad": "2026-11-04",
+  "7887988ec568": "2026-11-04",
+  "d7f007d30721": "2026-11-04",
+  "7773eb44e491": "2026-11-04",
+  "d9883d174224": "2026-11-04",
+  "704f75fbe018": "2026-11-04",
+  "66ae7b622930": "2026-11-04",
+  "80a3ff001440": "2026-11-04",
+  "5cd116a0fb14": "2026-11-04",
+  "505cab44cefe": "2026-11-04",
+  "5953c9dd6fa0": "2026-11-04",
+  "1e47d33a9819": "2026-11-04"
  },
  "queue": [
   {
@@ -133,6 +159,15 @@
    "summary": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 (+1092 stars today)",
    "score": 1092,
    "added": "2026-11-01"
+  },
+  {
+   "id": "3893f38c25d1",
+   "source": "Hacker News",
+   "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+   "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+   "summary": "HN 1041 points, 346 comments",
+   "score": 1041,
+   "added": "2026-11-04"
   },
   {
    "id": "bca7775ac9ca",
@@ -189,6 +224,15 @@
    "added": "2026-11-03"
   },
   {
+   "id": "d2f39386e20e",
+   "source": "GitHub Trending",
+   "title": "p-e-w/heretic",
+   "url": "https://github.com/p-e-w/heretic",
+   "summary": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more (+701 stars today)",
+   "score": 701,
+   "added": "2026-11-04"
+  },
+  {
    "id": "d8699931bd0d",
    "source": "GitHub Trending",
    "title": "JustVugg/colibri",
@@ -234,6 +278,15 @@
    "added": "2026-11-03"
   },
   {
+   "id": "eeaf9b0a846d",
+   "source": "GitHub Trending",
+   "title": "floci-io/floci",
+   "url": "https://github.com/floci-io/floci",
+   "summary": "Light, fluffy, and always free - The AWS Local Emulator alternative (+482 stars today)",
+   "score": 482,
+   "added": "2026-11-04"
+  },
+  {
    "id": "af11c4a85f03",
    "source": "GitHub Trending",
    "title": "beenuar/AiSOC",
@@ -241,6 +294,24 @@
    "summary": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue. (+446 stars today)",
    "score": 446,
    "added": "2026-11-02"
+  },
+  {
+   "id": "77049851f70b",
+   "source": "GitHub Trending",
+   "title": "max-sixty/worktrunk",
+   "url": "https://github.com/max-sixty/worktrunk",
+   "summary": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows (+438 stars today)",
+   "score": 438,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "613a41025d12",
+   "source": "GitHub Trending",
+   "title": "anomalyco/hex",
+   "url": "https://github.com/anomalyco/hex",
+   "summary": "Local voice dictation for mac, windows and linux (+410 stars today)",
+   "score": 410,
+   "added": "2026-11-04"
   },
   {
    "id": "7d8c130e960b",
@@ -279,6 +350,15 @@
    "added": "2026-11-03"
   },
   {
+   "id": "93c8eb4a1dfb",
+   "source": "Hacker News",
+   "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+   "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+   "summary": "HN 255 points, 115 comments",
+   "score": 255,
+   "added": "2026-11-04"
+  },
+  {
    "id": "586dee9a79c1",
    "source": "GitHub Trending",
    "title": "FlashML-org/FreeToken",
@@ -288,6 +368,15 @@
    "added": "2026-11-02"
   },
   {
+   "id": "f6211dd69522",
+   "source": "Hacker News",
+   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+   "url": "https://arxiv.org/abs/2605.29713",
+   "summary": "HN 242 points, 38 comments",
+   "score": 242,
+   "added": "2026-11-04"
+  },
+  {
    "id": "acdf7e3bc1bf",
    "source": "Hacker News",
    "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
@@ -295,6 +384,15 @@
    "summary": "HN 236 points, 173 comments",
    "score": 236,
    "added": "2026-11-03"
+  },
+  {
+   "id": "e693c29af620",
+   "source": "GitHub Trending",
+   "title": "Usagi-org/ai-goofish-monitor",
+   "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+   "summary": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。 (+228 stars today)",
+   "score": 228,
+   "added": "2026-11-04"
   },
   {
    "id": "8b95ff6d8b4e",
@@ -333,21 +431,21 @@
    "added": "2026-11-02"
   },
   {
+   "id": "76d7fff5eff1",
+   "source": "GitHub Trending",
+   "title": "spotify/portal-ai-plugins",
+   "url": "https://github.com/spotify/portal-ai-plugins",
+   "summary": " (+91 stars today)",
+   "score": 91,
+   "added": "2026-11-04"
+  },
+  {
    "id": "5b5da3d72e6c",
    "source": "GitHub Trending",
    "title": "0x0funky/agent-sprite-forge",
    "url": "https://github.com/0x0funky/agent-sprite-forge",
    "summary": "Agent Skill for generating 2D sprite sheets and map, transparent PNG frames, and animated GIFs from prompts. (+45 stars today)",
    "score": 45,
-   "added": "2026-11-01"
-  },
-  {
-   "id": "583336ccef38",
-   "source": "Gemini検索",
-   "title": "【新サービス】Ragate株式会社、AI導入オールインワンツール「AX STUDIO」の先行提供を開始",
-   "url": "https://prtimes.jp/main/html/rd/p/000000109.000119123.html",
-   "summary": "Ragate株式会社は、企業のAI導入や業務変革を一貫して支援するオールインワンツール「AX STUDIO」の先行提供を開始しました。生成AI活用のPoCからガバナンス構築、内製化支援までを網羅し、現場の業務改善と効率化を後押しします。",
-   "score": 0,
    "added": "2026-11-01"
   },
   {
@@ -383,15 +481,6 @@
    "title": "スライドの修正を、ひとことで。ChatSenseが新機能を提供予定",
    "url": "https://prtimes.jp/main/html/rd/p/000000432.000073671.html",
    "summary": "株式会社ナレッジセンスは、法人向け生成AI「ChatSense」においてスライド修正を簡単な指示で行える新機能を発表しました。作成済みスライドの修正箇所を直感的に指示・編集可能にすることで、資料作成にかかる工数を削減し業務を効率化します。",
-   "score": 0,
-   "added": "2026-11-01"
-  },
-  {
-   "id": "6ede45fa18cd",
-   "source": "\"生成AI ツール\" - Google ニュース",
-   "title": "最強の無料動画生成AIツール5選【 2026 年版】 - 小豆島町",
-   "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxONlo1SjM5MUw3bXB4Si0zb191bExqZi1xMTExbXA5N2FQTlpLcFM4UnFqRXlWSlZTRm1LOTNNNC1ZUHpJUmM3NGVZdFJUczFhd1VxWVlUdXBlOXhQZHhGdjZ2MWctcFhiZWJtSXl2QTQ2ODFyMUw3MnRZR0tZbnFZTjY2ODJGN0UxNk1QT2FzOGg5cmtYOXF0Y2ZYYXF1Unl5S01FQWVVdzkwdWRSNEtmVzcwUFM2TFppVG9qYmxNWHVxNEx2QVNETkhGVGk1Sldqdlpwb1NfcjUwbTBsTHJKYTdxYWY5N0c5QjFHMGZsVTY4S1FiSkItTXlrdWtIN2hZTWw4d1Y3VWpmaEdwNHFVaHIzdVo1anh3RVpaa1ZfMnE5R3RLWEY3OQ?oc=5",
-   "summary": "最強の無料動画生成AIツール5選【 2026 年版】 小豆島町",
    "score": 0,
    "added": "2026-11-01"
   },
@@ -464,15 +553,6 @@
    "title": "生成AIツール26選を徹底比較！特徴や料金プラン、選び方、注意点を完全網羅 - SHIFT AI",
    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5jamNVWEhWbks0UVk1cXQzSXhsMDBoZkhjLTB6VTFaVXhENnNNMzR3UWxndm80MEZ0dVotZ1RJanpxclNRSmhIdw?oc=5",
    "summary": "生成AIツール26選を徹底比較！特徴や料金プラン、選び方、注意点を完全網羅 SHIFT AI",
-   "score": 0,
-   "added": "2026-11-01"
-  },
-  {
-   "id": "22043b91bcd3",
-   "source": "Zennの「AI」のフィード",
-   "title": "「予約が止まった」理由も「漏えいはなかった」で終わった理由も ― 2つの不正アクセス事例に見る委託先管理の確認ポイント",
-   "url": "https://zenn.dev/taichiendoh/articles/medical-reservation-outage-vendor-case-study",
-   "summary": "これまで、「漏れた」と決める前にやること ― 情報漏洩対応は、まず\"範囲の特定\"から、「システムが止まった」とき、医療機器はどう動き続けるべきか、攻撃する側もAIを使う時代、「現場の継続性」の次は「委託先の継続性」、「委託先の継続性」の、もう一段先という5本を書いてきました。主語は「自組織」→「直接の委託先」→「委託先がさらに依存する基盤」まで広がりましたが、これまではどれも概念・フレームワークが中心でした。今回は、その枠組みに当てはめられる公開事例を2つ並べてみます。 1. フック ― 直接侵入されていない2つの公開事例 事例1：予約システムが止まったケース 2026年10月、産婦...",
    "score": 0,
    "added": "2026-11-01"
   },
@@ -898,6 +978,159 @@
    "summary": "はじめに 「検索には載せたい。でもAIの学習には使ってほしくない」。robots.txtでこれを書こうとして、ボット名を延々と追記し続けることに疲れていました。 2026年10月末、robots.txtに「AI学習には使わないで」を書く共通の名前 __usage_ai-training が、IETFの個人提出ドラフトとして出されました。この記事では書き方そのものより、なぜこういう設計になったのかを自分なりに読み解きます。読み終えると、次の3点が説明できるようになるはずです。 ボット名指定と何が違うのか（取得と利用の分離） なぜ User-agent: * が効かないのか 今の時点で...",
    "score": 0,
    "added": "2026-11-03"
+  },
+  {
+   "id": "ef13d17864e7",
+   "source": "Gemini検索",
+   "title": "アールスリーインスティテュート、生成AIを使った業務改善を支援する「キミノマホロ for 生成AI」をリリース - PR TIMES",
+   "url": "https://prtimes.jp/main/html/rd/p/000000076.000110790.html",
+   "summary": "アールスリーインスティテュートは、生成AIの使いどころの見極めから実装・改善までを一貫して支援する業務改善サービス「キミノマホロ for 生成AI」の提供を開始しました。業務フローに合わせて生成AIを使う範囲を絞り込み、現場で育てながら継続的に活用できる仕組みづくりを支援します。",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "1e134b75f954",
+   "source": "Gemini検索",
+   "title": "生成AIを活用した査定業務自動化システム、ニッセイプラス少短が引受査定への業務適用をスタート - PR TIMES",
+   "url": "https://prtimes.jp/main/html/rd/p/000000664.000012138.html",
+   "summary": "ニッセイプラス少額短期保険とFinatextは、生成AIを活用して保険引受査定を自動化するシステムを構築し、実業務への適用を開始しました。AI推論と静的ロジック、人による確認を組み合わせることでブラックボックス化を防ぎ、金融機関の査定業務効率化を実現します。",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "731db601d1a3",
+   "source": "Gemini検索",
+   "title": "AI活用を次のステージへ！中級者向け生成AI研修2講座を開講【助成金で実質1万円～】",
+   "url": "https://prtimes.jp/main/html/rd/p/000000081.000056645.html",
+   "summary": "CLINKS株式会社は、日常業務の自動化や自社専用AIの設計スキルを学ぶ中級者向け生成AI実践研修2講座を新たに開講しました。社内規定の検索効率化やGoogleツールとの連携による定型作業の自動化を習得させ、組織全体の業務効率化を後押しします。",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "f676cb614419",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "‍‍‍画像生成AIおすすめ比較【2026年】 - Anayasa.gov.tr",
+   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOZ3hWQUxZblFHMnpDMmFURFdBaHRfYW1hRUJXXzNSdHFJSFlVUXgtaDFLSG1ZbzdKajNoamh1cUZSRmUtbWVNOWNmOU1NT1JyRmJ5RGNRUE5wVXFEalVCQ1lXMjJRcDVqbXRYbFZ2Rnd1TWwyN2lCd1o1WTRrR2szclBnM1NESVExTmRuM2ZtNlNlVC04czBmNHpfZTdYaXRlaEFiM2gxVTY5TGhNSndXOS10d2JTTlZHY1RZWHNhSHFWMTV4VmhpWllJN1l2MkRYRUVIWHpscHJCTjZZUTZ1enpsbFhsdjJoVE5pNGhleDRfa0REcnZnVVNsZ2t1RDVzSGpj?oc=5",
+   "summary": "‍‍‍画像生成AIおすすめ比較【2026年】 Anayasa.gov.tr",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "6f5e5d83271e",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "デジタル化・AI導入補助金2026（旧IT導入補助金）とは？最大450万円・補助率1/2〜4/5・採択率44% - 補助金ポータル",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA0ckhwdUEzVWs0c3RZaU5YcER1NzRGT0FGU2U2NGRoYmdYc2UyZjhUMzRvQ0tDbmhwUzNMVzJBb3JYY29Yak91UTZlS0tZN3ZZODQ5TGZxcDBva1FBTVFmTHYxQQ?oc=5",
+   "summary": "デジタル化・AI導入補助金2026（旧IT導入補助金）とは？最大450万円・補助率1/2〜4/5・採択率44% 補助金ポータル",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "9f427233e6ad",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "Binance、偽の採用面接とAIツールの侵害がハッキングにつながった経緯を詳述 - Unite.AI",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZEh2RzRNUXpKWnItZjJUbmNGbEV2WmF6TnhSVHlhcTYwU2N6ak9lbmE2MnpSbUY3SmNaMFQwTU9iTXJ6SWZJcWh1YkkxVEV1ZThHa3RGUnZPQTlTMy1uRVdQZU5oWXhmY19aSEw0eHFtbVZOMEJ3TFpvRmYyU1ktQVZ6VUxmUExIcjdMZHlySUVILWdaZ0E?oc=5",
+   "summary": "Binance、偽の採用面接とAIツールの侵害がハッキングにつながった経緯を詳述 Unite.AI",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "7887988ec568",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "‍‍‍最強の無料動画生成AIツール5選【 2026 年版】 - Kütahya İl Millî Eğitim Müdürlüğü",
+   "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxONlZFTExkVnlJZnV6NHNHVFYwYVAtR3lHcm5FajA1eDlQYTJYU1p2R1E2MWs1X1hWNk1UWDJfQjI2Tnc4Ry1CODJRYTE5S2JfVTNLVEFoVE9PdnlMVmYzNEZOQWpIQTByMlpYRzZ3cmw1amxpZ19uUFJoZ18xOFZDUkdLelNPREJFMzNycmFIYTJ4TFFGX19SMHFnbGprQmNBeWRZTF9ROHJDVjRFc2FOWG1nT050RTA2cWNCQ2VXN2hULW1PXzJRUkpXNjMzQzIwQ2g3U2lYazdDaXVfdkd5d1RRQnk5SzBQbVE0Zm1wMHJsS2ZONXk0bXJjTXpqbGxjOTZfcXJxRDcwNVk3NGstY3hWNjl1VFQ5NElZ?oc=5",
+   "summary": "‍‍‍最強の無料動画生成AIツール5選【 2026 年版】 Kütahya İl Millî Eğitim Müdürlüğü",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "d7f007d30721",
+   "source": "Zennの「AI」のフィード",
+   "title": "DeepEval を「道具」で終わらせない — 継続的な企業 Gold Dataset の作り方",
+   "url": "https://zenn.dev/sscodeai/articles/deepeval-enterprise-gold-dataset",
+   "summary": "対象: LLM アプリの評価を社内に定着させたい開発者・EM・QA 検証環境: Python 3.12 / deepeval 4.3.2 / 決定論的メトリクスは API キーなしで実行 · 2026-11 本記事の立場: 公開 OSS のコードを読み、手元で実際に動かして確認した範囲だけを書いています。ベンダーの意図やロードマップを示すものではありません。 はじめに：Eval ツールを入れただけでは何も変わらない 「Eval を導入しました」という報告の多くは、フレームワークを pip install したという意味でしかありません。テストファイルが 1 本増えて、CI で回る...",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "7773eb44e491",
+   "source": "Zennの「AI」のフィード",
+   "title": "AI倫理の基本 ― 世界の原則はなぜ似ているのか【AIと社会の基本 #2】",
+   "url": "https://zenn.dev/yui10/articles/ai-society-basics-02-ethics",
+   "summary": "! シリーズ「AIと社会の基本」の第2回です。公的機関の資料や論文をもとに整理しています。2026年11月時点の情報です。 この記事の要点 AI倫理は、「AIは何者か」という問いと、「AIをどんな原則で作り、使うか」という問いの両方を扱います。 倫理学には、結果を重んじる功利主義、守るべき義務を重んじる義務論、行う人のあり方を重んじる徳倫理などの考え方があり、AIの問題は一つの理論だけでは答えが出ません。 チューリングテスト、中国語の部屋、フレーム問題、記号接地問題といった古典的な問いは、生成AIの時代にも議論が続いています。 2016〜2019年ごろ世界中でAI倫理原則が作られ...",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "d9883d174224",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIの基本 ― 定義・歴史・いまの実力【AIと社会の基本 #1】",
+   "url": "https://zenn.dev/yui10/articles/ai-society-basics-01-what-is-ai",
+   "summary": "! シリーズ「AIと社会の基本」の第1回です。公的機関の資料や報告書をもとに整理しています。2026年11月時点の情報です。 この記事の要点 AIの研究は1956年に始まり、3度のブームを経て、2022年の ChatGPT 公開から生成AIの時代に入りました。 AIには確立した定義がありません。国際的には「入力から推論して出力を生成するシステム」と定義されるのが主流で、日本のAI法は「人間の知的な能力を代替する技術」と定義しています。 いまのAIは多くの試験で人間の水準に達していますが、人間には簡単な課題で失敗することもあり、能力にむらがあります。 日本の個人の生成AI利用経験は...",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "704f75fbe018",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIが残した負債をNeo4jで見つける「depgraph」v0.1.0をリリースした",
+   "url": "https://zenn.dev/nozomi720/articles/depgraph-ai-code-debt",
+   "summary": "TL;DR AIエージェントが書いたコードの依存関係を Neo4j に入れて、コンパイラやlinterが報告しない負債を検出するツール depgraph の v0.1.0 をリリースしました 対象は「誰も使っていない export / ファイル / パッケージ」「名前を変えて複製された同じロジック」「循環 import・レイヤー違反・何でも依存されるハブパッケージ」です。コンパイルエラーや未使用のローカル変数のように、プロジェクトのツールチェーンが報告するものはあえて扱いません ルールはすべて Cypher のグラフクエリです。依存関係はグラフなので、グラフDBに入れて問い合わせ...",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "66ae7b622930",
+   "source": "Zennの「AI」のフィード",
+   "title": "AI に渡すツール定義の書き方——API ごとの違いと、ローカルモデルにできること",
+   "url": "https://zenn.dev/genhiroko/articles/tool-definition-api-differences",
+   "summary": "AI にツールを使わせる仕組み(ツール呼び出し、関数呼び出し)を作ろうとして、最初に引っかかりやすいのは「同じことを頼む定義なのに、API ごとに書き方が違う」ことです。このページでは、OpenAI・Anthropic・Gemini の3つの API で、ツール定義がどう違うのか、どこで失敗しやすいのかを整理します。そのうえで、自分のサーバーで動かすローカルモデルには何ができるのかも確かめます。 ツール呼び出しとは何をする仕組みか ツール呼び出しは、モデルが「この関数を、この引数で実行してほしい」とあなたのコードに依頼する仕組みです。大事なのは、モデルが関数を実行するわけではない点で...",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "80a3ff001440",
+   "source": "Zennの「AI」のフィード",
+   "title": "Claude Codeを49エージェントのゲームスタジオにするテンプレートで、実際に1本作ってみた",
+   "url": "https://zenn.dev/matsushima_a/articles/day-035-claude-code-game-studios",
+   "summary": "本記事は「海外で話題のAI関連ニュース/OSSを毎日検証する」100日チャレンジのDay 035。この連載自体もClaude Code Routines(クラウド上の自動実行)で運用しているが、今回検証したClaude Code Game Studios(以下CCGS、MIT License)は、Claude Codeの1セッションを49体のサブエージェント・74個のスラッシュコマンド形式スキルからなる「ゲーム開発スタジオ」として動かすテンプレートで、本日GitHub Trendingで見かけて気になった。筆者がこの連載をClaude Codeで回しているのと似た発想のツールを、実際に動...",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "5cd116a0fb14",
+   "source": "Zennの「AI」のフィード",
+   "title": "「何かあったら責任取れるの？」で組織の技術が死ぬ話",
+   "url": "https://zenn.dev/numekudi/articles/06f9a369125db4",
+   "summary": "↑ 最近よく見ているチャンネルのお気に入りのひとコマ 本当にエンジニアは不要か？ AIのおかげでソフトウェアの実装は圧倒的に速くなった。 一方で、エンジニア不要論も相変わらず根強い。 個人的には全くそう思わない。むしろ、技術力を失うことがどれほど恐ろしいか、LLM台頭前、新卒で入ったSIerで嫌というほど思い知った。 今回はその経験から、AI時代のエンジニアリングについて考えてみる。 本番で使うなと書いてあるものを本番で使う 新卒で入ったSIerでは、産業用カメラを搭載した装置の開発に携わっていた。 そこで目にしたシステムの設計が、なかなか衝撃的だった。 産業用カメラには、動作...",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "505cab44cefe",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIとの接続を解除したら、渡した情報は消えるのか",
+   "url": "https://zenn.dev/build_anotherme/articles/dd7432a52ba701",
+   "summary": "Dotsを使っていると、「ChatGPT Memoryをオフにする」「外部サービスとの接続を解除する」「Dotを削除する」のうち、どれで渡した情報まで消えるのか迷うことがあります。Dotsの公式FAQをもとに、それぞれの対象を見ていきます。個別の環境で削除が完了したかを調べた記事ではありません。 まず、止める操作と消す操作を分ける ChatGPT Memoryをオフにするのは、これからDotsへMemoryを共有しないための操作です。すでにDotが受け取った情報を消すものではありません。 pluginで接続したサービスを解除すれば、その接続を通じた新しいアクセスは止まります。ただ、...",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "5953c9dd6fa0",
+   "source": "Zennの「AI」のフィード",
+   "title": "ログを渡せば、AIが原因を突き止める ── Claudeと解決したWindows端末の更新トラブル4選",
+   "url": "https://zenn.dev/multilayer/articles/7eac27f326d172",
+   "summary": "TL;DR Windows 11の端末約40台で、累積更新の失敗、機能更新のロールバック、MCMクライアントの導入失敗が続きました。端末は遠隔の拠点にあり、触れるのは管理サーバーのPowerShellだけでした AIエージェントのClaudeに、エラーコード、ログ、コマンドの出力をそのまま渡し、原因の分析、検証コマンド、修正スクリプト、手順書の作成までを任せました メモリダンプの解析から機能更新のロールバックの原因ドライバーを特定するなど、これまでは経験者が時間をかけていた調査を、短い時間で進められました 一方で、AIの推定が外れることも、AIの書いた安全チェックが効かないこともあ...",
+   "score": 0,
+   "added": "2026-11-04"
+  },
+  {
+   "id": "1e47d33a9819",
+   "source": "Zennの「AI」のフィード",
+   "title": "Amazon Q Developer for GitHub を個人リポジトリで試した記録（2026-10）",
+   "url": "https://zenn.dev/kyto64/articles/amazon-q-github-report",
+   "summary": "検証環境: 観測日: 2026-10-25 GitHub App: Amazon Q Developer 主な観測リポジトリ: この Zenn 記事のリポジトリ zenn（非公開）。ほか個人開発リポジトリ数件でも同じ App の挙動を見た（非公開のものはリンクしない） ルールファイル: zenn の .amazonq/rules/review-context.md（記事リポジトリの PR で追加） 背景: 個人開発の PR に Amazon Q Developer for GitHub を入れ、レビューの出方と誤検知の傾向を見た。 導入のきっかけは、ものは試しという軽い好奇...",
+   "score": 0,
+   "added": "2026-11-04"
   }
  ],
  "posts": [
@@ -1086,15 +1319,77 @@
     "AI開発では、モデルの学習データの鮮度やコードの複雑さを踏まえた選定が重要になります。\n\n詳しくはこちら: https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
    ],
    "draft_file": "output/8e7cb50a9381-tweets.json"
+  },
+  {
+   "id": "9b441556dd3f",
+   "date": "2026-11-04 02:19",
+   "title": "AI導入ツール「AX STUDIO」先行提供開始！特徴と運用の要点",
+   "post": {
+    "title": "AI導入ツール「AX STUDIO」先行提供開始！特徴と運用の要点",
+    "slug": "ragate-ax-studio-launch",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000000109.000119123.html",
+    "description": "Ragate株式会社がAI導入オールインワンSaaS「AX STUDIO」の先行提供を開始しました。目標設定から業務棚卸し、MCP連携、効果測定、ガバナンス構築までを一気通貫で管理できる本ツールの特徴や提供形態、導入時の注意点を整理して解説します。"
+   },
+   "draft_status": "succeeded",
+   "publish_config": {
+    "wp_status": "draft",
+    "note_publish": false
+   },
+   "deliveries": {
+    "file": {
+     "status": "succeeded",
+     "url": "output/2026-11-04-ragate-ax-studio-launch.md"
+    }
+   },
+   "source_id": "583336ccef38",
+   "file": "output/2026-11-04-ragate-ax-studio-launch.md",
+   "tweets": [
+    "生成AIの導入効果が見えない、Excel管理が属人化している企業必見。目標設定から業務棚卸し、効果測定まで一元管理できるSaaS「AX STUDIO」の先行提供が開始されました。AI導入を体系化する要点をまとめました。\n#生成AI #DX",
+    "要点：目標設定から投資対効果（ROI）までを一気通貫で管理可能。全社目標を入力するとAIが指標を提案し、業務棚卸しや適用前後のフロー比較、削減時間やコストの集計まで行えます。Excel管理から脱却し、AIの導入成果を数値で説明できるようになります。",
+    "要点：AI入力支援とMCP連携に対応。入力フォームの下書きをAIが作成するほか、Claude CodeやCodexといった外部AIアシスタントから業務登録や集計を直接依頼できます。日常的に使うツールと連携させることで、管理作業の手間を削減できます。",
+    "要点：MFAやデータ分離などの統制と、社内事例共有などの市民開発支援を両立。正式リリースは2026年内予定です。\n\n詳しくはこちら\nhttps://prtimes.jp/main/html/rd/p/000000109.000119123.html"
+   ],
+   "draft_file": "output/9b441556dd3f-tweets.json"
+  },
+  {
+   "id": "6716ea215380",
+   "date": "2026-11-04 02:20",
+   "title": "委託先不正アクセス事例から学ぶ管理ポイントと初動対応",
+   "post": {
+    "title": "委託先不正アクセス事例から学ぶ管理ポイントと初動対応",
+    "slug": "vendor-security-incident-checkpoints",
+    "source_url": "https://zenn.dev/taichiendoh/articles/medical-reservation-outage-vendor-case-study",
+    "description": "外部サービスやクラウド基盤の不正アクセス事例から、委託先管理で確認すべき「契約」「通知体制」「業務継続」の3観点を解説。業務停止が先に来るケースと漏えい調査が先行するケースで異なる初動対応の優先順位を分かりやすく整理します。"
+   },
+   "draft_status": "succeeded",
+   "publish_config": {
+    "wp_status": "draft",
+    "note_publish": false
+   },
+   "deliveries": {
+    "file": {
+     "status": "succeeded",
+     "url": "output/2026-11-04-vendor-security-incident-checkpoints.md"
+    }
+   },
+   "source_id": "22043b91bcd3",
+   "file": "output/2026-11-04-vendor-security-incident-checkpoints.md",
+   "tweets": [
+    "外部SaaSやクラウドの不正アクセスに備えるため、利用組織が確認すべき管理ポイントと初動対応を整理しました。自社が直接侵入されていなくても影響を受けるリスクへの備えが分かります。 #セキュリティ #情報セキュリティ",
+    "外部トラブルは「業務停止先行型」と「漏えい懸念先行型」で優先すべき初動が異なります。停止先行なら代替手段など業務継続が最優先となり、漏えい懸念先行なら影響範囲の把握や対外通知判断が最優先です。発生形式に応じた確認ルートの準備が欠かせません。",
+    "確定情報を待つあまり初動が遅れないよう、通知体制の実効性が重要です。調査完了前でも「最大〇〇件の影響可能性がある」といった上限を早期に共有し、判明した事実に応じて情報を段階的に更新していく運用ルールを、委託先と平時から共有しておく必要があります。",
+    "コア機能の優先再開など段階的な機能切り分けが業務継続の鍵です。\n\n詳しくはこちら\nhttps://zenn.dev/taichiendoh/articles/medical-reservation-outage-vendor-case-study"
+   ],
+   "draft_file": "output/6716ea215380-tweets.json"
   }
  ],
  "pseo_done": {},
  "source_order": [
+  "GitHub Trending",
+  "Hacker News",
   "Gemini検索",
   "\"生成AI ツール\" - Google ニュース",
-  "Zennの「AI」のフィード",
-  "GitHub Trending",
-  "Hacker News"
+  "Zennの「AI」のフィード"
  ],
  "topic_seen": []
 }
