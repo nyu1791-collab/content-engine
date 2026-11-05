@@ -121,7 +121,38 @@
   "5cd116a0fb14": "2026-11-04",
   "505cab44cefe": "2026-11-04",
   "5953c9dd6fa0": "2026-11-04",
-  "1e47d33a9819": "2026-11-04"
+  "1e47d33a9819": "2026-11-04",
+  "45b5aa784bb3": "2026-11-05",
+  "ccc9e914d746": "2026-11-05",
+  "b5a328fb3856": "2026-11-05",
+  "abdd9ea079dd": "2026-11-05",
+  "5fb2a08103b0": "2026-11-05",
+  "8a080a19e768": "2026-11-05",
+  "40370f04263d": "2026-11-05",
+  "7c09473f1ffc": "2026-11-05",
+  "8ed11f9c07a0": "2026-11-05",
+  "e0063faa53a4": "2026-11-05",
+  "3b1f47cdc064": "2026-11-05",
+  "543f1dfd56fe": "2026-11-05",
+  "3a0c8c296327": "2026-11-05",
+  "2936444f3356": "2026-11-05",
+  "79558d1323ef": "2026-11-05",
+  "3f93d40f8cf0": "2026-11-05",
+  "d6c5d7e8c4f5": "2026-11-05",
+  "2cd0ce206bf1": "2026-11-05",
+  "aa76c6aff7ab": "2026-11-05",
+  "d694fe6a82d2": "2026-11-05",
+  "9fd1d684b355": "2026-11-05",
+  "ae215fb6972c": "2026-11-05",
+  "c264418fc16a": "2026-11-05",
+  "e4fa4b209c9a": "2026-11-05",
+  "d2e7cd608b46": "2026-11-05",
+  "d9cd3859e711": "2026-11-05",
+  "284b994a93a4": "2026-11-05",
+  "35c62b284dd0": "2026-11-05",
+  "1c30dc3a4e41": "2026-11-05",
+  "6e6104f3c0ec": "2026-11-05",
+  "0ea6bb30a98a": "2026-11-05"
  },
  "queue": [
   {
@@ -197,6 +228,15 @@
    "added": "2026-11-01"
   },
   {
+   "id": "8a080a19e768",
+   "source": "GitHub Trending",
+   "title": "github/spec-kit",
+   "url": "https://github.com/github/spec-kit",
+   "summary": "💫 Toolkit to help you get started with SDD or any other process! (+808 stars today)",
+   "score": 808,
+   "added": "2026-11-05"
+  },
+  {
    "id": "ea97e2f9b307",
    "source": "GitHub Trending",
    "title": "anthropics/skills",
@@ -258,6 +298,15 @@
    "summary": "Kronos: A Foundation Model for the Language of Financial Markets (+630 stars today)",
    "score": 630,
    "added": "2026-11-02"
+  },
+  {
+   "id": "7c09473f1ffc",
+   "source": "GitHub Trending",
+   "title": "harry0703/MoneyPrinterTurbo",
+   "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+   "summary": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow. (+617 stars today)",
+   "score": 617,
+   "added": "2026-11-05"
   },
   {
    "id": "20703a86e2b0",
@@ -350,6 +399,24 @@
    "added": "2026-11-03"
   },
   {
+   "id": "8ed11f9c07a0",
+   "source": "GitHub Trending",
+   "title": "garrytan/gstack",
+   "url": "https://github.com/garrytan/gstack",
+   "summary": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA (+290 stars today)",
+   "score": 290,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "40370f04263d",
+   "source": "GitHub Trending",
+   "title": "The-PR-Agent/pr-agent",
+   "url": "https://github.com/The-PR-Agent/pr-agent",
+   "summary": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier. (+280 stars today)",
+   "score": 280,
+   "added": "2026-11-05"
+  },
+  {
    "id": "93c8eb4a1dfb",
    "source": "Hacker News",
    "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
@@ -393,6 +460,33 @@
    "summary": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。 (+228 stars today)",
    "score": 228,
    "added": "2026-11-04"
+  },
+  {
+   "id": "543f1dfd56fe",
+   "source": "Hacker News",
+   "title": "OpenAI to acquire Pierre Computer Company",
+   "url": "https://openai.com/index/openai-to-acquire-pierre/",
+   "summary": "HN 190 points, 62 comments",
+   "score": 190,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "3a0c8c296327",
+   "source": "Hacker News",
+   "title": "Tencent Hy4",
+   "url": "https://hy.tencent.ai/research/hy4",
+   "summary": "HN 190 points, 61 comments",
+   "score": 190,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "3b1f47cdc064",
+   "source": "Hacker News",
+   "title": "Progress on provable inference for large language models",
+   "url": "https://www.anthropic.com/research/provable-inference",
+   "summary": "HN 177 points, 85 comments",
+   "score": 177,
+   "added": "2026-11-05"
   },
   {
    "id": "8b95ff6d8b4e",
@@ -446,15 +540,6 @@
    "url": "https://github.com/0x0funky/agent-sprite-forge",
    "summary": "Agent Skill for generating 2D sprite sheets and map, transparent PNG frames, and animated GIFs from prompts. (+45 stars today)",
    "score": 45,
-   "added": "2026-11-01"
-  },
-  {
-   "id": "f9b849068e5f",
-   "source": "Gemini検索",
-   "title": "AI活用を業務変革と成果創出につなげる 「AGX支援サービス」を提供開始",
-   "url": "https://prtimes.jp/main/html/rd/p/000000013.000039308.html",
-   "summary": "ZEIN株式会社は、AI活用を実際の業務成果や組織成長につなげる「AGX支援サービス」の提供を開始しました。単なるツール導入にとどまらず、業務プロセスの再設計やAIエージェントの実装を通じて持続的な業務効率化を実現します。",
-   "score": 0,
    "added": "2026-11-01"
   },
   {
@@ -1131,6 +1216,132 @@
    "summary": "検証環境: 観測日: 2026-10-25 GitHub App: Amazon Q Developer 主な観測リポジトリ: この Zenn 記事のリポジトリ zenn（非公開）。ほか個人開発リポジトリ数件でも同じ App の挙動を見た（非公開のものはリンクしない） ルールファイル: zenn の .amazonq/rules/review-context.md（記事リポジトリの PR で追加） 背景: 個人開発の PR に Amazon Q Developer for GitHub を入れ、レビューの出方と誤検知の傾向を見た。 導入のきっかけは、ものは試しという軽い好奇...",
    "score": 0,
    "added": "2026-11-04"
+  },
+  {
+   "id": "45b5aa784bb3",
+   "source": "Gemini検索",
+   "title": "AI業務アプリケーション導入コストを最大25%削減 - AAIP 業務テンプレート提供開始",
+   "url": "https://prtimes.jp/main/html/rd/p/000000013.000171717.html",
+   "summary": "株式会社Advanced AI Partnersは、日本企業で繰り返し発生し生成AIを適用しやすい100業務を整理した「AAIP業務テンプレート」の提供を開始しました。定義済みの業務フローやガードレール設定を活用することで、AI業務アプリケーションの導入にかかる工数とコストを最大25%削減します。",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "ccc9e914d746",
+   "source": "Gemini検索",
+   "title": "ベテランの「判断基準」をAIで継承する「Qast Clone」を提供開始",
+   "url": "https://prtimes.jp/main/html/rd/p/000000076.000033337.html",
+   "summary": "any株式会社は、ベテラン社員の経験や暗黙の判断基準を抽出・構造化してAIエージェントに落とし込む新サービス「Qast Clone」の提供を開始しました。日常の相談や資料レビューを通じて組織固有の判断基準を再利用できるようにし、属人化の解消と現場の業務効率化を支援します。",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "b5a328fb3856",
+   "source": "Gemini検索",
+   "title": "「Microsoft 365 Copilot向け支援サービス」を刷新",
+   "url": "https://prtimes.jp/main/html/rd/p/000000068.000074398.html",
+   "summary": "BIPROGY株式会社は、企業における生成AIやAIエージェントの本格利用に対応するため「Microsoft 365 Copilot向け支援サービス」の体系を刷新しました。活用方針の策定から定着・プロセス変革までを支援する6つのサービスへ再編し、組織全体での業務効率化と価値創出を後押しします。",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "abdd9ea079dd",
+   "source": "Gemini検索",
+   "title": "AIが会議中にリアルタイム介入。会議をファシリテーションする「AIファシリ」正式提供開始",
+   "url": "https://prtimes.jp/main/html/rd/p/000000012.000157146.html",
+   "summary": "株式会社トライフォースは、会議前の設計から進行、終了後の整理までをAIエージェントが一気通貫で支援する新サービス「AIファシリ」の提供を開始しました。議論の脱線をリアルタイムに検知して軌道修正を促すほか、自動議事録やタスク管理により会議運営の効率化と意思決定を促進します。",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "2936444f3356",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "SBI損保、生成AI搭載ツール「MSYS Omnis（エムシス オムニス）」を11月2日よりコンタクトセンター等へ本格導入 - MSRweb",
+   "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBfUWNrQWVuN2diVDdPb0VzeURZWW91N2o3ckhtOGdad0szN19tN294Sm1zY1BkaHJkRlF0ZG5EbEUxRzR1dXRr?oc=5",
+   "summary": "SBI損保、生成AI搭載ツール「MSYS Omnis（エムシス オムニス）」を11月2日よりコンタクトセンター等へ本格導入 MSRweb",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "79558d1323ef",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "最強の無料動画生成AIツール5選【 2026 年版】 登録不要でプライバシー保護がある無料AIセックスチャットオンラインを利用する方法 - tagesanzeiger.ch",
+   "url": "https://news.google.com/rss/articles/CBMiigRBVV95cUxNYmItNl9Xc0d5MWlGU2RkcmE1bDNqaUZObndWb3JWRUNJT2VybFJvTldKbW1yS2x5cm91QUtUN3NMTjJFQmYyallwZUtqbTNLNmhYVlhkZFpmTHVOR182dzdYWEo0U18xR0ZUbzFOZjNORVkxS1l4Z3JpR3Jra09qSm1OaWpYSmVISGhTTFBiYUJDN256TUNzTFNfUElHcXVORTlZRU80ZzNlNmJTQ0hiUlBkaFlXOVZxcVdCdHFJY2k3QnRqd281QjNkbmN3OHJfZW1QZzM1WXJOWnpRSUJsOUJoVkZDOF9tc1h0cEJtQjJuWjJLUW9UUEh1THdhckhWTE9aVlJndWFSdWtzY3dsSzJMZWdlWnpUM2J4SDYwc0tNOXM3aVh1ZHNOQ2pnenU3UDM3MDFMb3RrWXF2dFFMUmZ4SXp3SzFsb3BJck1vOUF4akJCS3ZadVl2WjRBa2tSMGV0VTVlVW44SUhQM3dwRi1PU01paEpsVXlaODY5Z3BxeEFqa3BXcE1jb2liOG93R1NwazQ4dXVnbkJQa2lJUjdVZFVMNEFabU4zejNlSkdKRmdNSUZILWo4Q3A3TFpueUxpWElvVDctZ0VidDU4SkhTZ1ZaSVFHeXlIOXktOEtKNF9GSWc0MGZmNGs1S1VXWXFOVEFxbWZfNzRNQTcxRVVvUkdzMldOd3c?oc=5",
+   "summary": "最強の無料動画生成AIツール5選【 2026 年版】 登録不要でプライバシー保護がある無料AIセックスチャットオンラインを利用する方法 tagesanzeiger.ch",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "3f93d40f8cf0",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "ManageAI、国内企業を対象に「企業の生成AI『契約とコスト』実態調査2026」を開始（12月25日まで） - ニコニコニュース",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE03Qy1IdDhPYk1mUkU5Z1RLcWRxczhpQlF6RmRJVVRrTFRrUXd2Rlk5cUlrYkNaSGx0MDdibjN1Vkszb0ZNWmg5LUhfaUY3MjFzTDkySVVDVjNkd3ZKMjlleDZjTXFpWjVX?oc=5",
+   "summary": "ManageAI、国内企業を対象に「企業の生成AI『契約とコスト』実態調査2026」を開始（12月25日まで） ニコニコニュース",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "d6c5d7e8c4f5",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "大阪産業局・大阪府が主催する生成AIセミナーでAIリスキル代表の山原慎也が講師登壇｜満足度94.4%を達成 - PR TIMES",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBlNEItSVlueTB6aEtOUVhiUE5seVlCOTJFVWw4NUY3c2Y0QkdhSTNnMTc3Y2RDZ21pcEdnbFNQZXlsU1VRMXV1aWV5VFkxVXA3azQ5ODNPMEF3T1ZJSXdjVkNVM2FBVFFvNFE?oc=5",
+   "summary": "大阪産業局・大阪府が主催する生成AIセミナーでAIリスキル代表の山原慎也が講師登壇｜満足度94.4%を達成 PR TIMES",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "2cd0ce206bf1",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "‍‍‍最強の無料動画生成AIツール5選【 2026 年版】 - Law.com",
+   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNNXc4V24ySVFaZlhqQVhIVDZUS0xvWDlTTHhsQk9sS3V0akthekFraFUzM0huQ1NYeTJPOVZleUZKRlhqSjVPQk9vc1RSWExqaUItTUYwQk9hX2dCaXhoanFrOGRRRnZfRHRPS2l0WnNrTDBPdDZ2el9ZbjlYRFRtLU45WEJ4clhfYnExeU9zMHRZTmJELU5lbS1sSEpVSjJHLUlGcWxzeFZOeTlWN3dBWTVSYlVpWEFnOGdnWktQby03T2wxS2hmbHZ5OTlaOXA0b0xFdmxCSUhQM3F6Qm5ZVHF3eXoxcEtybF9UWE9xWWwzYlRVUTZmMlpIcnp5T0FOVU5vQUlTQk9KOTQ4?oc=5",
+   "summary": "‍‍‍最強の無料動画生成AIツール5選【 2026 年版】 Law.com",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "aa76c6aff7ab",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "年次イベントをハイブリッド形式で開催 AIツールのリスク対策サービスなど紹介 - ニコニコニュース",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5OQS1vM0dVZDYzQlRfQ1BiX0tPZmZvdjdQT0tXZDZONDcxMU1pQkFkbnNSeFljWDJmYUpkaFY2SVJoUlVKVnBsdDZvQ1gycW1VN2ZzLXZYdEhXdEtrUUZlNjE4eHU3Tk9o?oc=5",
+   "summary": "年次イベントをハイブリッド形式で開催 AIツールのリスク対策サービスなど紹介 ニコニコニュース",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "d694fe6a82d2",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "HentAI AI：公式の無料トライアルプラットフォームとツール一覧 AI - Law.com",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNN0M1QnJBZnRXNTAyRjZfRU8tbEhuLUF2dmtIT3ZkNmpFdV9aSkJtTzZzSHRfdGlZNUtDZGEtY3drYm5GX2hLWDlEUmlBSzNkc1ctRUhpckFIX0dvQmlzMVo3UEtrN002SkZzcUF3V0s2MzQwTGlULTFweWU0UlZwRzhodHF1bXhXbElzSlN6bFBoRDlyUEsyWlVqZnpkMGxMUXB4REhoWEZDa1VzLWMyUUFyQ3l6ZkxWdmlLN3BRaXMzbFVPNVlmZmRDNGZxUUYyd2tzR0xMQ0ZTMjViaEdpblBSdkJFNjhHb25SdmFkWTl3NUtE?oc=5",
+   "summary": "HentAI AI：公式の無料トライアルプラットフォームとツール一覧 AI Law.com",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "9fd1d684b355",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "無修正AI画像動画生成ツール ロールプレイをカスタマイズできるプライバシー対応のセックスAIチャットボットサービス - tagesanzeiger.ch",
+   "url": "https://news.google.com/rss/articles/CBMi3ANBVV95cUxNd3FRdkFwN0Y4MTBvZDRRbW43aGFWdXEzZTRtM2c4aFdzd0VIRTVyNVFJNjJXUV9IZERoRGx3emdwWW1Db05KZFdHMGttYk5wbWpFSTdsRXNRNDUtbXFlOFRCYnI5ZmJfWVVTRUNLWlpLeVl4RlUxQksyRkF0M1NaQ1V0MGdhaldQNHI2bjYyZTFwWVVjMnVDMGFCSEVjTVBmTFFUUDNsanJLZ0g1Ny14YlNIQ0JNVnF4RHVNMklPY2tDV2lzYTZvMFlwWHlycVpqX3BZb2pHTkIyQzN3RzZscHdOQ2FyWW4tLTE3d1MwR3hYUFFOQU5vd2g5MzFGRHg2bVlaWGdsdVA2eThkbjkwbG9IWEJnSUptSnpPZFlxUS1HU04tRTY1XzFQTFRIYWVIdjVVYTlHNFFUSlBrTHVyZVdscTV4eXZ5ejlqa3NfVDFGRFRNLV9fdXdhLV8ySWlEZlEwX0UzNDFTaG1WUjJGMVV2c00xSklkZzJGSmRRdWkyTEhocGVWLUhiNHM3Smd0RHFQR3V4SFJzWnVOVmpTWmRDQkhYSTh0M1JUOG1uWTVBMWRBMHVkRVlmaDhkVW5LUm5YcFoxVEV0aHBlUzFVSm1MQ3NkbVFITGdSUg?oc=5",
+   "summary": "無修正AI画像動画生成ツール ロールプレイをカスタマイズできるプライバシー対応のセックスAIチャットボットサービス tagesanzeiger.ch",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "ae215fb6972c",
+   "source": "Zennの「AI」のフィード",
+   "title": "サブエージェントに任せるか、今の会話でやるか：並列・出力隔離・レビューの4場面と費用",
+   "url": "https://zenn.dev/ryuyanishino/articles/2c67dc24bfcb4658b3292bd5922bac2b",
+   "summary": "AIコーディングエージェントに作業を頼むと、エージェントが自分で「これは別担当に任せよう」と判断することがあります。便利な反面、任せるたびに別のリクエストが走り、利用量も増えます。では、任せたほうがいい場面と、今の会話で続けたほうがいい場面はどう分ければよいのでしょうか。 Claude Codeの公式文書（2026年11月3日時点）をもとに、委任する価値と費用、判断の基準をまとめます。 Claude Codeは自分で委任することがある 公式のBest practicesによると、Claude Codeは頼まなくてもサブエージェントへ作業を渡すことがあります。広いコードベース検索は組み...",
+   "score": 0,
+   "added": "2026-11-05"
+  },
+  {
+   "id": "c264418fc16a",
+   "source": "Zennの「AI」のフィード",
+   "title": "ChatGPTのdotで技術情報を蓄積し、評価を次の情報収集に返す",
+   "url": "https://zenn.dev/kzk_maeda/articles/dot-tech-information-cycle",
+   "summary": "最近、ChatGPTのエージェント「dot」を使って、技術情報を集めてNotionに保存し、読んだあとの評価を次の情報収集に反映する、という運用をしています。 情報を集めて要約してもらうところも便利なんですが、僕がこの運用で大事にしているのは、情報を蓄積し、自分の評価を返すところまでをつなげることです。 集めたものを読み、その情報が自分に合っていたかを残し、次に何を集めるかに使う。今回はこのサイクルについて書き留めてみます。 収集から次の選定までのサイクル こんな構成です。 流れとしては情報収集、一次情報の確認、日本語での解説、Notionへの蓄積、自分の評価、次の選定への反映です...",
+   "score": 0,
+   "added": "2026-11-05"
   }
  ],
  "posts": [
@@ -1381,15 +1592,77 @@
     "コア機能の優先再開など段階的な機能切り分けが業務継続の鍵です。\n\n詳しくはこちら\nhttps://zenn.dev/taichiendoh/articles/medical-reservation-outage-vendor-case-study"
    ],
    "draft_file": "output/6716ea215380-tweets.json"
+  },
+  {
+   "id": "e1ef1cda5fba",
+   "date": "2026-11-05 02:26",
+   "title": "NVIDIA Auto Ontologyとは？AIエージェントのDB検索精度を高めるOSS",
+   "post": {
+    "title": "NVIDIA Auto Ontologyとは？AIエージェントのDB検索精度を高めるOSS",
+    "slug": "nvidia-auto-ontology-overview",
+    "source_url": "https://github.com/NVIDIA/auto-ontology",
+    "description": "NVIDIAが公開したOSS「Auto Ontology」の概要と特徴を解説。企業データの意味や関係性をメタデータから整理し、AIエージェントによる確実なSQL生成やデータ分析を支援する基盤の仕組みや導入手順をまとめました。"
+   },
+   "draft_status": "succeeded",
+   "publish_config": {
+    "wp_status": "draft",
+    "note_publish": false
+   },
+   "deliveries": {
+    "file": {
+     "status": "succeeded",
+     "url": "output/2026-11-05-nvidia-auto-ontology-overview.md"
+    }
+   },
+   "source_id": "5fb2a08103b0",
+   "file": "output/2026-11-05-nvidia-auto-ontology-overview.md",
+   "tweets": [
+    "AIエージェントのDB検索で「計算方法やテーブルのズレ」に悩む開発者必見。NVIDIAのOSS「Auto Ontology」は、メタデータからデータの意味や関係性を整理し、SQL生成の精度を高める推論フレームワークです。 #AI #NVIDIA",
+    "メタデータから概念関係図を自動生成し、システム間で異なる指標の定義をすり合わせます。生成されたクエリが正規の定義に沿っているか検証し、出所の根拠も返却。修正履歴から学習して精度を高め、MCPやAPIで外部エージェントと連携します。",
+    "Next.jsのWeb UIやFastAPI、Postgres+pgvectorを備えたフルスタック構成です。NVIDIA NIMを活用し、自然言語からSQLへの変換、エンティティ抽出、埋め込み、検索結果のリランカーまで複数モデルを切り替えて処理します。",
+    "社内DBとLLMを繋ぐ開発者向けのOSSです。Dockerで検証環境を起動可能ですが、利用にはNVIDIA APIキーが必要で、現在は外部コントリビューション非対応です。\n\n詳しくはこちら\nhttps://github.com/NVIDIA/auto-ontology"
+   ],
+   "draft_file": "output/e1ef1cda5fba-tweets.json"
+  },
+  {
+   "id": "7f66a932d6b8",
+   "date": "2026-11-05 02:26",
+   "title": "ZEIN、AI活用と業務変革を一貫支援する「AGX支援サービス」開始",
+   "post": {
+    "title": "ZEIN、AI活用と業務変革を一貫支援する「AGX支援サービス」開始",
+    "slug": "zein-agx-service-launch",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000000013.000039308.html",
+    "description": "ZEIN株式会社がAI活用による業務変革と成果創出を支援する「AGX支援サービス」を開始しました。AIツールの導入にとどまらず、業務プロセスの再設計やAIエージェント実装、運用改善までを一貫して支援する取り組みです。"
+   },
+   "draft_status": "succeeded",
+   "publish_config": {
+    "wp_status": "draft",
+    "note_publish": false
+   },
+   "deliveries": {
+    "file": {
+     "status": "succeeded",
+     "url": "output/2026-11-05-zein-agx-service-launch.md"
+    }
+   },
+   "source_id": "f9b849068e5f",
+   "file": "output/2026-11-05-zein-agx-service-launch.md",
+   "tweets": [
+    "AIを導入しても部分的な効率化で終わる課題に対し、ZEINが業務変革まで一貫支援する「AGX支援サービス」を開始しました。AIを実際の成果につなげたい方必見です。 #AI活用 #業務変革",
+    "ツールの導入自体を目的とせず、業務プロセスの見直しや人とAIの役割分担、既存システム連携まで支援します。前後の確認や転記作業が残って部分的な効率化で終わるのを防ぎ、課題によってはAI以外の解決策も視野に入れて検討されます。",
+    "支援は3段階で展開されます。\n①経営課題から重点テーマを選び計画を立てる「構想策定」\n②プロセスを再設計し現場へ組み込む「業務実装」\n③処理時間などを測定し効果検証や他部門展開を支援する「運営・成長支援」\n短期間の実装から全社展開まで柔軟に対応します。",
+    "現状整理と優先テーマを提示する「AI活用課題診断」を無料で提供。AI導入に行き詰まる企業の課題棚卸しを支援します。\n\n詳しくはこちら\nhttps://prtimes.jp/main/html/rd/p/000000013.000039308.html"
+   ],
+   "draft_file": "output/7f66a932d6b8-tweets.json"
   }
  ],
  "pseo_done": {},
  "source_order": [
+  "\"生成AI ツール\" - Google ニュース",
+  "Zennの「AI」のフィード",
   "GitHub Trending",
   "Hacker News",
-  "Gemini検索",
-  "\"生成AI ツール\" - Google ニュース",
-  "Zennの「AI」のフィード"
+  "Gemini検索"
  ],
  "topic_seen": []
 }

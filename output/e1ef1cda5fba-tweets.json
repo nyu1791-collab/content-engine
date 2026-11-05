@@ -1,0 +1,12 @@
+{
+  "post_id": "e1ef1cda5fba",
+  "status": "draft",
+  "title": "NVIDIA Auto Ontologyとは？AIエージェントのDB検索精度を高めるOSS",
+  "source_url": "https://github.com/NVIDIA/auto-ontology",
+  "tweets": [
+    "AIエージェントのDB検索で「計算方法やテーブルのズレ」に悩む開発者必見。NVIDIAのOSS「Auto Ontology」は、メタデータからデータの意味や関係性を整理し、SQL生成の精度を高める推論フレームワークです。 #AI #NVIDIA",
+    "メタデータから概念関係図を自動生成し、システム間で異なる指標の定義をすり合わせます。生成されたクエリが正規の定義に沿っているか検証し、出所の根拠も返却。修正履歴から学習して精度を高め、MCPやAPIで外部エージェントと連携します。",
+    "Next.jsのWeb UIやFastAPI、Postgres+pgvectorを備えたフルスタック構成です。NVIDIA NIMを活用し、自然言語からSQLへの変換、エンティティ抽出、埋め込み、検索結果のリランカーまで複数モデルを切り替えて処理します。",
+    "社内DBとLLMを繋ぐ開発者向けのOSSです。Dockerで検証環境を起動可能ですが、利用にはNVIDIA APIキーが必要で、現在は外部コントリビューション非対応です。\n\n詳しくはこちら\nhttps://github.com/NVIDIA/auto-ontology"
+  ]
+}
