@@ -152,18 +152,35 @@
   "35c62b284dd0": "2026-11-05",
   "1c30dc3a4e41": "2026-11-05",
   "6e6104f3c0ec": "2026-11-05",
-  "0ea6bb30a98a": "2026-11-05"
+  "0ea6bb30a98a": "2026-11-05",
+  "4d4ecf11767a": "2026-11-06",
+  "dae4a3c60a94": "2026-11-06",
+  "a53054979d6d": "2026-11-06",
+  "d55b6bb1ff95": "2026-11-06",
+  "69c7eb76fe0b": "2026-11-06",
+  "c34811c59d2d": "2026-11-06",
+  "1b3010101444": "2026-11-06",
+  "502687729cd2": "2026-11-06",
+  "ff2144e468b4": "2026-11-06",
+  "6258d65ecf22": "2026-11-06",
+  "a576ca57b853": "2026-11-06",
+  "40e0d305b4a1": "2026-11-06",
+  "675a8cf43b88": "2026-11-06",
+  "ad5d21393f71": "2026-11-06",
+  "f9310a658402": "2026-11-06",
+  "901b16ea5ee0": "2026-11-06",
+  "02f3f4712e01": "2026-11-06",
+  "50226450c327": "2026-11-06",
+  "56f222ed88ad": "2026-11-06",
+  "171ac97f0af4": "2026-11-06",
+  "ed08d32c54a3": "2026-11-06",
+  "4d5c7dab4a39": "2026-11-06",
+  "7a498037d4c8": "2026-11-06",
+  "87cda646e0dd": "2026-11-06",
+  "44032c674e8c": "2026-11-06",
+  "1a4908aafd63": "2026-11-06"
  },
  "queue": [
-  {
-   "id": "be8acfaf1118",
-   "source": "GitHub Trending",
-   "title": "pbakaus/impeccable",
-   "url": "https://github.com/pbakaus/impeccable",
-   "summary": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships. (+1338 stars today)",
-   "score": 1338,
-   "added": "2026-11-01"
-  },
   {
    "id": "6c6686c0a357",
    "source": "GitHub Trending",
@@ -280,6 +297,15 @@
    "summary": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 (+675 stars today)",
    "score": 675,
    "added": "2026-11-03"
+  },
+  {
+   "id": "1b3010101444",
+   "source": "GitHub Trending",
+   "title": "scenario-labs/skills",
+   "url": "https://github.com/scenario-labs/skills",
+   "summary": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity. (+667 stars today)",
+   "score": 667,
+   "added": "2026-11-06"
   },
   {
    "id": "c3257d531a3c",
@@ -399,6 +425,15 @@
    "added": "2026-11-03"
   },
   {
+   "id": "ff2144e468b4",
+   "source": "Hacker News",
+   "title": "GPT-6 Astra covertly underperforms on safety research",
+   "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
+   "summary": "HN 304 points, 156 comments",
+   "score": 304,
+   "added": "2026-11-06"
+  },
+  {
    "id": "8ed11f9c07a0",
    "source": "GitHub Trending",
    "title": "garrytan/gstack",
@@ -462,6 +497,24 @@
    "added": "2026-11-04"
   },
   {
+   "id": "69c7eb76fe0b",
+   "source": "GitHub Trending",
+   "title": "google/skills",
+   "url": "https://github.com/google/skills",
+   "summary": "Agent Skills for Google products and technologies (+211 stars today)",
+   "score": 211,
+   "added": "2026-11-06"
+  },
+  {
+   "id": "502687729cd2",
+   "source": "Hacker News",
+   "title": "The Hackintosh Reborn",
+   "url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
+   "summary": "HN 210 points, 102 comments",
+   "score": 210,
+   "added": "2026-11-06"
+  },
+  {
    "id": "543f1dfd56fe",
    "source": "Hacker News",
    "title": "OpenAI to acquire Pierre Computer Company",
@@ -498,6 +551,15 @@
    "added": "2026-11-01"
   },
   {
+   "id": "6258d65ecf22",
+   "source": "Hacker News",
+   "title": "My psychophysics as a bilateral cochlear implant user",
+   "url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
+   "summary": "HN 164 points, 74 comments",
+   "score": 164,
+   "added": "2026-11-06"
+  },
+  {
    "id": "ab8e3a821dcd",
    "source": "Hacker News",
    "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
@@ -514,6 +576,15 @@
    "summary": "HN 153 points, 127 comments",
    "score": 153,
    "added": "2026-11-02"
+  },
+  {
+   "id": "c34811c59d2d",
+   "source": "GitHub Trending",
+   "title": "vercel-labs/agent-browser",
+   "url": "https://github.com/vercel-labs/agent-browser",
+   "summary": "Browser automation CLI for AI agents (+150 stars today)",
+   "score": 150,
+   "added": "2026-11-06"
   },
   {
    "id": "06db34233a17",
@@ -566,15 +637,6 @@
    "title": "スライドの修正を、ひとことで。ChatSenseが新機能を提供予定",
    "url": "https://prtimes.jp/main/html/rd/p/000000432.000073671.html",
    "summary": "株式会社ナレッジセンスは、法人向け生成AI「ChatSense」においてスライド修正を簡単な指示で行える新機能を発表しました。作成済みスライドの修正箇所を直感的に指示・編集可能にすることで、資料作成にかかる工数を削減し業務を効率化します。",
-   "score": 0,
-   "added": "2026-11-01"
-  },
-  {
-   "id": "369acae85604",
-   "source": "\"生成AI ツール\" - Google ニュース",
-   "title": "生成AIでゲーム開発に挑戦。長岡市で広がる中学生向けAI教育 - さくマガ",
-   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1FaTJxQkdDOWlyRmZwS1dvejZLejBGejZEZVJNOFdQclhPMnlwQ3FTNHdXSzlhdTdwQS10Q3B6LUhQMktISzJ3elExUkhqNjJRaEx5OFFpTVI3UDQ4M3UxWTFnVVJ0c28?oc=5",
-   "summary": "生成AIでゲーム開発に挑戦。長岡市で広がる中学生向けAI教育 さくマガ",
    "score": 0,
    "added": "2026-11-01"
   },
@@ -638,15 +700,6 @@
    "title": "生成AIツール26選を徹底比較！特徴や料金プラン、選び方、注意点を完全網羅 - SHIFT AI",
    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5jamNVWEhWbks0UVk1cXQzSXhsMDBoZkhjLTB6VTFaVXhENnNNMzR3UWxndm80MEZ0dVotZ1RJanpxclNRSmhIdw?oc=5",
    "summary": "生成AIツール26選を徹底比較！特徴や料金プラン、選び方、注意点を完全網羅 SHIFT AI",
-   "score": 0,
-   "added": "2026-11-01"
-  },
-  {
-   "id": "0eafa6e54550",
-   "source": "Zennの「AI」のフィード",
-   "title": "【今更聞けないLLM 後編】AIが画像を作る裏側は？Function Calling・オープンウェイト・蒸留をやさしく整理",
-   "url": "https://zenn.dev/takumi_shida/articles/2026-11-01-zenn-llm-basics-part3-tools",
-   "summary": "AIのニュースや新機能を見ていると、こんな疑問が出てきます。 Function Calling（ファンクション・コーリング）って、AI自身が外のサービスを動かしているの？ ChatGPTに画像を頼むと、裏側では何が起きているの？ 「オープンソース」ではなく「オープンウェイト」と呼ぶのはなぜ？ 「蒸留」って、他のAIの回答をコピーすること？ ! 先に結論です。 Function Callingでは、AIは「このツールを使いたい」と依頼を書くだけ。実行するのはアプリやサービス側 画像生成の裏側には、別のAIを呼ぶ型と、AI自身が作る型がある オープンウェイトは「完成品の数字だけが公開さ...",
    "score": 0,
    "added": "2026-11-01"
   },
@@ -1342,6 +1395,96 @@
    "summary": "最近、ChatGPTのエージェント「dot」を使って、技術情報を集めてNotionに保存し、読んだあとの評価を次の情報収集に反映する、という運用をしています。 情報を集めて要約してもらうところも便利なんですが、僕がこの運用で大事にしているのは、情報を蓄積し、自分の評価を返すところまでをつなげることです。 集めたものを読み、その情報が自分に合っていたかを残し、次に何を集めるかに使う。今回はこのサイクルについて書き留めてみます。 収集から次の選定までのサイクル こんな構成です。 流れとしては情報収集、一次情報の確認、日本語での解説、Notionへの蓄積、自分の評価、次の選定への反映です...",
    "score": 0,
    "added": "2026-11-05"
+  },
+  {
+   "id": "4d4ecf11767a",
+   "source": "Gemini検索",
+   "title": "予約・申込は決められた手順どおりに進めるAI顧客対応「JAPAN AI CX」の提供を開始",
+   "url": "https://prtimes.jp/main/html/rd/p/000000184.000124536.html",
+   "summary": "JAPAN AI株式会社は、AIとの対話を通じて顧客対応フローを作成し、予約や申込受付から業務ツール登録までを完結させる「JAPAN AI CX」を提供開始しました。厳格な手順遂行と生成AIによる柔軟な対話を組み合わせることで、顧客対応の確実性と業務効率化を両立します。",
+   "score": 0,
+   "added": "2026-11-06"
+  },
+  {
+   "id": "dae4a3c60a94",
+   "source": "Gemini検索",
+   "title": "「LegalOn」、契約書内・関連契約書との矛盾の確認を支援するAIレビュー機能を提供開始",
+   "url": "https://prtimes.jp/main/html/rd/p/000000828.000036601.html",
+   "summary": "株式会社LegalOn Technologiesは、法務特化型AI「LegalOn」において条項間や関連契約書との矛盾点をAIが指摘する新機能を提供開始しました。契約書全体を生成AIが精査して既存の審査基準では捉えにくいリスクを可視化し、法務担当者の確認業務を効率化します。",
+   "score": 0,
+   "added": "2026-11-06"
+  },
+  {
+   "id": "a53054979d6d",
+   "source": "Gemini検索",
+   "title": "ファストメタルとフィックスターズ、国内GPUサーバーで高速推論AIサービスの提供を開始",
+   "url": "https://prtimes.jp/main/html/rd/p/000000025.000190886.html",
+   "summary": "株式会社国際調達情報と株式会社フィックスターズは、国内設置のGPUサーバー上で高速推論を行うAIゲートウェイサービスの提供を開始しました。ユーザーはAPIを通じてデータを国内から出さずに利用でき、自社の業務システムに生成AI処理を迅速かつ安全に組み込めます。",
+   "score": 0,
+   "added": "2026-11-06"
+  },
+  {
+   "id": "d55b6bb1ff95",
+   "source": "Gemini検索",
+   "title": "WOODMAN、液浸冷却を活用した「HYBRID PRIVATE AI導入サービス」を提供開始",
+   "url": "https://prtimes.jp/main/html/rd/p/000000034.000035660.html",
+   "summary": "WOODMAN株式会社は、社内運用AIとクラウドAIを機密性や業務要件に応じて使い分ける企業向け基盤の導入支援サービスを開始しました。液浸冷却ソリューションを用いたセキュアなオンプレミス環境とクラウドを組み合わせ、企業の機密情報を保護しながら生成AIによる業務効率化を推進します。",
+   "score": 0,
+   "added": "2026-11-06"
+  },
+  {
+   "id": "a576ca57b853",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "OpenAIが画像生成AIツールの「Images 2.6」をリリース、GIF生成に対応し編集工程を細かく制御可能 - GIGAZINE",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE15UG5HcjFGd05uV1o1TDV0SGc1SU9DQ09uTzV4Sld3b2JtOTdOckh6OFJ6aUF2ZXdQTFprdF9HbUhSakVJYWJ6aFNrdkdlM2haSXg0bnJxcERoVm9VUmowblZn?oc=5",
+   "summary": "OpenAIが画像生成AIツールの「Images 2.6」をリリース、GIF生成に対応し編集工程を細かく制御可能 GIGAZINE",
+   "score": 0,
+   "added": "2026-11-06"
+  },
+  {
+   "id": "40e0d305b4a1",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "マーケター6割超が「生成AI使いこなし格差」を実感、約半数は単発利用段階にとどまる調査結果 - コマースピック",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBSVVgxRmxWVVpEOU9jY1NtWUJoQjk5ZUJXekN2aDF1QnFmLTUwU3Vhak1mdnpEeThwa2ZaSktuMXM0eFpHc0xmaGM4eVhiSXdFVWYyUEJuZw?oc=5",
+   "summary": "マーケター6割超が「生成AI使いこなし格差」を実感、約半数は単発利用段階にとどまる調査結果 コマースピック",
+   "score": 0,
+   "added": "2026-11-06"
+  },
+  {
+   "id": "675a8cf43b88",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "PowerToysで強化された生成AI用のCLIコマンドを活用すると便利なAIペーストツールに - マイナビニュース",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5HQ3NIei1aZzhSS3pQTUhBOUtxU09IMkdmdW9PbzdrNDFpOHRjSzEzUkVFcUNleERmMm9PN0RlTnctNGJHR0VRSEYyN0FiY3JMSy0yVExBRHRJTmRzSG9peXZ3VG5lU2txdWRuVXpjY1otSEU?oc=5",
+   "summary": "PowerToysで強化された生成AI用のCLIコマンドを活用すると便利なAIペーストツールに マイナビニュース",
+   "score": 0,
+   "added": "2026-11-06"
+  },
+  {
+   "id": "ad5d21393f71",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "グーグルが全米の学校に発表、AI禁止ならGoogle検索も利用不可に - Yahoo!ニュース",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lVXU0ZklONUZ3V3BwcHZQRmNvank0QmxVYS1ycUs0ZURpZWxhWHZwOGYtVUhJc1NiQTlaRFh0SVFRMFZJR1kzQzZVNV9YSzdiOEdkY0hjRUl6R2FnV0FRdW9aS3ZuZHJPMkMwdjNwSWdZOUdsTnYyR2RlN2J2Yms?oc=5",
+   "summary": "グーグルが全米の学校に発表、AI禁止ならGoogle検索も利用不可に Yahoo!ニュース",
+   "score": 0,
+   "added": "2026-11-06"
+  },
+  {
+   "id": "f9310a658402",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "AIアバター動画「HeyGen」の公式アンバサダーにAIリスキル代表・山原が就任、関西とオンラインで勉強会を開催へ - PR TIMES",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1fd3RrT0FsNnRTVUVUTmJQSEl6R1FndHZPT0o3ZmhmN2RGQnZTdVY2cE84VHk4U2RXQlNJV094Z3Nmd01fcDZjekVkWEVGTjRVbFJxWUdYMDVyN25uZ2tTdGl4YmxZaXk5SWc?oc=5",
+   "summary": "AIアバター動画「HeyGen」の公式アンバサダーにAIリスキル代表・山原が就任、関西とオンラインで勉強会を開催へ PR TIMES",
+   "score": 0,
+   "added": "2026-11-06"
+  },
+  {
+   "id": "901b16ea5ee0",
+   "source": "\"生成AI ツール\" - Google ニュース",
+   "title": "SoundCloud、ElevenMusicのクリエイター向けに直接公開機能を追加 - Unite.AI",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUHppMVZkX0d4MFlOR0FXWGc4OHZ2UmxzT3dlZlQ3bkVCbTlXdjFYV1ItTzRvZVpYcExITVFYaHh4eGhWWjBqT2ZURVJieGdpbTdzVkk3NG1CcEd6LW15RFNOOWdISHU1bzM2LUFDNDBkRmNIZHZMV3Jtc2ZsQzIwalhfRnlLanlUMkJB?oc=5",
+   "summary": "SoundCloud、ElevenMusicのクリエイター向けに直接公開機能を追加 Unite.AI",
+   "score": 0,
+   "added": "2026-11-06"
   }
  ],
  "posts": [
@@ -1654,15 +1797,77 @@
     "現状整理と優先テーマを提示する「AI活用課題診断」を無料で提供。AI導入に行き詰まる企業の課題棚卸しを支援します。\n\n詳しくはこちら\nhttps://prtimes.jp/main/html/rd/p/000000013.000039308.html"
    ],
    "draft_file": "output/7f66a932d6b8-tweets.json"
+  },
+  {
+   "id": "c16b1848f498",
+   "date": "2026-11-06 02:26",
+   "title": "LLMの裏側を整理！Function Callingや蒸留の仕組みを解説",
+   "post": {
+    "title": "LLMの裏側を整理！Function Callingや蒸留の仕組みを解説",
+    "slug": "llm-basics-function-calling-distillation-open-weights",
+    "source_url": "https://zenn.dev/takumi_shida/articles/2026-11-01-zenn-llm-basics-part3-tools",
+    "description": "Function Callingや画像生成連携、オープンウェイト、蒸留といったLLMの重要キーワードを整理。AIが外部APIをどう扱うのか、オープンソースとの違いや小型化の仕組みまで、公開情報に基づいてわかりやすく解説します。"
+   },
+   "draft_status": "succeeded",
+   "publish_config": {
+    "wp_status": "draft",
+    "note_publish": false
+   },
+   "deliveries": {
+    "file": {
+     "status": "succeeded",
+     "url": "output/2026-11-06-llm-basics-function-calling-distillation-open-weights.md"
+    }
+   },
+   "source_id": "0eafa6e54550",
+   "file": "output/2026-11-06-llm-basics-function-calling-distillation-open-weights.md",
+   "tweets": [
+    "「Function Calling」や「蒸留」など、LLM周辺技術の仕組みを押さえることで、業務アプリ開発やモデル選定を適切に判断できるようになります。技術の全体像をまとめました。 #LLM #生成AI",
+    "Function CallingではAI自身がAPIを実行するのではなく、呼び出し依頼のテキストを出すだけです。実際の処理はアプリ側が実行するため、渡された引数の検証や権限の最小化といった安全対策が重要になります。",
+    "重み数値が手に入る「オープンウェイト」は、厳密な「オープンソースAI」とは異なります。OSIの定義では学習データ情報やコードの開示も必要です。商用利用の可否など、ライセンス条項の確認が欠かせません。",
+    "「蒸留」は大規模AIの知識を小型AIに学ばせ、実運用向けに軽量化する手法です。\n\n詳しくはこちら\nhttps://zenn.dev/takumi_shida/articles/2026-11-01-zenn-llm-basics-part3-tools"
+   ],
+   "draft_file": "output/c16b1848f498-tweets.json"
+  },
+  {
+   "id": "b08b10939ebb",
+   "date": "2026-11-06 02:26",
+   "title": "AI生成デザインを改善するOSS「Impeccable」の特徴と使い方",
+   "post": {
+    "title": "AI生成デザインを改善するOSS「Impeccable」の特徴と使い方",
+    "slug": "ai-design-agent-impeccable-guide",
+    "source_url": "https://github.com/pbakaus/impeccable",
+    "description": "AIによるWebデザインの画一化や品質低下を防ぐOSS「Impeccable」を解説。Claude CodeやCursorと連携し、24種のコマンドや62のルールでデザインの微調整や検証を可能にするツールの特徴と使い方をまとめました。"
+   },
+   "draft_status": "succeeded",
+   "publish_config": {
+    "wp_status": "draft",
+    "note_publish": false
+   },
+   "deliveries": {
+    "file": {
+     "status": "succeeded",
+     "url": "output/2026-11-06-ai-design-agent-impeccable-guide.md"
+    }
+   },
+   "source_id": "be8acfaf1118",
+   "file": "output/2026-11-06-ai-design-agent-impeccable-guide.md",
+   "tweets": [
+    "AIが生成するありきたりなUIデザインを改善できるOSS「Impeccable」を紹介します。コーディングエージェントへの指示を具体化し、デザイン品質を高めたい開発者におすすめです。 #フロントエンド #AIツール",
+    "CursorやClaude Codeなどのツールに対応し、目的別のコマンドで的確に指示が出せます。「bolder」で大胆に調整したり、「critique」でレビューを依頼したりと、感覚的な言葉に頼らないUI修正が可能です。",
+    "狭すぎる余白や見出しのスキップなど、AI特有の問題を検知する62のルールを組み込んでいます。LLMのAPIを介さずに判定を行うため、追加のAPIキーなしで機械的な品質チェックを実行できます。",
+    "ローカル開発環境の画面上で直接変更を試せる「Liveモード」も備えています。既存コンポーネントの反復改善に強みを持つツールです。\n\n詳しくはこちら\nhttps://github.com/pbakaus/impeccable"
+   ],
+   "draft_file": "output/b08b10939ebb-tweets.json"
   }
  ],
  "pseo_done": {},
  "source_order": [
+  "Hacker News",
+  "Gemini検索",
   "\"生成AI ツール\" - Google ニュース",
   "Zennの「AI」のフィード",
-  "GitHub Trending",
-  "Hacker News",
-  "Gemini検索"
+  "GitHub Trending"
  ],
  "topic_seen": []
 }

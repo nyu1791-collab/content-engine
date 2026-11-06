@@ -1,0 +1,12 @@
+{
+  "post_id": "b08b10939ebb",
+  "status": "draft",
+  "title": "AI生成デザインを改善するOSS「Impeccable」の特徴と使い方",
+  "source_url": "https://github.com/pbakaus/impeccable",
+  "tweets": [
+    "AIが生成するありきたりなUIデザインを改善できるOSS「Impeccable」を紹介します。コーディングエージェントへの指示を具体化し、デザイン品質を高めたい開発者におすすめです。 #フロントエンド #AIツール",
+    "CursorやClaude Codeなどのツールに対応し、目的別のコマンドで的確に指示が出せます。「bolder」で大胆に調整したり、「critique」でレビューを依頼したりと、感覚的な言葉に頼らないUI修正が可能です。",
+    "狭すぎる余白や見出しのスキップなど、AI特有の問題を検知する62のルールを組み込んでいます。LLMのAPIを介さずに判定を行うため、追加のAPIキーなしで機械的な品質チェックを実行できます。",
+    "ローカル開発環境の画面上で直接変更を試せる「Liveモード」も備えています。既存コンポーネントの反復改善に強みを持つツールです。\n\n詳しくはこちら\nhttps://github.com/pbakaus/impeccable"
+  ]
+}

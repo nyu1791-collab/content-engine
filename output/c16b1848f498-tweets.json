@@ -1,0 +1,12 @@
+{
+  "post_id": "c16b1848f498",
+  "status": "draft",
+  "title": "LLMの裏側を整理！Function Callingや蒸留の仕組みを解説",
+  "source_url": "https://zenn.dev/takumi_shida/articles/2026-11-01-zenn-llm-basics-part3-tools",
+  "tweets": [
+    "「Function Calling」や「蒸留」など、LLM周辺技術の仕組みを押さえることで、業務アプリ開発やモデル選定を適切に判断できるようになります。技術の全体像をまとめました。 #LLM #生成AI",
+    "Function CallingではAI自身がAPIを実行するのではなく、呼び出し依頼のテキストを出すだけです。実際の処理はアプリ側が実行するため、渡された引数の検証や権限の最小化といった安全対策が重要になります。",
+    "重み数値が手に入る「オープンウェイト」は、厳密な「オープンソースAI」とは異なります。OSIの定義では学習データ情報やコードの開示も必要です。商用利用の可否など、ライセンス条項の確認が欠かせません。",
+    "「蒸留」は大規模AIの知識を小型AIに学ばせ、実運用向けに軽量化する手法です。\n\n詳しくはこちら\nhttps://zenn.dev/takumi_shida/articles/2026-11-01-zenn-llm-basics-part3-tools"
+  ]
+}
