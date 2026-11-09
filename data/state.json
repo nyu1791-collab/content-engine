@@ -230,93 +230,56 @@
   "f33fb7388bfd": "2026-11-08",
   "6f34a84fdf4a": "2026-11-08",
   "5d3a1dea56dc": "2026-11-08",
-  "11c368f7157b": "2026-11-08"
+  "11c368f7157b": "2026-11-08",
+  "86d75ee29cf1": "2026-11-09",
+  "13df77a00c23": "2026-11-09",
+  "685c56ef2ba7": "2026-11-09",
+  "a38f6be756e7": "2026-11-09",
+  "bfeff07f7d86": "2026-11-09",
+  "012e9cf37550": "2026-11-09",
+  "4f905989086d": "2026-11-09",
+  "7d6d832484db": "2026-11-09",
+  "dc64cd60d80a": "2026-11-09",
+  "47721e9750ab": "2026-11-09",
+  "09b61cff01ec": "2026-11-09",
+  "c3f511fde4e1": "2026-11-09",
+  "509b4ed021cd": "2026-11-09",
+  "3dfe5fb91b96": "2026-11-09",
+  "52844a73edd8": "2026-11-09",
+  "84fca9c5fda4": "2026-11-09",
+  "a10a73823845": "2026-11-09",
+  "5ff672ee20cc": "2026-11-09",
+  "0e0a668e6c3c": "2026-11-09",
+  "60e6aebf913b": "2026-11-09",
+  "1ed9ef567cfd": "2026-11-09"
  },
  "queue": [
   {
-   "id": "40370f04263d",
-   "source": "GitHub Trending",
-   "title": "The-PR-Agent/pr-agent",
-   "url": "https://github.com/The-PR-Agent/pr-agent",
-   "summary": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier. (+280 stars today)",
-   "score": 280,
-   "added": "2026-11-05",
-   "tries": 1
+   "id": "52844a73edd8",
+   "source": "Zennの「AI」のフィード",
+   "title": "NVIDIA/auto-ontologyを動かしたら、素朴なtext-to-SQLより遅く間違えた",
+   "url": "https://zenn.dev/matsushima_a/articles/day-040-auto-ontology-sql-hallucination",
+   "summary": "これは何を試した記事か NVIDIAが公開しているauto-ontology(Apache-2.0)は、データベースのメタデータから「オントロジー」(ビジネス用語・テーブル関係・SQL属性の集合)を自動生成し、AIエージェントが自然言語の質問を正確なSQLに変換できるようにするフレームワークである。 README・モデルカードが掲げる価値は明快で、「エージェントが誤ったテーブル/カラムを参照してSQLを生成してしまう問題」を、事前に構築したオントロジーの知識で防ぐ、というものだ。 筆者はこれを実際にDocker Composeで自分のPCに構築し、2テーブルだけの小さなサンプルDuc...",
+   "score": 0,
+   "added": "2026-11-09"
   },
   {
-   "id": "7d96f7c53b45",
-   "source": "GitHub Trending",
-   "title": "react/react",
-   "url": "https://github.com/react/react",
-   "summary": "The library for web and native user interfaces. (+248 stars today)",
-   "score": 248,
-   "added": "2026-11-07",
-   "tries": 1
+   "id": "84fca9c5fda4",
+   "source": "Zennの「AI」のフィード",
+   "title": "AI に授業ノートを作らせているけれど、理解したことにはならない",
+   "url": "https://zenn.dev/tomnotelog/articles/ai-notes-reduce-friction-before-understanding",
+   "summary": "はじめに 授業のメモと文字起こしを使って、Claude Code に整形ノートを作ってもらっています。 楽になったのは、情報を補って、読み返せる形にする作業。 ノートが出来上がったことと、私が内容を理解したことは分けています。 自分なりに作った「ノートを書く UI」。この捉え方が一番近いです。 授業中の変化 AI に後から補ってもらえることで、授業中の気持ちは少し変わりました。 聞き漏らしても、書き漏らしても、録音から拾い直せる。 全部をその場でメモしなければ、という焦りが減ったのは嬉しいところです。 私の感覚では、タイプミスも減り、先生の話を聞くことに集中しやすくなりました。 ...",
+   "score": 0,
+   "added": "2026-11-09"
   },
   {
-   "id": "104b57e9a431",
-   "source": "GitHub Trending",
-   "title": "microsoft/VibeVoice",
-   "url": "https://github.com/microsoft/VibeVoice",
-   "summary": "Open-Source Frontier Voice AI (+245 stars today)",
-   "score": 245,
-   "added": "2026-11-08"
-  },
-  {
-   "id": "586dee9a79c1",
-   "source": "GitHub Trending",
-   "title": "FlashML-org/FreeToken",
-   "url": "https://github.com/FlashML-org/FreeToken",
-   "summary": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently. (+242 stars today)",
-   "score": 242,
-   "added": "2026-11-02",
-   "tries": 1
-  },
-  {
-   "id": "e693c29af620",
-   "source": "GitHub Trending",
-   "title": "Usagi-org/ai-goofish-monitor",
-   "url": "https://github.com/Usagi-org/ai-goofish-monitor",
-   "summary": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。 (+228 stars today)",
-   "score": 228,
-   "added": "2026-11-04",
-   "tries": 1
-  },
-  {
-   "id": "69c7eb76fe0b",
-   "source": "GitHub Trending",
-   "title": "google/skills",
-   "url": "https://github.com/google/skills",
-   "summary": "Agent Skills for Google products and technologies (+211 stars today)",
-   "score": 211,
-   "added": "2026-11-06"
-  },
-  {
-   "id": "1b489a90529a",
-   "source": "GitHub Trending",
-   "title": "rust-lang/rust",
-   "url": "https://github.com/rust-lang/rust",
-   "summary": "Empowering everyone to build reliable and efficient software. (+192 stars today)",
-   "score": 192,
-   "added": "2026-11-07"
-  },
-  {
-   "id": "5a6031603e23",
-   "source": "GitHub Trending",
-   "title": "mbillow/localthings",
-   "url": "https://github.com/mbillow/localthings",
-   "summary": "Control your Samsung appliances from Home Assistant over your home network, with no cloud account. (+186 stars today)",
-   "score": 186,
-   "added": "2026-11-08"
-  },
-  {
-   "id": "c34811c59d2d",
-   "source": "GitHub Trending",
-   "title": "vercel-labs/agent-browser",
-   "url": "https://github.com/vercel-labs/agent-browser",
-   "summary": "Browser automation CLI for AI agents (+150 stars today)",
-   "score": 150,
-   "added": "2026-11-06"
+   "id": "a10a73823845",
+   "source": "Zennの「AI」のフィード",
+   "title": "週刊 ローカルLLM＆AIコーディングツール更新まとめ（10/31〜11/6）",
+   "url": "https://zenn.dev/girigiri_se/articles/8dedadbc54a425",
+   "summary": "はじめに 今回から、ローカルLLMとAIコーディングツールの更新を、毎週まとめていくことにしました。 自分はこれまで、Qiita でローカルLLMや自宅サーバー、AIを使った個人開発の記事を書いてきました。 ただ、Ollama や Open WebUI、Claude Code などは更新がとても速く、追いかけるだけでも手間がかかります。 しかも一次情報の多くは英語の GitHub に散らばっています。 そこで、自分の確認も兼ねて、週に一度まとめて残していくことにしました。 まとめ方は次のとおりです。 各ツールの GitHub のリリースノートや変更履歴をもとに、要点を日本語で整理し...",
+   "score": 0,
+   "added": "2026-11-09"
   },
   {
    "id": "2aedd933953a",
@@ -326,7 +289,7 @@
    "summary": "iPhoneアプリを一人で作っている Atsushi です。Claude Code のセッションを十数本、同じ Mac で並べて動かしています（セッションを「部署」に分ける話）。 AI に守ってほしい決まりは、CLAUDE.md に書いています。でも、決まりは忘れられることがあります。会話が長くなって要約されると、細かい決まりが抜け落ちるからです。 そこで、どうしても守ってほしい決まりは、Claude Code の PreToolUse フックで仕組みにしています。この記事では、フックの作り方と、実際に使っているフックを例に、作るときのコツを紹介します。 PreToolUse フック...",
    "score": 0,
    "added": "2026-11-03",
-   "tries": 1
+   "tries": 2
   },
   {
    "id": "7f412363fac2",
@@ -336,106 +299,7 @@
    "summary": "Claude Code 2.1.314 で入った permissions.blockWritesOutsideWorkingDirectories を true にしても、Windows の 2.1.316 では Bash の echo … >・cp と PowerShell の Set-Content・> で作業フォルダの外にファイルができました。止まったのは Write・Edit・NotebookEdit だけです。逆に、作業フォルダの中のファイルが、パスの大文字小文字の違いだけで「外」と判定されて拒否されることもあります。 ! この記事の答え（Windows 11・2....",
    "score": 0,
    "added": "2026-11-03",
-   "tries": 1
-  },
-  {
-   "id": "fe3df01f1970",
-   "source": "Zennの「AI」のフィード",
-   "title": "robots.txtで「検索はOK、AI学習はNG」を書き分ける：__usage_ai-trainingの設計を読む",
-   "url": "https://zenn.dev/dgtlchika/articles/41bf9f94396ecb",
-   "summary": "はじめに 「検索には載せたい。でもAIの学習には使ってほしくない」。robots.txtでこれを書こうとして、ボット名を延々と追記し続けることに疲れていました。 2026年10月末、robots.txtに「AI学習には使わないで」を書く共通の名前 __usage_ai-training が、IETFの個人提出ドラフトとして出されました。この記事では書き方そのものより、なぜこういう設計になったのかを自分なりに読み解きます。読み終えると、次の3点が説明できるようになるはずです。 ボット名指定と何が違うのか（取得と利用の分離） なぜ User-agent: * が効かないのか 今の時点で...",
-   "score": 0,
-   "added": "2026-11-03",
-   "tries": 1
-  },
-  {
-   "id": "d7f007d30721",
-   "source": "Zennの「AI」のフィード",
-   "title": "DeepEval を「道具」で終わらせない — 継続的な企業 Gold Dataset の作り方",
-   "url": "https://zenn.dev/sscodeai/articles/deepeval-enterprise-gold-dataset",
-   "summary": "対象: LLM アプリの評価を社内に定着させたい開発者・EM・QA 検証環境: Python 3.12 / deepeval 4.3.2 / 決定論的メトリクスは API キーなしで実行 · 2026-11 本記事の立場: 公開 OSS のコードを読み、手元で実際に動かして確認した範囲だけを書いています。ベンダーの意図やロードマップを示すものではありません。 はじめに：Eval ツールを入れただけでは何も変わらない 「Eval を導入しました」という報告の多くは、フレームワークを pip install したという意味でしかありません。テストファイルが 1 本増えて、CI で回る...",
-   "score": 0,
-   "added": "2026-11-04",
-   "tries": 1
-  },
-  {
-   "id": "7773eb44e491",
-   "source": "Zennの「AI」のフィード",
-   "title": "AI倫理の基本 ― 世界の原則はなぜ似ているのか【AIと社会の基本 #2】",
-   "url": "https://zenn.dev/yui10/articles/ai-society-basics-02-ethics",
-   "summary": "! シリーズ「AIと社会の基本」の第2回です。公的機関の資料や論文をもとに整理しています。2026年11月時点の情報です。 この記事の要点 AI倫理は、「AIは何者か」という問いと、「AIをどんな原則で作り、使うか」という問いの両方を扱います。 倫理学には、結果を重んじる功利主義、守るべき義務を重んじる義務論、行う人のあり方を重んじる徳倫理などの考え方があり、AIの問題は一つの理論だけでは答えが出ません。 チューリングテスト、中国語の部屋、フレーム問題、記号接地問題といった古典的な問いは、生成AIの時代にも議論が続いています。 2016〜2019年ごろ世界中でAI倫理原則が作られ...",
-   "score": 0,
-   "added": "2026-11-04",
-   "tries": 1
-  },
-  {
-   "id": "d9883d174224",
-   "source": "Zennの「AI」のフィード",
-   "title": "AIの基本 ― 定義・歴史・いまの実力【AIと社会の基本 #1】",
-   "url": "https://zenn.dev/yui10/articles/ai-society-basics-01-what-is-ai",
-   "summary": "! シリーズ「AIと社会の基本」の第1回です。公的機関の資料や報告書をもとに整理しています。2026年11月時点の情報です。 この記事の要点 AIの研究は1956年に始まり、3度のブームを経て、2022年の ChatGPT 公開から生成AIの時代に入りました。 AIには確立した定義がありません。国際的には「入力から推論して出力を生成するシステム」と定義されるのが主流で、日本のAI法は「人間の知的な能力を代替する技術」と定義しています。 いまのAIは多くの試験で人間の水準に達していますが、人間には簡単な課題で失敗することもあり、能力にむらがあります。 日本の個人の生成AI利用経験は...",
-   "score": 0,
-   "added": "2026-11-04",
-   "tries": 1
-  },
-  {
-   "id": "704f75fbe018",
-   "source": "Zennの「AI」のフィード",
-   "title": "AIが残した負債をNeo4jで見つける「depgraph」v0.1.0をリリースした",
-   "url": "https://zenn.dev/nozomi720/articles/depgraph-ai-code-debt",
-   "summary": "TL;DR AIエージェントが書いたコードの依存関係を Neo4j に入れて、コンパイラやlinterが報告しない負債を検出するツール depgraph の v0.1.0 をリリースしました 対象は「誰も使っていない export / ファイル / パッケージ」「名前を変えて複製された同じロジック」「循環 import・レイヤー違反・何でも依存されるハブパッケージ」です。コンパイルエラーや未使用のローカル変数のように、プロジェクトのツールチェーンが報告するものはあえて扱いません ルールはすべて Cypher のグラフクエリです。依存関係はグラフなので、グラフDBに入れて問い合わせ...",
-   "score": 0,
-   "added": "2026-11-04",
-   "tries": 1
-  },
-  {
-   "id": "66ae7b622930",
-   "source": "Zennの「AI」のフィード",
-   "title": "AI に渡すツール定義の書き方——API ごとの違いと、ローカルモデルにできること",
-   "url": "https://zenn.dev/genhiroko/articles/tool-definition-api-differences",
-   "summary": "AI にツールを使わせる仕組み(ツール呼び出し、関数呼び出し)を作ろうとして、最初に引っかかりやすいのは「同じことを頼む定義なのに、API ごとに書き方が違う」ことです。このページでは、OpenAI・Anthropic・Gemini の3つの API で、ツール定義がどう違うのか、どこで失敗しやすいのかを整理します。そのうえで、自分のサーバーで動かすローカルモデルには何ができるのかも確かめます。 ツール呼び出しとは何をする仕組みか ツール呼び出しは、モデルが「この関数を、この引数で実行してほしい」とあなたのコードに依頼する仕組みです。大事なのは、モデルが関数を実行するわけではない点で...",
-   "score": 0,
-   "added": "2026-11-04",
-   "tries": 1
-  },
-  {
-   "id": "9c214e2429c1",
-   "source": "Zennの「AI」のフィード",
-   "title": "Claude Code・Codex・Antigravityの週の利用枠を、余らせずに自動で使い切る仕組み",
-   "url": "https://zenn.dev/shinai/articles/ai-weekly-quota-autorun",
-   "summary": "サブスクのAIは「週の利用上限」があります。忙しい週は足りないのに、暇な週は半分以上余ったままリセットされる。もったいないので、余りそうな枠だけを自動で見つけて、AIに自分の作業をさせる仕組みを作りました。Windowsのタスクスケジューラ＋PowerShell1本です。 実際に動かしてわかった「最初の設計の失敗」と、その直し方まで書きます。 私自身、Claudeの利用制限を使い切れないままリセットを迎える週があり、もったいないと感じたのが作ったきっかけです。 全体像 毎時、タスクスケジューラがスクリプトを起動する 4つの枠（Claude Code／Codex／Antigravit...",
-   "score": 0,
-   "added": "2026-11-08"
-  },
-  {
-   "id": "80a3ff001440",
-   "source": "Zennの「AI」のフィード",
-   "title": "Claude Codeを49エージェントのゲームスタジオにするテンプレートで、実際に1本作ってみた",
-   "url": "https://zenn.dev/matsushima_a/articles/day-035-claude-code-game-studios",
-   "summary": "本記事は「海外で話題のAI関連ニュース/OSSを毎日検証する」100日チャレンジのDay 035。この連載自体もClaude Code Routines(クラウド上の自動実行)で運用しているが、今回検証したClaude Code Game Studios(以下CCGS、MIT License)は、Claude Codeの1セッションを49体のサブエージェント・74個のスラッシュコマンド形式スキルからなる「ゲーム開発スタジオ」として動かすテンプレートで、本日GitHub Trendingで見かけて気になった。筆者がこの連載をClaude Codeで回しているのと似た発想のツールを、実際に動...",
-   "score": 0,
-   "added": "2026-11-04",
-   "tries": 1
-  },
-  {
-   "id": "1a92f63bf14a",
-   "source": "GitHub Trending",
-   "title": "cloudflare/security-audit-skill",
-   "url": "https://github.com/cloudflare/security-audit-skill",
-   "summary": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings (+2085 stars today)",
-   "score": 2085,
-   "added": "2026-11-08",
-   "tries": 1
-  },
-  {
-   "id": "5cd116a0fb14",
-   "source": "Zennの「AI」のフィード",
-   "title": "「何かあったら責任取れるの？」で組織の技術が死ぬ話",
-   "url": "https://zenn.dev/numekudi/articles/06f9a369125db4",
-   "summary": "↑ 最近よく見ているチャンネルのお気に入りのひとコマ 本当にエンジニアは不要か？ AIのおかげでソフトウェアの実装は圧倒的に速くなった。 一方で、エンジニア不要論も相変わらず根強い。 個人的には全くそう思わない。むしろ、技術力を失うことがどれほど恐ろしいか、LLM台頭前、新卒で入ったSIerで嫌というほど思い知った。 今回はその経験から、AI時代のエンジニアリングについて考えてみる。 本番で使うなと書いてあるものを本番で使う 新卒で入ったSIerでは、産業用カメラを搭載した装置の開発に携わっていた。 そこで目にしたシステムの設計が、なかなか衝撃的だった。 産業用カメラには、動作...",
-   "score": 0,
-   "added": "2026-11-04",
-   "tries": 1
+   "tries": 2
   },
   {
    "id": "be490188feb3",
@@ -445,7 +309,97 @@
    "summary": "Hunt down social media accounts by username across social networks (+1766 stars today)",
    "score": 1766,
    "added": "2026-11-08",
+   "tries": 2
+  },
+  {
+   "id": "fe3df01f1970",
+   "source": "Zennの「AI」のフィード",
+   "title": "robots.txtで「検索はOK、AI学習はNG」を書き分ける：__usage_ai-trainingの設計を読む",
+   "url": "https://zenn.dev/dgtlchika/articles/41bf9f94396ecb",
+   "summary": "はじめに 「検索には載せたい。でもAIの学習には使ってほしくない」。robots.txtでこれを書こうとして、ボット名を延々と追記し続けることに疲れていました。 2026年10月末、robots.txtに「AI学習には使わないで」を書く共通の名前 __usage_ai-training が、IETFの個人提出ドラフトとして出されました。この記事では書き方そのものより、なぜこういう設計になったのかを自分なりに読み解きます。読み終えると、次の3点が説明できるようになるはずです。 ボット名指定と何が違うのか（取得と利用の分離） なぜ User-agent: * が効かないのか 今の時点で...",
+   "score": 0,
+   "added": "2026-11-03",
+   "tries": 2
+  },
+  {
+   "id": "d7f007d30721",
+   "source": "Zennの「AI」のフィード",
+   "title": "DeepEval を「道具」で終わらせない — 継続的な企業 Gold Dataset の作り方",
+   "url": "https://zenn.dev/sscodeai/articles/deepeval-enterprise-gold-dataset",
+   "summary": "対象: LLM アプリの評価を社内に定着させたい開発者・EM・QA 検証環境: Python 3.12 / deepeval 4.3.2 / 決定論的メトリクスは API キーなしで実行 · 2026-11 本記事の立場: 公開 OSS のコードを読み、手元で実際に動かして確認した範囲だけを書いています。ベンダーの意図やロードマップを示すものではありません。 はじめに：Eval ツールを入れただけでは何も変わらない 「Eval を導入しました」という報告の多くは、フレームワークを pip install したという意味でしかありません。テストファイルが 1 本増えて、CI で回る...",
+   "score": 0,
+   "added": "2026-11-04",
+   "tries": 2
+  },
+  {
+   "id": "7773eb44e491",
+   "source": "Zennの「AI」のフィード",
+   "title": "AI倫理の基本 ― 世界の原則はなぜ似ているのか【AIと社会の基本 #2】",
+   "url": "https://zenn.dev/yui10/articles/ai-society-basics-02-ethics",
+   "summary": "! シリーズ「AIと社会の基本」の第2回です。公的機関の資料や論文をもとに整理しています。2026年11月時点の情報です。 この記事の要点 AI倫理は、「AIは何者か」という問いと、「AIをどんな原則で作り、使うか」という問いの両方を扱います。 倫理学には、結果を重んじる功利主義、守るべき義務を重んじる義務論、行う人のあり方を重んじる徳倫理などの考え方があり、AIの問題は一つの理論だけでは答えが出ません。 チューリングテスト、中国語の部屋、フレーム問題、記号接地問題といった古典的な問いは、生成AIの時代にも議論が続いています。 2016〜2019年ごろ世界中でAI倫理原則が作られ...",
+   "score": 0,
+   "added": "2026-11-04",
+   "tries": 2
+  },
+  {
+   "id": "d9883d174224",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIの基本 ― 定義・歴史・いまの実力【AIと社会の基本 #1】",
+   "url": "https://zenn.dev/yui10/articles/ai-society-basics-01-what-is-ai",
+   "summary": "! シリーズ「AIと社会の基本」の第1回です。公的機関の資料や報告書をもとに整理しています。2026年11月時点の情報です。 この記事の要点 AIの研究は1956年に始まり、3度のブームを経て、2022年の ChatGPT 公開から生成AIの時代に入りました。 AIには確立した定義がありません。国際的には「入力から推論して出力を生成するシステム」と定義されるのが主流で、日本のAI法は「人間の知的な能力を代替する技術」と定義しています。 いまのAIは多くの試験で人間の水準に達していますが、人間には簡単な課題で失敗することもあり、能力にむらがあります。 日本の個人の生成AI利用経験は...",
+   "score": 0,
+   "added": "2026-11-04",
+   "tries": 2
+  },
+  {
+   "id": "704f75fbe018",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIが残した負債をNeo4jで見つける「depgraph」v0.1.0をリリースした",
+   "url": "https://zenn.dev/nozomi720/articles/depgraph-ai-code-debt",
+   "summary": "TL;DR AIエージェントが書いたコードの依存関係を Neo4j に入れて、コンパイラやlinterが報告しない負債を検出するツール depgraph の v0.1.0 をリリースしました 対象は「誰も使っていない export / ファイル / パッケージ」「名前を変えて複製された同じロジック」「循環 import・レイヤー違反・何でも依存されるハブパッケージ」です。コンパイルエラーや未使用のローカル変数のように、プロジェクトのツールチェーンが報告するものはあえて扱いません ルールはすべて Cypher のグラフクエリです。依存関係はグラフなので、グラフDBに入れて問い合わせ...",
+   "score": 0,
+   "added": "2026-11-04",
+   "tries": 2
+  },
+  {
+   "id": "66ae7b622930",
+   "source": "Zennの「AI」のフィード",
+   "title": "AI に渡すツール定義の書き方——API ごとの違いと、ローカルモデルにできること",
+   "url": "https://zenn.dev/genhiroko/articles/tool-definition-api-differences",
+   "summary": "AI にツールを使わせる仕組み(ツール呼び出し、関数呼び出し)を作ろうとして、最初に引っかかりやすいのは「同じことを頼む定義なのに、API ごとに書き方が違う」ことです。このページでは、OpenAI・Anthropic・Gemini の3つの API で、ツール定義がどう違うのか、どこで失敗しやすいのかを整理します。そのうえで、自分のサーバーで動かすローカルモデルには何ができるのかも確かめます。 ツール呼び出しとは何をする仕組みか ツール呼び出しは、モデルが「この関数を、この引数で実行してほしい」とあなたのコードに依頼する仕組みです。大事なのは、モデルが関数を実行するわけではない点で...",
+   "score": 0,
+   "added": "2026-11-04",
+   "tries": 2
+  },
+  {
+   "id": "9c214e2429c1",
+   "source": "Zennの「AI」のフィード",
+   "title": "Claude Code・Codex・Antigravityの週の利用枠を、余らせずに自動で使い切る仕組み",
+   "url": "https://zenn.dev/shinai/articles/ai-weekly-quota-autorun",
+   "summary": "サブスクのAIは「週の利用上限」があります。忙しい週は足りないのに、暇な週は半分以上余ったままリセットされる。もったいないので、余りそうな枠だけを自動で見つけて、AIに自分の作業をさせる仕組みを作りました。Windowsのタスクスケジューラ＋PowerShell1本です。 実際に動かしてわかった「最初の設計の失敗」と、その直し方まで書きます。 私自身、Claudeの利用制限を使い切れないままリセットを迎える週があり、もったいないと感じたのが作ったきっかけです。 全体像 毎時、タスクスケジューラがスクリプトを起動する 4つの枠（Claude Code／Codex／Antigravit...",
+   "score": 0,
+   "added": "2026-11-08",
    "tries": 1
+  },
+  {
+   "id": "80a3ff001440",
+   "source": "Zennの「AI」のフィード",
+   "title": "Claude Codeを49エージェントのゲームスタジオにするテンプレートで、実際に1本作ってみた",
+   "url": "https://zenn.dev/matsushima_a/articles/day-035-claude-code-game-studios",
+   "summary": "本記事は「海外で話題のAI関連ニュース/OSSを毎日検証する」100日チャレンジのDay 035。この連載自体もClaude Code Routines(クラウド上の自動実行)で運用しているが、今回検証したClaude Code Game Studios(以下CCGS、MIT License)は、Claude Codeの1セッションを49体のサブエージェント・74個のスラッシュコマンド形式スキルからなる「ゲーム開発スタジオ」として動かすテンプレートで、本日GitHub Trendingで見かけて気になった。筆者がこの連載をClaude Codeで回しているのと似た発想のツールを、実際に動...",
+   "score": 0,
+   "added": "2026-11-04",
+   "tries": 2
+  },
+  {
+   "id": "5cd116a0fb14",
+   "source": "Zennの「AI」のフィード",
+   "title": "「何かあったら責任取れるの？」で組織の技術が死ぬ話",
+   "url": "https://zenn.dev/numekudi/articles/06f9a369125db4",
+   "summary": "↑ 最近よく見ているチャンネルのお気に入りのひとコマ 本当にエンジニアは不要か？ AIのおかげでソフトウェアの実装は圧倒的に速くなった。 一方で、エンジニア不要論も相変わらず根強い。 個人的には全くそう思わない。むしろ、技術力を失うことがどれほど恐ろしいか、LLM台頭前、新卒で入ったSIerで嫌というほど思い知った。 今回はその経験から、AI時代のエンジニアリングについて考えてみる。 本番で使うなと書いてあるものを本番で使う 新卒で入ったSIerでは、産業用カメラを搭載した装置の開発に携わっていた。 そこで目にしたシステムの設計が、なかなか衝撃的だった。 産業用カメラには、動作...",
+   "score": 0,
+   "added": "2026-11-04",
+   "tries": 2
   },
   {
    "id": "505cab44cefe",
@@ -455,17 +409,17 @@
    "summary": "Dotsを使っていると、「ChatGPT Memoryをオフにする」「外部サービスとの接続を解除する」「Dotを削除する」のうち、どれで渡した情報まで消えるのか迷うことがあります。Dotsの公式FAQをもとに、それぞれの対象を見ていきます。個別の環境で削除が完了したかを調べた記事ではありません。 まず、止める操作と消す操作を分ける ChatGPT Memoryをオフにするのは、これからDotsへMemoryを共有しないための操作です。すでにDotが受け取った情報を消すものではありません。 pluginで接続したサービスを解除すれば、その接続を通じた新しいアクセスは止まります。ただ、...",
    "score": 0,
    "added": "2026-11-04",
-   "tries": 1
+   "tries": 2
   },
   {
-   "id": "6c6686c0a357",
+   "id": "a38f6be756e7",
    "source": "GitHub Trending",
-   "title": "milind-soni/OpenMausBot",
-   "url": "https://github.com/milind-soni/OpenMausBot",
-   "summary": "Open-source Grok Bot alternative with a virtual machine that bots can use (+1303 stars today)",
-   "score": 1303,
-   "added": "2026-11-01",
-   "tries": 2
+   "title": "ranxianglei/billion-context",
+   "url": "https://github.com/ranxianglei/billion-context",
+   "summary": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need (+460 stars today)",
+   "score": 460,
+   "added": "2026-11-09",
+   "tries": 1
   },
   {
    "id": "5953c9dd6fa0",
@@ -475,16 +429,6 @@
    "summary": "TL;DR Windows 11の端末約40台で、累積更新の失敗、機能更新のロールバック、MCMクライアントの導入失敗が続きました。端末は遠隔の拠点にあり、触れるのは管理サーバーのPowerShellだけでした AIエージェントのClaudeに、エラーコード、ログ、コマンドの出力をそのまま渡し、原因の分析、検証コマンド、修正スクリプト、手順書の作成までを任せました メモリダンプの解析から機能更新のロールバックの原因ドライバーを特定するなど、これまでは経験者が時間をかけていた調査を、短い時間で進められました 一方で、AIの推定が外れることも、AIの書いた安全チェックが効かないこともあ...",
    "score": 0,
    "added": "2026-11-04",
-   "tries": 1
-  },
-  {
-   "id": "d2e7f6acabc6",
-   "source": "GitHub Trending",
-   "title": "pingdotgg/t3code",
-   "url": "https://github.com/pingdotgg/t3code",
-   "summary": " (+1148 stars today)",
-   "score": 1148,
-   "added": "2026-11-01",
    "tries": 2
   },
   {
@@ -495,16 +439,6 @@
    "summary": "検証環境: 観測日: 2026-10-25 GitHub App: Amazon Q Developer 主な観測リポジトリ: この Zenn 記事のリポジトリ zenn（非公開）。ほか個人開発リポジトリ数件でも同じ App の挙動を見た（非公開のものはリンクしない） ルールファイル: zenn の .amazonq/rules/review-context.md（記事リポジトリの PR で追加） 背景: 個人開発の PR に Amazon Q Developer for GitHub を入れ、レビューの出方と誤検知の傾向を見た。 導入のきっかけは、ものは試しという軽い好奇...",
    "score": 0,
    "added": "2026-11-04",
-   "tries": 1
-  },
-  {
-   "id": "3fff46d92e86",
-   "source": "GitHub Trending",
-   "title": "Renhuai123/ziwei-doushu",
-   "url": "https://github.com/Renhuai123/ziwei-doushu",
-   "summary": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 (+1092 stars today)",
-   "score": 1092,
-   "added": "2026-11-01",
    "tries": 2
   },
   {
@@ -515,16 +449,6 @@
    "summary": "AIコーディングエージェントに作業を頼むと、エージェントが自分で「これは別担当に任せよう」と判断することがあります。便利な反面、任せるたびに別のリクエストが走り、利用量も増えます。では、任せたほうがいい場面と、今の会話で続けたほうがいい場面はどう分ければよいのでしょうか。 Claude Codeの公式文書（2026年11月3日時点）をもとに、委任する価値と費用、判断の基準をまとめます。 Claude Codeは自分で委任することがある 公式のBest practicesによると、Claude Codeは頼まなくてもサブエージェントへ作業を渡すことがあります。広いコードベース検索は組み...",
    "score": 0,
    "added": "2026-11-05",
-   "tries": 1
-  },
-  {
-   "id": "bca7775ac9ca",
-   "source": "GitHub Trending",
-   "title": "HKUDS/DeepTutor",
-   "url": "https://github.com/HKUDS/DeepTutor",
-   "summary": "DeepTutor: Lifelong Personalized Tutoring.https://deeptutor.info/. (+1034 stars today)",
-   "score": 1034,
-   "added": "2026-11-01",
    "tries": 2
   },
   {
@@ -535,366 +459,6 @@
    "summary": "最近、ChatGPTのエージェント「dot」を使って、技術情報を集めてNotionに保存し、読んだあとの評価を次の情報収集に反映する、という運用をしています。 情報を集めて要約してもらうところも便利なんですが、僕がこの運用で大事にしているのは、情報を蓄積し、自分の評価を返すところまでをつなげることです。 集めたものを読み、その情報が自分に合っていたかを残し、次に何を集めるかに使う。今回はこのサイクルについて書き留めてみます。 収集から次の選定までのサイクル こんな構成です。 流れとしては情報収集、一次情報の確認、日本語での解説、Notionへの蓄積、自分の評価、次の選定への反映です...",
    "score": 0,
    "added": "2026-11-05",
-   "tries": 1
-  },
-  {
-   "id": "3e5bc6114122",
-   "source": "GitHub Trending",
-   "title": "lightpanda-io/browser",
-   "url": "https://github.com/lightpanda-io/browser",
-   "summary": "Lightpanda: the headless browser designed for AI and automation (+929 stars today)",
-   "score": 929,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "a39e3201ea61",
-   "source": "Zennの「AI」のフィード",
-   "title": "画像内テキストが崩れないプロンプト設計：商品写真・広告向けチェックリスト",
-   "url": "https://zenn.dev/decomytree/articles/781e53405126ee",
-   "summary": "はじめに AI 画像生成でいちばんつまずきやすいのが、画像の中に入れる文字です。ポスターの見出し、パッケージの商品名、UI モックのラベル——どれも「なんとなく文字っぽい形」までは出るのに、いざ拡大すると字形が崩れたり、意図と違う綴りになったりしがちです。 一方で、EC の商品写真や Meta / TikTok 向けの静的広告では、文字が読めるかどうかがそのまま採用可否になります。この記事では、特定のサービスに依存しない形で、文字入りの商品写真・広告クリエイティブを安定させるプロンプトの書き方を整理します。最後に、同じ方針で試せるブラウザ上の生成環境として GPT Image 2 に...",
-   "score": 0,
-   "added": "2026-11-07",
-   "tries": 1
-  },
-  {
-   "id": "1ae169fb23a9",
-   "source": "GitHub Trending",
-   "title": "mattpocock/skills",
-   "url": "https://github.com/mattpocock/skills",
-   "summary": "Skills for Real Engineers. Straight from my .agents directory. (+883 stars today)",
-   "score": 883,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "454d0abed2a9",
-   "source": "Zennの「AI」のフィード",
-   "title": "Tech Watch 2026-11-01: 検証ループの設計",
-   "url": "https://zenn.dev/laiken/articles/20261101-tech-watch",
-   "summary": "AIが書きました🤖 この記事は、AIが書いたものをAIがレビューしてから公開しています。 L: 一度通った検査が、次の実行でも通るとは限らない。そこを人の注意力だけで埋めようとすると、長く動くエージェントほど運用が難しくなる気がする。検査を仕事の周りに置くとき、何を確認し、どこで止めるべきだろう。 今日の 10 件 Claude Code 2.1.316 Claude Code 2.1.316 は、サブエージェントの既定の推論強度、管理ポリシーの重ね合わせ、共有予算などを追加した。 背景処理から復帰したサブエージェントのモデル継承や、制限付き作業領域からのファイル送信も修正し...",
-   "score": 0,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "8a080a19e768",
-   "source": "GitHub Trending",
-   "title": "github/spec-kit",
-   "url": "https://github.com/github/spec-kit",
-   "summary": "💫 Toolkit to help you get started with SDD or any other process! (+808 stars today)",
-   "score": 808,
-   "added": "2026-11-05",
-   "tries": 2
-  },
-  {
-   "id": "12314bf7dfad",
-   "source": "Zennの「AI」のフィード",
-   "title": "1つのキーで主要モデル70種に接続できるOSSのローカルAIボット「AnyModelBot」",
-   "url": "https://zenn.dev/malachi_amb/articles/df4580505116b3",
-   "summary": "こんにちは。AnyModelBot の共同開発者の Malachi です。 AnyModelBot とは 自分のPC上で動く AI ボットです。MIT ライセンスのオープンソースで、無料で使えます。 特徴 1つのキーで70モデル：Modelflare Key 1つで、世界の主要モデル70種を切り替えられます。従量課金・月額料金なし。 ローカル動作・OSS：コードはすべて GitHub で公開しています。 PC操作：AIがPC上で操作を実行できます（macOS のみ、Beta）。 ローカル長期記憶：Markdown ファイルとして保存され、自由に閲覧・編集できます。 イ...",
-   "score": 0,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "ea97e2f9b307",
-   "source": "GitHub Trending",
-   "title": "anthropics/skills",
-   "url": "https://github.com/anthropics/skills",
-   "summary": "Public repository for Agent Skills (+754 stars today)",
-   "score": 754,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "149152c815e9",
-   "source": "Zennの「AI」のフィード",
-   "title": "ローカルLLM study6: 資料作成・要約用途で、小型モデルは「形式の指示」にどこまで従うか",
-   "url": "https://zenn.dev/tkpurine/articles/local-llm-study-006-summarization-check",
-   "summary": "結論: 要約の「3〜5個の箇条書き」という緩い指示には、試した6モデルが3回とも従った。しかし「ちょうど3個・各80字以内」「スライド5枚・番号付きタイトルのみ」のような厳しい形式の指示では、モデルごとに結果が割れ、モデルの大きさでは説明できなかった。最初の測定(1回)で見えた「指示を無視した」という結果は、今回の条件では再現しなかった。 読者が得るもの: 要約・資料作成にローカルLLMを使うときに、形式の指示をどの強さで書けばよいか、モデルを替えると何が起きるかの実測。形式を機械的に検査するスクリプトの考え方。 この記事について これまでの検証(study1〜5)はコーディング...",
-   "score": 0,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "92509c4f30bf",
-   "source": "GitHub Trending",
-   "title": "Donchitos/Claude-Code-Game-Studios",
-   "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-   "summary": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy. (+742 stars today)",
-   "score": 742,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "13fc56ecad4e",
-   "source": "Zennの「AI」のフィード",
-   "title": "公式のClaude拡張に裏口、約12時間。AI道具をどう守るか",
-   "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261031",
-   "summary": "2026年10月31日（土）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。 今日の話、いちばん大事なのは「公式だから安心」が崩れたことなんですよ。公式のAI道具に裏口が見つかって、約12時間も配られていました。他にも、AIの代理注文はまだ数百件、ハイテク株の急落、AIの書き込みを止める新設定、Starbucksの個別メニュー案まで。熱狂と現実の距離が見える5本です。皆さんの動き方までお話しします。 1. 公式のClaude拡張に裏口、約12時間も配布 6コマ漫画（案内役: ゼロ） ちょっと怖い話からいきますね。Cursor（AIでコードを書く道具）...",
-   "score": 0,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "76a267c59bdc",
-   "source": "GitHub Trending",
-   "title": "D4Vinci/Scrapling",
-   "url": "https://github.com/D4Vinci/Scrapling",
-   "summary": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here:https://discord.gg/EMgGbDceNQand follow here for daily tips and tricks:https://x.com/Scrapling_dev (+706 stars today)",
-   "score": 706,
-   "added": "2026-11-03",
-   "tries": 2
-  },
-  {
-   "id": "80512dc5bac9",
-   "source": "Zennの「AI」のフィード",
-   "title": "15歳でもわかるJev その3 — 「AIの自信」は当てになるか、13行のPythonで測る",
-   "url": "https://zenn.dev/hfujihira/articles/hf-4f8e8e041205",
-   "summary": "前編で「Jev は文章を書かず、選択肢と自信の数字だけを返す」と紹介し、その2で「Jev は自信 74% より上では一度も間違えなかった」と書いた。 ただし、あれは意見が割れた 35 通だけの話だった。今回は、人手で正解を付けた 65 通すべてを使って、自信の数字がどれくらい当てになるのかを帯ごとに測り直す。やり方はひとつだけで、Python は 13 行で足りる。 前編: 15歳でもわかるJev — 文章を書かないAIは何が違うのか その2: 点数で負けたほうが役に立った 「自信が当てになる」とはどういうことか AI が「このメールはお金が動いた知らせです。自信 90%」と言ったと...",
-   "score": 0,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "d2f39386e20e",
-   "source": "GitHub Trending",
-   "title": "p-e-w/heretic",
-   "url": "https://github.com/p-e-w/heretic",
-   "summary": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more (+701 stars today)",
-   "score": 701,
-   "added": "2026-11-04",
-   "tries": 2
-  },
-  {
-   "id": "76d068e9376c",
-   "source": "Zennの「AI」のフィード",
-   "title": "AI漫画制作の始め方｜使えるツールと制作の流れ",
-   "url": "https://zenn.dev/lyra_japan/articles/a1c319363cc764",
-   "summary": "AIで漫画を作る方法は、大きく分けると画像を一枚ずつ作って漫画に組む方法と、物語・キャラクター・コマ構成からページを作る方法があります。違いは絵柄だけではありません。構成、セリフ、画像の配置をいつ決め、修正時にどこへ戻るかが変わります。 この記事では、漫画制作を「準備・構成・画像・仕上げ」に分け、二つの方法で作り手が担う工程を比較します。Lyra Japanの開発・運営側として、確認できる公式の制作フローをページ制作型の例に使います。個別の画像生成サービスとの品質比較や、同じ入力を使った生成実験ではありません。 漫画制作には、画像の前後にも工程がある 短い漫画でも、完成までには次の作...",
-   "score": 0,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "d8699931bd0d",
-   "source": "GitHub Trending",
-   "title": "JustVugg/colibri",
-   "url": "https://github.com/JustVugg/colibri",
-   "summary": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 (+675 stars today)",
-   "score": 675,
-   "added": "2026-11-03",
-   "tries": 2
-  },
-  {
-   "id": "15e72f0a5a38",
-   "source": "Zennの「AI」のフィード",
-   "title": "Kiro CLIとKiro Crewを改めて入門してAWSで動かすまで",
-   "url": "https://zenn.dev/upgradetech/articles/2026-11-kiro-crew-api-key-intro",
-   "summary": "KiroはIDEだけの製品ではなくなりました。2026年11月時点では、IDE、CLI、Web、Mobile、そしてCrewの5つの入口があります。 特にCLIはAPIキーでヘッドレス実行ができるようになり、Crewは自分のマシンに常駐して仕事を進めるエージェントとして公開されました。 IDEでSpecを書いた経験はあるけれど最近は触っていない、という状態から、CLIとCrewとAPIキーを実機で一通り試して整理しました。 Kiroの今の全体像 入口は公式ドキュメントの数え方で5つあります。 IDEは従来どおりで、チャットとSpecsとHooksがあります。CLIにはヘッドレスモー...",
-   "score": 0,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "1b3010101444",
-   "source": "GitHub Trending",
-   "title": "scenario-labs/skills",
-   "url": "https://github.com/scenario-labs/skills",
-   "summary": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity. (+667 stars today)",
-   "score": 667,
-   "added": "2026-11-06",
-   "tries": 2
-  },
-  {
-   "id": "85b96a283ce5",
-   "source": "Zennの「AI」のフィード",
-   "title": "今日の市場ブリーフィング",
-   "url": "https://zenn.dev/bambampurin/articles/2026-09-22-market-daily",
-   "summary": "日経平均65,000円突破とレーザーテック+8.7%急騰から読み解く市場指標リファレンス この記事で分かること 65,000円台に乗せた日経平均株価と米国市場の温度差 米10年債利回り4.97%の上昇下におけるVIX指数と為替の動向 レーザーテック急騰にみる半導体関連株とその他主要銘柄の明暗 主要株価指数の動きを把握する方法 日経平均株価が65,000円の大台を突破した背景には、ハイテク株を中心とした市場の買い展開が存在します。 2026年9月22日の日経平均株価は前日比+1.38%（+886.08円相当）上昇し、65,018.95円で取引を終えました。出来高は1億...",
-   "score": 0,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "c3257d531a3c",
-   "source": "GitHub Trending",
-   "title": "obra/superpowers",
-   "url": "https://github.com/obra/superpowers",
-   "summary": "An agentic skills framework & software development methodology that works. (+665 stars today)",
-   "score": 665,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "beeebffada14",
-   "source": "Zennの「AI」のフィード",
-   "title": "Agent DX 〜 AI時代にフレームワークHonoは必要か",
-   "url": "https://zenn.dev/yusukebe/articles/3d3dc6605ca1b1",
-   "summary": "AIがユーザーになりました。我々は人間向けの開発者ではなく、AI向けの開発者体験を考えなくてはいけません。 我々は人間です。雰囲気で「フレームワークは必要ない」「フレームワークは必要」と言っても、AIの意見ではありません。人間の意見です。説得力がありません。我々人間はAIのことをもっと知らなくてはいけません。 そこで、Honoでは「Agent DX」というプロジェクトを立ち上げて、AI向けの開発者体験をちゃんと測りました。以下3つのカンファレンスでAgent DXについて話しました。 AI時代のWebフレームワークはどこへ行く？ - フロントエンドカンファレンス福岡 2026 Hono...",
-   "score": 0,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "c175a33fc995",
-   "source": "GitHub Trending",
-   "title": "shiyu-coder/Kronos",
-   "url": "https://github.com/shiyu-coder/Kronos",
-   "summary": "Kronos: A Foundation Model for the Language of Financial Markets (+630 stars today)",
-   "score": 630,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "a4da981375e0",
-   "source": "Zennの「AI」のフィード",
-   "title": "Unlimited-OCR-2で完全ローカルOCRワークベンチ構築：長文PDF・数式・表もVRAM一定で爆速解析",
-   "url": "https://zenn.dev/lumichy/articles/unlimited-ocr-2-workbench-2026",
-   "summary": "社内文書や学術論文、請求書などのPDF解析をクラウドAPI（Google Cloud Document AI や Azure AI Document Intelligence、あるいは GPT-4o / Claude 3.5 Sonnet）に丸投げしていませんか？ 確かにクラウドAPIは手軽ですが、機密データの外部送信リスク や 毎月の従量課金コスト は無視できない問題です。かといって、従来のオープンソースOCRである Tesseract を使うと、複数段組みや数式、セル結合の多いテーブルに出くわした瞬間にテキスト順序が崩壊してしまいます。 そんなドキュメント解析の悩みを根本から覆すモ...",
-   "score": 0,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "7c09473f1ffc",
-   "source": "GitHub Trending",
-   "title": "harry0703/MoneyPrinterTurbo",
-   "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-   "summary": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow. (+617 stars today)",
-   "score": 617,
-   "added": "2026-11-05",
-   "tries": 2
-  },
-  {
-   "id": "0c5a23886756",
-   "source": "Zennの「AI」のフィード",
-   "title": "Coding Agent の「作り直し」と「検証ミス」を減らす：Matt Pocock Skills × pstack",
-   "url": "https://zenn.dev/ryodev/articles/469b436dee634a",
-   "summary": "最近、Coding Agent を使った開発で、Matt Pocock Skills と pstack を組み合わせて使うことが増えています。 最初は便利そうな Skill を個別に試していただけでしたが、ソースコードやドキュメント、ほかの開発者の使用例を読んでいるうちに、それぞれの設計思想にも興味を持つようになりました。 実際に使い続ける中で、両者の良いところを取り入れた、自分なりのワークフローが少しずつ固まってきました。 特に役立っているのは、Spec を書いたのに UI が想像と違ったり、Agent がこちらの意図していない判断をしたり、変更後のアプリを検証したつもりが古いプロセス...",
-   "score": 0,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "20703a86e2b0",
-   "source": "GitHub Trending",
-   "title": "calesthio/OpenMontage",
-   "url": "https://github.com/calesthio/OpenMontage",
-   "summary": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio. (+583 stars today)",
-   "score": 583,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "d34053e9ecc9",
-   "source": "Zennの「AI」のフィード",
-   "title": "Claude Desktopで「確認してから断定する」を全部の発言にかける——FA開発で使っている常時規則のスキル",
-   "url": "https://zenn.dev/kensho_ya/articles/claude-desktop-always-on-rules-verify-first",
-   "summary": "Claude Desktopには、STやFHマクロの書き方を決めたスキルとは別に、作業の進め方そのものを決めたスキルを1本入れている。この記事に関係するのは、そのうちの2つの部分だ。1つは成果物を作るときの工程で、仕様の分解から検証、出力の形までを決めている。もう1つは「常時規則」と名付けた節で、成果物の有無に関係なく、すべての発言にかける規則だ。 工程の側には仕様トレース・机上トレース・独立レビューがあり、検証プロトコルの記事で書いた内容と重なるので、ここでは扱わない。この記事では常時規則の中身を書く。自分で使いながら手を入れている途中のもので、完成形ではない。 出発点は「出力に現...",
-   "score": 0,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "3a0b0b37a392",
-   "source": "GitHub Trending",
-   "title": "hyprwm/Hyprland",
-   "url": "https://github.com/hyprwm/Hyprland",
-   "summary": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks. (+509 stars today)",
-   "score": 509,
-   "added": "2026-11-03",
-   "tries": 2
-  },
-  {
-   "id": "4a81f9c8fb4c",
-   "source": "Zennの「AI」のフィード",
-   "title": "Claude Codeに「進捗どう？」と聞くのをやめた ― 隣の画面で勝手に育つ\"きょうのボード\"",
-   "url": "https://zenn.dev/jir0/articles/4cbcdd7421f26e",
-   "summary": "複数のプロジェクトを Claude Code に委任して並行で進めていると、1日に何度も同じことをやる羽目になります。 チャット窓を切り替えて「進捗どう？」と聞く。長い返事を読む。別の窓に切り替えて、また聞く。夕方になると「今日って結局何が終わったんだっけ」とスクロールで遡る——委任した作業そのものより、状況把握のほうが仕事になっている瞬間がありました。 で、気づいたんです。Claude はファイルを書けるんだから、進捗ボードも Claude に書かせればいい。私が聞きに行くのではなく、向こうが書きに来る形にすればいい。 そうして作ったのが「きょうのボード」です。この記事はその紹介と、作...",
-   "score": 0,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "eeaf9b0a846d",
-   "source": "GitHub Trending",
-   "title": "floci-io/floci",
-   "url": "https://github.com/floci-io/floci",
-   "summary": "Light, fluffy, and always free - The AWS Local Emulator alternative (+482 stars today)",
-   "score": 482,
-   "added": "2026-11-04",
-   "tries": 2
-  },
-  {
-   "id": "9607e45c4952",
-   "source": "Zennの「AI」のフィード",
-   "title": "AI生成コードのレビューで先に確認したい5つの前提",
-   "url": "https://zenn.dev/techstudiolab/articles/review-ai-generated-code-business-assumptions",
-   "summary": "AIが生成したコードはテストを通過し、画面でも期待どおりに動いている。それでも、更新してはいけない注文までキャンセルされる実装だったら、承認できるでしょうか。 AIコーディングツールを使うほど、レビュー対象のコードは増えます。細部まで確認する時間を確保するのも簡単ではありません。 私なら、実装の細部を追う前に、AIがどんな業務上の前提を置いてコードを書いたのかを確認します。 架空の受注管理システムを例に、レビューで確認したい5つの前提と、その確認を効率よく進める手順を整理します。 テストが通っても、要求を満たしたとは限らない コードレビューでは、条件分岐、例外処理、型、テスト、セキ...",
-   "score": 0,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "af11c4a85f03",
-   "source": "GitHub Trending",
-   "title": "beenuar/AiSOC",
-   "url": "https://github.com/beenuar/AiSOC",
-   "summary": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue. (+446 stars today)",
-   "score": 446,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "f53fda008733",
-   "source": "Zennの「AI」のフィード",
-   "title": "既存コードから仕様書・テストまでをつなぐ開発フローを、Codex の Agent Skills で作った話",
-   "url": "https://zenn.dev/elletech/articles/bbadfc622f2cd2",
-   "summary": "はじめに Webアプリの新規開発で、Codex の Agent Skills を使って「既存のソースコードから仕様書を作り、その仕様書からテストを作って実行する」までを一つの流れにまとめました。この記事では、その仕組みと、やってみてうまくいかなかったこと・工夫したことを書きます。 どんな状態だったか 技術スタックは TypeScript / Next.js / MUI / Prisma / PostgreSQL です。 ソースコードはあるものの、画面仕様書・API仕様書・テスト仕様書はまとまった形で存在せず、仕様は一部の人の頭の中にしかありませんでした。 そんな中で、単体テストの...",
-   "score": 0,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "77049851f70b",
-   "source": "GitHub Trending",
-   "title": "max-sixty/worktrunk",
-   "url": "https://github.com/max-sixty/worktrunk",
-   "summary": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows (+438 stars today)",
-   "score": 438,
-   "added": "2026-11-04",
-   "tries": 2
-  },
-  {
-   "id": "6a250085de15",
-   "source": "Zennの「AI」のフィード",
-   "title": "AIに無人運用させたパイプラインで、エラーを出さずに壊れていた8件と検知の作り方",
-   "url": "https://zenn.dev/zenn_content/articles/unattended-pipeline-silent-failures",
-   "summary": "はじめに 結論: Claude Code に作らせ・直させながら毎日無人で回している自作の知見収集パイプラインで、エラーを出さないまま壊れていた故障を、修正コミットと調査記録から数え直すと、期間まで言えるものが8件ありました。一番長いのは約4か月（日次バックアップが一度も動いていなかった）、一番長く「鳴っていたのに気づかなかった」のは28日間（評価の前段フィルタが毎日約800行の警告を出しながら素通りしていた）です。 8件に共通していたのは、「止まらない設計」「起動した記録」「exit 0」が、そのまま**「気づかない」の原因**になっていたことでした。 この記事では、8件の一覧（何...",
-   "score": 0,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "613a41025d12",
-   "source": "GitHub Trending",
-   "title": "anomalyco/hex",
-   "url": "https://github.com/anomalyco/hex",
-   "summary": "Local voice dictation for mac, windows and linux (+410 stars today)",
-   "score": 410,
-   "added": "2026-11-04",
-   "tries": 2
-  },
-  {
-   "id": "787317c0275e",
-   "source": "Zennの「AI」のフィード",
-   "title": "AIの定期タスクを止めずに回す：使用量の上限・モデルの使い分け・時間の分散・見張り役",
-   "url": "https://zenn.dev/shoyomayabot/articles/keep-scheduled-ai-tasks-running",
-   "summary": "AIエージェントには、決まった時間に仕事をさせる「スケジュールタスク」を設定できます。毎朝のニュースまとめ、毎週のレポート、記事の投稿などです。 便利な反面、数が増えると困ったことが起きます。気づいたら止まっている。朝に失敗したのに、夜まで誰も気づかない。使用量の上限に当たって、まとめて失敗する。 この記事では、AIの定期タスクを止めずに回すための工夫を4つ紹介します。 使用量の上限を知る モデルを使い分ける 実行時間を分散させる 見張り役のタスクを置く 例はClaudeのスケジュールタスクですが、考え方は他のAIサービスでも同じです。 1. 使用量の上限を知る AIのサブスクリ...",
-   "score": 0,
-   "added": "2026-11-03",
    "tries": 2
   },
   {
@@ -905,127 +469,187 @@
    "summary": "An extremely fast Python linter and code formatter, written in Rust. (+350 stars today)",
    "score": 350,
    "added": "2026-11-08",
-   "tries": 1
+   "tries": 2
   },
   {
-   "id": "ec0f034db6b7",
+   "id": "a39e3201ea61",
    "source": "Zennの「AI」のフィード",
-   "title": "AIコーディングエージェント向け検出器「impeccable」で自分のHTMLを検査したら94件の指摘が出た",
-   "url": "https://zenn.dev/matsushima_a/articles/day-034-impeccable-detect-contrast",
-   "summary": "要約 海外AIネタ100日チャレンジのDay 034。GitHub TrendingのJavaScript/TypeScriptランキングで急伸していたpbakaus/impeccable(Apache-2.0)を試した。 impeccableは、AIコーディングエージェントが生成するUIに特有の「いかにもAI感(AIスロップ)」なデザインパターンを、62個の決定論的なルールでLLM・APIキーなしに検出するCLIツール。 本チャレンジ自身が毎日作っているX投稿用シェアカードHTML(posts/cards/day-NNN.html、31枚)とその土台のテンプレートに対してimpe...",
+   "title": "画像内テキストが崩れないプロンプト設計：商品写真・広告向けチェックリスト",
+   "url": "https://zenn.dev/decomytree/articles/781e53405126ee",
+   "summary": "はじめに AI 画像生成でいちばんつまずきやすいのが、画像の中に入れる文字です。ポスターの見出し、パッケージの商品名、UI モックのラベル——どれも「なんとなく文字っぽい形」までは出るのに、いざ拡大すると字形が崩れたり、意図と違う綴りになったりしがちです。 一方で、EC の商品写真や Meta / TikTok 向けの静的広告では、文字が読めるかどうかがそのまま採用可否になります。この記事では、特定のサービスに依存しない形で、文字入りの商品写真・広告クリエイティブを安定させるプロンプトの書き方を整理します。最後に、同じ方針で試せるブラウザ上の生成環境として GPT Image 2 に...",
    "score": 0,
-   "added": "2026-11-03",
-   "tries": 2
-  },
-  {
-   "id": "7d8c130e960b",
-   "source": "GitHub Trending",
-   "title": "bregman-arie/devops-exercises",
-   "url": "https://github.com/bregman-arie/devops-exercises",
-   "summary": "Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions (+342 stars today)",
-   "score": 342,
-   "added": "2026-11-01",
-   "tries": 2
-  },
-  {
-   "id": "74848808399e",
-   "source": "Zennの「AI」のフィード",
-   "title": "AIエージェントの購入委任をRubyで扱う — AP2対応SDK v1.0.0を公開しました",
-   "url": "https://zenn.dev/ccq/articles/6ca97030e6c8fd",
-   "summary": "AIエージェントがユーザーの代わりに商品を購入する場合、販売者はどうやって「このAgentには、その商品を買う権限がある」と確認すればよいのでしょうか。 この課題に取り組む仕組みの一つが、AP2（Agentic Payment Protocol）です。 AP2のCheckout MandateをRubyで扱うOSS、ap2_mandate_verifierのv1.0.0を公開しました。 以前の記事では、v0.1.0を使い、正常・改ざん・期限切れの3ケースで「購入委任を検証する」ところを紹介しました。 今回は、そこから広がった発行 → 提示 → 検証 → Checkout Receipt確...",
-   "score": 0,
-   "added": "2026-11-03",
-   "tries": 2
-  },
-  {
-   "id": "ed6cd510886f",
-   "source": "GitHub Trending",
-   "title": "cjpais/Handy",
-   "url": "https://github.com/cjpais/Handy",
-   "summary": "A free, open source, and extensible speech-to-text application that works completely offline. (+339 stars today)",
-   "score": 339,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "14d8f064d737",
-   "source": "Zennの「AI」のフィード",
-   "title": "EVM simulationが成功しても止める：AIエージェントのALLOW・WARN・BLOCK設計",
-   "url": "https://zenn.dev/rinku/articles/evm-simulation-policy-decisions",
-   "summary": "EVMトランザクションを組み立てるエージェントでは、送信前に「callが成功するか」と「アプリの方針として進めてよいか」を分けて扱う必要があります。 TxGuardの判定層を使って、同じsimulation成功でもALLOW・WARN・BLOCKが変わる例をローカルで再現します。対象は、すでにEVM callを作っているTypeScript開発者です。ウォレット接続や送信は行いません。 この記事では、TxGuardの判定層とSDKの動作をローカルで検証しています。公開APIの稼働、SDKのnpm公開、顧客利用や収益は今回確認していません。以下の出力は合成fixtureであり、実際のチェー...",
-   "score": 0,
-   "added": "2026-11-03",
-   "tries": 2
-  },
-  {
-   "id": "a55c819fccc2",
-   "source": "GitHub Trending",
-   "title": "public-apis/public-apis",
-   "url": "https://github.com/public-apis/public-apis",
-   "summary": "A collective list of free APIs (+324 stars today)",
-   "score": 324,
-   "added": "2026-11-02",
-   "tries": 2
-  },
-  {
-   "id": "6a8114095e57",
-   "source": "Zennの「AI」のフィード",
-   "title": "三人将棋では「駒得は正義」が通用しない  ―― 【出る杭は打たれる】",
-   "url": "https://zenn.dev/mataasobo/articles/58c207cd3de160",
-   "summary": "自作の三人将棋で、AlphaZero 方式で学習させたAI2人と対局しました。 受け続けて粘ったら持ち駒が19枚まで増えましたが、負けました。 気になってデータを調べると、三人将棋では、持ち駒は5枚を超えると持っているだけで損になっていました。 三人将棋とAI 9×9の盤で、青・赤・緑の3人が指します。玉を取られた人は脱落し、最後に残った1人が勝ちです。取った駒は持ち駒にできます。 AIは自己対局だけで学習させたもので、ブラウザの中で動きます。 遊べるページ：https://mataasobo.com/shogi3/shogi3.html 持ち駒を1枚足してみる AIどうしの...",
-   "score": 0,
-   "added": "2026-11-03",
-   "tries": 2
-  },
-  {
-   "id": "971dc80d2487",
-   "source": "GitHub Trending",
-   "title": "karpathy/nanochat",
-   "url": "https://github.com/karpathy/nanochat",
-   "summary": "The best ChatGPT that $100 can buy. (+321 stars today)",
-   "score": 321,
-   "added": "2026-11-03",
-   "tries": 2
-  },
-  {
-   "id": "9d75410b7476",
-   "source": "Zennの「AI」のフィード",
-   "title": "コードレビューより設計レビュー",
-   "url": "https://zenn.dev/tanashun/articles/review-before-ai-writes",
-   "summary": "AI が書いた PR を、人はどこまで読むべきか。最近、「コードを読まずにマージする」という話をよく見かけます。 私は、AI と開発するなら、人のレビューの重心を、コードレビューから設計レビューに移すのがよいと考えています。AI が書く前に設計レビューをしておけば、コードレビューで人が読むのは、1 点だけで済みます。「要件に無いものが、AI の判断で足されていないか」です。 開発部長として、チームでこの形にしています。この記事では、その理由とやり方を紹介します。 「読まずにマージ」の議論と、どこが違うか 「コードを読まずにマージする」という議論の多くは、コードレビューのうち、どこを人...",
-   "score": 0,
-   "added": "2026-11-03",
-   "tries": 2
-  },
-  {
-   "id": "b492ec56ce07",
-   "source": "GitHub Trending",
-   "title": "zed-industries/zed",
-   "url": "https://github.com/zed-industries/zed",
-   "summary": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. (+306 stars today)",
-   "score": 306,
    "added": "2026-11-07",
    "tries": 2
   },
   {
-   "id": "167196021f8d",
-   "source": "Zennの「AI」のフィード",
-   "title": "Geminiのカスタムアシスタント「Gem」から「スキル」への移行入門",
-   "url": "https://zenn.dev/shangyuan/articles/bdaead308019e0",
-   "summary": "概要 / 目的 GeminiのGemを、これまで愛用してきた方なら、すでにこんな注意書きを見たことがあるはずです。 個人アカウントなら、有料・無料プラン限らず、2026年11月17日に、 組織向けのアカウントなら、企業向けは2027年3月、教育向けは2027年6月以降に順次移行となります。 いままでGemで作っていたものを、今後はスキルで作る必要があります。 この記事では、これまでGeminiの機能として活用されてきたカスタム指示機能（Gem）から、新しく「スキル」システムへの移行を踏まえ、独自の「スキル」を作成する方向けの導入手順をまとめています。 達成できたこと: Gem...",
-   "score": 0,
-   "added": "2026-11-03",
+   "id": "86d75ee29cf1",
+   "source": "GitHub Trending",
+   "title": "dsx-ai-factory/nvke",
+   "url": "https://github.com/dsx-ai-factory/nvke",
+   "summary": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal. (+345 stars today)",
+   "score": 345,
+   "added": "2026-11-09",
+   "tries": 1
+  },
+  {
+   "id": "40370f04263d",
+   "source": "GitHub Trending",
+   "title": "The-PR-Agent/pr-agent",
+   "url": "https://github.com/The-PR-Agent/pr-agent",
+   "summary": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier. (+280 stars today)",
+   "score": 280,
+   "added": "2026-11-05",
    "tries": 2
   },
   {
-   "id": "8ed11f9c07a0",
+   "id": "7d96f7c53b45",
    "source": "GitHub Trending",
-   "title": "garrytan/gstack",
-   "url": "https://github.com/garrytan/gstack",
-   "summary": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA (+290 stars today)",
-   "score": 290,
-   "added": "2026-11-05",
+   "title": "react/react",
+   "url": "https://github.com/react/react",
+   "summary": "The library for web and native user interfaces. (+248 stars today)",
+   "score": 248,
+   "added": "2026-11-07",
    "tries": 2
+  },
+  {
+   "id": "104b57e9a431",
+   "source": "GitHub Trending",
+   "title": "microsoft/VibeVoice",
+   "url": "https://github.com/microsoft/VibeVoice",
+   "summary": "Open-Source Frontier Voice AI (+245 stars today)",
+   "score": 245,
+   "added": "2026-11-08",
+   "tries": 1
+  },
+  {
+   "id": "586dee9a79c1",
+   "source": "GitHub Trending",
+   "title": "FlashML-org/FreeToken",
+   "url": "https://github.com/FlashML-org/FreeToken",
+   "summary": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently. (+242 stars today)",
+   "score": 242,
+   "added": "2026-11-02",
+   "tries": 2
+  },
+  {
+   "id": "e693c29af620",
+   "source": "GitHub Trending",
+   "title": "Usagi-org/ai-goofish-monitor",
+   "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+   "summary": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。 (+228 stars today)",
+   "score": 228,
+   "added": "2026-11-04",
+   "tries": 2
+  },
+  {
+   "id": "69c7eb76fe0b",
+   "source": "GitHub Trending",
+   "title": "google/skills",
+   "url": "https://github.com/google/skills",
+   "summary": "Agent Skills for Google products and technologies (+211 stars today)",
+   "score": 211,
+   "added": "2026-11-06",
+   "tries": 1
+  },
+  {
+   "id": "bfeff07f7d86",
+   "source": "GitHub Trending",
+   "title": "jamiepine/voicebox",
+   "url": "https://github.com/jamiepine/voicebox",
+   "summary": "The open-source AI voice studio. Clone, dictate, create. (+208 stars today)",
+   "score": 208,
+   "added": "2026-11-09",
+   "tries": 1
+  },
+  {
+   "id": "1b489a90529a",
+   "source": "GitHub Trending",
+   "title": "rust-lang/rust",
+   "url": "https://github.com/rust-lang/rust",
+   "summary": "Empowering everyone to build reliable and efficient software. (+192 stars today)",
+   "score": 192,
+   "added": "2026-11-07",
+   "tries": 1
+  },
+  {
+   "id": "5a6031603e23",
+   "source": "GitHub Trending",
+   "title": "mbillow/localthings",
+   "url": "https://github.com/mbillow/localthings",
+   "summary": "Control your Samsung appliances from Home Assistant over your home network, with no cloud account. (+186 stars today)",
+   "score": 186,
+   "added": "2026-11-08",
+   "tries": 1
+  },
+  {
+   "id": "c34811c59d2d",
+   "source": "GitHub Trending",
+   "title": "vercel-labs/agent-browser",
+   "url": "https://github.com/vercel-labs/agent-browser",
+   "summary": "Browser automation CLI for AI agents (+150 stars today)",
+   "score": 150,
+   "added": "2026-11-06",
+   "tries": 1
+  },
+  {
+   "id": "012e9cf37550",
+   "source": "GitHub Trending",
+   "title": "googlecolab/google-colab-cli",
+   "url": "https://github.com/googlecolab/google-colab-cli",
+   "summary": "A CLI for interacting with Google Colab runtimes (+104 stars today)",
+   "score": 104,
+   "added": "2026-11-09",
+   "tries": 1
+  },
+  {
+   "id": "685c56ef2ba7",
+   "source": "GitHub Trending",
+   "title": "google-deepmind/mujoco",
+   "url": "https://github.com/google-deepmind/mujoco",
+   "summary": "Multi-Joint dynamics with Contact. A general purpose physics simulator. (+41 stars today)",
+   "score": 41,
+   "added": "2026-11-09",
+   "tries": 1
+  },
+  {
+   "id": "c3f511fde4e1",
+   "source": "Zennの「AI」のフィード",
+   "title": "Claude × サスケWorks で、目標設定から評価までの自動化を試してみた ― promptfoo を添えて",
+   "url": "https://zenn.dev/interpark/articles/315a520d9590b3",
+   "summary": "人事の眞鍋さんと、目標管理をテーマにそれぞれツールを作りました。 目指しているのは、会社の成長と、一人ひとりが納得して働けること。そのために何ができるかを、人事とエンジニア、それぞれの立場から考える企画です。 眞鍋さんは、「本人がどうなりたいか」から目標を考えるツールを。私は、「やった仕事をどう評価するか」から逆算して、目標設定と評価をつなぐツールを作りました。 使ったのは、どちらも Claude とサスケWorks です。 同じ課題に、同じ道具で、逆方向から答えてみる。この記事では、エンジニア側の考え方と、作ってみて分かったことを紹介します。 ! なお、今回紹介するのは、私自身のデータ...",
+   "score": 0,
+   "added": "2026-11-09",
+   "tries": 1
+  },
+  {
+   "id": "13df77a00c23",
+   "source": "GitHub Trending",
+   "title": "anthropics/claude-quickstarts",
+   "url": "https://github.com/anthropics/claude-quickstarts",
+   "summary": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API (+32 stars today)",
+   "score": 32,
+   "added": "2026-11-09",
+   "tries": 1
+  },
+  {
+   "id": "509b4ed021cd",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIとの共同作業が楽しくなってきた — 分かってきたことと、まだ見えない深淵",
+   "url": "https://zenn.dev/sugitakenji/articles/a248cfd0475e29",
+   "summary": "最近、楽しくなってきた 最近、AIとの共同作業が楽しくなってきました。 文章を書き、技術資料を読み直し、プログラムを直し、出来上がったものを確かめる。そうした仕事を一緒に進める中で、「ここをもう少し変えてみよう」「それなら、次はこれもできるのではないか」と思う場面が増えています。 一つの仕事が片付くとうれしい。その過程で、最初には考えていなかったことが見えてくるのも面白い。完成したものを見る楽しさと、考えながら作っている時間の楽しさがあります。 AIがどのようなものなのか、少し分かってきた気がします。 どのような材料を渡せば仕事が進むのか。どこで意図がずれやすいのか。何を任せ、何を自...",
+   "score": 0,
+   "added": "2026-11-09",
+   "tries": 1
+  },
+  {
+   "id": "3dfe5fb91b96",
+   "source": "Zennの「AI」のフィード",
+   "title": "できるだけ無料でHuman-out-of-the-loop（HOOTL）を作ってみた",
+   "url": "https://zenn.dev/ts/articles/ee4686f0ad0309",
+   "summary": "はじめに 自宅のWindows PCで、GitHubのIssueをトリガーとして、調査・作成・別のAIによる検証・修正までを人の手を離れて進めるHuman-out-of-the-loop（HOOTL）なエージェントの仕組みを、実験しています。人が関わるのは、最初にIssueでゴールを決めるときと、最後に結果を確認するときだけです。本記事には、その過程で得た知識を記載しました。実験用の構成なので、本番運用には向かないサービスも利用しています。 また、この記事は、作りながら自分の理解を整理するためのメモでもあります。仕組みの説明に加えて、設計で迷ったところと、実際にハマったところをなるべ...",
+   "score": 0,
+   "added": "2026-11-09",
+   "tries": 1
   }
  ],
  "posts": [
@@ -1404,11 +1028,11 @@
  ],
  "pseo_done": {},
  "source_order": [
-  "\"生成AI ツール\" - Google ニュース",
+  "Gemini検索",
   "Hacker News",
-  "Zennの「AI」のフィード",
+  "\"生成AI ツール\" - Google ニュース",
   "GitHub Trending",
-  "Gemini検索"
+  "Zennの「AI」のフィード"
  ],
  "topic_seen": []
 }
