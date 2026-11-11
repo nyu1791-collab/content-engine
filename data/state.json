@@ -275,9 +275,94 @@
   "9b20940c19c0": "2026-11-10",
   "8726698e33d0": "2026-11-10",
   "30672aa4a08a": "2026-11-10",
-  "f6040b59a7b7": "2026-11-10"
+  "f6040b59a7b7": "2026-11-10",
+  "0d1bd25a3199": "2026-11-11",
+  "8ca276b505c3": "2026-11-11",
+  "76bd5c2a9497": "2026-11-11",
+  "78ddb48b10ae": "2026-11-11",
+  "5332af4a4cfe": "2026-11-11",
+  "0738ab9234a0": "2026-11-11",
+  "cad633b1fe46": "2026-11-11",
+  "8c60f8dc1e7b": "2026-11-11",
+  "86e3a75d4ebc": "2026-11-11",
+  "5cf07c263d69": "2026-11-11",
+  "a59c14c1fb43": "2026-11-11",
+  "42a93c6913bc": "2026-11-11",
+  "6db7f91d4efc": "2026-11-11",
+  "d29ce9bf8d6d": "2026-11-11",
+  "9603972a68f3": "2026-11-11",
+  "f0ef99550f04": "2026-11-11",
+  "34bd72bd8fba": "2026-11-11",
+  "73929e889d58": "2026-11-11",
+  "1163968c885e": "2026-11-11",
+  "ad241b4a9079": "2026-11-11",
+  "b8b2a667d755": "2026-11-11",
+  "256e315307d3": "2026-11-11"
  },
  "queue": [
+  {
+   "id": "f0ef99550f04",
+   "source": "Zennの「AI」のフィード",
+   "title": "[Amazon Nova 2.5 Sonic] 喋って動くぬいぐるみを作ってみた",
+   "url": "https://zenn.dev/aws_japan/articles/talking-plush-nova-sonic",
+   "summary": "はじめに 前回の記事では、音声を聞いて音声で返す speech-to-speech モデルの Amazon Nova 2.5 Sonic と、AWS がオープンソースで公開しているエージェントの SDK である Strands Agents の BidiAgent で、声で話しかけると Web を検索して答えるエージェントを作りました[1]。BidiAgent は、モデルとの接続を保ちながら声の入力と出力を同時に流し、会話と並行してツールを実行する Strands Agents のエージェントです。そのとき意外だったのが、ツールを挟んでも返事が速いことで、Web 検索そのものは 0....",
+   "score": 0,
+   "added": "2026-11-11"
+  },
+  {
+   "id": "34bd72bd8fba",
+   "source": "Zennの「AI」のフィード",
+   "title": "便利だから使うけど信頼してない？ オックスフォード大学が明らかにした生成AI利用者の本音",
+   "url": "https://zenn.dev/syoshida07/articles/a9703104f45941",
+   "summary": "オックスフォード大学ロイター・ジャーナリズム研究所は先日「Generative AI and News Report 2026」を公表した。 調査範囲は日本を含む9カ国で各国約2,000人が回答しており、2024年から続く6カ国では3年間の推移を比較でき、生成AIが社会に浸透する速度を時系列で捉えられる点が特徴である。 この論文内容を四つの視点で読み解き、日本への示唆と今後の提言につなげたい。 秋らしい挿絵、どことなくハリポタっぽく 引用元：University of Oxford：Generative AI and News Report 2026 急速に広がるAI利用 継続6カ...",
+   "score": 0,
+   "added": "2026-11-11"
+  },
+  {
+   "id": "73929e889d58",
+   "source": "Zennの「AI」のフィード",
+   "title": "GitHub の公開コミットの13%に、AIの署名が付いていた",
+   "url": "https://zenn.dev/damaha/articles/829c1a039aec5f",
+   "summary": "Claude Code にコミットまで任せると、メッセージの最後に Co-Authored-By: Claude <noreply@anthropic.com> の行が付きます。 自分のリポジトリでも毎日この行が増えていくので、「これ、GitHub 全体だとどれくらいあるんだろう」と気になりました。 この記事では、AIの署名が付いたコミットの数を、GitHub の公開の API で数えた結果を書きます。ツールごとの件数もくらべます。数字は2026年11月10日に数えたもので、いちばん新しい週は11月2日〜8日です。 GitHub で「noreply@anthropic.c...",
+   "score": 0,
+   "added": "2026-11-11"
+  },
+  {
+   "id": "1163968c885e",
+   "source": "Zennの「AI」のフィード",
+   "title": "Claude Fable 5.2のプロンプトガイドを読んで正直に思ったことを書く",
+   "url": "https://zenn.dev/tree_and_tree/articles/thoughts-on-claude-fable-5-2",
+   "summary": "はじめに https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-fable-5-2 Fable 5.2が発表されたのでプロンプトガイドのページを読んで思ったことをざっくりと書いていきます。 個人的に印象に残った内容を引用しつつ、所感を書きます。網羅的ではないので要約を見たい方は素直に↑のページをAIに読ませるのがいいと思います。 手元で軽く触ってみた結果も載せます。 以下常体で書きます。 プロンプトガイドの所感 effort Claude APIのデ...",
+   "score": 0,
+   "added": "2026-11-11"
+  },
+  {
+   "id": "ad241b4a9079",
+   "source": "Zennの「AI」のフィード",
+   "title": "【個人向け】AnthropicのIPOは買える？投資前に知りたい価格とリスク",
+   "url": "https://zenn.dev/student_blog/articles/anthropic-ipo-claude-money-flow",
+   "summary": "PR｜この記事にはアフィリエイトリンクが含まれます。 AnthropicのIPO（新規株式公開）が気になっている人にとって、知りたいのは「Claudeの会社はすごいのか」だけではないと思います。 自分も株を買えるのか。買えたら、利益を得られるのか。 Anthropicは2026年11月10日付の発表で、IPOの想定価格帯を1株70〜78ドルと示しました。SBI証券は日本の個人向けの取扱いを予定しています。最終的な公開価格やSBI証券の申込日程は、確定した案内で確認する必要があります。 この記事では、日本に住む個人がAnthropicのIPOを見て「投資を考えてみたい」と感じたとき、何を確...",
+   "score": 0,
+   "added": "2026-11-11"
+  },
+  {
+   "id": "b8b2a667d755",
+   "source": "Zennの「AI」のフィード",
+   "title": "Claude Code×VPSでAIを24時間動かす実測構築ガイド",
+   "url": "https://zenn.dev/selene_nyx_ai/books/claude-code-vps-24h-guide",
+   "summary": "フリーランスの右腕AI「セレネ」と後輩AI「ニクス」が、VPS上でClaude Codeを24時間動かして記事生成から公開までを回してきた構築記録。費用の内訳・失敗事例・構築チェックリストまで全部書く。",
+   "score": 0,
+   "added": "2026-11-11"
+  },
+  {
+   "id": "256e315307d3",
+   "source": "Zennの「AI」のフィード",
+   "title": "新人エンジニア必見！AI依存から脱却する方法とは",
+   "url": "https://zenn.dev/sunsun_eng/articles/new-engineers-ai-dependence",
+   "summary": "新人エンジニア必見！AI依存から脱却する方法とは この記事の要点 新人エンジニアはAIに依存することで基礎スキルが失われる危険があります。 AIを効果的に活用するためには、自分自身のスキル向上を意識することが重要です。 スキルや経験を積むための具体的な方法やリソースを紹介します。 新人エンジニアとしてキャリアをスタートした際、多くの方がAIの進化や便利さに注目しています。しかし、「AIがいなければ役に立たないハリボテ人間になってしまうのではないか」という不安も抱く方が多いのではないでしょうか。この記事では、AIに依存しすぎるリスクと、それを避けるための方法を探ります。 AI依...",
+   "score": 0,
+   "added": "2026-11-11"
+  },
   {
    "id": "509b4ed021cd",
    "source": "Zennの「AI」のフィード",
@@ -286,7 +371,7 @@
    "summary": "最近、楽しくなってきた 最近、AIとの共同作業が楽しくなってきました。 文章を書き、技術資料を読み直し、プログラムを直し、出来上がったものを確かめる。そうした仕事を一緒に進める中で、「ここをもう少し変えてみよう」「それなら、次はこれもできるのではないか」と思う場面が増えています。 一つの仕事が片付くとうれしい。その過程で、最初には考えていなかったことが見えてくるのも面白い。完成したものを見る楽しさと、考えながら作っている時間の楽しさがあります。 AIがどのようなものなのか、少し分かってきた気がします。 どのような材料を渡せば仕事が進むのか。どこで意図がずれやすいのか。何を任せ、何を自...",
    "score": 0,
    "added": "2026-11-09",
-   "tries": 1
+   "tries": 2
   },
   {
    "id": "3dfe5fb91b96",
@@ -296,7 +381,7 @@
    "summary": "はじめに 自宅のWindows PCで、GitHubのIssueをトリガーとして、調査・作成・別のAIによる検証・修正までを人の手を離れて進めるHuman-out-of-the-loop（HOOTL）なエージェントの仕組みを、実験しています。人が関わるのは、最初にIssueでゴールを決めるときと、最後に結果を確認するときだけです。本記事には、その過程で得た知識を記載しました。実験用の構成なので、本番運用には向かないサービスも利用しています。 また、この記事は、作りながら自分の理解を整理するためのメモでもあります。仕組みの説明に加えて、設計で迷ったところと、実際にハマったところをなるべ...",
    "score": 0,
    "added": "2026-11-09",
-   "tries": 1
+   "tries": 2
   },
   {
    "id": "bfe9bf9d6624",
@@ -305,7 +390,8 @@
    "url": "https://zenn.dev/joinclass/articles/restricted-ai-20261108220018-28240",
    "summary": "なぜ「制限付きで触らせる」仕組みを作ったか 新人や外注メンバーにClaude Codeを渡すかどうか。導入を決める側がまず気にするのは「便利かどうか」ではなく、「事故ったときに何が壊れるか」だと思います。 僕自身、これで痛い目を見ています。当社ではAIに git push --force を自動実行され、ブランチがまるごと消えたことがあります。営業メールを確認なしで自動送信して、敬語のおかしいメールが取引先に届いたこともあります。どちらもAIの性能が足りなかったわけではありません。AIに渡した権限が広すぎたのが原因です。 そこから当社では次のルールで運用しています。 読む・分析する...",
    "score": 0,
-   "added": "2026-11-10"
+   "added": "2026-11-10",
+   "tries": 1
   },
   {
    "id": "a029e1e952fe",
@@ -314,7 +400,8 @@
    "url": "https://zenn.dev/ao_workshop/articles/ai-legacy-maintenance-8-patterns",
    "summary": "はじめに 「ここだけ直して」と頼んだのに、考えなくていいケースまで全部作り込まれていました。直すことそのものより、余計なことをさせないことのほうに時間がかかりました。 AIに業務システムの改修を手伝わせていると、こういうことがよく起きます。ほかにも、こんな経験はありませんか。 差分を開いたら、関係ないファイルの空白やインデントまで変わっていた 「昨日AIが直したのどこだっけ？」と聞かれて、会話をさかのぼっても見つからない 最初に「コメント規約を守って」と伝えたのに、会話が長くなると忘れられている 設計書を読ませただけで文脈がいっぱいになり、肝心の調査が進まない 保存したら日本語の...",
    "score": 0,
-   "added": "2026-11-10"
+   "added": "2026-11-10",
+   "tries": 1
   },
   {
    "id": "64d32a0fd0ca",
@@ -323,7 +410,18 @@
    "url": "https://zenn.dev/miyoki_labs/articles/ai-73aa9bec48",
    "summary": "はじめに AI診断の再生成画面には「再生成の理由」入力欄があり、その内容は保存され、履歴画面にも表示されていました。 ところが確認すると、再生成理由は生成プロンプトに渡っていませんでした。 「営業範囲が違うから直して」と入力しても、AIはその指摘を知らないまま、同じ条件で診断を作り直します。 この記事は、再生成理由が収集・保存・表示されていても、生成処理に接続されていなければ機能しないと分かった開発ログです。 こんな人に向けて書いています AI生成機能にフィードバック入力欄を追加している人 入力値が保存や履歴画面まで届いていることを確認して安心している人 再生成や修正指示をプロ...",
    "score": 0,
-   "added": "2026-11-10"
+   "added": "2026-11-10",
+   "tries": 1
+  },
+  {
+   "id": "701a11531ae6",
+   "source": "GitHub Trending",
+   "title": "garrytan/gbrain",
+   "url": "https://github.com/garrytan/gbrain",
+   "summary": "Garry's Opinionated OpenClaw/Hermes Agent Brain (+216 stars today)",
+   "score": 216,
+   "added": "2026-11-10",
+   "tries": 2
   },
   {
    "id": "9e1c0b7c6317",
@@ -332,7 +430,8 @@
    "url": "https://zenn.dev/laiken/articles/20261110-tech-watch",
    "summary": "AIが書きました🤖 この記事は、AIが書いたものをAIがレビューしてから公開しています。 L: 最近、エージェントが作った変更依頼の説明を読んでいると、詳しさと読みやすさが別の問題だと感じる。作業そのものが正しいかを確かめる前に、説明を読む時間が必要になる。どこを人が見て、どこを仕組みに任せるべきだろう。 今日の 10 件 Introducing Claude Fable 5.2 and Claude Mythos 5.2 Claude Fable 5.2 と Mythos 5.2 は同じ基盤モデルを使い、コーディングや推論などを改善した。Fable は安全対策付きで一般向け...",
    "score": 0,
-   "added": "2026-11-10"
+   "added": "2026-11-10",
+   "tries": 1
   },
   {
    "id": "b24224891b96",
@@ -341,7 +440,8 @@
    "url": "https://zenn.dev/monkey_gineer/articles/auth-study-04-service-to-service",
    "summary": "1. 前回のおさらいと、今回のテーマ ここまでは、主に 人間 が相手でした。 #1〜#2：人間のログイン（パスキー、セッション、OIDC） #3：ログインした人に、何を許すか（RBAC、ABAC、ReBACなど） しかし、現代のシステムでは、サービスが、別のサービスを呼び出す 場面がたくさんあります。AIエージェントがツールを呼ぶのも、まさにこれです。 今回のテーマは、次の問いです。 人間ではなく、サービスやプログラム は、どうやって「自分は誰か」を証明するのか サービスAが、ユーザーの代わりにサービスBを呼ぶとき、誰の権限で 呼ぶのか ! この連載は、認証・認可を基礎から学...",
    "score": 0,
-   "added": "2026-11-10"
+   "added": "2026-11-10",
+   "tries": 1
   },
   {
    "id": "294c9faf90a0",
@@ -350,7 +450,8 @@
    "url": "https://zenn.dev/oikon/articles/claude-code-recipe",
    "summary": "Oikonです。 気がつけば2026年も終わりが見えてきました。今年はありがたいことにClaude Codeの書籍を2冊出版させていただきました。 Claude Code実践入門 [生成AI深掘りガイド]（SBクリエイティブ） Claude Code実践レシピ集（技術評論社） 新刊のClaude Code実践レシピ集は、個人的に好きなClaude CodeのTipsをベースに、割と好き勝手に書かせていただきました笑。 新しいClaude Code本の発売記念に、この記事では私が最近使っているClaude CodeのTipsを紹介します。 Claude Codeで最近使っている...",
    "score": 0,
-   "added": "2026-11-10"
+   "added": "2026-11-10",
+   "tries": 1
   },
   {
    "id": "9b20940c19c0",
@@ -359,7 +460,18 @@
    "url": "https://zenn.dev/everyinfra/articles/claude-managed-agents-nightly-review-monitoring",
    "summary": "! この記事は EveryInfra ブログ からの転載です（原文が正本です）。 2026年11月4日（シンガポール時間）、EveryInfra APIを使ってニューヨークのKatz's Delicatessenの新着レビューを読み取りました。対象はGoogle Maps、Yelp、Tripadvisorです。主な発見は「新着」の扱いに関するものです。最新N件のレビューがカバーする期間は、サイトごとに大きく異なります。Googleでは4日未満、Tripadvisorでは約4か月です。Yelpの1ページ目は日付順ではありません。 1時間後に2回目の読み取りを行うと、Googleで...",
    "score": 0,
-   "added": "2026-11-10"
+   "added": "2026-11-10",
+   "tries": 1
+  },
+  {
+   "id": "76bd5c2a9497",
+   "source": "GitHub Trending",
+   "title": "tokio-rs/topcoat",
+   "url": "https://github.com/tokio-rs/topcoat",
+   "summary": "A batteries-included framework for building web apps (+192 stars today)",
+   "score": 192,
+   "added": "2026-11-11",
+   "tries": 1
   },
   {
    "id": "8726698e33d0",
@@ -368,7 +480,8 @@
    "url": "https://zenn.dev/sk8jp/articles/40fa8d6f466924",
    "summary": "はじめに 以前の記事「週末 Solo Engineer が、Claude Code に「仕事の型」を覚えさせた話」と、その後日談「「クラウドに移したい」と相談したら、Claude Code に止められた話」で、CodeRabbit へのレビューの依頼を、Claude Code のスキルで順番に並べて出していると書きました。 この記事は、その続きです。プランを上げても CodeRabbit のレビューの回数が足りなかったので、CodeRabbit の再レビューと文書だけの PR は、Claude Code から Fable を呼んでレビューさせ、「CodeRabbit なしで通してよい...",
    "score": 0,
-   "added": "2026-11-10"
+   "added": "2026-11-10",
+   "tries": 1
   },
   {
    "id": "30672aa4a08a",
@@ -377,16 +490,28 @@
    "url": "https://zenn.dev/ray_9618/books/selling-software-practice",
    "summary": "個人開発の商用ソフト「Megrab Studio」を販売開始まで持っていった実践録。課金設計、Stripe、ライセンスサーバー、メール配信、テンプレ集、販売実務、失敗談を、コードと文書の「型」中心にまとめた。",
    "score": 0,
-   "added": "2026-11-10"
+   "added": "2026-11-10",
+   "tries": 1
   },
   {
-   "id": "f6040b59a7b7",
-   "source": "Zennの「AI」のフィード",
-   "title": "「AIで何かしたい」を解ける課題に変える ― AIソリューション設計の実践ガイド",
-   "url": "https://zenn.dev/inf_e/books/ai-solution-design-guide",
-   "summary": "「AIで何かしたい」という曖昧な要望を、解くべき課題に置き換え、AIとデータで解決策を設計し、効果と進め方まで示すための実践ガイドです。AI導入の基礎知識、要件定義の7ステップ、15のソリューションパターン、製造・物流・金融などの業界別の代表例、8つのケーススタディを収録しています。",
-   "score": 0,
-   "added": "2026-11-10"
+   "id": "361d8d37c397",
+   "source": "GitHub Trending",
+   "title": "ruvnet/RuView",
+   "url": "https://github.com/ruvnet/RuView",
+   "summary": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. (+172 stars today)",
+   "score": 172,
+   "added": "2026-11-10",
+   "tries": 2
+  },
+  {
+   "id": "8ca276b505c3",
+   "source": "GitHub Trending",
+   "title": "we-promise/sure",
+   "url": "https://github.com/we-promise/sure",
+   "summary": "The personal finance app for everyone (by everyone) (+159 stars today)",
+   "score": 159,
+   "added": "2026-11-11",
+   "tries": 1
   },
   {
    "id": "52844a73edd8",
@@ -396,7 +521,7 @@
    "summary": "これは何を試した記事か NVIDIAが公開しているauto-ontology(Apache-2.0)は、データベースのメタデータから「オントロジー」(ビジネス用語・テーブル関係・SQL属性の集合)を自動生成し、AIエージェントが自然言語の質問を正確なSQLに変換できるようにするフレームワークである。 README・モデルカードが掲げる価値は明快で、「エージェントが誤ったテーブル/カラムを参照してSQLを生成してしまう問題」を、事前に構築したオントロジーの知識で防ぐ、というものだ。 筆者はこれを実際にDocker Composeで自分のPCに構築し、2テーブルだけの小さなサンプルDuc...",
    "score": 0,
    "added": "2026-11-09",
-   "tries": 1
+   "tries": 2
   },
   {
    "id": "84fca9c5fda4",
@@ -406,6 +531,16 @@
    "summary": "はじめに 授業のメモと文字起こしを使って、Claude Code に整形ノートを作ってもらっています。 楽になったのは、情報を補って、読み返せる形にする作業。 ノートが出来上がったことと、私が内容を理解したことは分けています。 自分なりに作った「ノートを書く UI」。この捉え方が一番近いです。 授業中の変化 AI に後から補ってもらえることで、授業中の気持ちは少し変わりました。 聞き漏らしても、書き漏らしても、録音から拾い直せる。 全部をその場でメモしなければ、という焦りが減ったのは嬉しいところです。 私の感覚では、タイプミスも減り、先生の話を聞くことに集中しやすくなりました。 ...",
    "score": 0,
    "added": "2026-11-09",
+   "tries": 2
+  },
+  {
+   "id": "78ddb48b10ae",
+   "source": "GitHub Trending",
+   "title": "OpenBMB/VoxCPM",
+   "url": "https://github.com/OpenBMB/VoxCPM",
+   "summary": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning (+140 stars today)",
+   "score": 140,
+   "added": "2026-11-11",
    "tries": 1
   },
   {
@@ -416,137 +551,17 @@
    "summary": "はじめに 今回から、ローカルLLMとAIコーディングツールの更新を、毎週まとめていくことにしました。 自分はこれまで、Qiita でローカルLLMや自宅サーバー、AIを使った個人開発の記事を書いてきました。 ただ、Ollama や Open WebUI、Claude Code などは更新がとても速く、追いかけるだけでも手間がかかります。 しかも一次情報の多くは英語の GitHub に散らばっています。 そこで、自分の確認も兼ねて、週に一度まとめて残していくことにしました。 まとめ方は次のとおりです。 各ツールの GitHub のリリースノートや変更履歴をもとに、要点を日本語で整理し...",
    "score": 0,
    "added": "2026-11-09",
-   "tries": 1
-  },
-  {
-   "id": "86d75ee29cf1",
-   "source": "GitHub Trending",
-   "title": "dsx-ai-factory/nvke",
-   "url": "https://github.com/dsx-ai-factory/nvke",
-   "summary": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal. (+345 stars today)",
-   "score": 345,
-   "added": "2026-11-09",
    "tries": 2
   },
   {
-   "id": "104b57e9a431",
-   "source": "GitHub Trending",
-   "title": "microsoft/VibeVoice",
-   "url": "https://github.com/microsoft/VibeVoice",
-   "summary": "Open-Source Frontier Voice AI (+245 stars today)",
-   "score": 245,
-   "added": "2026-11-08",
-   "tries": 2
-  },
-  {
-   "id": "701a11531ae6",
-   "source": "GitHub Trending",
-   "title": "garrytan/gbrain",
-   "url": "https://github.com/garrytan/gbrain",
-   "summary": "Garry's Opinionated OpenClaw/Hermes Agent Brain (+216 stars today)",
-   "score": 216,
-   "added": "2026-11-10",
-   "tries": 1
-  },
-  {
-   "id": "69c7eb76fe0b",
-   "source": "GitHub Trending",
-   "title": "google/skills",
-   "url": "https://github.com/google/skills",
-   "summary": "Agent Skills for Google products and technologies (+211 stars today)",
-   "score": 211,
-   "added": "2026-11-06",
-   "tries": 2
-  },
-  {
-   "id": "bfeff07f7d86",
-   "source": "GitHub Trending",
-   "title": "jamiepine/voicebox",
-   "url": "https://github.com/jamiepine/voicebox",
-   "summary": "The open-source AI voice studio. Clone, dictate, create. (+208 stars today)",
-   "score": 208,
-   "added": "2026-11-09",
-   "tries": 2
-  },
-  {
-   "id": "9c214e2429c1",
+   "id": "6db7f91d4efc",
    "source": "Zennの「AI」のフィード",
-   "title": "Claude Code・Codex・Antigravityの週の利用枠を、余らせずに自動で使い切る仕組み",
-   "url": "https://zenn.dev/shinai/articles/ai-weekly-quota-autorun",
-   "summary": "サブスクのAIは「週の利用上限」があります。忙しい週は足りないのに、暇な週は半分以上余ったままリセットされる。もったいないので、余りそうな枠だけを自動で見つけて、AIに自分の作業をさせる仕組みを作りました。Windowsのタスクスケジューラ＋PowerShell1本です。 実際に動かしてわかった「最初の設計の失敗」と、その直し方まで書きます。 私自身、Claudeの利用制限を使い切れないままリセットを迎える週があり、もったいないと感じたのが作ったきっかけです。 全体像 毎時、タスクスケジューラがスクリプトを起動する 4つの枠（Claude Code／Codex／Antigravit...",
+   "title": "Claude Code CLIを文脈圧縮プロキシでラップしたら、圧縮は動いたがキャッシュが壊れた話",
+   "url": "https://zenn.dev/matsushima_a/articles/day-042-billion-context-compression-proxy",
+   "summary": "これは何の検証か 海外AIネタ100日チャレンジ Day 042。今回検証したのはranxianglei/billion-context(MIT License。製品に組み込む場合はクレジット表記を求める追加条項あり)。 Claude Code・Codex・OpenCodeなど既存のコーディングエージェントと、モデルAPIの間にローカルプロキシとして挟み込み、会話を可逆的に圧縮することで、小さいコンテキスト窓のまま月単位の長時間セッションを扱えるようにする、という触れ込みのツールだ。 README自身は「ContextBenchで約58%、LongMemEval-Sで約71%のコスト...",
    "score": 0,
-   "added": "2026-11-08",
-   "tries": 2
-  },
-  {
-   "id": "1b489a90529a",
-   "source": "GitHub Trending",
-   "title": "rust-lang/rust",
-   "url": "https://github.com/rust-lang/rust",
-   "summary": "Empowering everyone to build reliable and efficient software. (+192 stars today)",
-   "score": 192,
-   "added": "2026-11-07",
-   "tries": 2
-  },
-  {
-   "id": "5a6031603e23",
-   "source": "GitHub Trending",
-   "title": "mbillow/localthings",
-   "url": "https://github.com/mbillow/localthings",
-   "summary": "Control your Samsung appliances from Home Assistant over your home network, with no cloud account. (+186 stars today)",
-   "score": 186,
-   "added": "2026-11-08",
-   "tries": 2
-  },
-  {
-   "id": "361d8d37c397",
-   "source": "GitHub Trending",
-   "title": "ruvnet/RuView",
-   "url": "https://github.com/ruvnet/RuView",
-   "summary": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. (+172 stars today)",
-   "score": 172,
-   "added": "2026-11-10",
+   "added": "2026-11-11",
    "tries": 1
-  },
-  {
-   "id": "c34811c59d2d",
-   "source": "GitHub Trending",
-   "title": "vercel-labs/agent-browser",
-   "url": "https://github.com/vercel-labs/agent-browser",
-   "summary": "Browser automation CLI for AI agents (+150 stars today)",
-   "score": 150,
-   "added": "2026-11-06",
-   "tries": 2
-  },
-  {
-   "id": "012e9cf37550",
-   "source": "GitHub Trending",
-   "title": "googlecolab/google-colab-cli",
-   "url": "https://github.com/googlecolab/google-colab-cli",
-   "summary": "A CLI for interacting with Google Colab runtimes (+104 stars today)",
-   "score": 104,
-   "added": "2026-11-09",
-   "tries": 2
-  },
-  {
-   "id": "685c56ef2ba7",
-   "source": "GitHub Trending",
-   "title": "google-deepmind/mujoco",
-   "url": "https://github.com/google-deepmind/mujoco",
-   "summary": "Multi-Joint dynamics with Contact. A general purpose physics simulator. (+41 stars today)",
-   "score": 41,
-   "added": "2026-11-09",
-   "tries": 2
-  },
-  {
-   "id": "13df77a00c23",
-   "source": "GitHub Trending",
-   "title": "anthropics/claude-quickstarts",
-   "url": "https://github.com/anthropics/claude-quickstarts",
-   "summary": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API (+32 stars today)",
-   "score": 32,
-   "added": "2026-11-09",
-   "tries": 2
   },
   {
    "id": "8af7f6287fd6",
@@ -556,27 +571,37 @@
    "summary": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants. (+31 stars today)",
    "score": 31,
    "added": "2026-11-10",
+   "tries": 2
+  },
+  {
+   "id": "d29ce9bf8d6d",
+   "source": "Zennの「AI」のフィード",
+   "title": "MCPとNext.",
+   "url": "https://zenn.dev/bambampurin/articles/2026-09-25-tech-daily",
+   "summary": "AIエージェントとモダンWebの標準解：MCP・Next.js・Pythonエコシステムを選択すべき理由 この記事で分かること MCP（Model Context Protocol）の標準化がAIエージェント開発にもたらす構造的メリット Next.js × Pythonによるフルスタック構成が開発効率を最大化する理由 外部データ取得におけるDNS名前解決エラー（Errno 8）発生時のシステム運用の考え方 外部データ取得におけるDNS名前解決エラーの対策が必要な理由 外部ニュースフィードなどの外部データ依存型システムでは、ドメイン解決失敗によるデータ取得中断のリスクを常時...",
+   "score": 0,
+   "added": "2026-11-11",
    "tries": 1
   },
   {
-   "id": "4ec6d5af71ee",
+   "id": "0d1bd25a3199",
    "source": "GitHub Trending",
-   "title": "ZhuLinsen/daily_stock_analysis",
-   "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-   "summary": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs. (+506 stars today)",
-   "score": 506,
-   "added": "2026-11-10",
+   "title": "addyosmani/agent-skills",
+   "url": "https://github.com/addyosmani/agent-skills",
+   "summary": "Production-grade engineering skills for AI coding agents. (+465 stars today)",
+   "score": 465,
+   "added": "2026-11-11",
    "tries": 2
   },
   {
-   "id": "c3f511fde4e1",
+   "id": "9603972a68f3",
    "source": "Zennの「AI」のフィード",
-   "title": "Claude × サスケWorks で、目標設定から評価までの自動化を試してみた ― promptfoo を添えて",
-   "url": "https://zenn.dev/interpark/articles/315a520d9590b3",
-   "summary": "人事の眞鍋さんと、目標管理をテーマにそれぞれツールを作りました。 目指しているのは、会社の成長と、一人ひとりが納得して働けること。そのために何ができるかを、人事とエンジニア、それぞれの立場から考える企画です。 眞鍋さんは、「本人がどうなりたいか」から目標を考えるツールを。私は、「やった仕事をどう評価するか」から逆算して、目標設定と評価をつなぐツールを作りました。 使ったのは、どちらも Claude とサスケWorks です。 同じ課題に、同じ道具で、逆方向から答えてみる。この記事では、エンジニア側の考え方と、作ってみて分かったことを紹介します。 ! なお、今回紹介するのは、私自身のデータ...",
+   "title": "Garmin × Muse で「自分で育てる音声コーチ」を作った ― Voice Coach for Muse 開発記",
+   "url": "https://zenn.dev/comeonyama/articles/929d6272f9f1bf",
+   "summary": "はじめに Garmin の LiveTrack と Muse を連携させ、走行中に準リアルタイムの音声コーチングを届けるシステム「Voice Coach for Muse（VCM）」を個人開発し、GitHub で公開しました。 きっかけは、Garmin のアクティビティデータを Muse に読み込ませて、走行後に分析してもらう運用をしていたことです。ペース配分や心拍の推移を振り返るには十分だったのですが、分析はあくまで「終わった後」の話で、走っている最中の自分には何も届きません。そこで「走っている最中も Muse に監視してもらえないか」と考え、LiveTrack のデータを走行中...",
    "score": 0,
-   "added": "2026-11-09",
-   "tries": 2
+   "added": "2026-11-11",
+   "tries": 1
   }
  ],
  "posts": [
@@ -958,8 +983,8 @@
   "Gemini検索",
   "\"生成AI ツール\" - Google ニュース",
   "Hacker News",
-  "Zennの「AI」のフィード",
-  "GitHub Trending"
+  "GitHub Trending",
+  "Zennの「AI」のフィード"
  ],
  "topic_seen": []
 }
