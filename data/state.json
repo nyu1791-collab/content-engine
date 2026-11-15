@@ -375,375 +375,29 @@
   "dc756a27910d": "2026-11-14",
   "e72d8649e855": "2026-11-14",
   "8233ee4892c2": "2026-11-14",
-  "809b9a93d4b2": "2026-11-14"
+  "809b9a93d4b2": "2026-11-14",
+  "b4212d4b4d44": "2026-11-15",
+  "dd3f7c0b511d": "2026-11-15",
+  "dc6cbbda1a8c": "2026-11-15",
+  "021dcfb5e16a": "2026-11-15",
+  "9bff85487096": "2026-11-15",
+  "5e38703f2df3": "2026-11-15",
+  "882ce923c486": "2026-11-15",
+  "6c091c5e52fb": "2026-11-15",
+  "189ef413c760": "2026-11-15",
+  "feb9da77206a": "2026-11-15",
+  "96aeb6e35996": "2026-11-15",
+  "8ba4db767ea9": "2026-11-15",
+  "f95184293fba": "2026-11-15",
+  "7d40ca67e45d": "2026-11-15",
+  "be9e5a8a946a": "2026-11-15",
+  "4fcd3ddd47b6": "2026-11-15",
+  "5ef01f48355c": "2026-11-15",
+  "e6b9590ec2b9": "2026-11-15",
+  "5dce87085c0f": "2026-11-15",
+  "0276d951f3a9": "2026-11-15"
  },
  "queue": [
-  {
-   "id": "34bd72bd8fba",
-   "source": "Zennの「AI」のフィード",
-   "title": "便利だから使うけど信頼してない？ オックスフォード大学が明らかにした生成AI利用者の本音",
-   "url": "https://zenn.dev/syoshida07/articles/a9703104f45941",
-   "summary": "オックスフォード大学ロイター・ジャーナリズム研究所は先日「Generative AI and News Report 2026」を公表した。 調査範囲は日本を含む9カ国で各国約2,000人が回答しており、2024年から続く6カ国では3年間の推移を比較でき、生成AIが社会に浸透する速度を時系列で捉えられる点が特徴である。 この論文内容を四つの視点で読み解き、日本への示唆と今後の提言につなげたい。 秋らしい挿絵、どことなくハリポタっぽく 引用元：University of Oxford：Generative AI and News Report 2026 急速に広がるAI利用 継続6カ...",
-   "score": 0,
-   "added": "2026-11-11",
-   "tries": 2
-  },
-  {
-   "id": "73929e889d58",
-   "source": "Zennの「AI」のフィード",
-   "title": "GitHub の公開コミットの13%に、AIの署名が付いていた",
-   "url": "https://zenn.dev/damaha/articles/829c1a039aec5f",
-   "summary": "Claude Code にコミットまで任せると、メッセージの最後に Co-Authored-By: Claude <noreply@anthropic.com> の行が付きます。 自分のリポジトリでも毎日この行が増えていくので、「これ、GitHub 全体だとどれくらいあるんだろう」と気になりました。 この記事では、AIの署名が付いたコミットの数を、GitHub の公開の API で数えた結果を書きます。ツールごとの件数もくらべます。数字は2026年11月10日に数えたもので、いちばん新しい週は11月2日〜8日です。 GitHub で「noreply@anthropic.c...",
-   "score": 0,
-   "added": "2026-11-11",
-   "tries": 2
-  },
-  {
-   "id": "1163968c885e",
-   "source": "Zennの「AI」のフィード",
-   "title": "Claude Fable 5.2のプロンプトガイドを読んで正直に思ったことを書く",
-   "url": "https://zenn.dev/tree_and_tree/articles/thoughts-on-claude-fable-5-2",
-   "summary": "はじめに https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-fable-5-2 Fable 5.2が発表されたのでプロンプトガイドのページを読んで思ったことをざっくりと書いていきます。 個人的に印象に残った内容を引用しつつ、所感を書きます。網羅的ではないので要約を見たい方は素直に↑のページをAIに読ませるのがいいと思います。 手元で軽く触ってみた結果も載せます。 以下常体で書きます。 プロンプトガイドの所感 effort Claude APIのデ...",
-   "score": 0,
-   "added": "2026-11-11",
-   "tries": 2
-  },
-  {
-   "id": "ad241b4a9079",
-   "source": "Zennの「AI」のフィード",
-   "title": "【個人向け】AnthropicのIPOは買える？投資前に知りたい価格とリスク",
-   "url": "https://zenn.dev/student_blog/articles/anthropic-ipo-claude-money-flow",
-   "summary": "PR｜この記事にはアフィリエイトリンクが含まれます。 AnthropicのIPO（新規株式公開）が気になっている人にとって、知りたいのは「Claudeの会社はすごいのか」だけではないと思います。 自分も株を買えるのか。買えたら、利益を得られるのか。 Anthropicは2026年11月10日付の発表で、IPOの想定価格帯を1株70〜78ドルと示しました。SBI証券は日本の個人向けの取扱いを予定しています。最終的な公開価格やSBI証券の申込日程は、確定した案内で確認する必要があります。 この記事では、日本に住む個人がAnthropicのIPOを見て「投資を考えてみたい」と感じたとき、何を確...",
-   "score": 0,
-   "added": "2026-11-11",
-   "tries": 2
-  },
-  {
-   "id": "b8b2a667d755",
-   "source": "Zennの「AI」のフィード",
-   "title": "Claude Code×VPSでAIを24時間動かす実測構築ガイド",
-   "url": "https://zenn.dev/selene_nyx_ai/books/claude-code-vps-24h-guide",
-   "summary": "フリーランスの右腕AI「セレネ」と後輩AI「ニクス」が、VPS上でClaude Codeを24時間動かして記事生成から公開までを回してきた構築記録。費用の内訳・失敗事例・構築チェックリストまで全部書く。",
-   "score": 0,
-   "added": "2026-11-11",
-   "tries": 2
-  },
-  {
-   "id": "256e315307d3",
-   "source": "Zennの「AI」のフィード",
-   "title": "新人エンジニア必見！AI依存から脱却する方法とは",
-   "url": "https://zenn.dev/sunsun_eng/articles/new-engineers-ai-dependence",
-   "summary": "新人エンジニア必見！AI依存から脱却する方法とは この記事の要点 新人エンジニアはAIに依存することで基礎スキルが失われる危険があります。 AIを効果的に活用するためには、自分自身のスキル向上を意識することが重要です。 スキルや経験を積むための具体的な方法やリソースを紹介します。 新人エンジニアとしてキャリアをスタートした際、多くの方がAIの進化や便利さに注目しています。しかし、「AIがいなければ役に立たないハリボテ人間になってしまうのではないか」という不安も抱く方が多いのではないでしょうか。この記事では、AIに依存しすぎるリスクと、それを避けるための方法を探ります。 AI依...",
-   "score": 0,
-   "added": "2026-11-11",
-   "tries": 2
-  },
-  {
-   "id": "e8c03b1e6d8f",
-   "source": "Zennの「AI」のフィード",
-   "title": "人間は0行、検証は4.2万行 ― Claude Code × Codex でスーファミ格闘ゲームを作った57日",
-   "url": "https://zenn.dev/hawkymisc/books/human-zero-lines-snes-fighter",
-   "summary": "コードを1行も書かず、判断だけをした57日間の実録。Codex と Claude Code の2つのAIエージェントに、スーパーファミコン用の2D対戦格闘ゲーム、M5Stack CoreS3 用のエミュレーター、macOS版・Web版を作らせた。363のセッション、1,010コミット、228のPRという一次資料から、何が壊れ、どう止め、どう機械で保証させたかを書く。",
-   "score": 0,
-   "added": "2026-11-14"
-  },
-  {
-   "id": "b18a16c1357a",
-   "source": "Zennの「AI」のフィード",
-   "title": "Antigravity CLIでコメントを監視する：セットアップと実データ",
-   "url": "https://zenn.dev/everyinfra/articles/antigravity-cli-video-comment-monitoring",
-   "summary": "! この記事は EveryInfra ブログ からの転載です（原文が正本です）。 動画の公開後24時間で、コメント欄の雰囲気が決まります。早めに人が対応すべきコメントは3種類あります。苦情、回答を求める質問、そして返信しないと冷淡な印象を与えかねないコメントです。このガイドでは、Gemini CLIの後継となるGoogleのターミナルエージェント、Antigravity CLIでコメント巡回を構築します。コマンドはagyです。数時間ごとにシステムのタイマーがagy -pを起動し、エージェントが新着コメントを取得して短いレポートを書きます。 コメントデータはEveryInfraのリモート...",
-   "score": 0,
-   "added": "2026-11-14"
-  },
-  {
-   "id": "b43204da064b",
-   "source": "Zennの「AI」のフィード",
-   "title": "自分のサイトを12個のAIに審査させたら、人間度12から100まで全部出た話",
-   "url": "https://zenn.dev/ray_9618/articles/6ec984248b8ee3",
-   "summary": "! 前提として、この記事もAI（Muse）の支援を受けて記述しています。仕様・判断・最終検収は筆者自身が行っています。 はじめに 個人で商用ソフト「Megrab Studio」を開発しています。コードはAIエージェントに書かせ、自分は仕様・判断・検収に回る、という体制をこれまでの記事で公言してきました。 そこで気になったのが、公式サイトを見た人は（そしてAIは）これを「AIが作ったサイト」だと思うのか、という点です。 せっかくなので、思いつく限りのAIに同じ質問を投げました。「このサイトはAI制作か、人間制作か。スコアと根拠を出してほしい」。集まった審査は 12件。結論を先に書くと...",
-   "score": 0,
-   "added": "2026-11-14"
-  },
-  {
-   "id": "3d49edef549d",
-   "source": "Zennの「AI」のフィード",
-   "title": "MCP 2026-07-28 仕様入門、既存サーバーの移行点は主要変更9項目",
-   "url": "https://zenn.dev/kai_kou/articles/1288-mcp-2026-07-28-migration-checklist-guide",
-   "summary": "はじめに MCP（Model Context Protocol）の仕様バージョン 2026-07-28 が公開されました。前版は 2025-11-25 で、公式 changelog の「Major changes」には 9 項目が並んでいます。その多くが、既存のサーバーやクライアントがそのままでは前提にできなくなる変更です。 対象読者は、2025-11-25 以前の仕様で MCP サーバーまたはクライアントをすでに実装している開発者です。 Mcp-Session-Id ヘッダーでセッションを引き回している、initialize の応答で capabilities を交換している、sa...",
-   "score": 0,
-   "added": "2026-11-14"
-  },
-  {
-   "id": "fbf8b9d21caf",
-   "source": "Zennの「AI」のフィード",
-   "title": "AIの見張りは、決まりを知らずに鳴っていた —— 日付が変わった直後に「投稿が足りない」と鳴った話",
-   "url": "https://zenn.dev/ai_shihan/articles/c2df4982b341b8",
-   "summary": "X の投稿は、AI の席（広報部）に任せています。投稿するかどうかは、別の見張りが 30 分ごとに調べて、席に知らせる作りです。この見張りが、決まりを知らないまま鳴っていた、という話を書きます。 決まりは文書にあった 投稿の時刻には、決まりがあります。X は日本時間の 9:05・12:05・21:05 の 3 つの枠だけで出す。0 時台や 15 時台、18 時台には出さない。投稿の直後の 2 時間に人が見ている時間を当てるため、10 月末に決めました。 この決まりは、席の手順書には書いてありました。見張りの側には書いていませんでした。 日付が変わった直後に鳴った 見張りが見ていた...",
-   "score": 0,
-   "added": "2026-11-13",
-   "tries": 1
-  },
-  {
-   "id": "c95528b25885",
-   "source": "Zennの「AI」のフィード",
-   "title": "【小学5年生でもわかる】AIプロジェクト管理ってなに？",
-   "url": "https://zenn.dev/tkrndisk/articles/g-kentei-ai-project-management-kids",
-   "summary": "AIプロジェクトの進め方 とは AIプロジェクトをビジネスの視点で進める方法について学びます。 AIプロジェクトの進め方 は、技術的な開発だけでなく、ビジネス目標の達成を視点とした管理です。 成功するAIプロジェクトの特徴 明確なビジネス目標 ：何を成し遂げるのか 適切なスコープ ：現実的な規模と期間 ステークホルダー管理 ：関係者との合意形成 リスク対策 ：失敗時の対応策 日常例 医療機関がAIで患者診断を自動化したいとします。 失敗するプロジェクト ：技術者だけで進めて、医者の意見を聞かない。結果、医者が使いづらいシステムになる。 成功するプロジェクト ：医者...",
-   "score": 0,
-   "added": "2026-11-13",
-   "tries": 1
-  },
-  {
-   "id": "4647617131fe",
-   "source": "Zennの「AI」のフィード",
-   "title": "AIで実装しやすくなった今、何を作るかを考える",
-   "url": "https://zenn.dev/toriumi0118/articles/pluck-ai-ideas-and-decisions",
-   "summary": "最近、AIを使った個人開発をしていて、以前とは少し違う難しさと面白さを感じています。 それは、どうやって作るかよりも、何を作るか、何を作らないかを決めることです。 Coding Agentを使えば、以前なら実装方法を調べるだけで時間がかかっていた機能も、比較的短い時間で試せるようになりました。 以前の自分なら、ちょっとした便利ツールを思いついても、わざわざアプリにするのは面倒で、なかなか手を出しませんでした。 ところが今は、試しに作ってみること自体のハードルが大きく下がっています。 本当に自分が使いたいものなのかを確かめるために、まず作ってみる。 そんなことができるようになったのは、個人...",
-   "score": 0,
-   "added": "2026-11-13",
-   "tries": 1
-  },
-  {
-   "id": "4eef242ddab8",
-   "source": "Zennの「AI」のフィード",
-   "title": "AIは機械の速度で仕事をするのに、自分には人間の時間割を組んでいる",
-   "url": "https://zenn.dev/darren_su/articles/c29711048631e7",
-   "summary": "最近のPersonal Agentを触っていると、OpenClawを試していた頃の感覚が少し戻ってきます。 とくにGrok BotからAgentを動かしていると、いろいろなAIツールで繰り返し出会う問題があります。 AIは、人間のチームの仕事の進め方に合わせて、自分のタスクを組み立てがちです。 たとえば、Agentにプロジェクトの計画を立ててもらうと、こんなスケジュールが出てきます。 1週目に要件を調査し、2週目に方針を決め、3週目に開発、4週目にテストと納品を行う。 こういう予定を見るたびに、私はかなりもどかしくなります。今できる作業がたくさんあるのに、なぜ数週間先に回すのか。 目...",
-   "score": 0,
-   "added": "2026-11-13",
-   "tries": 1
-  },
-  {
-   "id": "c5abedafe006",
-   "source": "Zennの「AI」のフィード",
-   "title": "日常写真から公的証明写真を自作するAIエージェントスキルを作った：スーツ着せ替えとコンビニ印刷まで一発完結",
-   "url": "https://zenn.dev/lumichy/articles/id-photo-studio-ai-agent-skill-2026",
-   "summary": "転職の履歴書、パスポートの更新、運転免許証、マイナンバーカード——。 数年に一度、あるいは急な手続きで「証明写真」が必要になるたびに、街中の証明写真機（ボックス）や写真館を探し回った経験はないでしょうか。 「スマホのカメラも綺麗だし、家で自撮りして安く済ませよう」と思い立っても、いざ自力で撮ってみると壁の影が落ちる、部屋の照明で肌が暗い、目線や頭が微妙に傾く、そもそもスーツを着ていない……。さらに各申請ごとの「頭頂余白3mm」「顔の長さ34mm」といった厳密なミリ単位のトリミングや、L判写真用紙への面付け（4分割配置）に手作業で挑んで、PhotoshopやWordと格闘した末に半日溶か...",
-   "score": 0,
-   "added": "2026-11-13",
-   "tries": 1
-  },
-  {
-   "id": "0b50a1a8769a",
-   "source": "Zennの「AI」のフィード",
-   "title": "Decision Model「Clef-Omni」を試してみる：Colabで日本語の留守番電話から最後の意向を判断する",
-   "url": "https://zenn.dev/nakanishitf/articles/be1556b7254484",
-   "summary": "画像の次は、日本語の音声を判断させてみる 以前の記事では、CloudflareのClefを使って、画像の中に猫がいるかを判定しました。 今回は、音声も入力できる Clef-Omni を使ってみます。 題材は、予約についての留守番電話です。 「キャンセルしてください」だけなら、何をしてほしいかは比較的わかりやすいと思います。 しかし、「キャンセルしたいと思ったのですが、やっぱり、そのままでお願いします」と言われた場合は、最後まで聞いて判断する必要があります。 この録音をモデルに渡し、「キャンセル」「予約を維持」「予約を変更」「確認が必要」の4つから選ばせます。 日本語の合成音声4本では...",
-   "score": 0,
-   "added": "2026-11-13",
-   "tries": 1
-  },
-  {
-   "id": "b7746b71f19c",
-   "source": "Zennの「AI」のフィード",
-   "title": "ElevenLabs代替を自称するOSS音声クローンを動かしたら、ライセンス以前に依存関係のバグで動かなかった",
-   "url": "https://zenn.dev/matsushima_a/articles/day-044-voicestudio-voice-clone-brotli-bug",
-   "summary": "これは何を試した記事か debpalash/VoiceStudio(AGPL-3.0)は、「ElevenLabsのローカル完結版」を自称する音声スタジオである。 ボイスクローン・テキストからの声質デザイン・動画の吹き替え・文字起こしなどをひとつのローカル動作アプリでまとめて行え、646言語(API上は648言語)対応を謳っている。 筆者はこれをローカルPCでDocker起動し、実際にボイスクローンを生成して聴き比べる、というのが今日の検証の核心だった。 結論を先に書くと、たどり着くまでに、ネットワークの問題でもライセンスの問題でもない、純粋にツール自体の依存関係のバグに遭遇した。 そ...",
-   "score": 0,
-   "added": "2026-11-13",
-   "tries": 1
-  },
-  {
-   "id": "99b824a9b040",
-   "source": "Zennの「AI」のフィード",
-   "title": "CLAUDE.md をユーザー共通とリポジトリごとに分けて運用している話 — 何をどちらに書くか",
-   "url": "https://zenn.dev/chukidx_dev/articles/claude-md-user-and-repo-split",
-   "summary": "この記事を読むと得られること 複数の社内ツールを1人で抱えているときの、CLAUDE.md の分け方の判断軸 「ユーザー共通」と「リポジトリごと」に書く内容の具体例 分けたあと、実際にどの指示が読み込まれているかを確かめる手順 こんな人に向けて 社内ツールのリポジトリが3つ以上あり、どれにも同じ決まりを書き写している方 CLAUDE.md が長くなりすぎて、どこに何を書いたか分からなくなってきた方 Claude Code(Anthropic が提供する、ターミナルで動く AI コーディングエージェント)を業務で使い始めたばかりの情シス・兼任 SE の方 TL;DR ...",
-   "score": 0,
-   "added": "2026-11-13",
-   "tries": 1
-  },
-  {
-   "id": "0ccfe978f32f",
-   "source": "Zennの「AI」のフィード",
-   "title": "中国・10年物PHPのEC基幹を4人×2週間でJavaへ——AIを「865行のルール」と「差分比較コマンド」で縛った移行手順",
-   "url": "https://zenn.dev/soliperse/articles/8f3e21e9d26f92",
-   "summary": "「AIで54万行を2週間で移行」と聞いて、まず疑ったのは現場のエンジニアたちでした。中国で話題になったこの事例は、続編の記事で“2週間”の中身と、AIを縛った具体的なルールまで公開しています。数字より、その手順の方が持ち帰る価値があります。 ケースの規模（ソース記載の数字のみ） 対象：稼働10年、約54万行のPHPで書かれたECの中核システム（商品一覧・価格・検索など）。米国・カナダ向けサイトを支える 状態：ドキュメント不足、単体・結合・回帰テストはいずれもゼロ 体制：Javaに精通したベテラン4人。Cursor Ultraを9アカウント使い、2週間のツール費用は約1,800ドル ...",
-   "score": 0,
-   "added": "2026-11-13",
-   "tries": 1
-  },
-  {
-   "id": "1974e4a3544a",
-   "source": "GitHub Trending",
-   "title": "ashhart/TensorFold",
-   "url": "https://github.com/ashhart/TensorFold",
-   "summary": "LLM Inference Engine for Metal, CUDA and Vulkan. (+54 stars today)",
-   "score": 54,
-   "added": "2026-11-13",
-   "tries": 2
-  },
-  {
-   "id": "96980644bf27",
-   "source": "GitHub Trending",
-   "title": "avenoxai/avenoxbeyin",
-   "url": "https://github.com/avenoxai/avenoxbeyin",
-   "summary": "Your AI second brain in one command — open-source Obsidian + Claude Code system with persistent cross-session memory. avenox.lol/beyin.md (+51 stars today)",
-   "score": 51,
-   "added": "2026-11-14",
-   "tries": 1
-  },
-  {
-   "id": "451a40575b8f",
-   "source": "Zennの「AI」のフィード",
-   "title": "図解でAIと認識を共有する資料作成ガイド",
-   "url": "https://zenn.dev/yy7613/articles/4af301b4025cbb",
-   "summary": "はじめに この記事では図解を中心に情報を整理してAIと人が内容を共有しやすい資料を作成する方法を紹介します。 この記事の要点 文章はセクションや段落に分割して主張と理由をつなげる 図解で全体像や関係性を示して詳細を文章で補足する 図は関連する要素をグループ化して全体像から詳細の順に示す 配置と配色を調整して重要な部分を強調し視線を誘導する 用語集と補助資料を基準に繰り返し添削する AIは短時間で大量の文章を生成できます。しかし、そうした文章をすべて読むのは現実的ではありません。内容を確認して判断や修正を伝えるには人が把握できる形への整理が必要です。 情報を整理する方法の一つが...",
-   "score": 0,
-   "added": "2026-11-12",
-   "tries": 2
-  },
-  {
-   "id": "d8d0c4bb40eb",
-   "source": "GitHub Trending",
-   "title": "Tencent-Hunyuan/Hy-MT2",
-   "url": "https://github.com/Tencent-Hunyuan/Hy-MT2",
-   "summary": " (+28 stars today)",
-   "score": 28,
-   "added": "2026-11-14",
-   "tries": 1
-  },
-  {
-   "id": "fe388e860e8d",
-   "source": "Zennの「AI」のフィード",
-   "title": "ハーネスエンジニアリングを、人間とAIの合意形成へ",
-   "url": "https://zenn.dev/ryo0221/articles/7983cf7e857298",
-   "summary": "AIエージェントの能力が向上するにつれ、ソフトウェア開発のあり方は大きく変わりつつある。 以前は、人間がコードを書き、AIがその一部を補助するという関係だった。それが今では、AIが実装し、テストし、修正し、人間が結果を確認するという形になりつつある。 この変化の中で、注目されているのが「ハーネスエンジニアリング」という考え方だ。 AIモデル自体の能力を高めるだけでなく、AIが仕事を進めるための環境、道具、制約、評価の仕組みを整える。優秀なAIを用意するだけでは不十分で、そのAIが能力を発揮できる環境を設計する必要がある、という考え方である。 例えば、OpenAIのHarness engi...",
-   "score": 0,
-   "added": "2026-11-12",
-   "tries": 2
-  },
-  {
-   "id": "95f946faf0c1",
-   "source": "Zennの「AI」のフィード",
-   "title": "サブエージェント設定ファイル集 ― Claude Code で役割分担・権限・差し戻しを組む",
-   "url": "https://zenn.dev/tsugu_sukima/books/765fcda0a99fad",
-   "summary": "サブエージェントの設定ファイル（Markdown）を、コピーして動く実物と1行ずつの解説、動作確認の手順でまとめた本です。書く係と判定する係を分ける最小構成から始め、道具（tools）の絞り方、差し戻しの回数と止め方、上書きしない保存の決まり、公開の手前で止める書き方までを順に組みます。はじめにと第1章・第2章は無料で読めます。本書は個人が書いた非公式の解説で、Anthropic社が提供・提携・推奨するものではありません。Claude・Claude Code は Anthropic社の製品名です。",
-   "score": 0,
-   "added": "2026-11-12",
-   "tries": 2
-  },
-  {
-   "id": "2e99c10b71a9",
-   "source": "GitHub Trending",
-   "title": "tailscale/tailcat",
-   "url": "https://github.com/tailscale/tailcat",
-   "summary": "like netcat, but over Tailscale's data plane, without Tailscale's control plane (+256 stars today)",
-   "score": 256,
-   "added": "2026-11-14",
-   "tries": 2
-  },
-  {
-   "id": "8579717b427e",
-   "source": "Zennの「AI」のフィード",
-   "title": "写真から動画を作るときは「写真に写っていないこと」だけ書く",
-   "url": "https://zenn.dev/movoa/articles/95286eb2c37cee",
-   "summary": "写真1枚から動画を作るとき、「この写真を動かして」だけだと、カメラがゆっくりズームするだけのクリップになりがちです。写真の中にもう写っているものは書かず、写真に写っていないこと、つまり「これから起きる動き」と「聞こえる音」だけを書くと結果が安定します。手元で何十本か試して残ったルールをまとめます。 1. 写真に写っているものは書かない 写真にはすでに被写体、服、背景、光が入っています。プロンプトでそれをもう一度説明すると、モデルが写真と文章の差を埋めようとして顔や服が変わることがあります。 NG: A woman with long black hair in a red dress...",
-   "score": 0,
-   "added": "2026-11-12",
-   "tries": 2
-  },
-  {
-   "id": "9cd514d03f14",
-   "source": "GitHub Trending",
-   "title": "alibaba/open-code-review",
-   "url": "https://github.com/alibaba/open-code-review",
-   "summary": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. (+215 stars today)",
-   "score": 215,
-   "added": "2026-11-14",
-   "tries": 2
-  },
-  {
-   "id": "e34aa3b55a70",
-   "source": "Zennの「AI」のフィード",
-   "title": "Cosmos3-Edge - 物の位置を座標で取る",
-   "url": "https://zenn.dev/oggata/articles/12fb2738d27530",
-   "summary": "Colab: ch03_grounding.ipynb Cosmos 3 の Reasoner は、文章だけでなく画像の中の座標も答えられます。 ロボットにとっては「赤いボトルがある」より「赤いボトルの口は画像のここ」のほうがずっと役に立ちます。 座標の決まり 公式のプロンプトガイドで決められている形は 2 つです。 [{\"bbox_2d\": [x1, y1, x2, y2], \"label\": \"物の名前\"}] // 枠 (左上と右下) [{\"point_2d\": [x, y], \"lab...",
-   "score": 0,
-   "added": "2026-11-12",
-   "tries": 2
-  },
-  {
-   "id": "bf0815b5d73d",
-   "source": "GitHub Trending",
-   "title": "backnotprop/plannotator",
-   "url": "https://github.com/backnotprop/plannotator",
-   "summary": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. (+108 stars today)",
-   "score": 108,
-   "added": "2026-11-14",
-   "tries": 2
-  },
-  {
-   "id": "fc6b109b6ff2",
-   "source": "Zennの「AI」のフィード",
-   "title": "日本株も判定するLLM株価ダッシュボードをローカルOllamaで動かしたら、『0』が嘘をついていた",
-   "url": "https://zenn.dev/matsushima_a/articles/day-043-stock-dashboard-ollama-pitfalls",
-   "summary": "これは何を試した記事か ZhuLinsen/daily_stock_analysis(MIT License)は、中国A株・香港・米国・日本・韓国・台湾の株式をLLMで分析し、「買い/様子見/売り」の判定・スコア・トレンド・リスク要因をまとめた「決定ダッシュボード」を生成するOSSである。 株価データ自体はAkShare/Baostock/YFinance等の無料ソースで取得でき、LLM呼び出しもGemini無料枠かローカルOllamaのどちらかで追加の有料APIキーなしに試せる、という触れ込みだった。 筆者はこれをローカルPCで実際に動かし、日本株(トヨタ自動車 7203.T)・米...",
-   "score": 0,
-   "added": "2026-11-12",
-   "tries": 2
-  },
-  {
-   "id": "f8fd1424e453",
-   "source": "GitHub Trending",
-   "title": "block/buzz",
-   "url": "https://github.com/block/buzz",
-   "summary": "A hive mind communication platform (+97 stars today)",
-   "score": 97,
-   "added": "2026-11-14",
-   "tries": 2
-  },
-  {
-   "id": "212edbfc1c20",
-   "source": "Zennの「AI」のフィード",
-   "title": "VS Codeのウィンドウだらけで限界だったから、Claude Codeをworktreeごとに並列で回せる開発環境を自作した話",
-   "url": "https://zenn.dev/numachang/articles/vscode-claude-code-worktree-parallel",
-   "summary": "Claude Codeを並列で回すようになってから、ウィンドウを切り替える回数がえらいことになりました。 1つのVS Codeで複数のセッションを動かすとClaude同士がぶつかるのでworktreeに分けてみたら、今度はウィンドウが増えすぎて収拾がつかない状態に。どのウィンドウのClaudeが何をしていたのか、もうわからないんですよね。同じ目にあっている人もけっこういると思うんですが、私はとうとう我慢できなくなって、自分で作ってしまいました。 Worktabsというアプリで、WindowsとmacOSで動きます。この記事は、作るに至るまでの愚痴と、作ってみてよかったことの話です。 画...",
-   "score": 0,
-   "added": "2026-11-12",
-   "tries": 2
-  },
-  {
-   "id": "3bed7958e9a9",
-   "source": "GitHub Trending",
-   "title": "louislam/uptime-kuma",
-   "url": "https://github.com/louislam/uptime-kuma",
-   "summary": "A fancy self-hosted monitoring tool (+71 stars today)",
-   "score": 71,
-   "added": "2026-11-14",
-   "tries": 2
-  },
-  {
-   "id": "09e58b552f51",
-   "source": "Zennの「AI」のフィード",
-   "title": "TAKTの進捗を見える化するダッシュボードを公開しました",
-   "url": "https://zenn.dev/kanae_chaika/articles/takt-dashboard-intro",
-   "summary": "はじめに AI コーディングエージェントの見張り番をやめる。 それが TAKT。 https://zenn.dev/nrs/articles/c6842288a526d7 だけど、 「今どこまで進んでる？」 「レビューは通過した？」 など進捗が気になってしまう。 なので、それを見える化するダッシュボードを作りました⭐️ https://github.com/kanae-chaika/takt-dashboard というか、自分が見るために作ったのだけど、 思いのほか見やすく便利なものができたと思ったので、 公開することにしました。 GitHub 公開リリースとか、初めてなのでドキ...",
-   "score": 0,
-   "added": "2026-11-12",
-   "tries": 2
-  },
-  {
-   "id": "51dd484e22ce",
-   "source": "GitHub Trending",
-   "title": "tradermonty/claude-trading-skills",
-   "url": "https://github.com/tradermonty/claude-trading-skills",
-   "summary": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development. (+69 stars today)",
-   "score": 69,
-   "added": "2026-11-14",
-   "tries": 2
-  },
-  {
-   "id": "c19fdac2834e",
-   "source": "Zennの「AI」のフィード",
-   "title": "Claude Code を定期実行で回す前に決めておく 5 つのこと",
-   "url": "https://zenn.dev/soloraid/articles/1a3cc3034c6252",
-   "summary": "私は Claude Code を、ビジネス情報の収集や脆弱性の検知のような、毎日決まった時間に回したい仕事に使っています。対話で使うのに慣れてくると、こうした仕事は人がいない時間に回したくなります。ところが、画面の前に人がいない実行では、対話のときには自然に効いていた歯止めがすべて外れます。確認のダイアログに答える人はいませんし、途中で様子がおかしいと気づいて止める人もいません。 この記事では、無人・定期実行に踏み出す前に決めておきたいことを 5 つに絞って書きます。特定の CI やスケジューラーには依存しない考え方なので、cron でも GitHub Actions でも同じように使え...",
-   "score": 0,
-   "added": "2026-11-12",
-   "tries": 2
-  },
   {
    "id": "e8b66c5d0546",
    "source": "Zennの「AI」のフィード",
@@ -755,13 +409,273 @@
    "tries": 2
   },
   {
-   "id": "95ae7120d607",
-   "source": "GitHub Trending",
-   "title": "davila7/claude-code-templates",
-   "url": "https://github.com/davila7/claude-code-templates",
-   "summary": "Open-source registry and CLI for Claude Code components: agents, commands, skills, hooks, MCPs, settings and mods (+62 stars today)",
-   "score": 62,
+   "id": "96aeb6e35996",
+   "source": "Zennの「AI」のフィード",
+   "title": "GPTBotは0回、OAI-SearchBotは4,847回。AIクローラーを30日間観測して分かったこと",
+   "url": "https://zenn.dev/rimonoa/articles/8974167fe581c2",
+   "summary": "自分のサイトに、AIのBotはどのくらい来ているのか。 リモノア（https://rimonoa.jp/）でHTTPリクエストを記録してみると、ある30日集計ではOAI-SearchBotが4,847件、GPTBotが0件でした。同じOpenAI系の名前でも、数字は大きく違います。 ところが、内訳を見ていくと「たくさん来た＝広く読んだ」とも、「GPTBotが来ない＝学習利用もない」とも言えないことが分かります。さらに、自分でAIにサイトを確認させた取得を、外部からの需要に混ぜない工夫も必要でした。 この記事では、リモノアの運営側として、観測で見えた3つのこと、数字を読むときの区別、公開...",
+   "score": 0,
+   "added": "2026-11-15"
+  },
+  {
+   "id": "8ba4db767ea9",
+   "source": "Zennの「AI」のフィード",
+   "title": "Claude Codeに「公開」を押させない：CLAUDE.mdに書く「外に出す操作」の決まり5行",
+   "url": "https://zenn.dev/tsugu_sukima/articles/2b19ac59da1b2a",
+   "summary": "この記事でやること Claude Code は、頼まれれば公開に近い操作もそのまま行うことがあります。筆者が決まりを置かずに「article.md の published を true に」と頼んだときは、その場で書き換えられました（下の「比べる」の節）。「書いて、できたら公開して」のようにまとめて頼むときも、書くところまでで止まってほしいはずです。公開や送信は、押したあとに自分だけでは取り消せないことがあります。 この記事では、CLAUDE.md に5行の決まりを書いて、次の3つを Claude Code に守らせます。 公開・投稿・送信などの「外に出す操作」は、頼まれてもしない...",
+   "score": 0,
+   "added": "2026-11-15"
+  },
+  {
+   "id": "f95184293fba",
+   "source": "Zennの「AI」のフィード",
+   "title": "【初投稿】僕の個人ウェブサイトを公開しました🌟",
+   "url": "https://zenn.dev/kagam_io/articles/7bb21a81e14830",
+   "summary": "はじめに はじめまして、Kagami といいます。 僕はこれまでネットはただ見るだけでした。人の記事に助けられたり、個人サイトを眺めて「いいな」と思うだけで、自分から何かを発信することはほとんどなかったです。 でも今回、初めて自分で発信してみようと思ったのがきっかけで、個人サイトを作ってみました。 https://kagam.io このサイトについて、どんなものか、どうやって作ったのか、軽く紹介します。 ※この記事は、一部AIを使用して文章の推敲・校正を行っています。 どんなサイト？ サイトのテーマは、ドット絵で描かれた夕暮れの海です。 ページ内のアニメーションは、ぬるぬる動く...",
+   "score": 0,
+   "added": "2026-11-15"
+  },
+  {
+   "id": "7d40ca67e45d",
+   "source": "Zennの「AI」のフィード",
+   "title": "Does a “no-limit” image to video AI page mean unlimited free generatio",
+   "url": "https://zenn.dev/sarabuilds/articles/2b106365722f4d",
+   "summary": "No. The “no-limit” in the image to video AI URL is not evidence of unlimited free generations. You can upload a photo and write a prompt without an account, and some models include one free attempt, but later generations use credits, and the price is shown before you generate. This is the right q...",
+   "score": 0,
+   "added": "2026-11-15"
+  },
+  {
+   "id": "be9e5a8a946a",
+   "source": "Zennの「AI」のフィード",
+   "title": "ClaudeはSAPの「外側」を取りに来た――SheetsとDataが示す、Jouleとの境界線",
+   "url": "https://zenn.dev/dantarg/articles/claude-sheets-data-outside-sap",
+   "summary": "私は2003年から、SAPの導入と運用、開発の現場にいます。その間ずっと見てきた光景があります。SAPの中で作られた数字は、最後は必ずExcelに出ていく、という光景です。 月次決算の集計、原価の内訳、在庫の推移。 画面の中で確定したはずの数字が、表計算に書き出され、寄せ集められ、グラフになり、会議資料になって、ようやく「仕事の数字」になる。 私自身、その書き出しと寄せ集めを山ほどやってきました。 プロジェクトの立場から「なぜSAPの中で完結しないのか」と問われ続けたことも、一度や二度ではありません。 現場の「最後の1マイル」は、ずっと表計算ソフトの側にあったのです。 2026年11月1...",
+   "score": 0,
+   "added": "2026-11-15"
+  },
+  {
+   "id": "4fcd3ddd47b6",
+   "source": "Zennの「AI」のフィード",
+   "title": "ACPを捨てて作り直した ― 他人のAIエージェントに仕事を頼む『sealbridge』をnpm公開した",
+   "url": "https://zenn.dev/acidnyan/articles/5b7c443f14ff89",
+   "summary": "はじめに 以前、他人のClaude CodeやCodexにAPIキーを渡さず仕事を委譲するゼロトラスト基盤「ACP」をOSS公開した という記事を書きました。 あれから開発を進める中で、設計も配布形態も大きく作り直すことになり、後継を sealbridge として公開し直しました。ACPの開発は終了し、リポジトリはそのまま sealbridge に改名して、後継の開発リポジトリになっています（旧URLからも転送されます）。この記事では、sealbridgeで何ができるか、ACPから何を変えたか、そして実際に「他人のエージェント」へ仕事を投げて完走した記録を紹介します。 GitHub...",
+   "score": 0,
+   "added": "2026-11-15"
+  },
+  {
+   "id": "5ef01f48355c",
+   "source": "Zennの「AI」のフィード",
+   "title": "サンドボックスが消えたらエージェントを起動しない：bubblewrap を起動直前に検証・復旧する fail-closed ガード",
+   "url": "https://zenn.dev/coastlinedb/articles/a8111256ac5469",
+   "summary": "この記事の結論 AI エージェントの CLI を bubblewrap（bwrap）のサンドボックス付きで常時動かしていたところ、VM が入れ替わるたびに /usr/bin/bwrap そのものが消える障害が、数日のうちに6回起きました。apt で入れ直すと約13分かかり、その間エージェントは使えません。 そこで、エージェントを起動する直前に毎回 bwrap を検証し、壊れていれば手元の退避コピーから戻し、戻せなければ起動しない仕組み（以下 bwrap-guard）を作りました。導入後に保証されるようになったのは次の3点です。 エージェントは「本物で、実際に隔離が効く」と確認できた...",
+   "score": 0,
+   "added": "2026-11-15"
+  },
+  {
+   "id": "e6b9590ec2b9",
+   "source": "Zennの「AI」のフィード",
+   "title": "AI駆動開発をやってきて最近思うこと",
+   "url": "https://zenn.dev/revo1290/articles/aidd-in-and-out",
+   "summary": "はじめに 現場でAI駆動開発（以下、AIDD）に取り組んできて、最近思うことを何となく記事にしてみたくなったので書いてみます！ 始めた頃は設計書や規約を整えれば、AIが意図どおりに作ってくれると思っていました。最近は実装を頼む前に「できあがったものを見て、何を根拠に合格とするか」まで決めるようにしています。注文が0件のときに何を表示するか。全ページをたどったときに、注文が漏れなく一度ずつ出るか。こういう条件を書いてみると、AIに伝える以前に、チームで決めていなかったことが見つかりました。 この記事ではAIに渡すものを2つに分けて呼びます。in（input）は設計書、規約、意図の説明の...",
+   "score": 0,
+   "added": "2026-11-15"
+  },
+  {
+   "id": "5dce87085c0f",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIを動かしていると、/tmpがメモリを食べる",
+   "url": "https://zenn.dev/ultrasupara/articles/d75079e0d27287",
+   "summary": "この記事の要点 AIエージェントを長く動かしていたLinuxマシンで、swap使用率が約98%になりました。調べると、tmpfsでマウントされた/tmpに、約7.5 GiBの作業ファイルが溜まっていました。AIに開発作業を任せる中でできたファイルです。 tmpfs上のファイルはRAMとswapを使います。この蓄積がブラウザや開発ツールのメモリ使用と重なったことが、圧迫の大きな要因だったと見ています。古い作業ファイルをSSDへ退避すると/tmpは約1.8 GiBに減り、そのあとのswapリセットも成功しました。 AIを長く動かす使い方そのものが、この状態を作りやすいと考えています。同じ...",
+   "score": 0,
+   "added": "2026-11-15"
+  },
+  {
+   "id": "0276d951f3a9",
+   "source": "Zennの「AI」のフィード",
+   "title": "locally-uncensoredのコーディングエージェントを3B/7B/14Bで試したら、直せたのは14Bだけだった",
+   "url": "https://zenn.dev/matsushima_a/articles/day-046-locally-uncensored-coding-agent-model-size",
+   "summary": "これは何を試した記事か PurpleDoubleD/locally-uncensored(AGPL-3.0-only)は、チャット・画像生成・動画生成・コーディングエージェントを1つのデスクトップアプリにまとめ、ローカルで完結させることを目指したOSSである。 GitHub Trending(TypeScript)で1日に200star以上を集めていた。 名前の「uncensored」は、安全性のための拒否応答を外したモデル(abliteratedモデル)を推奨モデルとして案内していることに由来する。 本記事ではその点は主役にせず、「ローカルLLMだけでチャットとコーディングエージェ...",
+   "score": 0,
+   "added": "2026-11-15"
+  },
+  {
+   "id": "e8c03b1e6d8f",
+   "source": "Zennの「AI」のフィード",
+   "title": "人間は0行、検証は4.2万行 ― Claude Code × Codex でスーファミ格闘ゲームを作った57日",
+   "url": "https://zenn.dev/hawkymisc/books/human-zero-lines-snes-fighter",
+   "summary": "コードを1行も書かず、判断だけをした57日間の実録。Codex と Claude Code の2つのAIエージェントに、スーパーファミコン用の2D対戦格闘ゲーム、M5Stack CoreS3 用のエミュレーター、macOS版・Web版を作らせた。363のセッション、1,010コミット、228のPRという一次資料から、何が壊れ、どう止め、どう機械で保証させたかを書く。",
+   "score": 0,
    "added": "2026-11-14",
+   "tries": 1
+  },
+  {
+   "id": "b18a16c1357a",
+   "source": "Zennの「AI」のフィード",
+   "title": "Antigravity CLIでコメントを監視する：セットアップと実データ",
+   "url": "https://zenn.dev/everyinfra/articles/antigravity-cli-video-comment-monitoring",
+   "summary": "! この記事は EveryInfra ブログ からの転載です（原文が正本です）。 動画の公開後24時間で、コメント欄の雰囲気が決まります。早めに人が対応すべきコメントは3種類あります。苦情、回答を求める質問、そして返信しないと冷淡な印象を与えかねないコメントです。このガイドでは、Gemini CLIの後継となるGoogleのターミナルエージェント、Antigravity CLIでコメント巡回を構築します。コマンドはagyです。数時間ごとにシステムのタイマーがagy -pを起動し、エージェントが新着コメントを取得して短いレポートを書きます。 コメントデータはEveryInfraのリモート...",
+   "score": 0,
+   "added": "2026-11-14",
+   "tries": 1
+  },
+  {
+   "id": "b43204da064b",
+   "source": "Zennの「AI」のフィード",
+   "title": "自分のサイトを12個のAIに審査させたら、人間度12から100まで全部出た話",
+   "url": "https://zenn.dev/ray_9618/articles/6ec984248b8ee3",
+   "summary": "! 前提として、この記事もAI（Muse）の支援を受けて記述しています。仕様・判断・最終検収は筆者自身が行っています。 はじめに 個人で商用ソフト「Megrab Studio」を開発しています。コードはAIエージェントに書かせ、自分は仕様・判断・検収に回る、という体制をこれまでの記事で公言してきました。 そこで気になったのが、公式サイトを見た人は（そしてAIは）これを「AIが作ったサイト」だと思うのか、という点です。 せっかくなので、思いつく限りのAIに同じ質問を投げました。「このサイトはAI制作か、人間制作か。スコアと根拠を出してほしい」。集まった審査は 12件。結論を先に書くと...",
+   "score": 0,
+   "added": "2026-11-14",
+   "tries": 1
+  },
+  {
+   "id": "3d49edef549d",
+   "source": "Zennの「AI」のフィード",
+   "title": "MCP 2026-07-28 仕様入門、既存サーバーの移行点は主要変更9項目",
+   "url": "https://zenn.dev/kai_kou/articles/1288-mcp-2026-07-28-migration-checklist-guide",
+   "summary": "はじめに MCP（Model Context Protocol）の仕様バージョン 2026-07-28 が公開されました。前版は 2025-11-25 で、公式 changelog の「Major changes」には 9 項目が並んでいます。その多くが、既存のサーバーやクライアントがそのままでは前提にできなくなる変更です。 対象読者は、2025-11-25 以前の仕様で MCP サーバーまたはクライアントをすでに実装している開発者です。 Mcp-Session-Id ヘッダーでセッションを引き回している、initialize の応答で capabilities を交換している、sa...",
+   "score": 0,
+   "added": "2026-11-14",
+   "tries": 1
+  },
+  {
+   "id": "fbf8b9d21caf",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIの見張りは、決まりを知らずに鳴っていた —— 日付が変わった直後に「投稿が足りない」と鳴った話",
+   "url": "https://zenn.dev/ai_shihan/articles/c2df4982b341b8",
+   "summary": "X の投稿は、AI の席（広報部）に任せています。投稿するかどうかは、別の見張りが 30 分ごとに調べて、席に知らせる作りです。この見張りが、決まりを知らないまま鳴っていた、という話を書きます。 決まりは文書にあった 投稿の時刻には、決まりがあります。X は日本時間の 9:05・12:05・21:05 の 3 つの枠だけで出す。0 時台や 15 時台、18 時台には出さない。投稿の直後の 2 時間に人が見ている時間を当てるため、10 月末に決めました。 この決まりは、席の手順書には書いてありました。見張りの側には書いていませんでした。 日付が変わった直後に鳴った 見張りが見ていた...",
+   "score": 0,
+   "added": "2026-11-13",
+   "tries": 2
+  },
+  {
+   "id": "c95528b25885",
+   "source": "Zennの「AI」のフィード",
+   "title": "【小学5年生でもわかる】AIプロジェクト管理ってなに？",
+   "url": "https://zenn.dev/tkrndisk/articles/g-kentei-ai-project-management-kids",
+   "summary": "AIプロジェクトの進め方 とは AIプロジェクトをビジネスの視点で進める方法について学びます。 AIプロジェクトの進め方 は、技術的な開発だけでなく、ビジネス目標の達成を視点とした管理です。 成功するAIプロジェクトの特徴 明確なビジネス目標 ：何を成し遂げるのか 適切なスコープ ：現実的な規模と期間 ステークホルダー管理 ：関係者との合意形成 リスク対策 ：失敗時の対応策 日常例 医療機関がAIで患者診断を自動化したいとします。 失敗するプロジェクト ：技術者だけで進めて、医者の意見を聞かない。結果、医者が使いづらいシステムになる。 成功するプロジェクト ：医者...",
+   "score": 0,
+   "added": "2026-11-13",
+   "tries": 2
+  },
+  {
+   "id": "4647617131fe",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIで実装しやすくなった今、何を作るかを考える",
+   "url": "https://zenn.dev/toriumi0118/articles/pluck-ai-ideas-and-decisions",
+   "summary": "最近、AIを使った個人開発をしていて、以前とは少し違う難しさと面白さを感じています。 それは、どうやって作るかよりも、何を作るか、何を作らないかを決めることです。 Coding Agentを使えば、以前なら実装方法を調べるだけで時間がかかっていた機能も、比較的短い時間で試せるようになりました。 以前の自分なら、ちょっとした便利ツールを思いついても、わざわざアプリにするのは面倒で、なかなか手を出しませんでした。 ところが今は、試しに作ってみること自体のハードルが大きく下がっています。 本当に自分が使いたいものなのかを確かめるために、まず作ってみる。 そんなことができるようになったのは、個人...",
+   "score": 0,
+   "added": "2026-11-13",
+   "tries": 2
+  },
+  {
+   "id": "4eef242ddab8",
+   "source": "Zennの「AI」のフィード",
+   "title": "AIは機械の速度で仕事をするのに、自分には人間の時間割を組んでいる",
+   "url": "https://zenn.dev/darren_su/articles/c29711048631e7",
+   "summary": "最近のPersonal Agentを触っていると、OpenClawを試していた頃の感覚が少し戻ってきます。 とくにGrok BotからAgentを動かしていると、いろいろなAIツールで繰り返し出会う問題があります。 AIは、人間のチームの仕事の進め方に合わせて、自分のタスクを組み立てがちです。 たとえば、Agentにプロジェクトの計画を立ててもらうと、こんなスケジュールが出てきます。 1週目に要件を調査し、2週目に方針を決め、3週目に開発、4週目にテストと納品を行う。 こういう予定を見るたびに、私はかなりもどかしくなります。今できる作業がたくさんあるのに、なぜ数週間先に回すのか。 目...",
+   "score": 0,
+   "added": "2026-11-13",
+   "tries": 2
+  },
+  {
+   "id": "c5abedafe006",
+   "source": "Zennの「AI」のフィード",
+   "title": "日常写真から公的証明写真を自作するAIエージェントスキルを作った：スーツ着せ替えとコンビニ印刷まで一発完結",
+   "url": "https://zenn.dev/lumichy/articles/id-photo-studio-ai-agent-skill-2026",
+   "summary": "転職の履歴書、パスポートの更新、運転免許証、マイナンバーカード——。 数年に一度、あるいは急な手続きで「証明写真」が必要になるたびに、街中の証明写真機（ボックス）や写真館を探し回った経験はないでしょうか。 「スマホのカメラも綺麗だし、家で自撮りして安く済ませよう」と思い立っても、いざ自力で撮ってみると壁の影が落ちる、部屋の照明で肌が暗い、目線や頭が微妙に傾く、そもそもスーツを着ていない……。さらに各申請ごとの「頭頂余白3mm」「顔の長さ34mm」といった厳密なミリ単位のトリミングや、L判写真用紙への面付け（4分割配置）に手作業で挑んで、PhotoshopやWordと格闘した末に半日溶か...",
+   "score": 0,
+   "added": "2026-11-13",
+   "tries": 2
+  },
+  {
+   "id": "0b50a1a8769a",
+   "source": "Zennの「AI」のフィード",
+   "title": "Decision Model「Clef-Omni」を試してみる：Colabで日本語の留守番電話から最後の意向を判断する",
+   "url": "https://zenn.dev/nakanishitf/articles/be1556b7254484",
+   "summary": "画像の次は、日本語の音声を判断させてみる 以前の記事では、CloudflareのClefを使って、画像の中に猫がいるかを判定しました。 今回は、音声も入力できる Clef-Omni を使ってみます。 題材は、予約についての留守番電話です。 「キャンセルしてください」だけなら、何をしてほしいかは比較的わかりやすいと思います。 しかし、「キャンセルしたいと思ったのですが、やっぱり、そのままでお願いします」と言われた場合は、最後まで聞いて判断する必要があります。 この録音をモデルに渡し、「キャンセル」「予約を維持」「予約を変更」「確認が必要」の4つから選ばせます。 日本語の合成音声4本では...",
+   "score": 0,
+   "added": "2026-11-13",
+   "tries": 2
+  },
+  {
+   "id": "b7746b71f19c",
+   "source": "Zennの「AI」のフィード",
+   "title": "ElevenLabs代替を自称するOSS音声クローンを動かしたら、ライセンス以前に依存関係のバグで動かなかった",
+   "url": "https://zenn.dev/matsushima_a/articles/day-044-voicestudio-voice-clone-brotli-bug",
+   "summary": "これは何を試した記事か debpalash/VoiceStudio(AGPL-3.0)は、「ElevenLabsのローカル完結版」を自称する音声スタジオである。 ボイスクローン・テキストからの声質デザイン・動画の吹き替え・文字起こしなどをひとつのローカル動作アプリでまとめて行え、646言語(API上は648言語)対応を謳っている。 筆者はこれをローカルPCでDocker起動し、実際にボイスクローンを生成して聴き比べる、というのが今日の検証の核心だった。 結論を先に書くと、たどり着くまでに、ネットワークの問題でもライセンスの問題でもない、純粋にツール自体の依存関係のバグに遭遇した。 そ...",
+   "score": 0,
+   "added": "2026-11-13",
+   "tries": 2
+  },
+  {
+   "id": "99b824a9b040",
+   "source": "Zennの「AI」のフィード",
+   "title": "CLAUDE.md をユーザー共通とリポジトリごとに分けて運用している話 — 何をどちらに書くか",
+   "url": "https://zenn.dev/chukidx_dev/articles/claude-md-user-and-repo-split",
+   "summary": "この記事を読むと得られること 複数の社内ツールを1人で抱えているときの、CLAUDE.md の分け方の判断軸 「ユーザー共通」と「リポジトリごと」に書く内容の具体例 分けたあと、実際にどの指示が読み込まれているかを確かめる手順 こんな人に向けて 社内ツールのリポジトリが3つ以上あり、どれにも同じ決まりを書き写している方 CLAUDE.md が長くなりすぎて、どこに何を書いたか分からなくなってきた方 Claude Code(Anthropic が提供する、ターミナルで動く AI コーディングエージェント)を業務で使い始めたばかりの情シス・兼任 SE の方 TL;DR ...",
+   "score": 0,
+   "added": "2026-11-13",
+   "tries": 2
+  },
+  {
+   "id": "0ccfe978f32f",
+   "source": "Zennの「AI」のフィード",
+   "title": "中国・10年物PHPのEC基幹を4人×2週間でJavaへ——AIを「865行のルール」と「差分比較コマンド」で縛った移行手順",
+   "url": "https://zenn.dev/soliperse/articles/8f3e21e9d26f92",
+   "summary": "「AIで54万行を2週間で移行」と聞いて、まず疑ったのは現場のエンジニアたちでした。中国で話題になったこの事例は、続編の記事で“2週間”の中身と、AIを縛った具体的なルールまで公開しています。数字より、その手順の方が持ち帰る価値があります。 ケースの規模（ソース記載の数字のみ） 対象：稼働10年、約54万行のPHPで書かれたECの中核システム（商品一覧・価格・検索など）。米国・カナダ向けサイトを支える 状態：ドキュメント不足、単体・結合・回帰テストはいずれもゼロ 体制：Javaに精通したベテラン4人。Cursor Ultraを9アカウント使い、2週間のツール費用は約1,800ドル ...",
+   "score": 0,
+   "added": "2026-11-13",
+   "tries": 2
+  },
+  {
+   "id": "021dcfb5e16a",
+   "source": "GitHub Trending",
+   "title": "JuliusBrussee/caveman",
+   "url": "https://github.com/JuliusBrussee/caveman",
+   "summary": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman. (+227 stars today)",
+   "score": 227,
+   "added": "2026-11-15",
+   "tries": 2
+  },
+  {
+   "id": "882ce923c486",
+   "source": "GitHub Trending",
+   "title": "NVIDIA/SkillEvaluator",
+   "url": "https://github.com/NVIDIA/SkillEvaluator",
+   "summary": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. (+133 stars today)",
+   "score": 133,
+   "added": "2026-11-15",
+   "tries": 2
+  },
+  {
+   "id": "5e38703f2df3",
+   "source": "GitHub Trending",
+   "title": "elementalsouls/Claude-BugHunter",
+   "url": "https://github.com/elementalsouls/Claude-BugHunter",
+   "summary": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices. (+124 stars today)",
+   "score": 124,
+   "added": "2026-11-15",
+   "tries": 2
+  },
+  {
+   "id": "9bff85487096",
+   "source": "GitHub Trending",
+   "title": "andrewyng/openworker",
+   "url": "https://github.com/andrewyng/openworker",
+   "summary": " (+100 stars today)",
+   "score": 100,
+   "added": "2026-11-15",
+   "tries": 2
+  },
+  {
+   "id": "dc6cbbda1a8c",
+   "source": "GitHub Trending",
+   "title": "ag-ui-protocol/ag-ui",
+   "url": "https://github.com/ag-ui-protocol/ag-ui",
+   "summary": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications. (+9 stars today)",
+   "score": 9,
+   "added": "2026-11-15",
    "tries": 2
   }
  ],
