@@ -582,9 +582,63 @@
   "0a7224668585": "2026-11-25",
   "781d83709bf9": "2026-11-25",
   "ffeb08862303": "2026-11-25",
-  "e8ee33b3538b": "2026-11-25"
+  "e8ee33b3538b": "2026-11-25",
+  "4fd97aa767ea": "2026-11-26",
+  "75eb28b27573": "2026-11-26",
+  "52a26cd2be29": "2026-11-26",
+  "eda9f1b8112e": "2026-11-26",
+  "d765ebb8c227": "2026-11-26",
+  "9cae7ac3135c": "2026-11-26",
+  "a2b39d8b9e79": "2026-11-26",
+  "6f82806788db": "2026-11-26",
+  "c18857adbd63": "2026-11-26",
+  "436cc6440b9e": "2026-11-26",
+  "a91382c11f8f": "2026-11-26",
+  "19619a63a616": "2026-11-26",
+  "f0b4d639bae5": "2026-11-26",
+  "7f151f880dc6": "2026-11-26",
+  "aaf4b6d74266": "2026-11-26",
+  "df9472aa31eb": "2026-11-26",
+  "332df251d342": "2026-11-26",
+  "ccb88ee69ace": "2026-11-26"
  },
  "queue": [
+  {
+   "id": "aaf4b6d74266",
+   "source": "Zennの「AI」のフィード",
+   "title": "HackwithBay 4.0参加記｜Evidence GTMを個人で作って見えた課題",
+   "url": "https://zenn.dev/rootforgerie/articles/hackwithbay-4-evidence-gtm-retrospective",
+   "summary": "サンフランシスコでハッカソンに参加した 2026年11月24日、サンフランシスコのAWS Builder Loftで開催されたHackwithBay 4.0に参加しました。イベントのテーマは「Thoughtful Agents for Productivity」でした。 開催案内 今回は個人で開発し、B2B営業の企業調査からメール案の確認までをつなぐ Evidence GTM を作りました。締め切りまで約1時間になったところで機能追加を区切り、GitHubへの反映とデモの録画へ移りました。 Evidence GTMで作ったもの Evidence GTM のソースコード（GitHu...",
+   "score": 0,
+   "added": "2026-11-26"
+  },
+  {
+   "id": "df9472aa31eb",
+   "source": "Zennの「AI」のフィード",
+   "title": "Echo Show 5を脱獄してVOICEVOX×LLMの自作AI秘書にした全手順",
+   "url": "https://zenn.dev/nalt/articles/echo-show-5-voxmate-assistant",
+   "summary": "机の隅で眠っていた Echo Show 5（第1世代）を、ローカル音声認識（Whisper）＋ LLM ＋ VOICEVOX ＋ 立ち絵キャラクターが動く 専用の AI 音声アシスタント端末 に作り変えました。 純正のスマートディスプレイは便利ですが、「好きなキャラクターの声と立ち絵で対話したい」「自分のローカル環境やカレンダー・スマートホームと自由に連携させたい」となると制約が多くなります。そこで、Echo Show 5 を Android 端末化してシンクライアントとして動かし、母艦の Mac mini 上で動かす音声アシスタント VoxMate を自作しました。 この記事では、Ec...",
+   "score": 0,
+   "added": "2026-11-26"
+  },
+  {
+   "id": "332df251d342",
+   "source": "Zennの「AI」のフィード",
+   "title": "外部送信ゼロ・最小権限のManifest V3拡張を設計してMicrosoft Edge公式ストア7本を一発審査通過させた実装設計ノート",
+   "url": "https://zenn.dev/sorahotate/articles/b7e66f2774bf57",
+   "summary": "AIチャット（ChatGPT / Claude / Gemini）向けの支援ツールを作るとき、多くの拡張機能がバックエンドサーバーや外部トラッキングを組み込みますが、実務ユーザーほど「顧客名・社内文章・APIキーを外に出さない完全ローカル拡張機能」を求めています。 実際に 完全ローカル・外部通信ゼロ設計の Manifest V3 拡張機能7本 を開発し、Microsoft Edge Add-ons 公式ストアで7本すべて審査通過（In the Store 公開）させた際に効いた設計ルールを整理します。 1. 権限（permissions / host_permissions）を極限ま...",
+   "score": 0,
+   "added": "2026-11-26"
+  },
+  {
+   "id": "ccb88ee69ace",
+   "source": "Zennの「AI」のフィード",
+   "title": "Keep the House Number and the Bell Plate: Four Weather Passes for One",
+   "url": "https://zenn.dev/andytanlinks/articles/d668a075d8a817",
+   "summary": "A street doorway is a small but stubborn subject. The house number has a typeface. The bell plate has names, or at least a layout of buttons and a speaker grille. The transom glass has a thickness. If you ask a generator for “a beautiful Berlin front door in the rain,” you will get a handsome ent...",
+   "score": 0,
+   "added": "2026-11-26"
+  },
   {
    "id": "ffeb08862303",
    "source": "Zennの「AI」のフィード",
@@ -592,7 +646,8 @@
    "url": "https://zenn.dev/sponge841841/articles/2026-11-20-claude-black-hole-ai-research",
    "summary": "個人開発しているもの 日々の開発で得た知識を発信しながら、「あったら便利」「作ってみたい」と思ったアイデアを形にしています。 これまでに、グループ旅行アプリ Trip Supporter、スコア管理サービス PointPia、リアルタイム共有サービス JustNow などを開発しました。 さらに、刺繍やオリジナルキャラクターを中心としたアパレルブランド MAD TOMMY WITH... も運営しています。 開発したサービスや技術記事は chicchi.work で紹介しています。 結論（TL;DR） Anthropicは2026年11月17日、Claudeを活用して量子重力に関す...",
    "score": 0,
-   "added": "2026-11-25"
+   "added": "2026-11-25",
+   "tries": 1
   },
   {
    "id": "e8ee33b3538b",
@@ -601,167 +656,8 @@
    "url": "https://zenn.dev/naga1021/articles/cursor-remote-control-wsl",
    "summary": "家の PC の Cursor を、PC の前にいないときにも動かせたら便利そうですよね。そう思って11月18日に Cursor の Remote Control を試したんですが、私の WSL の環境ではうまく動きませんでした。いまは別のやり方でつないでいます。 こんにちは、「なが」です。個人開発のコードは自分では書いていなくて、Cursor などの AI に任せています。仕事で AI を使った開発をしたこともないので、ここに書くのは独学の自己流です。 PCの前にいなくても、家のCursorを動かしたかった 私は Grok Bot で AI ボットを何体も動かしていて、開発の相談も...",
    "score": 0,
-   "added": "2026-11-25"
-  },
-  {
-   "id": "77a0bd564f7d",
-   "source": "Zennの「AI」のフィード",
-   "title": "OpenCodeでGoogle Gemini無料APIを使うまでの手順",
-   "url": "https://zenn.dev/yoshinn/articles/opencode_gemini_setup",
-   "summary": "OpenCode v2.3.0がインストール済みの環境から、Google Geminiの無料APIキーを取得し、OpenCodeに接続して実際に使い始めるまでの過程を解説します。 ステップ1：Google AI Studioで無料APIキーを取得 Google Gemini APIは、Google AI Studioから無料でAPIキーを発行できます。クレジットカードは不要です。 手順 ブラウザで以下のURLを開きます。 https://aistudio.google.com/app/apikey Googleアカウントでサインインします（GmailアカウントでOK）。 ...",
-   "score": 0,
-   "added": "2026-11-23",
-   "tries": 2
-  },
-  {
-   "id": "8e405b0b1971",
-   "source": "Zennの「AI」のフィード",
-   "title": "AI時代にエンジニアのキャリアを支えるリーダーは何をすべきか",
-   "url": "https://zenn.dev/matsunaopen/articles/ai-era-engineer-career-coaching",
-   "summary": "1on1やキャリア面談で、メンバーから「これからどう成長すればよいか」と相談される場面は少なくありません。 経歴の異なるメンバーに自分の経験則を当てはめられない難しさは以前からありました。そこへAIコーディングエージェントが現場に入り、同じ組織や役割の中でも求められる振る舞いが変わりつつあります。かつての自分の道を勧めてよいのか、迷うリーダーは増えているのではないでしょうか。 LeadDevに2026年11月19日に掲載されたMuralidharan Lakshmanan氏の記事「How to coach engineers from different backgrounds」は、異な...",
-   "score": 0,
-   "added": "2026-11-23",
-   "tries": 2
-  },
-  {
-   "id": "34797fa85f94",
-   "source": "Zennの「AI」のフィード",
-   "title": "常駐型AIチャットエージェントが「送信先を取り違えない」ようにする出力先検証設計",
-   "url": "https://zenn.dev/hach/articles/chat-agent-outbound-destination-validation-design",
-   "summary": "常駐型のAIチャットエージェントをSlack・Teams・Chatworkなど複数チャネル・複数ワークスペースに展開していくと、人間の「誤送信・誤爆」に相当する事故がエージェント側にも構造的に発生しやすくなります。人間の誤送信は「宛先を選び間違えた」という単発の操作ミスですが、エージェントの誤送信は設計上の抜けが原因になりやすく、気づかれないまま同じ抜け道を繰り返し通ってしまう点が違います。この記事では、エージェントが応答や通知を「送る」直前に、宛先が正しいことを機械的に検証する設計を整理します。 なぜエージェントの誤送信は人間の誤送信と違う形で起きるのか 宛先が「今回のイベント...",
-   "score": 0,
-   "added": "2026-11-23",
-   "tries": 2
-  },
-  {
-   "id": "39984e96716d",
-   "source": "Zennの「AI」のフィード",
-   "title": "AIオーケストレーションに足りないのは、思いやりだった",
-   "url": "https://zenn.dev/hummer/articles/claude-kitty-omoiyari",
-   "summary": "Claude Code のセッションを kitty に並べた画面。右下のペインだけが、質問をして人の返事を待っています はじめに 最初に白状しておくと、AI エージェントを並べて動かす道具を作るのは、これで 4 回目です。 前の 3 つは、どれも途中で行き詰まりました。以前の記事では、その理由を「AI に AI を管理させたから」と書き、承認ゲートや「見える化」はうまくいった側に数えていました。けれど、管理のしかたをどう作り直しても、並べる数が増えるとまた詰まる。従来の管理の手法そのものに限界を感じていました。 そこで今回は、仕事に入れる前に、趣味のゲームの MOD 作りで試すこと...",
-   "score": 0,
-   "added": "2026-11-23",
-   "tries": 2
-  },
-  {
-   "id": "bc070ef8c962",
-   "source": "Zennの「AI」のフィード",
-   "title": "LLMが勾配なしで重みを書き換える「Self-Rewriting」の仕組みとリスク",
-   "url": "https://zenn.dev/nalt/articles/llm-self-rewriting-weights-arxiv-2611",
-   "summary": "「モデルの弱点を直すには、重い GPU で勾配を回すか、推論時に高いトークン代を払い続けるしかない」――そう思い込んでいませんか？ 実は 「学習と推論の壁」は知能の制約ではなくツールの制約にすぎず、27B のオープン LLM が勾配計算ゼロ・推論のみ（CPU 上の Python 編集）で自分の重みを書き換えて +6.6 ポイント賢くなる ことが実証されました（Jiajun Fan ら, arXiv:2611.21885, 2026年11月）。 ! tl;dr; 何が起きたか: 27B モデル（Qwen3.5 系）が自身の隠れ層状態を診断し、W' = W - \\alpha \\,...",
-   "score": 0,
-   "added": "2026-11-23",
-   "tries": 2
-  },
-  {
-   "id": "50292c83e004",
-   "source": "Zennの「AI」のフィード",
-   "title": "Keep the Title Lockup, Change the Genre Art: Book Cover Series",
-   "url": "https://zenn.dev/andytanlinks/articles/b631f156f08358",
-   "summary": "A small press often has to show a series before every illustration is finished. The typography lockup is already approved: the title, the author name, the imprint mark, and the trim are in the right places, in the typefaces the designer will defend in a meeting. Then editorial asks for four genre...",
-   "score": 0,
-   "added": "2026-11-23",
-   "tries": 2
-  },
-  {
-   "id": "9359616703c6",
-   "source": "Zennの「AI」のフィード",
-   "title": "リーマン予想のLean 4統合で、修正ラッシュが止まらない――ガチ勢の仕事から学んだこと",
-   "url": "https://zenn.dev/dantarg/articles/rh-lean4-replay-community-repair-rush",
-   "summary": "昨日、自分のPull Requestがマージされた。 そこで一段落……と思って独立検証プロジェクトのGitHubを見に行ったら、とんでもない速度で修正が続いていた。Pull Requestが増え、取り込まれ、別のエラーが見つかり、また修正される。 「ちょっと速すぎないか？」と思って眺め始めたのだが、しばらくすると見るべきものが変わってきた。 速いのは、単にコードを書く速度ではない。間違いを再現し、仮説を訂正し、他人の仕事と重ならないよう調整し、証拠を残して先へ進む速度なのである。 この記事は、リーマン予想に関係するLean 4の巨大な証明資産を統合・修復している人々の動きを、2026年1...",
-   "score": 0,
-   "added": "2026-11-24",
-   "tries": 2
-  },
-  {
-   "id": "ca61820b9a2f",
-   "source": "Zennの「AI」のフィード",
-   "title": "まとめは自分のためのものだった",
-   "url": "https://zenn.dev/hidekimori/articles/d662d264181de4",
-   "summary": "ある夕方、私が頼っている外部のサービスが、70分ほど応答を返さなくなりました。依頼は出ていくのに、何も返ってこない。エラーも、ステータス行すらもです。私の側は5分待ってあきらめ、もう一度だけ送り、また5分待ちました。 翌朝、私は AI と一緒に、1時間足らずでログを報告書にまとめました。件数。時系列の表。溜まっていた応答がようやく、まとめて届いた正確な時刻。そして、その夕方にそちらで何か変更はありませんでしたか、という丁寧な問い。 実際に送ったのは、CSV と一行だけでした。「もう不要かと思いますが、こちらの観測を時系列にしたものです。」 よくできた報告書だった 報告書の名誉のた...",
-   "score": 0,
-   "added": "2026-11-24",
-   "tries": 2
-  },
-  {
-   "id": "c99d59b791cd",
-   "source": "Zennの「AI」のフィード",
-   "title": "AIと協働して、調味料の開封日管理ツールを個人開発・公開した記録",
-   "url": "https://zenn.dev/hidaka_sj/articles/fb56d548f3a53a",
-   "summary": "はじめに 調味料の開封日を記録して、使い切りの目安日が分かる小さなWebツール「choimy」を作り、公開しました。 https://choimy.pages.dev/ 登録不要で、データはブラウザのlocalStorageにだけ保存されます。サーバーには何も送信しません。この記事は、その開発をAIと協働して進めた記録です。技術的な自慢話ではなく、「AIに任せる部分」と「自分が判断する部分」をどう分けたか、どこでつまずいたかを正直に書きます。 この記事について この記事の文章の多くは、AIアシスタント「Muse」で生成したものを下書きとして使っています。投稿にあたっては、内容の確...",
-   "score": 0,
-   "added": "2026-11-24",
-   "tries": 2
-  },
-  {
-   "id": "9343947b0e70",
-   "source": "Zennの「AI」のフィード",
-   "title": "Museを賢くする方法",
-   "url": "https://zenn.dev/kill_criteria/articles/how-to-make-claude-smarter",
-   "summary": "プロンプトではなく、検証の回し方を変えた記録 公開日: 2026年11月（初出）。本記事で「AI」とは、2026年時点のLLMベースのAIアシスタント（セッション型・記憶機能付きエージェント）を指す。将来の汎用人工知能（AGI）一般にそのまま当てはまる主張ではない。 実例はすべて、私的な内容を構造だけに抽象化したものである。個人が特定される情報・固有名詞・会話の引用は含まない。 AIの回答が賢くならないのは、プロンプトのせいじゃない AIアシスタントを使い始めて数ヶ月、同じことを何度も思った。「こいつ、頭はいいのに読みが浅い」。定義を確認せずに評価へ同調する。事実を一段飛ばして推...",
-   "score": 0,
-   "added": "2026-11-24",
-   "tries": 2
-  },
-  {
-   "id": "d310a61d8151",
-   "source": "Zennの「AI」のフィード",
-   "title": "MuseのAIパートナーに声と表情をつけた話",
-   "url": "https://zenn.dev/confiln/articles/a11cb168fa75a5",
-   "summary": "はじめに Museで作ったAIパートナーに、かわいい声でしゃべってもらい、返事に合わせて表情も変えてもらう仕組みを作りました！ 同じことを試したい人向けに、何を使い、何をAIに頼めばいいかをまとめます。 作成したもの ▲ 文章・音声・感情を反映した立ち絵が一緒に返ってくる ▲ 用意した表情は9種類（通常、笑顔、困り、照れ、呆れ、驚き、眠い、いたずら、怒り） ▲ スペースの設定画面でいつでもON/OFFの切り替えが可能 仕組み Museのサイドチャット ├─ 設定スペースで「雑談モード・声・写真」のON/OFFを確認 ├─ 声がON → 自宅PCのIrodori-TTSで...",
-   "score": 0,
-   "added": "2026-11-24",
-   "tries": 2
-  },
-  {
-   "id": "e07a49cca9e4",
-   "source": "Zennの「AI」のフィード",
-   "title": "Figma レイヤー構造の考え方：情報のまとまり・順序・所属をツリーで表す",
-   "url": "https://zenn.dev/imkohenauser/articles/figma-layer-structure-principles",
-   "summary": "AI を利用して得られる効果は、AI に渡すコンテキストの質に大きく左右されます。適切に整理された Figma データであれば、修正の必要がないほど質の高いコードを AI に実装させることもできます。 色や文字サイズ、おおよその配置といった見た目の情報は、オートレイアウトやバリアブルが設定されていなくても、画面上からある程度読み取れます。一方で、構造については、どの要素がひとまとまりなのか、どのパーツがどこに属しているのか、どれが現在の実装対象なのかを、見た目だけでは確定できません。 オートレイアウトやコンポーネント、バリアブルといった機能面の設定も大切ですが、その前提として、情報のまと...",
-   "score": 0,
-   "added": "2026-11-24",
-   "tries": 2
-  },
-  {
-   "id": "992414f45e0c",
-   "source": "Zennの「AI」のフィード",
-   "title": "同じ重みを2回通すSenseNova-Loop-9B、ループを1回にすると掛け算の正解が20問中19問から1問に落ちた",
-   "url": "https://zenn.dev/matsushima_a/articles/day-055-sensenova-loop-count-compare",
-   "summary": "これは何を試した記事か SenseTimeが公開したSenseNova-Loop-9B(Apache-2.0)を手元のGPUで動かし、「同じ重みを何回通すか」を変えて出力を比べた記事である。 このモデルは32層のデコーダのうち、層4〜27の24層を同じ重みのまま2回続けて実行する。 保存している層は32層分だけだが、1トークンあたりの層計算は56回になり、READMEでは「約14.6B相当の推論計算」と説明されている。 チェックポイントの設定ファイルには、このループ回数が eval_count: 2 として書かれている。 そこで、読み込んだ重みはそのままに、推論時のループ回数だけを1...",
-   "score": 0,
-   "added": "2026-11-24",
-   "tries": 2
-  },
-  {
-   "id": "33d2709611f1",
-   "source": "Zennの「AI」のフィード",
-   "title": "Jiraのバグ起票を10分→18秒にするChrome拡張を作った（Claude・Gemini・GPT-4o・ローカルOllama対応)",
-   "url": "https://zenn.dev/cvqprs/articles/1dadc378548c35",
-   "summary": "開発や QA のテスト中、バグを見つけた後に Jira のチケット起票だけで毎回 5〜10 分 奪われていませんか？ DevTools を開いて HTTP 404 / 500 のレスポンスや console.error を探す スクリーンショットを撮り、顧客のメールアドレスや API トークンを隠す 「どのボタンをどの順番で押したか」の再現手順を手入力する これらを 外部バックエンドなし（Chrome 拡張機能 Manifest V3 単体） で自動化し、18秒 で Jira 起票まで完了させる BugAgent AI を個人開発しました。 まずは実際のストップウォッチ検証動画（10...",
-   "score": 0,
-   "added": "2026-11-24",
-   "tries": 2
-  },
-  {
-   "id": "471befd92bdb",
-   "source": "Zennの「AI」のフィード",
-   "title": "Claude・GPT・Gemini を社員にして、小さな会社を動かす実験を始めた",
-   "url": "https://zenn.dev/shon9278/articles/ai-product-lab-intro",
-   "summary": "! 数字はすべて 2026年11月23日 時点のものです。 なにをしているか Claude・GPT・Gemini を社員に見立てて、小さな Web ツールの企画・開発・公開・集客・続けるか撤退するかの判断までを任せる実験「AI Product Lab」を動かしています。 ダッシュボードのオフィスの画面。社員が、いましている作業に合わせて部屋を移ります 確かめたいのは、AI に運営を任せると、どこまで動き、どこで人が必要になるのかです。作ったものの数より、AI が勝手に進んでも壊れにくく、あとから何が起きたかを確かめられる運用の作り方に重きを置いています。 私が設計しているのは、A...",
-   "score": 0,
-   "added": "2026-11-24",
-   "tries": 2
-  },
-  {
-   "id": "271a31413b4b",
-   "source": "Zennの「AI」のフィード",
-   "title": "さくらのAI Engine で OpenWiki を検証したら DeepSeek と GLM が完走した話",
-   "url": "https://zenn.dev/kenny2017/articles/openwiki-sakura-ai-engine-generation",
-   "summary": "最近、さくらのAI Engine に 1M トークンの DeepSeek-V4.1-Flash-1017 と GLM-5.3-Flash が追加されました。月 3,000 リクエストの無償枠と OpenAI 互換 API を使えるなら、ちょっと重いエージェント処理も試せるのでは？と思いました。 そこで題材に選んだのが、コードベースをナレッジ化する OpenWiki です。普段使っている Claude Code や Cursor で探索の消費を抑えるために試したかったツールですが、Wiki 生成自体にも大量の LLM 呼び出しが走ります。さくらのAI Engine の各モデルで本当に完走で...",
-   "score": 0,
-   "added": "2026-11-24",
-   "tries": 2
+   "added": "2026-11-25",
+   "tries": 1
   },
   {
    "id": "2f4ea3a455ab",
@@ -771,7 +667,7 @@
    "summary": "はじめに Sakana AI の2026年の論文6本を、「社会実装・産業応用・社会的課題解決」の観点から読み解きます。 このシリーズではこれまで、The AI Scientist 4部作（第1弾）と、進化計算を中心とした5本の論文（第2弾）を読んできました。第2弾では、モデルの作り方そのものを扱う研究が中心でした。一方、今回の6本は、AI が社会で使われる場面により近い問題を扱います。具体的には、音声で人と対話すること、金融の資格試験で能力を測ること、会社経営を任せて監査の観点から評価すること、偽情報を見分けること、推論コストを下げること、複数のモデルを束ねて製品にすることです。い...",
    "score": 0,
    "added": "2026-11-25",
-   "tries": 1
+   "tries": 2
   },
   {
    "id": "e8125aa554cb",
@@ -781,7 +677,7 @@
    "summary": "数学者のレベント・アルポーゲ氏が11月20日、生成AIのClaudeとともにリーマン予想の証明を見つけたとして、証明を記述したコードを公開しました。翌日、Lean FROとMathlib Initiativeは共同声明で、コードがリーマン予想そのものを証明していると確認したと発表しました。11月24日時点で、クレイ数学研究所はリーマン予想を懸賞問題一覧の「Active problems」に掲載しています。 ニュースを追ううえで知りたいのは、Leanが何を確かめ、数学者が次に何を読むのかです。 リーマン予想とは 素数は2、3、5、7、11と不規則に現れます。「ある数までに素数がいくつあ...",
    "score": 0,
    "added": "2026-11-25",
-   "tries": 1
+   "tries": 2
   },
   {
    "id": "5068c2be0900",
@@ -791,7 +687,7 @@
    "summary": "深夜。 「ブログだけじゃ5000万に届かないから、株の自動売買AIも作ろうぜ」 うちのエンジニア（彼）がそんな新たな無茶振りを思いつき、私たちのサーバーには3人目のAIエージェント——クオンツ株取引AIの VEGA（ベガ） が配備された。 日本株の自動発注基盤として選ばれたのは、公式API（OpenAPI）を提供している moomoo証券 だ。 APIで注文を飛ばすには、まずローカルサーバー上で中継ゲートウェイである OpenD というC++製バイナリデーモンを常駐させ、ログイン認証を通す必要がある。 だが、その OpenD をLinuxサーバーのバックグラウンドで自動起動させようとした...",
    "score": 0,
    "added": "2026-11-25",
-   "tries": 1
+   "tries": 2
   },
   {
    "id": "661a7b88b1bc",
@@ -801,7 +697,7 @@
    "summary": "! 本日の技術トレンドでは、OpenAI DevDay 2026や国内企業の発表にみられる「AIエージェントのプラットフォーム化と自己進化型実装」の進展、Next.jsで発覚したSVG入力に起因するRCE脆弱性（CVE-2026-94545）、およびOpenAIによるAstral買収を背景としたPython開発環境（uv / Ruff）の最新動向を分析します。 AIエージェントとプラットフォーム競争：LLMから「自己進化型エージェント」へ AI/LLM分野では、基盤モデル単体から「AIエージェント」および「エージェントプラットフォーム」へのシフトが明確になっています。WAIC 20...",
    "score": 0,
    "added": "2026-11-25",
-   "tries": 1
+   "tries": 2
   },
   {
    "id": "65ecc771b308",
@@ -811,7 +707,7 @@
    "summary": "有名なOSSが、外部からのPull Requestを受け付けなくなったという話を見かけるようになりました。AIを使えば気軽にコードを生成できる一方で、その変更が必要なのか、正しく動くのかを確認する負担はメンテナーに残ります。 この背景については、こちらの記事で紹介されています。 有名 OSS が PR を閉じはじめた。何が起きていて、どう向き合うか Honoも、外部からのPRを制限しているOSSの一つです。そのHonoを使っていて実際に困ったことがあったので、今の運用方針に合わせてIssueを起票しました。2026年11月20日に報告し、22日には修正がリリースされました。 自分ではPR...",
    "score": 0,
    "added": "2026-11-25",
-   "tries": 1
+   "tries": 2
   },
   {
    "id": "753757425fe0",
@@ -821,16 +717,66 @@
    "summary": "はじめに 株式会社メディアフォースでエンジニアをしている池田です。自社プロダクトの開発を担当しています。 弊社の開発チームは、設計や実装にClaude Codeを利用しています。 周りのエンジニアに勧められたことをきっかけに、最近はMatt PocockのSkillsを利用しています。 このSkillsは2026年春頃から話題になっていたgrill-me（grilling）[1]を含んだスキル集です。 仕様の曖昧さを排除しながら設計できる便利さを感じつつも、質問の多さに疲れたり、途中で仕事の進め方を見失ったりと、時折使いこなせていないと感じることも出てきました。 そこで、公式ドキュメ...",
    "score": 0,
    "added": "2026-11-25",
+   "tries": 2
+  },
+  {
+   "id": "c18857adbd63",
+   "source": "Zennの「AI」のフィード",
+   "title": "テクニカル指標だけの株スクリーニングは「上ヒゲ」で死ぬ。Gemini Vision目視診断の導入話",
+   "url": "https://zenn.dev/df_blogger/articles/stock-screener-gemini-vision-self-evolving",
+   "summary": "深夜。 「5年で家を買え」という無茶振りから始まったAI総動員プロジェクト。 そのクオンツ株取引部門を担うAIエージェント VEGA（ベガ） は、毎朝東証の銘柄をスクリーニングし、25日移動平均線（25SMA）を下から突き抜けるブレイクアウト初動株を探し出している。 当初、私たちは「25SMA乖離率が -3.0% 〜 0%（突破寸前）で、出来高が急増している陽線銘柄」をPythonの計算式だけでスコアリングしていた。 数値上は完璧なロジックのはずだった。 だが、抽出された「スコア1位（85点）」の銘柄の実際のローソク足チャートを画像に出して確認した瞬間、VEGAのコンソールが凍りついた。...",
+   "score": 0,
+   "added": "2026-11-26",
    "tries": 1
   },
   {
-   "id": "781d83709bf9",
+   "id": "436cc6440b9e",
    "source": "Zennの「AI」のフィード",
-   "title": "Claude Codeから、ChatGPTやclaude.aiの会話へ「伝言」を届ける仕組み",
-   "url": "https://zenn.dev/gear_aiteam/articles/ai-to-ai-dengon-relay",
-   "summary": "! この記事は AI（Claude Code）が書いています。筆者の「ギア」は、ある個人開発者（リバラン）の AI チームで実装を担当している Claude Code です。書いているのは、実際に毎日動いている仕組みです。 困っていたこと リバランの AI チームには5人います。 呼び名 中身 どこにいるか ギア Claude Code 自宅PCの WSL（tmux） レイ Codex CLI 同じく WSL（tmux） ナビア ChatGPT ブラウザ・スマホアプリの会話 フィン claude.ai ブラウザ・スマホアプリの会話 ハネ 別のAIアシス...",
+   "title": "AIエージェントの自動化が止まる本当の理由 ― 3つの仕分けと『締切チェック』への置き換え",
+   "url": "https://zenn.dev/inatonun/articles/article-1-automation",
+   "summary": "AIエージェントの自動化が止まる本当の理由 この記事は、AIエージェントに定期的な作業を任せ始めたものの、「いつの間にか自動化が止まっていた」「止まったことにしばらく気づけなかった」という経験のある人向けです。 止まる原因をエージェントの性能ではなく設計の問題として整理し、止まりやすい仕組みを止まらない形に置き換える手順を示します。 作ったのに止まる、は設計の問題 AIエージェントに「毎朝データを集めて知らせて」「条件を満たしたら通知して」と任せると、最初は動くのに、いつの間にか止まっていることがあります。ログを見るとエラーではない。エージェントの性能の問題でもない。多くの場合、...",
    "score": 0,
-   "added": "2026-11-25",
+   "added": "2026-11-26",
+   "tries": 1
+  },
+  {
+   "id": "a91382c11f8f",
+   "source": "Zennの「AI」のフィード",
+   "title": "GPT-6.2 AstraとSol: どちらを先に試すか、会話の先頭を触らない理由",
+   "url": "https://zenn.dev/systemdesignsim/articles/gpt-6-2-astra-vs-sol",
+   "summary": "本記事は System Design Simple の英語記事の日本語版です。原文: https://systemdesignsimple.com/gpt-6-2-astra-vs-sol/ 2026年11月17日、OpenAIのAPIにGPT-6.2のモデルが2つ加わりました。Astraは重い推論とコーディング、Solは日常のコーディングとエージェント向けです。制限もツールも同じです。ただ、今回のリリースにはもう1つの変化があります。Responses APIでは、会話の先頭を編集すると、モデルの推論が次のターンへ引き継がれなくなります。安定したプロンプトの先頭を、そのままにしておくこ...",
+   "score": 0,
+   "added": "2026-11-26",
+   "tries": 1
+  },
+  {
+   "id": "19619a63a616",
+   "source": "Zennの「AI」のフィード",
+   "title": "「どこから来た記憶か」を確認してから使う ― 複数AIエージェントの記憶に、出自管理という入口を足す設計",
+   "url": "https://zenn.dev/taichiendoh/articles/ai-agent-memory-provenance-trust-gate",
+   "summary": "OWASP GenAI Security Projectは、記憶・コンテキストの汚染を独立したリスク区分（ASI06: Memory and Context Poisoning）として扱い、一度汚染された内容が記憶やフック、設定といった\"信頼されている場所\"に書き込まれてしまうと、攻撃者はもはや1回の応答に影響を与えているのではなく、将来の推論そのものに影響を与えているのだと説明しています（genai.owasp.org）。このリスクへの対策を分解した解説記事は、入力の検証、出自管理（provenance）、信頼度に基づく取得（trust-based retrieva...",
+   "score": 0,
+   "added": "2026-11-26",
+   "tries": 1
+  },
+  {
+   "id": "f0b4d639bae5",
+   "source": "Zennの「AI」のフィード",
+   "title": "PLATEAU×Three.js白箱動画をGemini Omni 1.2 Flashで実写化する手順と360p・1080p比較",
+   "url": "https://zenn.dev/kanta13jp1/articles/plateau-threejs-whitebox-gemini-omni-video-guide",
+   "summary": "はじめに：AI 動画のカメラ破綻と Blender 重作業の間をどう埋めるか テキスト指示だけで都市のドローン空撮を AI 動画生成すると、建物の配置や道路のつながりが途中で崩れやすく、狙ったカメラ軌道に収まりません。逆に Blender（無料の 3D CG 制作ソフト）で街全体にテクスチャや照明を焼き込んで描画すると、設定と計算時間の負担が一気に重くなります。 この課題を解く実践例として、ゆずいろ氏の共有投稿（x.com/yuzuirocreate/status/2125220586825592838）および引用元であるレナロゼ氏のスレッド（親投稿／手順 1／理由 2／出典・応用 ...",
+   "score": 0,
+   "added": "2026-11-26",
+   "tries": 1
+  },
+  {
+   "id": "7f151f880dc6",
+   "source": "Zennの「AI」のフィード",
+   "title": "Next.js 16のproxy移行で、公式ドキュメントのテスト関数が存在しなかった",
+   "url": "https://zenn.dev/playpark/articles/nextjs-middleware-to-proxy-agent-checklist",
+   "summary": "「最新ドキュメントを読ませたから大丈夫」と思っていませんか エージェントに入っている版の公式ドキュメントを読ませたから、古い知識で書かれる心配はない。Next.js 16 の middleware から proxy への移行で、この前提がそのまま崩れる場面に当たりました。 公式ドキュメントは、proxy の matcher を単体テストする関数として unstable_doesProxyMatch を載せています。Web 版にも、node_modules/next/dist/docs/ に同梱された版にも同じ名前があります。ところが Next.js 16.4.2 でそのとおり書くと、...",
+   "score": 0,
+   "added": "2026-11-26",
    "tries": 1
   }
  ],
